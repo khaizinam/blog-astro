@@ -7,7 +7,7 @@ KhaiZiNam (https://khaizinam.com) is the personal technology, programming, and c
 - **Name:** Nguyen Huu Khai (khaizinam)
 - **Role:** Software Developer — enterprise web systems, backend architecture, CMS engineering
 - **Website:** https://khaizinam.com
-- **Portfolio:** https://khaizinam.github.io/cv_port/
+- **Portfolio:** https://cv.khaizinam.com
 - **Zalo/Phone:** +84 846 141 788
 - **Core Stacks:** PHP Laravel, Botble CMS, Multi-tenancy (tenancy-for-laravel), NuxtJS, Node.js (TypeScript), Vue 3, React, MySQL, Redis, Docker, Nginx, Linux, VietQR/SePay.
 

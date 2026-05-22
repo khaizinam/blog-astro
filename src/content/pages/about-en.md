@@ -24,7 +24,7 @@ The name **KhaiZiNam** originated from a shared passion for gaming back in the Z
 
 *   **Author:** Nguyen Huu Khai (khaizinam)
 *   **Website:** [khaizinam.com](https://khaizinam.com)
-*   **Portfolio:** [KhaiZiNam Portfolio](https://khaizinam.github.io/cv_port/)
+*   **Portfolio:** [KhaiZiNam Portfolio](https://cv.khaizinam.com)
 *   **Phone/Zalo:** +84 846 141 788
 *   **Languages:** Vietnamese & English (Bilingual)
 *   **Target Audience:** Vietnamese software engineers, particularly Junior Developers and IT Freshers.
