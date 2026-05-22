@@ -71,7 +71,7 @@ export default defineConfig({
     },
   },
   markdown: {
-    remarkPlugins: [remarkToc, [remarkCollapse, { test: "Table of contents" }]],
+    remarkPlugins: [remarkToc],
     rehypePlugins: [rehypeCleanSlugs],
     shikiConfig: {
       themes: { light: "min-light", dark: "night-owl" },

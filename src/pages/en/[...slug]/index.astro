@@ -99,6 +99,24 @@ if (!ogImageUrl && config.features.dynamicOgImage) {
 const ogImage = ogImageUrl
   ? new URL(ogImageUrl, Astro.url.origin).href
   : undefined;
+
+// Filter and compute related posts based on tag intersection
+const otherPosts = allPosts.filter(
+  p => p.id !== post.id && (p.data.lang ?? "vi") === locale
+);
+const relatedPosts = otherPosts
+  .map(p => {
+    const commonTags = p.data.tags.filter(t => tags.includes(t));
+    return { post: p, score: commonTags.length };
+  })
+  .sort((a, b) => {
+    if (b.score !== a.score) {
+      return b.score - a.score;
+    }
+    return b.post.data.pubDatetime.getTime() - a.post.data.pubDatetime.getTime();
+  })
+  .slice(0, 10) // Show up to 10 highly-relevant articles
+  .map(item => item.post);
 ---
 
 <PostLayout
@@ -163,6 +181,38 @@ const ogImage = ogImageUrl
     </ul>
 
     <ShareLinks />
+
+    {
+      relatedPosts.length > 0 && (
+        <div class="mt-12">
+          <h2 class="text-lg font-bold tracking-wide text-foreground mb-6">
+            Related Posts
+          </h2>
+          <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+            {relatedPosts.map(relatedPost => {
+              const url = getPostUrl(relatedPost.id, relatedPost.filePath, locale);
+              return (
+                <a
+                  href={url}
+                  title={relatedPost.data.title}
+                  class="group block p-4 rounded-lg border border-border bg-muted/20 hover:bg-muted/50 hover:border-accent/50 transition-all duration-200"
+                >
+                  <span class="text-[10px] text-muted-foreground block mb-1">
+                    <Datetime pubDatetime={relatedPost.data.pubDatetime} size="sm" />
+                  </span>
+                  <h3 class="text-sm font-semibold text-foreground group-hover:text-accent transition-colors duration-200 line-clamp-2 leading-snug">
+                    {relatedPost.data.title}
+                  </h3>
+                  <p class="text-xs text-muted-foreground mt-1.5 line-clamp-2 leading-relaxed">
+                    {relatedPost.data.description}
+                  </p>
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      )
+    }
 
     <hr class="my-8 border-dashed" />
 

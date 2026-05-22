@@ -1,8 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-// Chuẩn hóa slug giống cách github-slugger / Astro thực hiện
-function slugify(text) {
+function cleanSlugify(text) {
   return text
     .toString()
     .toLowerCase()
@@ -11,8 +10,8 @@ function slugify(text) {
     .replace(/[đĐ]/g, "d")
     .replace(/[^a-z0-9\s-]/g, "") // Remove special characters
     .trim()
-    .replace(/\s+/g, "-") // Replace spaces with hyphens
-    .replace(/-+/g, "-"); // Collapse multiple hyphens
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-");
 }
 
 const POSTS_DIR_VI = path.join(__dirname, '../content/posts/vi');
@@ -38,7 +37,7 @@ function processDirectory(dirPath) {
       if (headingMatch) {
         const level = headingMatch[1].length;
         const text = headingMatch[2].trim();
-        const slug = slugify(text);
+        const slug = cleanSlugify(text);
         headings.push({
           level,
           text,
@@ -66,7 +65,7 @@ function processDirectory(dirPath) {
       let matchedHeading = null;
 
       // Cách 1: Tìm tiêu đề khớp chính xác slug của linkText
-      const linkSlug = slugify(trimmedText);
+      const linkSlug = cleanSlugify(trimmedText);
       matchedHeading = headings.find(h => h.slug === linkSlug);
 
       // Cách 2: Nếu không khớp chính xác, tìm tiêu đề có cùng số thứ tự bắt đầu
@@ -83,7 +82,7 @@ function processDirectory(dirPath) {
 
       // Cách 3: Nếu vẫn không khớp, thử so sánh độ tương đồng tương đối (chứa text)
       if (!matchedHeading) {
-        const normalizedLink = slugify(trimmedText).replace(/^\d+-/, ''); // bỏ số ở đầu
+        const normalizedLink = cleanSlugify(trimmedText).replace(/^\d+-/, ''); // bỏ số ở đầu
         matchedHeading = headings.find(h => {
           const normalizedHeading = h.slug.replace(/^\d+-/, '');
           return normalizedHeading.includes(normalizedLink) || normalizedLink.includes(normalizedHeading);
