@@ -60,23 +60,28 @@ Nginx doesn't execute PHP directly — it delegates PHP processing to **PHP-FPM*
 
 ##### 3.1. SSH into the server
 
-\# SSH with password (first login)
-ssh root@YOUR\_SERVER\_IP
+```bash
+# SSH with password (first login)
+ssh root@YOUR_SERVER_IP
 
 # SSH with key (recommended for production)
-ssh -i ~/.ssh/your\_key.pem ubuntu@YOUR\_SERVER\_IP
+ssh -i ~/.ssh/your_key.pem ubuntu@YOUR_SERVER_IP
+```
 
 ##### 3.2. Update the server and install essential tools
 
-\# Update all packages
+```bash
+# Update all packages
 sudo apt update && sudo apt upgrade -y
 
 # Install essential tools
 sudo apt install -y curl git unzip software-properties-common apt-transport-https ca-certificates gnupg
+```
 
 ##### 3.3. Configure UFW firewall
 
-\# Enable UFW
+```bash
+# Enable UFW
 sudo ufw enable
 
 # Allow SSH (critical — missing this step will lock you out)
@@ -88,6 +93,7 @@ sudo ufw allow 'Nginx Full'
 
 # Check status
 sudo ufw status verbose
+```
 
 **Critical warning:** Always run **sudo ufw allow ssh** BEFORE **sudo ufw enable**. Enabling UFW without opening the SSH port first will completely lock you out of the server — you'll need to use your VPS provider's console to recover.
 
@@ -97,7 +103,8 @@ sudo ufw status verbose
 
 ##### 4.1. Add PPA and install PHP 8.2
 
-\# Add Ondřej Surý's PHP PPA (most trusted source for up-to-date PHP on Ubuntu)
+```bash
+# Add Ondřej Surý's PHP PPA (most trusted source for up-to-date PHP on Ubuntu)
 sudo add-apt-repository ppa:ondrej/php -y
 sudo apt update
 
@@ -106,44 +113,50 @@ sudo apt install -y php8.2 php8.2-fpm
 
 # Verify version
 php -v
+```
 
 ##### 4.2. Install required PHP extensions
 
-\# Full extension set for plain PHP, Laravel, and CodeIgniter
-sudo apt install -y \\
-  php8.2-cli \\
-  php8.2-common \\
-  php8.2-mysql \\
-  php8.2-pgsql \\
-  php8.2-sqlite3 \\
-  php8.2-xml \\
-  php8.2-xmlrpc \\
-  php8.2-curl \\
-  php8.2-gd \\
-  php8.2-imagick \\
-  php8.2-mbstring \\
-  php8.2-zip \\
-  php8.2-bcmath \\
-  php8.2-intl \\
-  php8.2-redis \\
+```bash
+# Full extension set for plain PHP, Laravel, and CodeIgniter
+sudo apt install -y \
+  php8.2-cli \
+  php8.2-common \
+  php8.2-mysql \
+  php8.2-pgsql \
+  php8.2-sqlite3 \
+  php8.2-xml \
+  php8.2-xmlrpc \
+  php8.2-curl \
+  php8.2-gd \
+  php8.2-imagick \
+  php8.2-mbstring \
+  php8.2-zip \
+  php8.2-bcmath \
+  php8.2-intl \
+  php8.2-redis \
   php8.2-opcache
 
 # Start and enable PHP-FPM
 sudo systemctl enable php8.2-fpm
 sudo systemctl start php8.2-fpm
 sudo systemctl status php8.2-fpm
+```
 
 ##### 4.3. Install Composer
 
+```bash
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 sudo chmod +x /usr/local/bin/composer
 composer --version
+```
 
 * * *
 
 #### 5\. Step 3 — Install Nginx
 
+```bash
 sudo apt install -y nginx
 sudo systemctl enable nginx
 sudo systemctl start nginx
@@ -151,8 +164,9 @@ sudo systemctl status nginx
 
 # Remove the default config — you'll create per-site configs instead
 sudo rm /etc/nginx/sites-enabled/default
+```
 
-At this point, visiting **http://YOUR\_SERVER\_IP** in a browser should show the Nginx welcome page, confirming it's running correctly.
+At this point, visiting **http://YOUR_SERVER_IP** in a browser should show the Nginx welcome page, confirming it's running correctly.
 
 * * *
 
@@ -167,10 +181,11 @@ You can install MySQL directly with **apt install mysql-server** — that works 
 
 ##### 6.1. Install Docker
 
+```bash
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 
-echo "deb \[arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg\] \\
-  https://download.docker.com/linux/ubuntu $(lsb\_release -cs) stable" | \\
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] \
+  https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 sudo apt update
@@ -179,137 +194,156 @@ sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 sudo usermod -aG docker $USER
 newgrp docker
 docker --version
+```
 
 ##### 6.2. Run the MySQL 8 container
 
-\# Create a named volume so data survives container restarts
-docker volume create mysql8\_data
+```bash
+# Create a named volume so data survives container restarts
+docker volume create mysql8_data
 
 # Run MySQL 8
 # - Binds port 33060 on localhost only (not exposed to the internet)
 # - Data persisted in docker volume
 # - Restarts automatically on server reboot
-docker run -d \\
-  --name mysql8 \\
-  -e MYSQL\_ROOT\_PASSWORD=your\_strong\_root\_password \\
-  -e MYSQL\_DATABASE=your\_db\_name \\
-  -e MYSQL\_USER=your\_db\_user \\
-  -e MYSQL\_PASSWORD=your\_db\_password \\
-  -p 127.0.0.1:33060:3306 \\
-  -v mysql8\_data:/var/lib/mysql \\
-  --restart always \\
+docker run -d \
+  --name mysql8 \
+  -e MYSQL_ROOT_PASSWORD=your_strong_root_password \
+  -e MYSQL_DATABASE=your_db_name \
+  -e MYSQL_USER=your_db_user \
+  -e MYSQL_PASSWORD=your_db_password \
+  -p 127.0.0.1:33060:3306 \
+  -v mysql8_data:/var/lib/mysql \
+  --restart always \
   mysql:8.0
+```
 
-**Important:** The **\-p 127.0.0.1:33060:3306** flag binds MySQL only to the loopback interface — only processes on the same server can connect. Never use **0.0.0.0:3306** on a production server as it exposes MySQL to the public internet.
+**Important:** The **-p 127.0.0.1:33060:3306** flag binds MySQL only to the loopback interface — only processes on the same server can connect. Never use **0.0.0.0:3306** on a production server as it exposes MySQL to the public internet.
 
 ##### 6.3. Create a database and user per project
 
-\# Connect into the MySQL container
+```bash
+# Connect into the MySQL container
 docker exec -it mysql8 mysql -u root -p
+```
 
-# Inside the MySQL shell
-CREATE DATABASE laravel\_app CHARACTER SET utf8mb4 COLLATE utf8mb4\_unicode\_ci;
-CREATE USER 'laravel\_user'@'%' IDENTIFIED BY 'strong\_password\_here';
-GRANT ALL PRIVILEGES ON laravel\_app.\* TO 'laravel\_user'@'%';
+```sql
+-- Inside the MySQL shell
+CREATE DATABASE laravel_app CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE USER 'laravel_user'@'%' IDENTIFIED BY 'strong_password_here';
+GRANT ALL PRIVILEGES ON laravel_app.* TO 'laravel_user'@'%';
 FLUSH PRIVILEGES;
 EXIT;
+```
 
 In your Laravel / CodeIgniter **.env** file:
 
-DB\_HOST=127.0.0.1
-DB\_PORT=33060
-DB\_DATABASE=laravel\_app
-DB\_USERNAME=laravel\_user
-DB\_PASSWORD=strong\_password\_here
+```env
+DB_HOST=127.0.0.1
+DB_PORT=33060
+DB_DATABASE=laravel_app
+DB_USERNAME=laravel_user
+DB_PASSWORD=strong_password_here
+```
 
 * * *
 
 #### 7\. Step 5 — Configure Nginx Server Block for PHP
 
-Nginx doesn't process PHP — it hands PHP requests to PHP-FPM via **fastcgi\_pass**. This is the PHP equivalent of **proxy\_pass** for Node.js, but using the FastCGI protocol instead of HTTP.
+Nginx doesn't process PHP — it hands PHP requests to PHP-FPM via **fastcgi_pass**. This is the PHP equivalent of **proxy_pass** for Node.js, but using the FastCGI protocol instead of HTTP.
 
 ##### 7.1. Create the web directory and upload code
 
+```bash
 sudo mkdir -p /var/www/yourdomain.com
 sudo chown -R $USER:www-data /var/www/yourdomain.com
 sudo chmod -R 755 /var/www/yourdomain.com
 
 cd /var/www/yourdomain.com
 git clone https://github.com/youruser/your-php-project.git .
+```
 
 ##### 7.2. Nginx config for plain PHP
 
+```bash
 sudo nano /etc/nginx/sites-available/yourdomain.com
+```
 
 Paste the following. This is the HTTP port 80 config — Certbot will add the HTTPS section in the next step:
 
+```nginx
 server {
     listen 80;
-    listen \[::\]:80;
-    server\_name yourdomain.com www.yourdomain.com;
+    listen [::]:80;
+    server_name yourdomain.com www.yourdomain.com;
 
     root /var/www/yourdomain.com;
     index index.php index.html index.htm;
 
-    access\_log /var/log/nginx/yourdomain.access.log;
-    error\_log  /var/log/nginx/yourdomain.error.log;
+    access_log /var/log/nginx/yourdomain.access.log;
+    error_log  /var/log/nginx/yourdomain.error.log;
 
     location / {
-        try\_files $uri $uri/ =404;
+        try_files $uri $uri/ =404;
     }
 
     # Pass all .php requests to PHP-FPM
-    location ~ \\.php$ {
+    location ~ \.php$ {
         include snippets/fastcgi-php.conf;
-        fastcgi\_pass unix:/var/run/php/php8.2-fpm.sock;
-        fastcgi\_param SCRIPT\_FILENAME $realpath\_root$fastcgi\_script\_name;
-        include fastcgi\_params;
+        fastcgi_pass unix:/var/run/php/php8.2-fpm.sock;
+        fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
+        include fastcgi_params;
     }
 
-    location ~ /\\.ht  { deny all; }
-    location ~ /\\.env { deny all; }
+    location ~ /\.ht  { deny all; }
+    location ~ /\.env { deny all; }
 }
+```
 
 ##### 7.3. Nginx config for Laravel
 
+```nginx
 server {
     listen 80;
-    listen \[::\]:80;
-    server\_name yourdomain.com www.yourdomain.com;
+    listen [::]:80;
+    server_name yourdomain.com www.yourdomain.com;
 
     # Laravel: document root must point to the public/ subdirectory
     root /var/www/yourdomain.com/public;
     index index.php index.html;
 
-    access\_log /var/log/nginx/yourdomain.access.log;
-    error\_log  /var/log/nginx/yourdomain.error.log;
+    access_log /var/log/nginx/yourdomain.access.log;
+    error_log  /var/log/nginx/yourdomain.error.log;
 
     location / {
         # Laravel routing depends on this line
-        try\_files $uri $uri/ /index.php?$query\_string;
+        try_files $uri $uri/ /index.php?$query_string;
     }
 
-    location ~ \\.php$ {
+    location ~ \.php$ {
         include snippets/fastcgi-php.conf;
-        fastcgi\_pass unix:/var/run/php/php8.2-fpm.sock;
-        fastcgi\_param SCRIPT\_FILENAME $realpath\_root$fastcgi\_script\_name;
-        include fastcgi\_params;
+        fastcgi_pass unix:/var/run/php/php8.2-fpm.sock;
+        fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
+        include fastcgi_params;
     }
 
-    location ~ /\\.ht  { deny all; }
-    location ~ /\\.env { deny all; }
+    location ~ /\.ht  { deny all; }
+    location ~ /\.env { deny all; }
 
-    location ~\* \\.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2)$ {
+    location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2)$ {
         expires 1y;
-        add\_header Cache-Control "public, immutable";
+        add_header Cache-Control "public, immutable";
     }
 }
+```
 
 ##### 7.4. Enable the site and test
 
+```bash
 sudo ln -s /etc/nginx/sites-available/yourdomain.com /etc/nginx/sites-enabled/
 sudo nginx -t
 sudo systemctl reload nginx
+```
 
 * * *
 
@@ -317,20 +351,24 @@ sudo systemctl reload nginx
 
 Certbot reads your existing Nginx config, adds an HTTPS server block for port 443, and configures an HTTP-to-HTTPS redirect — no manual Nginx editing required.
 
+```bash
 sudo apt install -y certbot python3-certbot-nginx
 
 sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
+```
 
-# Follow the prompts:
-# 1. Enter your email for renewal notifications
-# 2. Agree to the Terms of Service (A)
-# 3. Select redirect HTTP to HTTPS (option 2) — recommended
+Follow the prompts:
+1. Enter your email for renewal notifications
+2. Agree to the Terms of Service (A)
+3. Select redirect HTTP to HTTPS (option 2) — recommended
 
-\# Test auto-renewal (dry run — does not affect the real certificate)
+```bash
+# Test auto-renewal (dry run — does not affect the real certificate)
 sudo certbot renew --dry-run
 
 # Verify the systemd renewal timer is active
 sudo systemctl status certbot.timer
+```
 
 * * *
 
@@ -338,6 +376,7 @@ sudo systemctl status certbot.timer
 
 ##### 9.1. Complete Laravel setup
 
+```bash
 cd /var/www/yourdomain.com
 composer install --optimize-autoloader --no-dev
 cp .env.example .env
@@ -349,14 +388,18 @@ sudo chmod -R 775 storage bootstrap/cache
 php artisan config:cache
 php artisan route:cache
 php artisan view:cache
+```
 
 ##### 9.2. Run Laravel Queue Worker with Supervisor
 
+```bash
 sudo apt install -y supervisor
 sudo nano /etc/supervisor/conf.d/laravel-worker.conf
+```
 
-\[program:laravel-worker\]
-process\_name=%(program\_name)s\_%(process\_num)02d
+```ini
+[program:laravel-worker]
+process_name=%(program_name)s_%(process_num)02d
 command=php /var/www/yourdomain.com/artisan queue:work --sleep=3 --tries=3 --max-time=3600
 autostart=true
 autorestart=true
@@ -364,13 +407,16 @@ stopasgroup=true
 killasgroup=true
 user=www-data
 numprocs=2
-redirect\_stderr=true
-stdout\_logfile=/var/log/supervisor/laravel-worker.log
+redirect_stderr=true
+stdout_logfile=/var/log/supervisor/laravel-worker.log
 stopwaitsecs=3600
+```
 
+```bash
 sudo supervisorctl reread
 sudo supervisorctl update
-sudo supervisorctl start laravel-worker:\*
+sudo supervisorctl start laravel-worker:*
+```
 
 * * *
 
@@ -380,13 +426,13 @@ sudo supervisorctl start laravel-worker:\*
 
 **403 Forbidden:** Nginx can't read your files due to wrong ownership. Fix with **sudo chown -R www-data:www-data /var/www/yourdomain.com** and ensure directories are 755 and files are 644.
 
-**404 on all Laravel/CodeIgniter routes:** Missing or incorrect **try\_files $uri $uri/ /index.php?$query\_string** directive. Framework routing depends on this to forward all non-static requests to **index.php**.
+**404 on all Laravel/CodeIgniter routes:** Missing or incorrect **try_files $uri $uri/ /index.php?$query_string** directive. Framework routing depends on this to forward all non-static requests to **index.php**.
 
-**PHP can't connect to MySQL Docker:** Verify the port in **.env** matches the mapped port in your **docker run** command. Check the container is running with **docker ps**. Test the connection manually: **mysql -h 127.0.0.1 -P 33060 -u your\_user -p**.
+**PHP can't connect to MySQL Docker:** Verify the port in **.env** matches the mapped port in your **docker run** command. Check the container is running with **docker ps**. Test the connection manually: **mysql -h 127.0.0.1 -P 33060 -u your_user -p**.
 
-**Certbot: "Could not automatically find a matching server block":** Your Nginx config's **server\_name** doesn't match the domain you passed to Certbot. Check **/etc/nginx/sites-available/yourdomain.com** and ensure **server\_name** is correct.
+**Certbot: "Could not automatically find a matching server block":** Your Nginx config's **server_name** doesn't match the domain you passed to Certbot. Check **/etc/nginx/sites-available/yourdomain.com** and ensure **server_name** is correct.
 
-**Laravel: "No application encryption key has been specified":** You haven't run **php artisan key:generate**, or the **.env** file is missing the **APP\_KEY** variable.
+**Laravel: "No application encryption key has been specified":** You haven't run **php artisan key:generate**, or the **.env** file is missing the **APP_KEY** variable.
 
 **Permission denied on storage/ or bootstrap/cache/:** Run **sudo chown -R www-data:www-data storage bootstrap/cache && sudo chmod -R 775 storage bootstrap/cache** from the Laravel root directory.
 
@@ -404,11 +450,11 @@ A Unix socket (**unix:/var/run/php/php8.2-fpm.sock**) is faster than TCP because
 
 ##### Can I run multiple PHP versions on the same server?
 
-Yes. Install PHP 7.4 and PHP 8.2 in parallel from Ondřej's PPA — each version gets its own PHP-FPM socket. In each site's Nginx config, simply point **fastcgi\_pass** to the correct socket: **php7.4-fpm.sock** or **php8.2-fpm.sock**.
+Yes. Install PHP 7.4 and PHP 8.2 in parallel from Ondřej's PPA — each version gets its own PHP-FPM socket. In each site's Nginx config, simply point **fastcgi_pass** to the correct socket: **php7.4-fpm.sock** or **php8.2-fpm.sock**.
 
 ##### What's the deployment process for new code?
 
-For plain PHP: upload files via SFTP or run **git pull** — no server restart needed. For Laravel: **git pull && composer install --no-dev && php artisan migrate --force && php artisan config:cache && php artisan route:cache**. If using queue workers: **sudo supervisorctl restart laravel-worker:\*** after deployment.
+For plain PHP: upload files via SFTP or run **git pull** — no server restart needed. For Laravel: **git pull && composer install --no-dev && php artisan migrate --force && php artisan config:cache && php artisan route:cache**. If using queue workers: **sudo supervisorctl restart laravel-worker:*** after deployment.
 
 ##### What happens when my Let's Encrypt certificate expires?
 

@@ -60,7 +60,7 @@ By using the `--max-old-space-size` flag, you can force Node.js to clean up memo
 
 Instead of running standard commands, use the following structure to "tighten" resources from startup:
 
-```plaintext
+```bash
 node --max-old-space-size=256 index.js
 ```
 
@@ -84,7 +84,7 @@ The configuration file helps you centrally manage multiple applications (e.g., a
 
 Create a file named `ecosystem.config.js` in your server's root directory and use the following sample content:
 
-```plaintext
+```javascript
 module.exports = {
   apps: [
     {
@@ -119,8 +119,8 @@ module.exports = {
 
 ### 3\. Parameter Breakdown
 
-*   **max\_memory\_restart (250M):** This is the most crucial feature. If your app leaks memory and hits 250MB, PM2 will automatically kill that process and restart it. This prevents the VPS from hanging completely.
-*   **exec\_mode: "fork":** Unlike `cluster` (which creates multiple copies to utilize multi-core), `fork` runs the app as a single process. On a 1GB VPS (usually 1 vCPU), `fork` mode reduces the management burden on the OS.
+*   **max_memory_restart (250M):** This is the most crucial feature. If your app leaks memory and hits 250MB, PM2 will automatically kill that process and restart it. This prevents the VPS from hanging completely.
+*   **exec_mode: "fork":** Unlike `cluster` (which creates multiple copies to utilize multi-core), `fork` runs the app as a single process. On a 1GB VPS (usually 1 vCPU), `fork` mode reduces the management burden on the OS.
 *   **script: "serve":** For Frontend, do not run `npm start`. Build into a static directory and use PM2's `serve` command. It saves up to 70% of RAM compared to running React/Vue development toolsets.
 
 After creating the file, simply run a single command: `pm2 start ecosystem.config.js` to activate this entire optimized configuration.
@@ -137,7 +137,7 @@ This is an official extension module for PM2 that helps automatically manage, sp
 
 First, install the module with the command:
 
-```plaintext
+```bash
 pm2 install pm2-logrotate
 ```
 
@@ -145,25 +145,25 @@ After installation, execute the following commands to set strict limits for a 1-
 
 *   **Limit file size:** Split files when they reach 10MB (instead of the 100MB default which is too large for weak VPS).
 
-```plaintext
+```bash
 pm2 set pm2-logrotate:max_size 10M
 ```
 
 *   **Limit number of stored files:** Only keep a maximum of the 5 most recent files.
 
-```plaintext
+```bash
 pm2 set pm2-logrotate:retain 5
 ```
 
 *   **Enable compression:** Compress old log files into .gz format to save up to 90% of disk space.
 
-```plaintext
+```bash
 pm2 set pm2-logrotate:compress true
 ```
 
 *   **Check frequency:** Tell the module to check log size every 30 seconds.
 
-```plaintext
+```bash
 pm2 set pm2-logrotate:workerInterval 30
 ```
 
@@ -187,7 +187,7 @@ On a 1GB VPS, when Node.js hits peak load, if there's no Swap, the OS will execu
 
 Run the following sequence of commands to create 2GB of Swap:
 
-```plaintext
+```bash
 # Create 2GB swap file
 sudo fallocate -l 2G /swapfile
 # Set security permissions
@@ -204,7 +204,7 @@ echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 
 Instead of using Linux `top` or `htop` commands which are hard to read for specific Node.js stats, use PM2's built-in tool:
 
-```plaintext
+```bash
 pm2 monit
 ```
 
@@ -222,7 +222,7 @@ To ensure all your optimized configurations remain after a VPS reboot (due to ma
 
 To free up RAM occupied by junk processes or old PM2 caches, you should periodically run:
 
-```plaintext
+```bash
 # Restart apps safely (Zero-downtime) to clear RAM
 pm2 reload all
 
@@ -236,7 +236,7 @@ pm2 delete [old_app_id]
 
 Even with a standard configuration, real-world deployment on budget VPS lines (like Vultr, DigitalOcean, or Intel N100 servers) can still encounter specific errors. Here is a summary of quick fixes:
 
-### 1\. Why did the OOM Killer still strike even with max\_memory\_restart set?
+### 1\. Why did the OOM Killer still strike even with max_memory_restart set?
 
 **Cause:** The application's RAM leak speed was too fast or remaining system RAM was too low, causing Linux to intervene (Kill process) before PM2 could identify the overload threshold to restart.
 
@@ -251,7 +251,7 @@ Even with a standard configuration, real-world deployment on budget VPS lines (l
 
 **Solution:** Run the following command to install the ultra-light static file serving tool:
 
-```plaintext
+```bash
 npm install -g serve
 ```
 
@@ -261,7 +261,7 @@ npm install -g serve
 
 **Solution:** Reset following the exact order:
 
-```plaintext
+```bash
 pm2 startup
 # Copy and run the system command returned
 pm2 save
@@ -282,7 +282,7 @@ pm2 save
 
 **Solution:** Use the `reload` command. It keeps old processes running until the new ones are ready:
 
-```plaintext
+```bash
 pm2 reload ecosystem.config.js
 ```
 
@@ -296,5 +296,3 @@ Author: Nguyen Huu Khai
 > 
 > *   [Deploy PHP, Laravel, CodeIgniter on Linux VPS with Nginx](/en/deploy-php-laravel-codeigniter-len-linux-vps-voi-nginx)
 > *   [How to Deploy Node.js and React on Linux Hosting Using Nginx](/en/cach-deploy-nodejs-va-react-len-hosting-linux-bang-nginx-reverse-proxy-huong-dan-day-du-pm2-ssl-2025)
-
-\`\`\`
