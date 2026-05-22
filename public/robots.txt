@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https:/khaizinam.io.vn/sitemap-index.xml
+Sitemap: https://khaizinam.com/sitemap-index.xml

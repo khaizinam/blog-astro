@@ -2,7 +2,7 @@ import { defineAstroPaperConfig } from "./src/types/config";
 
 export default defineAstroPaperConfig({
   site: {
-    url: "https://blog.khaizinam.com",
+    url: "https://khaizinam.com",
     title: "KhaiziNam Blog",
     description:
       "Blog cá nhân về công nghệ, lập trình, kinh nghiệm thực tế và chia sẻ kiến thức từ góc nhìn của một developer Việt Nam.",
