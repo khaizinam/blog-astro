@@ -74,23 +74,25 @@ Sau khi chuyển sang access token 15 phút + refresh token 30 ngày có rotatio
 
 Refresh token không được lưu raw value trong DB — phải hash trước (tương tự password). Lý do: nếu DB bị dump, attacker không thể dùng hash để authenticate.
 
-\-- MySQL / PostgreSQL schema
-CREATE TABLE refresh\_tokens (
-  id          BIGINT UNSIGNED AUTO\_INCREMENT PRIMARY KEY,
-  user\_id     BIGINT UNSIGNED NOT NULL,
-  token\_hash  VARCHAR(64) NOT NULL,        -- SHA-256 hash của raw token
-  expires\_at  TIMESTAMP NOT NULL,
+```sql
+-- MySQL / PostgreSQL schema
+CREATE TABLE refresh_tokens (
+  id          BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  user_id     BIGINT UNSIGNED NOT NULL,
+  token_hash  VARCHAR(64) NOT NULL,        -- SHA-256 hash của raw token
+  expires_at  TIMESTAMP NOT NULL,
   revoked     TINYINT(1) NOT NULL DEFAULT 0,
-  revoked\_at  TIMESTAMP NULL DEFAULT NULL,
-  created\_at  TIMESTAMP DEFAULT CURRENT\_TIMESTAMP,
-  ip\_address  VARCHAR(45) NULL,            -- Optional: audit trail
-  user\_agent  VARCHAR(255) NULL,           -- Optional: device tracking
+  revoked_at  TIMESTAMP NULL DEFAULT NULL,
+  created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  ip_address  VARCHAR(45) NULL,            -- Optional: audit trail
+  user_agent  VARCHAR(255) NULL,           -- Optional: device tracking
 
-  INDEX idx\_token\_hash (token\_hash),
-  INDEX idx\_user\_id (user\_id),
-  INDEX idx\_expires\_at (expires\_at),
-  FOREIGN KEY (user\_id) REFERENCES users(id) ON DELETE CASCADE
+  INDEX idx_token_hash (token_hash),
+  INDEX idx_user_id (user_id),
+  INDEX idx_expires_at (expires_at),
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
+```
 
 ##### 3.2 Tại sao cần index expires\_at?
 
@@ -100,6 +102,7 @@ Cần chạy cleanup job định kỳ để xóa token hết hạn — không in
 
 ##### 4.1 Cài đặt và helper functions
 
+```javascript
 // npm install jsonwebtoken crypto-js
 const jwt = require('jsonwebtoken');
 const crypto = require('crypto');
@@ -120,24 +123,26 @@ function generateAccessToken(userId, role) {
     {
       sub: userId,
       role,
-      iss: process.env.JWT\_ISSUER,
-      aud: process.env.JWT\_AUDIENCE,
+      iss: process.env.JWT_ISSUER,
+      aud: process.env.JWT_AUDIENCE,
       jti: crypto.randomUUID()
     },
-    process.env.JWT\_SECRET,
+    process.env.JWT_SECRET,
     { algorithm: 'HS256', expiresIn: '15m' }
   );
 }
+```
 
 ##### 4.2 Login endpoint — cấp cả hai token
 
+```javascript
 // POST /auth/login
 app.post('/auth/login', async (req, res) => {
   try {
     const { email, password } = req.body;
     const user = await User.findOne({ email });
 
-    if (!user || !(await bcrypt.compare(password, user.password\_hash))) {
+    if (!user || !(await bcrypt.compare(password, user.password_hash))) {
       return res.status(401).json({ error: 'Invalid credentials' });
     }
 
@@ -147,22 +152,22 @@ app.post('/auth/login', async (req, res) => {
 
     // Lưu refresh token vào DB (lưu hash, không lưu raw)
     await db.query(
-      \`INSERT INTO refresh\_tokens (user\_id, token\_hash, expires\_at, ip\_address, user\_agent)
-       VALUES (?, ?, DATE\_ADD(NOW(), INTERVAL 30 DAY), ?, ?)\`,
-      \[
+      `INSERT INTO refresh_tokens (user_id, token_hash, expires_at, ip_address, user_agent)
+       VALUES (?, ?, DATE_ADD(NOW(), INTERVAL 30 DAY), ?, ?)`,
+      [
         user.id,
         hashToken(rawRefreshToken),
         req.ip,
-        req.headers\['user-agent'\]?.substring(0, 255)
-      \]
+        req.headers['user-agent']?.substring(0, 255)
+      ]
     );
 
     // Refresh token: httpOnly cookie
     res.cookie('refreshToken', rawRefreshToken, {
       httpOnly: true,
-      secure: process.env.NODE\_ENV === 'production',
+      secure: process.env.NODE_ENV === 'production',
       sameSite: 'strict',
-      maxAge: 30 \* 24 \* 60 \* 60 \* 1000 // 30 ngày
+      maxAge: 30 * 24 * 60 * 60 * 1000 // 30 ngày
     });
 
     // Access token: response body (client lưu in-memory)
@@ -176,9 +181,11 @@ app.post('/auth/login', async (req, res) => {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
+```
 
 ##### 4.3 Refresh endpoint — cấp access token mới kèm rotation
 
+```javascript
 // POST /auth/refresh
 app.post('/auth/refresh', async (req, res) => {
   const rawRefreshToken = req.cookies?.refreshToken;
@@ -190,11 +197,11 @@ app.post('/auth/refresh', async (req, res) => {
   const tokenHash = hashToken(rawRefreshToken);
 
   // Tìm token trong DB
-  const \[rows\] = await db.query(
-    \`SELECT \* FROM refresh\_tokens
-     WHERE token\_hash = ? AND revoked = 0 AND expires\_at > NOW()
-     LIMIT 1\`,
-    \[tokenHash\]
+  const [rows] = await db.query(
+    `SELECT * FROM refresh_tokens
+     WHERE token_hash = ? AND revoked = 0 AND expires_at > NOW()
+     LIMIT 1`,
+    [tokenHash]
   );
 
   if (rows.length === 0) {
@@ -204,41 +211,41 @@ app.post('/auth/refresh', async (req, res) => {
     return res.status(401).json({ error: 'Invalid or expired refresh token' });
   }
 
-  const storedToken = rows\[0\];
+  const storedToken = rows[0];
 
   // --- ROTATION: Revoke token cũ, cấp token mới ---
   await db.query(
-    \`UPDATE refresh\_tokens SET revoked = 1, revoked\_at = NOW() WHERE id = ?\`,
-    \[storedToken.id\]
+    `UPDATE refresh_tokens SET revoked = 1, revoked_at = NOW() WHERE id = ?`,
+    [storedToken.id]
   );
 
   const newRawRefreshToken = generateRefreshToken();
   await db.query(
-    \`INSERT INTO refresh\_tokens (user\_id, token\_hash, expires\_at, ip\_address, user\_agent)
-     VALUES (?, ?, DATE\_ADD(NOW(), INTERVAL 30 DAY), ?, ?)\`,
-    \[
-      storedToken.user\_id,
+    `INSERT INTO refresh_tokens (user_id, token_hash, expires_at, ip_address, user_agent)
+     VALUES (?, ?, DATE_ADD(NOW(), INTERVAL 30 DAY), ?, ?)`,
+    [
+      storedToken.user_id,
       hashToken(newRawRefreshToken),
       req.ip,
-      req.headers\['user-agent'\]?.substring(0, 255)
-    \]
+      req.headers['user-agent']?.substring(0, 255)
+    ]
   );
 
   // Lấy thông tin user để đưa vào access token mới
-  const \[userRows\] = await db.query(
+  const [userRows] = await db.query(
     'SELECT id, role FROM users WHERE id = ?',
-    \[storedToken.user\_id\]
+    [storedToken.user_id]
   );
-  const user = userRows\[0\];
+  const user = userRows[0];
 
   const newAccessToken = generateAccessToken(user.id, user.role);
 
   // Set cookie mới
   res.cookie('refreshToken', newRawRefreshToken, {
     httpOnly: true,
-    secure: process.env.NODE\_ENV === 'production',
+    secure: process.env.NODE_ENV === 'production',
     sameSite: 'strict',
-    maxAge: 30 \* 24 \* 60 \* 60 \* 1000
+    maxAge: 30 * 24 * 60 * 60 * 1000
   });
 
   res.json({
@@ -246,18 +253,20 @@ app.post('/auth/refresh', async (req, res) => {
     expiresIn: 900
   });
 });
+```
 
 ##### 4.4 Logout endpoint — revoke refresh token
 
+```javascript
 // POST /auth/logout
 app.post('/auth/logout', async (req, res) => {
   const rawRefreshToken = req.cookies?.refreshToken;
 
   if (rawRefreshToken) {
     await db.query(
-      \`UPDATE refresh\_tokens SET revoked = 1, revoked\_at = NOW()
-       WHERE token\_hash = ?\`,
-      \[hashToken(rawRefreshToken)\]
+      `UPDATE refresh_tokens SET revoked = 1, revoked_at = NOW()
+       WHERE token_hash = ?`,
+      [hashToken(rawRefreshToken)]
     );
   }
 
@@ -268,54 +277,56 @@ app.post('/auth/logout', async (req, res) => {
 // POST /auth/logout-all — đăng xuất khỏi tất cả thiết bị
 app.post('/auth/logout-all', requireAuth, async (req, res) => {
   await db.query(
-    \`UPDATE refresh\_tokens SET revoked = 1, revoked\_at = NOW()
-     WHERE user\_id = ? AND revoked = 0\`,
-    \[req.user.sub\]
+    `UPDATE refresh_tokens SET revoked = 1, revoked_at = NOW()
+     WHERE user_id = ? AND revoked = 0`,
+    [req.user.sub]
   );
 
   res.clearCookie('refreshToken');
   res.json({ message: 'Logged out from all devices' });
 });
+```
 
 #### 5\. Implement Refresh Token trong Laravel PHP
 
 ##### 5.1 Migration và Model
 
-// database/migrations/create\_refresh\_tokens\_table.php
-Schema::create('refresh\_tokens', function (Blueprint $table) {
+```php
+// database/migrations/create_refresh_tokens_table.php
+Schema::create('refresh_tokens', function (Blueprint $table) {
     $table->id();
-    $table->foreignId('user\_id')->constrained()->cascadeOnDelete();
-    $table->string('token\_hash', 64);
-    $table->timestamp('expires\_at');
+    $table->foreignId('user_id')->constrained()->cascadeOnDelete();
+    $table->string('token_hash', 64);
+    $table->timestamp('expires_at');
     $table->boolean('revoked')->default(false);
-    $table->timestamp('revoked\_at')->nullable();
-    $table->string('ip\_address', 45)->nullable();
-    $table->string('user\_agent', 255)->nullable();
-    $table->timestamp('created\_at')->useCurrent();
+    $table->timestamp('revoked_at')->nullable();
+    $table->string('ip_address', 45)->nullable();
+    $table->string('user_agent', 255)->nullable();
+    $table->timestamp('created_at')->useCurrent();
 
-    $table->index('token\_hash');
-    $table->index('user\_id');
-    $table->index('expires\_at');
+    $table->index('token_hash');
+    $table->index('user_id');
+    $table->index('expires_at');
 });
 
 // app/Models/RefreshToken.php
-namespace App\\Models;
+namespace App\Models;
 
-use Illuminate\\Database\\Eloquent\\Model;
+use Illuminate\Database\Eloquent\Model;
 
 class RefreshToken extends Model
 {
     public $timestamps = false;
-    protected $fillable = \[
-        'user\_id', 'token\_hash', 'expires\_at',
-        'ip\_address', 'user\_agent'
-    \];
+    protected $fillable = [
+        'user_id', 'token_hash', 'expires_at',
+        'ip_address', 'user_agent'
+    ];
 
-    protected $casts = \[
-        'expires\_at' => 'datetime',
-        'revoked\_at' => 'datetime',
+    protected $casts = [
+        'expires_at' => 'datetime',
+        'revoked_at' => 'datetime',
         'revoked'    => 'boolean',
-    \];
+    ];
 
     public function user()
     {
@@ -324,26 +335,28 @@ class RefreshToken extends Model
 
     public function isValid(): bool
     {
-        return !$this->revoked && $this->expires\_at->isFuture();
+        return !$this->revoked && $this->expires_at->isFuture();
     }
 }
+```
 
 ##### 5.2 AuthService — Logic tập trung
 
+```php
 // app/Services/AuthService.php
-namespace App\\Services;
+namespace App\Services;
 
-use App\\Models\\RefreshToken;
-use App\\Models\\User;
-use Firebase\\JWT\\JWT;
-use Illuminate\\Support\\Str;
+use App\Models\RefreshToken;
+use App\Models\User;
+use Firebase\JWT\JWT;
+use Illuminate\Support\Str;
 
 class AuthService
 {
     private string $secret;
     private string $issuer;
 
-    public function \_\_construct()
+    public function __construct()
     {
         $this->secret = config('jwt.secret');
         $this->issuer = config('app.url');
@@ -351,7 +364,7 @@ class AuthService
 
     public function generateAccessToken(User $user): string
     {
-        $payload = \[
+        $payload = [
             'sub' => $user->id,
             'role' => $user->role,
             'iss' => $this->issuer,
@@ -359,22 +372,22 @@ class AuthService
             'iat' => time(),
             'exp' => time() + 900, // 15 menit
             'jti' => (string) Str::uuid(),
-        \];
+        ];
 
         return JWT::encode($payload, $this->secret, 'HS256');
     }
 
     public function issueRefreshToken(User $user, string $ip, string $userAgent): string
     {
-        $rawToken = bin2hex(random\_bytes(40));
+        $rawToken = bin2hex(random_bytes(40));
 
-        RefreshToken::create(\[
-            'user\_id'    => $user->id,
-            'token\_hash' => hash('sha256', $rawToken),
-            'expires\_at' => now()->addDays(30),
-            'ip\_address' => $ip,
-            'user\_agent' => substr($userAgent, 0, 255),
-        \]);
+        RefreshToken::create([
+            'user_id'    => $user->id,
+            'token_hash' => hash('sha256', $rawToken),
+            'expires_at' => now()->addDays(30),
+            'ip_address' => $ip,
+            'user_agent' => substr($userAgent, 0, 255),
+        ]);
 
         return $rawToken;
     }
@@ -383,20 +396,20 @@ class AuthService
     {
         $tokenHash = hash('sha256', $rawToken);
 
-        $stored = RefreshToken::where('token\_hash', $tokenHash)
+        $stored = RefreshToken::where('token_hash', $tokenHash)
             ->where('revoked', false)
-            ->where('expires\_at', '>', now())
+            ->where('expires_at', '>', now())
             ->first();
 
         if (!$stored) {
-            throw new \\Exception('Invalid or expired refresh token');
+            throw new \Exception('Invalid or expired refresh token');
         }
 
         // Revoke token cũ
-        $stored->update(\[
+        $stored->update([
             'revoked'    => true,
-            'revoked\_at' => now(),
-        \]);
+            'revoked_at' => now(),
+        ]);
 
         $user = $stored->user;
 
@@ -404,46 +417,48 @@ class AuthService
         $newRawToken    = $this->issueRefreshToken($user, $ip, $userAgent);
         $newAccessToken = $this->generateAccessToken($user);
 
-        return \[
+        return [
             'accessToken'  => $newAccessToken,
             'refreshToken' => $newRawToken,
             'expiresIn'    => 900,
-        \];
+        ];
     }
 
     public function revokeAllTokens(int $userId): void
     {
-        RefreshToken::where('user\_id', $userId)
+        RefreshToken::where('user_id', $userId)
             ->where('revoked', false)
-            ->update(\['revoked' => true, 'revoked\_at' => now()\]);
+            ->update(['revoked' => true, 'revoked_at' => now()]);
     }
 }
+```
 
 ##### 5.3 AuthController — API endpoints
 
+```php
 // app/Http/Controllers/AuthController.php
-namespace App\\Http\\Controllers;
+namespace App\Http\Controllers;
 
-use App\\Models\\User;
-use App\\Services\\AuthService;
-use Illuminate\\Http\\Request;
-use Illuminate\\Support\\Facades\\Hash;
+use App\Models\User;
+use App\Services\AuthService;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
-    public function \_\_construct(private AuthService $authService) {}
+    public function __construct(private AuthService $authService) {}
 
     public function login(Request $request)
     {
-        $request->validate(\[
+        $request->validate([
             'email'    => 'required|email',
             'password' => 'required|string',
-        \]);
+        ]);
 
         $user = User::where('email', $request->email)->first();
 
         if (!$user || !Hash::check($request->password, $user->password)) {
-            return response()->json(\['error' => 'Invalid credentials'\], 401);
+            return response()->json(['error' => 'Invalid credentials'], 401);
         }
 
         $accessToken  = $this->authService->generateAccessToken($user);
@@ -454,10 +469,10 @@ class AuthController extends Controller
         );
 
         return response()
-            ->json(\['accessToken' => $accessToken, 'expiresIn' => 900\])
+            ->json(['accessToken' => $accessToken, 'expiresIn' => 900])
             ->cookie(
                 'refreshToken', $refreshToken,
-                60 \* 24 \* 30,   // 30 ngày (phút)
+                60 * 24 * 30,   // 30 ngày (phút)
                 '/',
                 null,
                 true,           // secure
@@ -472,7 +487,7 @@ class AuthController extends Controller
         $rawToken = $request->cookie('refreshToken');
 
         if (!$rawToken) {
-            return response()->json(\['error' => 'Refresh token missing'\], 401);
+            return response()->json(['error' => 'Refresh token missing'], 401);
         }
 
         try {
@@ -481,20 +496,20 @@ class AuthController extends Controller
                 $request->ip(),
                 $request->userAgent() ?? ''
             );
-        } catch (\\Exception $e) {
+        } catch (\Exception $e) {
             return response()
-                ->json(\['error' => 'Invalid or expired refresh token'\], 401)
+                ->json(['error' => 'Invalid or expired refresh token'], 401)
                 ->withoutCookie('refreshToken');
         }
 
         return response()
-            ->json(\[
-                'accessToken' => $tokens\['accessToken'\],
-                'expiresIn'   => $tokens\['expiresIn'\],
-            \])
+            ->json([
+                'accessToken' => $tokens['accessToken'],
+                'expiresIn'   => $tokens['expiresIn'],
+            ])
             ->cookie(
-                'refreshToken', $tokens\['refreshToken'\],
-                60 \* 24 \* 30, '/', null, true, true, false, 'strict'
+                'refreshToken', $tokens['refreshToken'],
+                60 * 24 * 30, '/', null, true, true, false, 'strict'
             );
     }
 
@@ -503,12 +518,12 @@ class AuthController extends Controller
         $rawToken = $request->cookie('refreshToken');
 
         if ($rawToken) {
-            \\App\\Models\\RefreshToken::where('token\_hash', hash('sha256', $rawToken))
-                ->update(\['revoked' => true, 'revoked\_at' => now()\]);
+            \App\Models\RefreshToken::where('token_hash', hash('sha256', $rawToken))
+                ->update(['revoked' => true, 'revoked_at' => now()]);
         }
 
         return response()
-            ->json(\['message' => 'Logged out'\])
+            ->json(['message' => 'Logged out'])
             ->withoutCookie('refreshToken');
     }
 
@@ -517,10 +532,11 @@ class AuthController extends Controller
         $this->authService->revokeAllTokens($request->user()->id);
 
         return response()
-            ->json(\['message' => 'Logged out from all devices'\])
+            ->json(['message' => 'Logged out from all devices'])
             ->withoutCookie('refreshToken');
     }
 }
+```
 
 #### 6\. Refresh Token Rotation — Phát hiện Token Theft
 
@@ -530,6 +546,7 @@ Rotation không chỉ là "best practice" — nó là cơ chế phát hiện t�
 
 ##### 6.2 Implement Reuse Detection — Revoke toàn bộ session khi phát hiện tái sử dụng
 
+```javascript
 // Node.js — Nâng cấp refresh endpoint với reuse detection
 app.post('/auth/refresh', async (req, res) => {
   const rawRefreshToken = req.cookies?.refreshToken;
@@ -540,9 +557,9 @@ app.post('/auth/refresh', async (req, res) => {
   const tokenHash = hashToken(rawRefreshToken);
 
   // Tìm token — kể cả đã revoke
-  const \[rows\] = await db.query(
-    'SELECT \* FROM refresh\_tokens WHERE token\_hash = ? LIMIT 1',
-    \[tokenHash\]
+  const [rows] = await db.query(
+    'SELECT * FROM refresh_tokens WHERE token_hash = ? LIMIT 1',
+    [tokenHash]
   );
 
   if (rows.length === 0) {
@@ -550,15 +567,15 @@ app.post('/auth/refresh', async (req, res) => {
     return res.status(401).json({ error: 'Token not found' });
   }
 
-  const storedToken = rows\[0\];
+  const storedToken = rows[0];
 
   // Phát hiện reuse: token tồn tại nhưng đã bị revoke
   if (storedToken.revoked) {
     // CẢNH BÁO: Có thể đang bị tấn công — revoke toàn bộ session
     await db.query(
-      \`UPDATE refresh\_tokens SET revoked = 1, revoked\_at = NOW()
-       WHERE user\_id = ? AND revoked = 0\`,
-      \[storedToken.user\_id\]
+      `UPDATE refresh_tokens SET revoked = 1, revoked_at = NOW()
+       WHERE user_id = ? AND revoked = 0`,
+      [storedToken.user_id]
     );
     res.clearCookie('refreshToken');
     // Optional: gửi email cảnh báo bảo mật cho user
@@ -566,7 +583,7 @@ app.post('/auth/refresh', async (req, res) => {
   }
 
   // Token hết hạn
-  if (new Date(storedToken.expires\_at) <= new Date()) {
+  if (new Date(storedToken.expires_at) <= new Date()) {
     res.clearCookie('refreshToken');
     return res.status(401).json({ error: 'Refresh token expired' });
   }
@@ -574,6 +591,7 @@ app.post('/auth/refresh', async (req, res) => {
   // Token hợp lệ — tiến hành rotation bình thường
   // ... (code rotation như phần 4.3)
 });
+```
 
 #### 7\. 6 sai lầm phổ biến khi implement Refresh Token
 

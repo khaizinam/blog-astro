@@ -74,23 +74,25 @@ After switching to 15-minute access tokens + 30-day refresh tokens with rotation
 
 Refresh tokens must never be stored as raw values in the DB — they must be hashed first (similar to passwords). Reason: if the DB is dumped, attackers can't use the hash to authenticate.
 
-\-- MySQL / PostgreSQL schema
-CREATE TABLE refresh\_tokens (
-  id          BIGINT UNSIGNED AUTO\_INCREMENT PRIMARY KEY,
-  user\_id     BIGINT UNSIGNED NOT NULL,
-  token\_hash  VARCHAR(64) NOT NULL,        -- SHA-256 hash of raw token
-  expires\_at  TIMESTAMP NOT NULL,
+```sql
+-- MySQL / PostgreSQL schema
+CREATE TABLE refresh_tokens (
+  id          BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  user_id     BIGINT UNSIGNED NOT NULL,
+  token_hash  VARCHAR(64) NOT NULL,        -- SHA-256 hash of raw token
+  expires_at  TIMESTAMP NOT NULL,
   revoked     TINYINT(1) NOT NULL DEFAULT 0,
-  revoked\_at  TIMESTAMP NULL DEFAULT NULL,
-  created\_at  TIMESTAMP DEFAULT CURRENT\_TIMESTAMP,
-  ip\_address  VARCHAR(45) NULL,            -- Optional: audit trail
-  user\_agent  VARCHAR(255) NULL,           -- Optional: device tracking
+  revoked_at  TIMESTAMP NULL DEFAULT NULL,
+  created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  ip_address  VARCHAR(45) NULL,            -- Optional: audit trail
+  user_agent  VARCHAR(255) NULL,           -- Optional: device tracking
 
-  INDEX idx\_token\_hash (token\_hash),
-  INDEX idx\_user\_id (user\_id),
-  INDEX idx\_expires\_at (expires\_at),
-  FOREIGN KEY (user\_id) REFERENCES users(id) ON DELETE CASCADE
+  INDEX idx_token_hash (token_hash),
+  INDEX idx_user_id (user_id),
+  INDEX idx_expires_at (expires_at),
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
+```
 
 ##### 3.2 Why Index expires\_at?
 
@@ -100,6 +102,7 @@ A nightly cleanup job needs to delete expired tokens — without an index, it wo
 
 ##### 4.1 Setup and Helper Functions
 
+```javascript
 // npm install jsonwebtoken
 const jwt = require('jsonwebtoken');
 const crypto = require('crypto');
@@ -120,24 +123,26 @@ function generateAccessToken(userId, role) {
     {
       sub: userId,
       role,
-      iss: process.env.JWT\_ISSUER,
-      aud: process.env.JWT\_AUDIENCE,
+      iss: process.env.JWT_ISSUER,
+      aud: process.env.JWT_AUDIENCE,
       jti: crypto.randomUUID()
     },
-    process.env.JWT\_SECRET,
+    process.env.JWT_SECRET,
     { algorithm: 'HS256', expiresIn: '15m' }
   );
 }
+```
 
 ##### 4.2 Login Endpoint — Issue Both Tokens
 
+```javascript
 // POST /auth/login
 app.post('/auth/login', async (req, res) => {
   try {
     const { email, password } = req.body;
     const user = await User.findOne({ email });
 
-    if (!user || !(await bcrypt.compare(password, user.password\_hash))) {
+    if (!user || !(await bcrypt.compare(password, user.password_hash))) {
       return res.status(401).json({ error: 'Invalid credentials' });
     }
 
@@ -146,22 +151,22 @@ app.post('/auth/login', async (req, res) => {
 
     // Store hash, never raw token
     await db.query(
-      \`INSERT INTO refresh\_tokens (user\_id, token\_hash, expires\_at, ip\_address, user\_agent)
-       VALUES (?, ?, DATE\_ADD(NOW(), INTERVAL 30 DAY), ?, ?)\`,
-      \[
+      `INSERT INTO refresh_tokens (user_id, token_hash, expires_at, ip_address, user_agent)
+       VALUES (?, ?, DATE_ADD(NOW(), INTERVAL 30 DAY), ?, ?)`,
+      [
         user.id,
         hashToken(rawRefreshToken),
         req.ip,
-        req.headers\['user-agent'\]?.substring(0, 255)
-      \]
+        req.headers['user-agent']?.substring(0, 255)
+      ]
     );
 
     // Refresh token: httpOnly cookie
     res.cookie('refreshToken', rawRefreshToken, {
       httpOnly: true,
-      secure: process.env.NODE\_ENV === 'production',
+      secure: process.env.NODE_ENV === 'production',
       sameSite: 'strict',
-      maxAge: 30 \* 24 \* 60 \* 60 \* 1000
+      maxAge: 30 * 24 * 60 * 60 * 1000
     });
 
     // Access token: response body (client stores in-memory)
@@ -172,9 +177,11 @@ app.post('/auth/login', async (req, res) => {
     res.status(500).json({ error: 'Internal server error' });
   }
 });
+```
 
 ##### 4.3 Refresh Endpoint — Issue New Access Token with Rotation
 
+```javascript
 // POST /auth/refresh
 app.post('/auth/refresh', async (req, res) => {
   const rawRefreshToken = req.cookies?.refreshToken;
@@ -184,11 +191,11 @@ app.post('/auth/refresh', async (req, res) => {
 
   const tokenHash = hashToken(rawRefreshToken);
 
-  const \[rows\] = await db.query(
-    \`SELECT \* FROM refresh\_tokens
-     WHERE token\_hash = ? AND revoked = 0 AND expires\_at > NOW()
-     LIMIT 1\`,
-    \[tokenHash\]
+  const [rows] = await db.query(
+    `SELECT * FROM refresh_tokens
+     WHERE token_hash = ? AND revoked = 0 AND expires_at > NOW()
+     LIMIT 1`,
+    [tokenHash]
   );
 
   if (rows.length === 0) {
@@ -196,52 +203,54 @@ app.post('/auth/refresh', async (req, res) => {
     return res.status(401).json({ error: 'Invalid or expired refresh token' });
   }
 
-  const storedToken = rows\[0\];
+  const storedToken = rows[0];
 
   // ROTATION: revoke old, issue new
   await db.query(
-    \`UPDATE refresh\_tokens SET revoked = 1, revoked\_at = NOW() WHERE id = ?\`,
-    \[storedToken.id\]
+    `UPDATE refresh_tokens SET revoked = 1, revoked_at = NOW() WHERE id = ?`,
+    [storedToken.id]
   );
 
   const newRawRefreshToken = generateRefreshToken();
   await db.query(
-    \`INSERT INTO refresh\_tokens (user\_id, token\_hash, expires\_at, ip\_address, user\_agent)
-     VALUES (?, ?, DATE\_ADD(NOW(), INTERVAL 30 DAY), ?, ?)\`,
-    \[
-      storedToken.user\_id,
+    `INSERT INTO refresh_tokens (user_id, token_hash, expires_at, ip_address, user_agent)
+     VALUES (?, ?, DATE_ADD(NOW(), INTERVAL 30 DAY), ?, ?)`,
+    [
+      storedToken.user_id,
       hashToken(newRawRefreshToken),
       req.ip,
-      req.headers\['user-agent'\]?.substring(0, 255)
-    \]
+      req.headers['user-agent']?.substring(0, 255)
+    ]
   );
 
-  const \[userRows\] = await db.query(
+  const [userRows] = await db.query(
     'SELECT id, role FROM users WHERE id = ?',
-    \[storedToken.user\_id\]
+    [storedToken.user_id]
   );
-  const newAccessToken = generateAccessToken(userRows\[0\].id, userRows\[0\].role);
+  const newAccessToken = generateAccessToken(userRows[0].id, userRows[0].role);
 
   res.cookie('refreshToken', newRawRefreshToken, {
     httpOnly: true,
-    secure: process.env.NODE\_ENV === 'production',
+    secure: process.env.NODE_ENV === 'production',
     sameSite: 'strict',
-    maxAge: 30 \* 24 \* 60 \* 60 \* 1000
+    maxAge: 30 * 24 * 60 * 60 * 1000
   });
 
   res.json({ accessToken: newAccessToken, expiresIn: 900 });
 });
+```
 
 ##### 4.4 Logout Endpoints
 
+```javascript
 // POST /auth/logout
 app.post('/auth/logout', async (req, res) => {
   const rawRefreshToken = req.cookies?.refreshToken;
   if (rawRefreshToken) {
     await db.query(
-      \`UPDATE refresh\_tokens SET revoked = 1, revoked\_at = NOW()
-       WHERE token\_hash = ?\`,
-      \[hashToken(rawRefreshToken)\]
+      `UPDATE refresh_tokens SET revoked = 1, revoked_at = NOW()
+       WHERE token_hash = ?`,
+      [hashToken(rawRefreshToken)]
     );
   }
   res.clearCookie('refreshToken');
@@ -251,73 +260,77 @@ app.post('/auth/logout', async (req, res) => {
 // POST /auth/logout-all
 app.post('/auth/logout-all', requireAuth, async (req, res) => {
   await db.query(
-    \`UPDATE refresh\_tokens SET revoked = 1, revoked\_at = NOW()
-     WHERE user\_id = ? AND revoked = 0\`,
-    \[req.user.sub\]
+    `UPDATE refresh_tokens SET revoked = 1, revoked_at = NOW()
+     WHERE user_id = ? AND revoked = 0`,
+    [req.user.sub]
   );
   res.clearCookie('refreshToken');
   res.json({ message: 'Logged out from all devices' });
 });
+```
 
 #### 5\. Refresh Token Implementation in Laravel PHP
 
 ##### 5.1 Migration and Model
 
-// database/migrations/create\_refresh\_tokens\_table.php
-Schema::create('refresh\_tokens', function (Blueprint $table) {
+```php
+// database/migrations/create_refresh_tokens_table.php
+Schema::create('refresh_tokens', function (Blueprint $table) {
     $table->id();
-    $table->foreignId('user\_id')->constrained()->cascadeOnDelete();
-    $table->string('token\_hash', 64);
-    $table->timestamp('expires\_at');
+    $table->foreignId('user_id')->constrained()->cascadeOnDelete();
+    $table->string('token_hash', 64);
+    $table->timestamp('expires_at');
     $table->boolean('revoked')->default(false);
-    $table->timestamp('revoked\_at')->nullable();
-    $table->string('ip\_address', 45)->nullable();
-    $table->string('user\_agent', 255)->nullable();
-    $table->timestamp('created\_at')->useCurrent();
+    $table->timestamp('revoked_at')->nullable();
+    $table->string('ip_address', 45)->nullable();
+    $table->string('user_agent', 255)->nullable();
+    $table->timestamp('created_at')->useCurrent();
 
-    $table->index('token\_hash');
-    $table->index('user\_id');
-    $table->index('expires\_at');
+    $table->index('token_hash');
+    $table->index('user_id');
+    $table->index('expires_at');
 });
 
 // app/Models/RefreshToken.php
-namespace App\\Models;
+namespace App\Models;
 
-use Illuminate\\Database\\Eloquent\\Model;
+use Illuminate\Database\Eloquent\Model;
 
 class RefreshToken extends Model
 {
     public $timestamps = false;
-    protected $fillable = \[
-        'user\_id', 'token\_hash', 'expires\_at', 'ip\_address', 'user\_agent'
-    \];
-    protected $casts = \[
-        'expires\_at' => 'datetime',
-        'revoked\_at' => 'datetime',
+    protected $fillable = [
+        'user_id', 'token_hash', 'expires_at', 'ip_address', 'user_agent'
+    ];
+    protected $casts = [
+        'expires_at' => 'datetime',
+        'revoked_at' => 'datetime',
         'revoked'    => 'boolean',
-    \];
+    ];
 
     public function user()
     {
         return $this->belongsTo(User::class);
     }
 }
+```
 
 ##### 5.2 AuthService — Centralized Logic
 
+```php
 // app/Services/AuthService.php
-namespace App\\Services;
+namespace App\Services;
 
-use App\\Models\\RefreshToken;
-use App\\Models\\User;
-use Firebase\\JWT\\JWT;
-use Illuminate\\Support\\Str;
+use App\Models\RefreshToken;
+use App\Models\User;
+use Firebase\JWT\JWT;
+use Illuminate\Support\Str;
 
 class AuthService
 {
     public function generateAccessToken(User $user): string
     {
-        $payload = \[
+        $payload = [
             'sub' => $user->id,
             'role' => $user->role,
             'iss' => config('app.url'),
@@ -325,76 +338,78 @@ class AuthService
             'iat' => time(),
             'exp' => time() + 900,
             'jti' => (string) Str::uuid(),
-        \];
+        ];
         return JWT::encode($payload, config('jwt.secret'), 'HS256');
     }
 
     public function issueRefreshToken(User $user, string $ip, string $ua): string
     {
-        $raw = bin2hex(random\_bytes(40));
-        RefreshToken::create(\[
-            'user\_id'    => $user->id,
-            'token\_hash' => hash('sha256', $raw),
-            'expires\_at' => now()->addDays(30),
-            'ip\_address' => $ip,
-            'user\_agent' => substr($ua, 0, 255),
-        \]);
+        $raw = bin2hex(random_bytes(40));
+        RefreshToken::create([
+            'user_id'    => $user->id,
+            'token_hash' => hash('sha256', $raw),
+            'expires_at' => now()->addDays(30),
+            'ip_address' => $ip,
+            'user_agent' => substr($ua, 0, 255),
+        ]);
         return $raw;
     }
 
     public function rotateRefreshToken(string $raw, string $ip, string $ua): array
     {
-        $stored = RefreshToken::where('token\_hash', hash('sha256', $raw))
+        $stored = RefreshToken::where('token_hash', hash('sha256', $raw))
             ->where('revoked', false)
-            ->where('expires\_at', '>', now())
+            ->where('expires_at', '>', now())
             ->firstOrFail();
 
         // Detect reuse on already-revoked token
         if ($stored->revoked) {
-            RefreshToken::where('user\_id', $stored->user\_id)
-                ->update(\['revoked' => true, 'revoked\_at' => now()\]);
-            throw new \\Exception('Reuse detected');
+            RefreshToken::where('user_id', $stored->user_id)
+                ->update(['revoked' => true, 'revoked_at' => now()]);
+            throw new \Exception('Reuse detected');
         }
 
-        $stored->update(\['revoked' => true, 'revoked\_at' => now()\]);
+        $stored->update(['revoked' => true, 'revoked_at' => now()]);
         $user = $stored->user;
 
-        return \[
+        return [
             'accessToken'  => $this->generateAccessToken($user),
             'refreshToken' => $this->issueRefreshToken($user, $ip, $ua),
             'expiresIn'    => 900,
-        \];
+        ];
     }
 
     public function revokeAllTokens(int $userId): void
     {
-        RefreshToken::where('user\_id', $userId)
+        RefreshToken::where('user_id', $userId)
             ->where('revoked', false)
-            ->update(\['revoked' => true, 'revoked\_at' => now()\]);
+            ->update(['revoked' => true, 'revoked_at' => now()]);
     }
 }
+```
 
 ##### 5.3 AuthController
 
+```php
 // app/Http/Controllers/AuthController.php
-namespace App\\Http\\Controllers;
+namespace App\Http\Controllers;
 
-use App\\Models\\User;
-use App\\Services\\AuthService;
-use Illuminate\\Http\\Request;
-use Illuminate\\Support\\Facades\\Hash;
+use App\Models\User;
+use App\Services\AuthService;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
-    public function \_\_construct(private AuthService $auth) {}
+    public function __construct(private AuthService $auth) {}
 
     public function login(Request $request)
     {
-        $request->validate(\['email' => 'required|email', 'password' => 'required'\]);
+        $request->validate(['email' => 'required|email', 'password' => 'required']);
         $user = User::where('email', $request->email)->firstOrFail();
 
         if (!Hash::check($request->password, $user->password)) {
-            return response()->json(\['error' => 'Invalid credentials'\], 401);
+            return response()->json(['error' => 'Invalid credentials'], 401);
         }
 
         $accessToken  = $this->auth->generateAccessToken($user);
@@ -403,45 +418,46 @@ class AuthController extends Controller
         );
 
         return response()
-            ->json(\['accessToken' => $accessToken, 'expiresIn' => 900\])
-            ->cookie('refreshToken', $refreshToken, 60\*24\*30, '/', null, true, true, false, 'strict');
+            ->json(['accessToken' => $accessToken, 'expiresIn' => 900])
+            ->cookie('refreshToken', $refreshToken, 60*24*30, '/', null, true, true, false, 'strict');
     }
 
     public function refresh(Request $request)
     {
         $raw = $request->cookie('refreshToken');
-        if (!$raw) return response()->json(\['error' => 'Missing token'\], 401);
+        if (!$raw) return response()->json(['error' => 'Missing token'], 401);
 
         try {
             $tokens = $this->auth->rotateRefreshToken(
                 $raw, $request->ip(), $request->userAgent() ?? ''
             );
-        } catch (\\Exception) {
-            return response()->json(\['error' => 'Invalid or expired token'\], 401)
+        } catch (\Exception) {
+            return response()->json(['error' => 'Invalid or expired token'], 401)
                 ->withoutCookie('refreshToken');
         }
 
         return response()
-            ->json(\['accessToken' => $tokens\['accessToken'\], 'expiresIn' => 900\])
-            ->cookie('refreshToken', $tokens\['refreshToken'\], 60\*24\*30, '/', null, true, true, false, 'strict');
+            ->json(['accessToken' => $tokens['accessToken'], 'expiresIn' => 900])
+            ->cookie('refreshToken', $tokens['refreshToken'], 60*24*30, '/', null, true, true, false, 'strict');
     }
 
     public function logout(Request $request)
     {
         $raw = $request->cookie('refreshToken');
         if ($raw) {
-            \\App\\Models\\RefreshToken::where('token\_hash', hash('sha256', $raw))
-                ->update(\['revoked' => true, 'revoked\_at' => now()\]);
+            \App\Models\RefreshToken::where('token_hash', hash('sha256', $raw))
+                ->update(['revoked' => true, 'revoked_at' => now()]);
         }
-        return response()->json(\['message' => 'Logged out'\])->withoutCookie('refreshToken');
+        return response()->json(['message' => 'Logged out'])->withoutCookie('refreshToken');
     }
 
     public function logoutAll(Request $request)
     {
         $this->auth->revokeAllTokens($request->user()->id);
-        return response()->json(\['message' => 'Logged out from all devices'\])->withoutCookie('refreshToken');
+        return response()->json(['message' => 'Logged out from all devices'])->withoutCookie('refreshToken');
     }
 }
+```
 
 #### 6\. Refresh Token Rotation — Detecting Token Theft
 
@@ -451,6 +467,7 @@ Rotation isn't just a best practice — it's an active breach detection mechanis
 
 ##### 6.2 Implementing Reuse Detection — Revoke All Sessions on Reuse
 
+```javascript
 // Node.js — Upgrade refresh endpoint with full reuse detection
 app.post('/auth/refresh', async (req, res) => {
   const rawRefreshToken = req.cookies?.refreshToken;
@@ -461,9 +478,9 @@ app.post('/auth/refresh', async (req, res) => {
   const tokenHash = hashToken(rawRefreshToken);
 
   // Fetch token regardless of revoke status
-  const \[rows\] = await db.query(
-    'SELECT \* FROM refresh\_tokens WHERE token\_hash = ? LIMIT 1',
-    \[tokenHash\]
+  const [rows] = await db.query(
+    'SELECT * FROM refresh_tokens WHERE token_hash = ? LIMIT 1',
+    [tokenHash]
   );
 
   if (rows.length === 0) {
@@ -471,21 +488,21 @@ app.post('/auth/refresh', async (req, res) => {
     return res.status(401).json({ error: 'Token not found' });
   }
 
-  const storedToken = rows\[0\];
+  const storedToken = rows[0];
 
   // Reuse detected: token exists but already revoked
   if (storedToken.revoked) {
     // Possible attack in progress — revoke all sessions for this user
     await db.query(
-      \`UPDATE refresh\_tokens SET revoked = 1, revoked\_at = NOW()
-       WHERE user\_id = ? AND revoked = 0\`,
-      \[storedToken.user\_id\]
+      `UPDATE refresh_tokens SET revoked = 1, revoked_at = NOW()
+       WHERE user_id = ? AND revoked = 0`,
+      [storedToken.user_id]
     );
     res.clearCookie('refreshToken');
     return res.status(401).json({ error: 'Security alert: session terminated' });
   }
 
-  if (new Date(storedToken.expires\_at) <= new Date()) {
+  if (new Date(storedToken.expires_at) <= new Date()) {
     res.clearCookie('refreshToken');
     return res.status(401).json({ error: 'Refresh token expired' });
   }
@@ -493,6 +510,7 @@ app.post('/auth/refresh', async (req, res) => {
   // Valid token — proceed with rotation
   // ... (rotation code from section 4.3)
 });
+```
 
 #### 7\. 6 Common Mistakes When Implementing Refresh Tokens
 

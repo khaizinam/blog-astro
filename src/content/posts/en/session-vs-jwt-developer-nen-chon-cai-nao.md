@@ -34,20 +34,21 @@ Article Content:
 
 Session is a **stateful** mechanism: after the user logs in successfully, the server creates a session object stored in memory or an external store (Redis, database), then sends back a concise session ID in the form of a cookie to the client. For each subsequent request, the client attaches that cookie, and the server looks up the session store to get user information. The entire "state" stays on the server side — the client only holds a key that contains no information.
 
+```javascript
 // Node.js Express + Redis Session Store
 const session = require('express-session');
 const RedisStore = require('connect-redis').default;
 
 app.use(session({
   store: new RedisStore({ client: redisClient }),
-  secret: process.env.SESSION\_SECRET,
+  secret: process.env.SESSION_SECRET,
   resave: false,
   saveUninitialized: false,
   cookie: {
     httpOnly: true,
     secure: true,        // Only send via HTTPS
     sameSite: 'strict',  // Block CSRF
-    maxAge: 7 \* 24 \* 60 \* 60 \* 1000 // 7 days
+    maxAge: 7 * 24 * 60 * 60 * 1000 // 7 days
   }
 }));
 
@@ -65,11 +66,13 @@ app.post('/logout', (req, res) => {
   res.clearCookie('connect.sid');
   res.json({ message: 'Logged out' });
 });
+```
 
 ##### 1.2 JWT — Stateless, client carries everything
 
 JWT is a **stateless** mechanism: after logging in, the server creates a token containing all necessary information (userId, role, exp...), signs it with a secret key, and returns it to the client. Each request, the client sends the token in the Authorization header. The server only needs to verify the signature — no database lookup, no shared store needed. The entire "state" resides within the token itself.
 
+```javascript
 // Node.js Express + JWT
 const jwt = require('jsonwebtoken');
 const crypto = require('crypto');
@@ -80,7 +83,7 @@ app.post('/login', async (req, res) => {
 
   const accessToken = jwt.sign(
     { sub: user.id, role: user.role },
-    process.env.JWT\_SECRET,
+    process.env.JWT_SECRET,
     { algorithm: 'HS256', expiresIn: '15m', jwtid: crypto.randomUUID() }
   );
 
@@ -89,22 +92,23 @@ app.post('/login', async (req, res) => {
 
   res.cookie('refreshToken', refreshToken, {
     httpOnly: true, secure: true, sameSite: 'strict',
-    maxAge: 30 \* 24 \* 60 \* 60 \* 1000
+    maxAge: 30 * 24 * 60 * 60 * 1000
   });
   res.json({ accessToken });
 });
 
 // Verify middleware
 function requireAuth(req, res, next) {
-  const token = req.headers.authorization?.split(' ')\[1\];
+  const token = req.headers.authorization?.split(' ')[1];
   if (!token) return res.status(401).json({ error: 'Unauthorized' });
   try {
-    req.user = jwt.verify(token, process.env.JWT\_SECRET, { algorithms: \['HS256'\] });
+    req.user = jwt.verify(token, process.env.JWT_SECRET, { algorithms: ['HS256'] });
     next();
   } catch {
     res.status(401).json({ error: 'Invalid or expired token' });
   }
 }
+```
 
 #### 2\. Before/After: What problems does choosing the wrong authentication mechanism cause?
 

@@ -67,6 +67,7 @@ JWT is a self-contained technology — all authentication information resides wi
 
 HS256 (HMAC SHA-256) is a symmetric algorithm: the same secret key is used for both signing and verification. Suitable when there is only one service that both issues and authenticates tokens. Pros: simple, fast. Cons: if multiple services need verification, all must hold the secret — leaking risk increases with the number of services.
 
+```javascript
 // Node.js — Generating a strong secret key
 const crypto = require('crypto');
 const secret = crypto.randomBytes(32).toString('hex');
@@ -79,11 +80,13 @@ const token = jwt.sign(
   secret,
   { algorithm: 'HS256', expiresIn: '15m' }
 );
+```
 
 ##### 3.2 RS256 — The choice for microservices
 
 RS256 is asymmetric: a private key for signing (held only by the Auth Service), and a public key for verification (can be made public via a JWKS endpoint). This is the best practice for microservices systems or when third parties need to verify tokens.
 
+```javascript
 // Node.js — Signing with RS256
 const fs = require('fs');
 const privateKey = fs.readFileSync('private.pem');
@@ -97,10 +100,11 @@ const token = jwt.sign(
 // Verifying with public key
 const publicKey = fs.readFileSync('public.pem');
 const decoded = jwt.verify(token, publicKey, {
-  algorithms: \['RS256'\], // ALWAYS whitelist the algorithm
+  algorithms: ['RS256'], // ALWAYS whitelist the algorithm
   issuer: 'auth.khaizinam.io.vn',
   audience: 'api'
 });
+```
 
 ##### 3.3 ES256 — When higher performance than RS256 is needed
 
@@ -114,17 +118,19 @@ localStorage is accessible by any JavaScript running on the same origin — incl
 
 ##### 4.2 httpOnly Cookie — Best practice for web apps
 
+```javascript
 // Node.js / Express — Setting refresh token in httpOnly cookie
 res.cookie('refreshToken', refreshToken, {
   httpOnly: true,      // JavaScript cannot read it
   secure: true,        // Only send via HTTPS
   sameSite: 'strict',  // Block CSRF
-  maxAge: 30 \* 24 \* 60 \* 60 \* 1000 // 30 days
+  maxAge: 30 * 24 * 60 * 60 * 1000 // 30 days
 });
 
 // Access token: sent in response body, client stores in memory (JS variable)
 // Do not store in localStorage or sessionStorage
 res.json({ accessToken });
+```
 
 ##### 4.3 Storage strategy by platform
 
@@ -140,24 +146,26 @@ Many developers only verify the signature and ignore claim validation — this i
 
 *   **exp** (expiration): Has the token expired? Most libraries do this automatically, but ensure this feature is not disabled.
 *   **nbf** (not before): Is the token being used earlier than allowed?
-*   **iss** (issuer): Does the token come from the correct Auth Server? Prevents tokens from other services from being misused.
+*   **iss** (issuer): Does the token come from the correct Auth Server? Prevents tokens từ other services from being misused.
 *   **aud** (audience): Was the token created for the specific service verifying it?
 *   **alg whitelist**: Always specify the list of allowed algorithms; do not let the library blindly trust the header.
 
+```php
 // Laravel PHP — Full validation with firebase/php-jwt
-use Firebase\\JWT\\JWT;
-use Firebase\\JWT\\Key;
+use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
 
 $decoded = JWT::decode($token, new Key($publicKey, 'RS256'));
 
 // Manual additional validation
 if ($decoded->iss !== 'auth.khaizinam.io.vn') {
-    throw new \\Exception('Invalid issuer');
+    throw new \Exception('Invalid issuer');
 }
 if ($decoded->aud !== 'api') {
-    throw new \\Exception('Invalid audience');
+    throw new \Exception('Invalid audience');
 }
 // exp is automatically checked by firebase/php-jwt — throws ExpiredException if expired
+```
 
 ##### 5.2 Clock Skew — The issue few notice
 
@@ -171,6 +179,7 @@ This is a design trade-off of JWT compared to Sessions. Once issued, a token is 
 
 ##### 6.2 Jti Blacklist with Redis — Instant Revocation
 
+```javascript
 // Upon logout or when immediate revocation is needed
 // 1. Read jti from the current token
 const decoded = jwt.decode(token);
@@ -178,18 +187,20 @@ const jti = decoded.jti;
 const ttl = decoded.exp - Math.floor(Date.now() / 1000);
 
 // 2. Store in Redis with TTL = remaining time of the token
-await redis.setex(\`blacklist:${jti}\`, ttl, '1');
+await redis.setex(`blacklist:${jti}`, ttl, '1');
 
 // 3. Verify middleware — check blacklist before allowing access
-const isBlacklisted = await redis.get(\`blacklist:${jti}\`);
+const isBlacklisted = await redis.get(`blacklist:${jti}`);
 if (isBlacklisted) {
     return res.status(401).json({ error: 'Token revoked' });
 }
+```
 
 ##### 6.3 Refresh Token Rotation — Detecting Token Theft
 
 Rotation is a mechanism where every time a refresh token is used to get a new access token, the old refresh token is invalidated and a new one is issued. If an attacker steals a refresh token and uses it before the user, when the real user attempts to use it, the system sees the token is already invalid — immediately indicating a breach and allowing for the revocation of the entire session.
 
+```javascript
 // Node.js — Refresh Token Rotation logic
 async function refreshTokens(oldRefreshToken) {
   // 1. Find in DB
@@ -210,7 +221,7 @@ async function refreshTokens(oldRefreshToken) {
 
   // 2. Revoke old token
   await db.refreshTokens.updateOne(
-    { \_id: storedToken.\_id },
+    { _id: storedToken._id },
     { revoked: true }
   );
 
@@ -221,11 +232,10 @@ async function refreshTokens(oldRefreshToken) {
   await db.refreshTokens.create({
     token: hash(newRefreshToken),
     userId: storedToken.userId,
-    expiresAt: new Date(Date.now() + 30 \* 24 \* 60 \* 60 \* 1000)
+    expiresAt: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000)
   });
-
-  return { accessToken: newAccessToken, refreshToken: newRefreshToken };
 }
+```
 
 #### 7\. 6 common JWT security mistakes and how to fix them
 

@@ -184,59 +184,16 @@ Decoding Google Play Error Codes
 
 Below is a summary table of the most common error codes related to Google Play payment issues:
 
-Error Code
-
-Detailed Description
-
-Main Cause
-
-**OR-CCSEH-26**
-
-Insufficient balance
-
-The card does not have enough balance for the package or the minimum verification transaction.
-
-**OR-CCSEH-04**
-
-"Trust" verification required
-
-Suspicious activities prompt Google to require verification of account reputation or payment profile.
-
-**OR-BAIH-04**
-
-Bank declined payment
-
-Transaction blocked directly by the issuing bank, usually due to suspected fraud or policy violations.
-
-**OR-CCSEH-21**
-
-Invalid card
-
-This card type is not accepted as a payment method in Google's system.
-
-**OR-CCSEH-25**
-
-Expired card
-
-The card has passed its expiration date or has been completely blocked by the bank.
-
-**OR-CAC-01**
-
-Profile country mismatch
-
-The country in the billing address does not match the card or Google account's country.
-
-**OR-ACH-02**
-
-Bank account issue
-
-The bank detects risk and proactively blocks or imposes transaction limits on the card.
-
-**OR-CCSEH-05**
-
-Outdated User Agent
-
-The browser or User Agent used is too old, causing errors in the system's processing.
+| Error Code | Detailed Description | Main Cause |
+| :--- | :--- | :--- |
+| **OR-CCSEH-26** | Insufficient balance | The card does not have enough balance for the package or the minimum verification transaction. |
+| **OR-CCSEH-04** | "Trust" verification required | Suspicious activities prompt Google to require verification of account reputation or payment profile. |
+| **OR-BAIH-04** | Bank declined payment | Transaction blocked directly by the issuing bank, usually due to suspected fraud or policy violations. |
+| **OR-CCSEH-21** | Invalid card | This card type is not accepted as a payment method in Google's system. |
+| **OR-CCSEH-25** | Expired card | The card has passed its expiration date or has been completely blocked by the bank. |
+| **OR-CAC-01** | Profile country mismatch | The country in the billing address does not match the card or Google account's country. |
+| **OR-ACH-02** | Bank account issue | The bank detects risk and proactively blocks or imposes transaction limits on the card. |
+| **OR-CCSEH-05** | Outdated User Agent | The browser or User Agent used is too old, causing errors in the system's processing. |
 
 Understanding these error codes not only assists in troubleshooting but also serves as a basis for evaluating the quality of card data (Ci) and the effectiveness of the spoofing techniques used.
 

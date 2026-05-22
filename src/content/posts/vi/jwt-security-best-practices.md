@@ -67,6 +67,7 @@ JWT là công nghệ self-contained — toàn bộ thông tin xác thực nằm 
 
 HS256 (HMAC SHA-256) là thuật toán symmetric: cùng một secret key dùng để ký và verify. Phù hợp khi chỉ có một service duy nhất vừa phát hành vừa xác thực token. Ưu điểm: đơn giản, nhanh. Nhược điểm: nếu nhiều service cần verify, tất cả đều phải giữ secret — rủi ro lộ key tăng theo số lượng service.
 
+```javascript
 // Node.js — Tạo secret key đủ mạnh
 const crypto = require('crypto');
 const secret = crypto.randomBytes(32).toString('hex');
@@ -79,11 +80,13 @@ const token = jwt.sign(
   secret,
   { algorithm: 'HS256', expiresIn: '15m' }
 );
+```
 
 ##### 3.2 RS256 — Lựa chọn cho microservices
 
 RS256 là asymmetric: private key để ký (chỉ Auth Service giữ), public key để verify (có thể public qua JWKS endpoint). Đây là best practice cho hệ thống microservices hoặc khi cần third-party verify token.
 
+```javascript
 // Node.js — Ký bằng RS256
 const fs = require('fs');
 const privateKey = fs.readFileSync('private.pem');
@@ -97,10 +100,11 @@ const token = jwt.sign(
 // Verify bằng public key
 const publicKey = fs.readFileSync('public.pem');
 const decoded = jwt.verify(token, publicKey, {
-  algorithms: \['RS256'\], // LUÔN whitelist algorithm
+  algorithms: ['RS256'], // LUÔN whitelist algorithm
   issuer: 'auth.khaizinam.io.vn',
   audience: 'api'
 });
+```
 
 ##### 3.3 ES256 — Khi cần hiệu năng cao hơn RS256
 
@@ -114,17 +118,19 @@ localStorage accessible bằng bất kỳ JavaScript nào chạy trên cùng ori
 
 ##### 4.2 httpOnly Cookie — Best practice cho web app
 
+```javascript
 // Node.js / Express — Set refresh token trong httpOnly cookie
 res.cookie('refreshToken', refreshToken, {
   httpOnly: true,      // JavaScript không đọc được
   secure: true,        // Chỉ gửi qua HTTPS
   sameSite: 'strict',  // Chặn CSRF
-  maxAge: 30 \* 24 \* 60 \* 60 \* 1000 // 30 ngày
+  maxAge: 30 * 24 * 60 * 60 * 1000 // 30 ngày
 });
 
 // Access token: gửi trong response body, client lưu trong memory (biến JS)
 // Không lưu vào localStorage hay sessionStorage
 res.json({ accessToken });
+```
 
 ##### 4.3 Chiến lược lưu trữ theo platform
 
@@ -144,20 +150,22 @@ Nhiều developer chỉ verify signature mà bỏ qua validate claims — đây 
 *   **aud** (audience): Token có được tạo cho đúng service đang verify không?
 *   **alg whitelist**: Luôn chỉ định danh sách algorithm được phép, không để thư viện tự tin theo alg trong header.
 
+```php
 // Laravel PHP — Validate đầy đủ với firebase/php-jwt
-use Firebase\\JWT\\JWT;
-use Firebase\\JWT\\Key;
+use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
 
 $decoded = JWT::decode($token, new Key($publicKey, 'RS256'));
 
 // Validate thủ công thêm
 if ($decoded->iss !== 'auth.khaizinam.io.vn') {
-    throw new \\Exception('Invalid issuer');
+    throw new \Exception('Invalid issuer');
 }
 if ($decoded->aud !== 'api') {
-    throw new \\Exception('Invalid audience');
+    throw new \Exception('Invalid audience');
 }
 // exp được firebase/php-jwt tự kiểm tra — nếu hết hạn sẽ throw ExpiredException
+```
 
 ##### 5.2 Clock Skew — Vấn đề ít ai để ý
 
@@ -171,6 +179,7 @@ Trong môi trường distributed, đồng hồ giữa các server có thể lệ
 
 ##### 6.2 Jti Blacklist với Redis — Revoke tức thì
 
+```javascript
 // Khi logout hoặc cần revoke token ngay
 // 1. Đọc jti từ token đang dùng
 const decoded = jwt.decode(token);
@@ -178,18 +187,20 @@ const jti = decoded.jti;
 const ttl = decoded.exp - Math.floor(Date.now() / 1000);
 
 // 2. Lưu vào Redis với TTL = thời gian còn lại của token
-await redis.setex(\`blacklist:${jti}\`, ttl, '1');
+await redis.setex(`blacklist:${jti}`, ttl, '1');
 
 // 3. Middleware verify — kiểm tra blacklist trước khi cho qua
-const isBlacklisted = await redis.get(\`blacklist:${jti}\`);
+const isBlacklisted = await redis.get(`blacklist:${jti}`);
 if (isBlacklisted) {
     return res.status(401).json({ error: 'Token revoked' });
 }
+```
 
 ##### 6.3 Refresh Token Rotation — Phát hiện token theft
 
 Rotation là cơ chế: mỗi lần dùng refresh token để lấy access token mới, refresh token cũ bị vô hiệu hóa và một refresh token mới được cấp. Nếu attacker đánh cắp refresh token và dùng trước user, khi user thật dùng sẽ thấy token đã invalid — ngay lập tức biết có breach và có thể revoke toàn bộ session.
 
+```javascript
 // Node.js — Refresh Token Rotation logic
 async function refreshTokens(oldRefreshToken) {
   // 1. Tìm trong DB
@@ -210,7 +221,7 @@ async function refreshTokens(oldRefreshToken) {
 
   // 2. Revoke token cũ
   await db.refreshTokens.updateOne(
-    { \_id: storedToken.\_id },
+    { _id: storedToken._id },
     { revoked: true }
   );
 
@@ -221,11 +232,12 @@ async function refreshTokens(oldRefreshToken) {
   await db.refreshTokens.create({
     token: hash(newRefreshToken),
     userId: storedToken.userId,
-    expiresAt: new Date(Date.now() + 30 \* 24 \* 60 \* 60 \* 1000)
+    expiresAt: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000)
   });
 
   return { accessToken: newAccessToken, refreshToken: newRefreshToken };
 }
+```
 
 #### 7\. 6 sai lầm bảo mật JWT phổ biến nhất và cách fix
 

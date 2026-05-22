@@ -184,59 +184,16 @@ Giải mã các mã lỗi Google Play (Troubleshooting)
 
 Dưới đây là bảng tổng hợp các mã lỗi phổ biến nhất liên quan đến sự cố thanh toán trên Google Play:
 
-Mã lỗi
-
-Mô tả chi tiết
-
-Nguyên nhân chính
-
-**OR-CCSEH-26**
-
-Số dư thẻ không đủ
-
-Thẻ không còn đủ số dư để thực hiện thanh toán gói item hoặc không đủ để thực hiện giao dịch xác thực tối thiểu.
-
-**OR-CCSEH-04**
-
-Yêu cầu xác minh “Trust”
-
-Xuất hiện các hoạt động đáng ngờ khiến Google yêu cầu người dùng phải xác minh độ uy tín của tài khoản hoặc hồ sơ thanh toán.
-
-**OR-BAIH-04**
-
-Ngân hàng từ chối thanh toán
-
-Giao dịch bị chặn trực tiếp từ phía ngân hàng phát hành thẻ, thường do nghi ngờ gian lận hoặc vi phạm chính sách thẻ.
-
-**OR-CCSEH-21**
-
-Thẻ không hợp lệ
-
-Loại thẻ này không được Google chấp nhận làm phương thức thanh toán trong hệ thống.
-
-**OR-CCSEH-25**
-
-Thẻ không còn hiệu lực
-
-Thẻ đã quá ngày hết hạn hoặc đã bị ngân hàng khóa hoàn toàn.
-
-**OR-CAC-01**
-
-Sai quốc gia hồ sơ
-
-Quốc gia trong hồ sơ thanh toán (Billing Address) không khớp với quốc gia của thẻ hoặc tài khoản Google.
-
-**OR-ACH-02**
-
-Sự cố tài khoản ngân hàng
-
-Ngân hàng phát hiện rủi ro nên chủ động chặn hoặc áp đặt các hạn chế giao dịch đối với thẻ này.
-
-**OR-CCSEH-05**
-
-User Agent đã lỗi thời
-
-Trình duyệt hoặc thông số User Agent được sử dụng quá cũ, gây lỗi trong quá trình xử lý của hệ thống.
+| Mã lỗi | Mô tả chi tiết | Nguyên nhân chính |
+| :--- | :--- | :--- |
+| **OR-CCSEH-26** | Số dư thẻ không đủ | Thẻ không còn đủ số dư để thực hiện thanh toán gói item hoặc không đủ để thực hiện giao dịch xác thực tối thiểu. |
+| **OR-CCSEH-04** | Yêu cầu xác minh “Trust” | Xuất hiện các hoạt động đáng ngờ khiến Google yêu cầu người dùng phải xác minh độ uy tín của tài khoản hoặc hồ sơ thanh toán. |
+| **OR-BAIH-04** | Ngân hàng từ chối thanh toán | Giao dịch bị chặn trực tiếp từ phía ngân hàng phát hành thẻ, thường do nghi ngờ gian lận hoặc vi phạm chính sách thẻ. |
+| **OR-CCSEH-21** | Thẻ không hợp lệ | Loại thẻ này không được Google chấp nhận làm phương thức thanh toán trong hệ thống. |
+| **OR-CCSEH-25** | Thẻ không còn hiệu lực | Thẻ đã quá ngày hết hạn hoặc đã bị ngân hàng khóa hoàn toàn. |
+| **OR-CAC-01** | Sai quốc gia hồ sơ | Quốc gia trong hồ sơ thanh toán (Billing Address) không khớp với quốc gia của thẻ hoặc tài khoản Google. |
+| **OR-ACH-02** | Sự cố tài khoản ngân hàng | Ngân hàng phát hiện rủi ro nên chủ động chặn hoặc áp đặt các hạn chế giao dịch đối với thẻ này. |
+| **OR-CCSEH-05** | User Agent đã lỗi thời | Trình duyệt hoặc thông số User Agent được sử dụng quá cũ, gây lỗi trong quá trình xử lý của hệ thống. |
 
 Việc nắm bắt các mã lỗi này không chỉ hỗ trợ quá trình khắc phục sự cố mà còn là căn cứ để đánh giá chất lượng của dữ liệu thẻ (Ci) và độ hiệu quả của các kỹ thuật ngụy trang đang sử dụng.
 

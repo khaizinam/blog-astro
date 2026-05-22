@@ -34,20 +34,21 @@ Nội dung bài viết:
 
 Session là cơ chế **stateful**: sau khi user đăng nhập thành công, server tạo một session object lưu trữ trong bộ nhớ hoặc một store bên ngoài (Redis, database), rồi gửi về client một session ID ngắn gọn dạng cookie. Mỗi request tiếp theo, client đính kèm cookie đó, server tra cứu session store để lấy thông tin user. Toàn bộ "trạng thái" nằm ở phía server — client chỉ cầm một cái chìa khóa không chứa thông tin gì.
 
+```javascript
 // Node.js Express + Redis Session Store
 const session = require('express-session');
 const RedisStore = require('connect-redis').default;
 
 app.use(session({
   store: new RedisStore({ client: redisClient }),
-  secret: process.env.SESSION\_SECRET,
+  secret: process.env.SESSION_SECRET,
   resave: false,
   saveUninitialized: false,
   cookie: {
     httpOnly: true,
     secure: true,        // Chỉ gửi qua HTTPS
     sameSite: 'strict',  // Chặn CSRF
-    maxAge: 7 \* 24 \* 60 \* 60 \* 1000 // 7 ngày
+    maxAge: 7 * 24 * 60 * 60 * 1000 // 7 ngày
   }
 }));
 
@@ -65,11 +66,13 @@ app.post('/logout', (req, res) => {
   res.clearCookie('connect.sid');
   res.json({ message: 'Logged out' });
 });
+```
 
 ##### 1.2 JWT — Stateless, client mang theo mọi thứ
 
 JWT là cơ chế **stateless**: sau khi đăng nhập, server tạo một token chứa đầy đủ thông tin cần thiết (userId, role, exp...), ký bằng secret key, trả về client. Mỗi request, client gửi token trong Authorization header. Server chỉ cần verify chữ ký là xong — không tra database, không cần shared store. Toàn bộ "trạng thái" nằm trong chính token.
 
+```javascript
 // Node.js Express + JWT
 const jwt = require('jsonwebtoken');
 const crypto = require('crypto');
@@ -80,7 +83,7 @@ app.post('/login', async (req, res) => {
 
   const accessToken = jwt.sign(
     { sub: user.id, role: user.role },
-    process.env.JWT\_SECRET,
+    process.env.JWT_SECRET,
     { algorithm: 'HS256', expiresIn: '15m', jwtid: crypto.randomUUID() }
   );
 
@@ -89,22 +92,23 @@ app.post('/login', async (req, res) => {
 
   res.cookie('refreshToken', refreshToken, {
     httpOnly: true, secure: true, sameSite: 'strict',
-    maxAge: 30 \* 24 \* 60 \* 60 \* 1000
+    maxAge: 30 * 24 * 60 * 60 * 1000
   });
   res.json({ accessToken });
 });
 
 // Middleware verify
 function requireAuth(req, res, next) {
-  const token = req.headers.authorization?.split(' ')\[1\];
+  const token = req.headers.authorization?.split(' ')[1];
   if (!token) return res.status(401).json({ error: 'Unauthorized' });
   try {
-    req.user = jwt.verify(token, process.env.JWT\_SECRET, { algorithms: \['HS256'\] });
+    req.user = jwt.verify(token, process.env.JWT_SECRET, { algorithms: ['HS256'] });
     next();
   } catch {
     res.status(401).json({ error: 'Invalid or expired token' });
   }
 }
+```
 
 #### 2\. Before/After: Chọn sai cơ chế xác thực gây ra vấn đề gì?
 
