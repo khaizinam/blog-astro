@@ -39,7 +39,7 @@ Nếu bạn đã xem qua các tin tuyển dụng gần đây, hẳn bạn nhận
 
 **Chất lượng portfolio quan trọng hơn GPA.** Một fresher có hai dự án đã deploy và GitHub với commit đều đặn sẽ nhận được offer cao hơn người có GPA 3.8 nhưng không có code nào ngoài thực tế. Nhà tuyển dụng đang mua output tương lai của bạn, không phải điểm số trong quá khứ.
 
-![Mức Lương Fresher & Junior IT 2026: Bạn Nên Kỳ Vọng Bao Nhiêu?](/storage/blogs/gemini-generated-image-bzoi43bzoi43bzoi.jpg)
+![Mức Lương Fresher & Junior IT 2026: Bạn Nên Kỳ Vọng Bao Nhiêu?](https://khaizinam.com/storage/blogs/gemini-generated-image-bzoi43bzoi43bzoi.jpg)
 
   
 Mức Lương Fresher & Junior IT 2026: Bạn Nên Kỳ Vọng Bao Nhiêu?

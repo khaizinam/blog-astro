@@ -16,7 +16,7 @@ Ngôn ngữ cơ thể phỏng vấn IT là tập hợp những tín hiệu phi n
 
 Nhiều fresher và junior developer mất điểm không phải vì không biết kỹ thuật, mà vì những thứ họ không nhận ra: nhìn xuống sàn khi trả lời, khoanh tay trước ngực khi nghe câu hỏi khó, hoặc gật đầu liên tục dù không thực sự hiểu câu hỏi. Một buổi phỏng vấn kéo dài 45 phút, nhưng ấn tượng đầu tiên được hình thành trong chưa đến 7 giây — và phần lớn đến từ cơ thể, không phải lời nói.
 
-![Ngôn ngữ cơ thể trong phỏng vấn — những điều vô tình mất điểm](/storage/blog-folder/2026-04/photo-5-1518939893024943632782.webp)
+![Ngôn ngữ cơ thể trong phỏng vấn — những điều vô tình mất điểm](https://khaizinam.com/storage/blog-folder/2026-04/photo-5-1518939893024943632782.webp)
 
 Ngôn ngữ cơ thể trong phỏng vấn — những điều vô tình mất điểm
 

@@ -100,7 +100,7 @@ SQL phù hợp khi data có cấu trúc rõ ràng, cần ACID transaction, và q
 
 **Session** là stateful — server lưu trạng thái phiên đăng nhập, client chỉ giữ session ID. **JWT** là stateless — toàn bộ thông tin user được mã hóa trong token, server không cần lưu gì. JWT dễ scale hơn vì bất kỳ server instance nào cũng có thể verify token mà không cần share session store. Nhược điểm của JWT: không thể invalidate ngay lập tức trước khi hết hạn.
 
-Xem chi tiết tại [Session vs JWT phỏng vấn — lý thuyết đầy đủ và câu hỏi thực tế](/session-vs-jwt-toan-bo-ly-thuyet-va-cau-hoi-phong-van-hay-gap-nhat-ma-junior-can-nam-chac) để nắm vững topic này trước buổi phỏng vấn.
+Xem chi tiết tại [Session vs JWT phỏng vấn — lý thuyết đầy đủ và câu hỏi thực tế](https://khaizinam.com/session-vs-jwt-toan-bo-ly-thuyet-va-cau-hoi-phong-van-hay-gap-nhat-ma-junior-can-nam-chac) để nắm vững topic này trước buổi phỏng vấn.
 
 ##### OAuth 2.0 là gì — giải thích flow cơ bản?
 
@@ -124,7 +124,7 @@ Cache là lớp lưu trữ trung gian giúp phục vụ data nhanh hơn bằng c
 
 Redis là in-memory data store cực nhanh, thường được dùng cho: cache (giảm load database), session storage (thay thế server-side session), rate limiting (INCR + EXPIRE), pub/sub messaging, và job queue. **Điểm quan trọng cần nêu:** Redis là volatile by default — nếu server restart mà không config persistence, data sẽ mất. Với data quan trọng cần dùng RDB snapshot hoặc AOF logging.
 
-Đọc thêm về Các bài viết chủ đề [Series Phỏng vấn.](/tag/seriesphongvan)
+Đọc thêm về Các bài viết chủ đề [Series Phỏng vấn.](https://khaizinam.com/tag/seriesphongvan)
 
 ##### Cache invalidation — vấn đề khó nhất của caching?
 
@@ -182,4 +182,4 @@ Phần cuối: thiết kế endpoint để xử lý thanh toán. Tuấn chủ đ
 
 Đừng cố học thuộc hết mọi câu hỏi. Thay vào đó, hiểu đủ sâu để có thể trả lời câu hỏi tiếp theo của interviewer sau câu trả lời đầu tiên của bạn — đó mới là thứ phân biệt ứng viên được nhận với ứng viên không được nhận.
 
-Bước tiếp theo: đọc bài [Session vs JWT phỏng vấn](/session-vs-jwt-phong-van) và luyện viết SQL query thực tế trên ít nhất 20 bài tập trên LeetCode hoặc HackerRank SQL track trước buổi phỏng vấn.
+Bước tiếp theo: đọc bài [Session vs JWT phỏng vấn](https://khaizinam.com/session-vs-jwt-phong-van) và luyện viết SQL query thực tế trên ít nhất 20 bài tập trên LeetCode hoặc HackerRank SQL track trước buổi phỏng vấn.

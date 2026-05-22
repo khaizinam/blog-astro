@@ -2,7 +2,7 @@
 title: "Refresh Token in Node.js and Laravel: Complete Production Implementation Guide 2026"
 author: KhaiziNam
 pubDatetime: 2026-04-06T19:56:15.000Z
-slug: refresh-token-in-nodejs-and-laravel-complete-production-implementation-guide-2026
+slug: refresh-token-nodejs-va-laravel-huong-dan-implement-chuan-production-2026
 lang: en
 translationKey: post-219
 featured: false
@@ -498,12 +498,12 @@ app.post('/auth/refresh', async (req, res) => {
 
 1.  **Storing the raw refresh token in the DB** → Fix: always store a SHA-256 hash. If the DB is dumped, attackers get the hash but can't authenticate because the server compares hash(rawToken) against the stored value.
 2.  **Not implementing rotation — reusing the same refresh token forever** → Fix: every refresh must issue a new token and revoke the old one. Without rotation, there is no way to detect token theft.
-3.  **Storing refresh tokens in localStorage instead of httpOnly cookies** → Fix: refresh tokens are even more sensitive than access tokens because of their longer TTL. They must be in httpOnly cookies. Full details in [JWT Security Best Practices](/en/jwt-security-best-practices-how-to-secure-json-web-tokens-in-production-2026).
+3.  **Storing refresh tokens in localStorage instead of httpOnly cookies** → Fix: refresh tokens are even more sensitive than access tokens because of their longer TTL. They must be in httpOnly cookies. Full details in [JWT Security Best Practices](https://khaizinam.com/en/jwt-security-best-practices-how-to-secure-json-web-tokens-in-production-2026).
 4.  **Not cleaning up old tokens — letting the refresh\_tokens table grow unbounded** → Fix: run a nightly cron job to delete revoked or expired tokens older than 7 days. A bloated table hurts query performance.
 5.  **Returning the refresh token in the response body instead of a cookie** → Fix: refresh token in httpOnly cookie, access token in body. Many tutorials return both in the body — this is a serious security mistake.
 6.  **No logout-all endpoint — no way to revoke access when an account is compromised** → Fix: always provide a **/auth/logout-all** endpoint that revokes all refresh tokens by user\_id. This is a mandatory feature for any production system.
 
-For the full JWT security picture, read [JWT Security Best Practices 2026](/en/jwt-security-best-practices-how-to-secure-json-web-tokens-in-production-2026). If you're still deciding between Session and JWT for your project, [Session vs JWT: Which Should Developers Choose?](/en/session-vs-jwt-which-should-developers-choose-a-practical-comparison-for-2026) will help you make a definitive decision.
+For the full JWT security picture, read [JWT Security Best Practices 2026](https://khaizinam.com/en/jwt-security-best-practices-how-to-secure-json-web-tokens-in-production-2026). If you're still deciding between Session and JWT for your project, [Session vs JWT: Which Should Developers Choose?](https://khaizinam.com/en/session-vs-jwt-which-should-developers-choose-a-practical-comparison-for-2026) will help you make a definitive decision.
 
 #### 8\. FAQ - Frequently Asked Questions About Refresh Tokens
 
@@ -521,7 +521,7 @@ Implement an axios interceptor or fetch wrapper: when a 401 is received, automat
 
 ##### 8.4 Does the access token need to be stored in the DB?
 
-No, and it shouldn't be — that's the whole point of JWT being stateless. Access tokens have a short TTL (15 minutes) and can be verified by signature alone. If you need to revoke an access token immediately before it expires (e.g., breach detected), use a jti blacklist in Redis with TTL equal to the token's remaining lifetime. Full details in [JWT Security Best Practices](/en/jwt-security-best-practices-how-to-secure-json-web-tokens-in-production-2026).
+No, and it shouldn't be — that's the whole point of JWT being stateless. Access tokens have a short TTL (15 minutes) and can be verified by signature alone. If you need to revoke an access token immediately before it expires (e.g., breach detected), use a jti blacklist in Redis with TTL equal to the token's remaining lifetime. Full details in [JWT Security Best Practices](https://khaizinam.com/en/jwt-security-best-practices-how-to-secure-json-web-tokens-in-production-2026).
 
 ##### 8.5 Do refresh tokens work with React Native?
 

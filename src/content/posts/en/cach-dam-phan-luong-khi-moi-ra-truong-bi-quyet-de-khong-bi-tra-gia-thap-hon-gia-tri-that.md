@@ -2,7 +2,7 @@
 title: "How to Negotiate Your Salary as a Fresh Graduate: Stop Leaving Money on the Table"
 author: KhaiziNam
 pubDatetime: 2026-03-30T10:25:29.000Z
-slug: how-to-negotiate-your-salary-as-a-fresh-graduate-stop-leaving-money-on-the-table
+slug: cach-dam-phan-luong-khi-moi-ra-truong-bi-quyet-de-khong-bi-tra-gia-thap-hon-gia-tri-that
 lang: en
 translationKey: post-210
 featured: false
@@ -62,7 +62,7 @@ When base salary isn't flexible, you can still negotiate: training budgets, remo
 
 Your first salary negotiation is always harder than your second. Starting early builds this thinking muscle from the beginning of your career, rather than having to learn it in higher-stakes situations later.
 
-See also: [IT Fresher & Junior Salary 2026 — How Much Should You Expect?](/muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu) for specific benchmark numbers before entering any negotiation.
+See also: [IT Fresher & Junior Salary 2026 — How Much Should You Expect?](https://khaizinam.com/muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu) for specific benchmark numbers before entering any negotiation.
 
 #### What to Prepare Before Negotiating
 
@@ -146,4 +146,4 @@ HR responded that 10M was over budget, but could offer 9M and an earlier review 
 
 Prepare your benchmarks, define your target number, practice your scripts, and walk in with a professional mindset — not begging, not confrontational, simply two parties finding a fair number together.
 
-See also: [IT Fresher & Junior Salary 2026 — How Much Should You Expect?](/muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu) for full benchmark data by role and company type before entering any salary negotiation.
+See also: [IT Fresher & Junior Salary 2026 — How Much Should You Expect?](https://khaizinam.com/muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu) for full benchmark data by role and company type before entering any salary negotiation.

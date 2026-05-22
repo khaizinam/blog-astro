@@ -154,7 +154,7 @@ ${viMarkdownContent}
 
       // --- TẠO BÀI VIẾT TIẾNG ANH (NẾU CÓ BẢN DỊCH) ---
       if (post.en_title) {
-        const enSlug = post.en_slug || viSlug;
+        const enSlug = viSlug;
         const enTitle = decodeHtml(post.en_title);
         const enDesc = decodeHtml(post.en_description || '');
         

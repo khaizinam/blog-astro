@@ -2,7 +2,7 @@
 title: "ReactJS Junior Interview Questions: Hooks, Virtual DOM, and State — Complete Guide With Answers"
 author: KhaiziNam
 pubDatetime: 2026-04-04T11:36:05.000Z
-slug: reactjs-junior-interview-questions-hooks-virtual-dom-and-state-complete-guide-with-answers
+slug: cau-hoi-phong-van-reactjs-junior-hooks-virtual-dom-state-tong-hop-day-du-kem-dap-an
 lang: en
 translationKey: post-215
 featured: false
@@ -154,7 +154,7 @@ Linh identified three issues: using `index` as the key instead of `p.id`, the in
 
 The interviewer followed up: "How would you fix it?" — Linh proposed using `p.id` as the key, wrapping the callback with useCallback, and adding React.memo to ProductCard. **Result: Linh received an offer above the initial proposal — specifically because she demonstrated performance-aware code review thinking, not just feature-writing ability.**
 
-For more on how to handle technical deep-dives in interviews, read [Junior IT Interview Tips A-Z](/en/junior-it-interview-tips-the-complete-a-z-guide-to-getting-hired) — covering how to reason out loud and handle questions that go deeper than you expected.
+For more on how to handle technical deep-dives in interviews, read [Junior IT Interview Tips A-Z](https://khaizinam.com/en/junior-it-interview-tips-the-complete-a-z-guide-to-getting-hired) — covering how to reason out loud and handle questions that go deeper than you expected.
 
 #### Common Mistakes When Answering ReactJS Questions
 
@@ -194,4 +194,4 @@ For more on how to handle technical deep-dives in interviews, read [Junior IT In
 
 Your next step: build a small project — a todo app with filtering and sorting — using only useState, useEffect, useCallback, and Context API, with no external state management library. Then refactor it to add Redux Toolkit. This hands-on process will give you genuine intuition about when each solution fits better — and that's exactly what interviewers want to hear.
 
-Also read [Backend Junior Interview Questions](/en/backend-junior-interview-questions-the-complete-guide-covering-apis-databases-auth-and-caching) if you're preparing for a fullstack role or want to understand the API layer that your React frontend will consume.
+Also read [Backend Junior Interview Questions](https://khaizinam.com/en/backend-junior-interview-questions-the-complete-guide-covering-apis-databases-auth-and-caching) if you're preparing for a fullstack role or want to understand the API layer that your React frontend will consume.

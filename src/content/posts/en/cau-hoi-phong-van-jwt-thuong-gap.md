@@ -2,7 +2,7 @@
 title: "JWT Interview Questions and Answers (2026)"
 author: KhaiziNam
 pubDatetime: 2026-04-05T20:43:26.000Z
-slug: jwt-interview-questions-answers-complete-guide-for-developers-2026
+slug: cau-hoi-phong-van-jwt-thuong-gap
 lang: en
 translationKey: post-216
 featured: false
@@ -84,7 +84,7 @@ A classic follow-up: **"Can the payload be read by anyone?"** — Answer: Yes. B
 
 ##### Before/After Using the Right Tool
 
-This is a staple question in every backend interview. The article [Session vs JWT: The Complete Theory and Most Common Interview Questions Every Junior Developer Must Know](/en/session-vs-jwt-the-complete-theory-and-most-common-interview-questions-every-junior-developer-must-know) covers this in depth, but for interviews, remember this comparison:
+This is a staple question in every backend interview. The article [Session vs JWT: The Complete Theory and Most Common Interview Questions Every Junior Developer Must Know](https://khaizinam.com/en/session-vs-jwt-the-complete-theory-and-most-common-interview-questions-every-junior-developer-must-know) covers this in depth, but for interviews, remember this comparison:
 
 *   **Session**: Stateful — server stores session data, client holds only a session ID. Great for monolith apps, easy to revoke instantly.
 *   **JWT**: Stateless — server stores nothing, everything is in the token. Great for microservices and horizontal scaling, but harder to revoke before expiry.
@@ -139,7 +139,7 @@ An attacker reuses a stolen but still-valid token. Fix: set short expiry (15 min
 4.  **Setting exp too long** → Fix: Access tokens should have short TTL (15–30 minutes). Long TTL widens the revocation window if a token is compromised.
 5.  **Not knowing the difference between HS256 and RS256** → Fix: Understand symmetric vs asymmetric signing and when each applies (see the section above).
 
-For a deeper look at JWT versus Session in real applications, read the full comparison at [Session vs JWT Interview Guide: Everything You Need to Answer With Confidence and Depth](/en/session-vs-jwt-interview-guide-everything-you-need-to-answer-with-confidence-and-depth)
+For a deeper look at JWT versus Session in real applications, read the full comparison at [Session vs JWT Interview Guide: Everything You Need to Answer With Confidence and Depth](https://khaizinam.com/en/session-vs-jwt-interview-guide-everything-you-need-to-answer-with-confidence-and-depth)
 
 #### FAQ - Frequently Asked JWT Interview Questions
 

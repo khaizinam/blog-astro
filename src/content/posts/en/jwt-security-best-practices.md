@@ -2,7 +2,7 @@
 title: "JWT Security Best Practices: How to Secure JSON Web Tokens in Production 2026"
 author: KhaiziNam
 pubDatetime: 2026-04-06T09:01:23.000Z
-slug: jwt-security-best-practices-how-to-secure-json-web-tokens-in-production-2026
+slug: jwt-security-best-practices
 lang: en
 translationKey: post-217
 featured: false

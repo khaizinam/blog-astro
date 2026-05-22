@@ -2,7 +2,7 @@
 title: "How to Deploy Node.js and React Apps on Linux Hosting with Nginx Reverse Proxy (PM2 + SSL Guide 2025)"
 author: KhaiziNam
 pubDatetime: 2026-03-23T20:59:38.000Z
-slug: how-to-deploy-nodejs-and-react-apps-on-linux-hosting-with-nginx-reverse-proxy-pm2-ssl-guide-2025
+slug: cach-deploy-nodejs-va-react-len-hosting-linux-bang-nginx-reverse-proxy-huong-dan-day-du-pm2-ssl-2025
 lang: en
 translationKey: post-205
 featured: false

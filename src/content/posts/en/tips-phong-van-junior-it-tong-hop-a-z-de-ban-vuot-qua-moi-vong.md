@@ -2,7 +2,7 @@
 title: "Junior IT Interview Tips: The Complete A-Z Guide to Getting Hired"
 author: KhaiziNam
 pubDatetime: 2026-03-28T15:49:05.000Z
-slug: junior-it-interview-tips-the-complete-a-z-guide-to-getting-hired
+slug: tips-phong-van-junior-it-tong-hop-a-z-de-ban-vuot-qua-moi-vong
 lang: en
 translationKey: post-208
 featured: false

@@ -150,7 +150,7 @@ Câu hay bị hỏi thêm: **"HttpOnly cookie có chống được XSS không?"*
 
 #### 4\. Event Loop Node.js - Trái Tim Của Runtime
 
-![Event Loop Node.js - Trái Tim Của Runtime](/storage/blogs/2b46af9a-6e8f-4e5f-a88c-4aa0c25e4e95.webp)
+![Event Loop Node.js - Trái Tim Của Runtime](https://khaizinam.com/storage/blogs/2b46af9a-6e8f-4e5f-a88c-4aa0c25e4e95.webp)
 
 Event Loop Node.js - Trái Tim Của Runtime
 

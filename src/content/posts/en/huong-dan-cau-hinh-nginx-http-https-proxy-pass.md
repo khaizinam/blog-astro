@@ -2,7 +2,7 @@
 title: "Nginx Configuration Guide: HTTP, HTTPS, Proxy Pass"
 author: KhaiziNam
 pubDatetime: 2026-01-08T13:47:42.000Z
-slug: nginx-configuration-guide-http-https-proxy-pass
+slug: huong-dan-cau-hinh-nginx-http-https-proxy-pass
 lang: en
 translationKey: post-159
 featured: false
@@ -18,7 +18,7 @@ description: "Discover how to configure Nginx effectively for HTTP, HTTPS, Proxy
 
 In the modern web world, owning a powerful and flexible web server is key to ensuring performance and security for your website. Nginx, with its asynchronous architecture and high traffic handling capabilities, has become the top choice for many developers and system administrators. This article will dive deep into **how to use Nginx**, explaining important configuration rules such as HTTP, HTTPS, proxy pass, cache, and how to block unwanted URLs.
 
-![Nginx Configuration Guide: HTTP, HTTPS, Proxy Pass](/storage/blogs/612493203-1455239526604230-4049589168133588422-n.jpg)
+![Nginx Configuration Guide: HTTP, HTTPS, Proxy Pass](https://khaizinam.com/storage/blogs/612493203-1455239526604230-4049589168133588422-n.jpg)
 
 **Nginx Configuration Guide: HTTP, HTTPS, Proxy Pass**
 
@@ -232,6 +232,6 @@ During the process of working with Nginx, several common mistakes can cause issu
 
 Mastering **Nginx configuration** is a crucial skill for anyone working with web servers. From setting up HTTP and HTTPS to using \`proxypass\` to connect with backend applications and leveraging \`cache\` for speed, Nginx provides a powerful toolkit. Knowing how to block unwanted URLs also contributes to protecting your website.
 
-If you need **SEO** support or **website optimization**, contact [**khaizinam.io.vn**]() for in-depth consultation.
+If you need **SEO** support or **website optimization**, contact [**khaizinam.io.vn**](https://khaizinam.com) for in-depth consultation.
 
 Continue practicing and exploring more features of Nginx to optimize performance and security for your projects.

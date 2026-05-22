@@ -195,7 +195,7 @@ Three quick checks: (1) Ask someone outside IT to read it for 10 seconds, then s
 
 A 1-page IT CV isn't a "lazy" CV — it's a CV that respects how the real hiring process works. AI is a great tool for keyword optimization and language polish, but you must control the length and structure. The most important lesson: **you pass ATS to reach HR, but HR is the one who decides whether you get the interview call — and they only have 10 seconds.**
 
-If you're preparing for your next interview round, don't miss the articles on [IT junior interview tips A–Z](/en/tips-phong-van-junior-it-tong-hop-a-z-de-ban-vuot-qua-moi-vong) and [2026 IT salary benchmarks by role and experience](/muc-luong-it-2026) on khaizinam.io.vn to prepare as thoroughly as possible.
+If you're preparing for your next interview round, don't miss the articles on [IT junior interview tips A–Z](/en/tips-phong-van-junior-it-tong-hop-a-z-de-ban-vuot-qua-moi-vong) and [2026 IT salary benchmarks by role and experience](https://khaizinam.com/muc-luong-it-2026) on khaizinam.io.vn to prepare as thoroughly as possible.
 
 Author: Nguyen Huu Khai
 

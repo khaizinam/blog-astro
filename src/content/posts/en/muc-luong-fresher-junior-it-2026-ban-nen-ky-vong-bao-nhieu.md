@@ -2,7 +2,7 @@
 title: "IT Fresher & Junior Developer Salary in 2026: How Much Should You Expect?"
 author: KhaiziNam
 pubDatetime: 2026-03-30T09:51:10.000Z
-slug: it-fresher-junior-developer-salary-in-2026-how-much-should-you-expect
+slug: muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu
 lang: en
 translationKey: post-209
 featured: false
@@ -39,7 +39,7 @@ If you've looked at job postings lately, you've probably noticed that two "junio
 
 **Portfolio quality trumps GPA.** A fresher with two deployed side projects and a GitHub with consistent commits will receive higher offers than one with a 3.8 GPA and no code in the wild. Employers are buying future output, not past grades.
 
-![IT Fresher & Junior Developer Salary in 2026: How Much Should You Expect?](/storage/blogs/gemini-generated-image-bzoi43bzoi43bzoi.jpg)
+![IT Fresher & Junior Developer Salary in 2026: How Much Should You Expect?](https://khaizinam.com/storage/blogs/gemini-generated-image-bzoi43bzoi43bzoi.jpg)
 
 IT Fresher & Junior Developer Salary in 2026: How Much Should You Expect?
 

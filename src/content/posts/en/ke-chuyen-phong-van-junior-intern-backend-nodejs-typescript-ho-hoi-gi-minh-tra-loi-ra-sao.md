@@ -2,7 +2,7 @@
 title: "My Junior Intern Backend Node.js TypeScript Interview - What They Asked and How I Answered"
 author: KhaiziNam
 pubDatetime: 2026-03-09T09:05:00.000Z
-slug: my-junior-intern-backend-nodejs-typescript-interview-what-they-asked-and-how-i-answered
+slug: ke-chuyen-phong-van-junior-intern-backend-nodejs-typescript-ho-hoi-gi-minh-tra-loi-ra-sao
 lang: en
 translationKey: post-197
 featured: true
@@ -150,7 +150,7 @@ A follow-up question often asked: **"Does an HttpOnly cookie protect against XSS
 
 #### 4\. Node.js Event Loop - The Heart of the Runtime
 
-![Node.js Event Loop - The Heart of the Runtime](/storage/blogs/2b46af9a-6e8f-4e5f-a88c-4aa0c25e4e95.webp)
+![Node.js Event Loop - The Heart of the Runtime](https://khaizinam.com/storage/blogs/2b46af9a-6e8f-4e5f-a88c-4aa0c25e4e95.webp)
 
 Node.js Event Loop - The Heart of the Runtime
 

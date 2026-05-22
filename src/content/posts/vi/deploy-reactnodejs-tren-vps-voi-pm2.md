@@ -25,7 +25,7 @@ description: "Đối với các nhà phát triển Web, việc sở hữu một 
 
 Đối với các nhà phát triển Web, việc sở hữu một VPS 1GB RAM với chi phí rẻ là lựa chọn khởi đầu lý tưởng. Thế nhưng, thực tế triển khai lại thường biến thành một "cơn ác mộng" khi ứng dụng liên tục bị sập mà không rõ nguyên nhân. Vấn đề cốt lõi nằm ở hai yếu tố chính sau đây:
 
-![Bí quyết Deploy React/Node.js trên VPS 1GB RAM với PM2: Không bao giờ bị Out of Memory (OOM)](/storage/blogs/gemini-generated-image-z2uuv6z2uuv6z2uu.jpg)
+![Bí quyết Deploy React/Node.js trên VPS 1GB RAM với PM2: Không bao giờ bị Out of Memory (OOM)](https://khaizinam.com/storage/blogs/gemini-generated-image-z2uuv6z2uuv6z2uu.jpg)
 
 Bí quyết Deploy React/Node.js trên VPS 1GB RAM với PM2: Không bao giờ bị Out of Memory (OOM)
 

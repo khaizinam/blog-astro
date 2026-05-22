@@ -2,7 +2,7 @@
 title: "How to Introduce Yourself in an IT Job Interview — Script Templates for Freshers and Junior Developers"
 author: KhaiziNam
 pubDatetime: 2026-03-25T22:03:01.000Z
-slug: how-to-introduce-yourself-in-an-it-job-interview-script-templates-for-freshers-and-junior-developers
+slug: cach-gioi-thieu-ban-than-khi-phong-van-it-script-mau-cho-fresher-va-junior-dev
 lang: en
 translationKey: post-206
 featured: false

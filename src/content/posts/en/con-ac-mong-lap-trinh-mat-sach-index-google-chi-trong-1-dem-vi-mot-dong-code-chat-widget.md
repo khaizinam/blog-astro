@@ -2,7 +2,7 @@
 title: "Programmer's Nightmare: Losing All Google Indexing in 1 Night Over a Single Chat Widget Code Line!"
 author: KhaiziNam
 pubDatetime: 2026-02-24T19:46:10.000Z
-slug: programmers-nightmare-losing-all-google-indexing-in-1-night-over-a-single-chat-widget-code-line
+slug: con-ac-mong-lap-trinh-mat-sach-index-google-chi-trong-1-dem-vi-mot-dong-code-chat-widget
 lang: en
 translationKey: post-187
 featured: true
@@ -14,7 +14,7 @@ description: "Did your website suddenly vanish from Google for no apparent reaso
 
 It was the worst Tuesday morning of my typing career. I opened Google Analytics and was hit by a graph nose-diving into the ground.
 
-![Programmer's Nightmare: Losing All Google Indexing in 1 Night Because of a Single Chat Widget Code Line!](/storage/blogs/google-mat-index.jpg)
+![Programmer's Nightmare: Losing All Google Indexing in 1 Night Because of a Single Chat Widget Code Line!](https://khaizinam.com/storage/blogs/google-mat-index.jpg)
 
 Programmer's Nightmare: Losing All Google Indexing in 1 Night Because of a Single Chat Widget Code Line!
 

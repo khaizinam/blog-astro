@@ -2,7 +2,7 @@
 title: "Backend Junior Interview Questions: The Complete Guide Covering APIs, Databases, Auth, and Caching"
 author: KhaiziNam
 pubDatetime: 2026-04-01T13:48:29.000Z
-slug: backend-junior-interview-questions-the-complete-guide-covering-apis-databases-auth-and-caching
+slug: cau-hoi-phong-van-backend-junior-tong-hop-day-du-tu-database-den-api-auth-va-cache
 lang: en
 translationKey: post-211
 featured: false
@@ -102,7 +102,7 @@ SQL fits when your data is structured, you need ACID transactions, and relations
 
 **Session** is stateful — the server stores session state, the client only holds a session ID. **JWT** is stateless — all user information is encoded in the token itself, and the server stores nothing. JWT scales more easily because any server instance can verify the token without a shared session store. JWT's downside: you cannot instantly invalidate a token before it expires.
 
-For a deep dive, read [Session vs JWT Interview Guide — full theory and real questions](/session-vs-jwt-phong-van) before your interview.
+For a deep dive, read [Session vs JWT Interview Guide — full theory and real questions](https://khaizinam.com/session-vs-jwt-phong-van) before your interview.
 
 ##### What is OAuth 2.0 — explain the basic flow?
 
@@ -182,4 +182,4 @@ Final section: design an endpoint to process payments. Tuan proactively mentione
 
 Don't try to memorize every possible question. Instead, understand each topic deeply enough to answer the interviewer's follow-up question after your first answer — that's what separates candidates who get hired from those who don't.
 
-Next step: work through the [Session vs JWT interview guide](/session-vs-jwt-phong-van) and practice writing real SQL queries on at least 20 problems on LeetCode or HackerRank's SQL track before your interview.
+Next step: work through the [Session vs JWT interview guide](https://khaizinam.com/session-vs-jwt-phong-van) and practice writing real SQL queries on at least 20 problems on LeetCode or HackerRank's SQL track before your interview.

@@ -2,7 +2,7 @@
 title: "Session vs JWT Interview Guide: Everything You Need to Answer With Confidence and Depth"
 author: KhaiziNam
 pubDatetime: 2026-04-02T12:17:09.000Z
-slug: session-vs-jwt-interview-guide-everything-you-need-to-answer-with-confidence-and-depth
+slug: session-vs-jwt-phong-van
 lang: en
 translationKey: post-214
 featured: false

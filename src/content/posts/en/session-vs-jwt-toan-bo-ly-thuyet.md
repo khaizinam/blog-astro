@@ -2,7 +2,7 @@
 title: "Session vs JWT: The Complete Theory and Most Common Interview Questions Every Junior Developer Must Know"
 author: KhaiziNam
 pubDatetime: 2026-03-19T19:26:34.000Z
-slug: session-vs-jwt-the-complete-theory-and-most-common-interview-questions-every-junior-developer-must-know
+slug: session-vs-jwt-toan-bo-ly-thuyet
 lang: en
 translationKey: post-204
 featured: true
@@ -47,7 +47,7 @@ Understanding this philosophy correctly is the foundation for answering every re
 
 #### What Is a Session — How It Works and Where It's Stored
 
-![What Is a Session — How It Works and Where It's Stored](/storage/blogs/session-la-gi.jpg)
+![What Is a Session — How It Works and Where It's Stored](https://khaizinam.com/storage/blogs/session-la-gi.jpg)
 
 What Is a Session — How It Works and Where It's Stored
 
@@ -92,7 +92,7 @@ On the client side, the Session ID is stored in a **cookie**. The cookie should 
 
 #### What Is JWT — Structure, Mechanism, and Where It's Stored
 
-![What Is JWT — Structure, Mechanism, and Where It's Stored](/storage/blogs/jwt-la-gi.jpg)
+![What Is JWT — Structure, Mechanism, and Where It's Stored](https://khaizinam.com/storage/blogs/jwt-la-gi.jpg)
 
 What Is JWT — Structure, Mechanism, and Where It's Stored
 
@@ -279,7 +279,7 @@ After all that theory, here's the simplest way to remember: **Session is like a 
 
 Choose Session when you need absolute control — immediate revocation, full audit trail, always-fresh data. Choose JWT when you need flexibility — multiple clients, multiple domains, horizontal scaling without shared storage.
 
-See more articles in the [Interview Series](/tag/seriesphongvan)
+See more articles in the [Interview Series](https://khaizinam.com/tag/seriesphongvan)
 
 **Practical next step:** Open an old Laravel project and try implementing both mechanisms — Session for web routes, Sanctum token for API routes. Write a `/me` endpoint that works with both guards. Once you've implemented it yourself and debugged real errors, this interview topic will no longer be a challenge.
 

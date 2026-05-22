@@ -62,7 +62,7 @@ Khi lương cơ bản không linh hoạt, bạn vẫn có thể thương lượn
 
 Đàm phán lương lần đầu luôn khó hơn lần thứ hai. Bắt đầu sớm giúp bạn xây dựng cơ bắp tư duy này ngay từ đầu sự nghiệp, thay vì phải học trong tình huống có nhiều rủi ro hơn sau này.
 
-Xem thêm [Mức lương fresher/junior IT 2026 — Bạn nên kỳ vọng bao nhiêu?](/muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu) để có benchmark số liệu cụ thể trước khi bước vào đàm phán.
+Xem thêm [Mức lương fresher/junior IT 2026 — Bạn nên kỳ vọng bao nhiêu?](https://khaizinam.com/muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu) để có benchmark số liệu cụ thể trước khi bước vào đàm phán.
 
 #### Điều Kiện Cần Chuẩn Bị Trước Khi Đàm Phán
 
@@ -146,4 +146,4 @@ HR phản hồi rằng 10 triệu vượt ngân sách, nhưng có thể offer 9 
 
 Chuẩn bị benchmark, xác định con số mục tiêu, luyện tập script nói chuyện, và bước vào với thái độ chuyên nghiệp — không xin xỏ, không đối đầu, chỉ đơn giản là hai bên cùng tìm con số công bằng.
 
-Xem thêm [Mức lương fresher/junior IT 2026 — Bạn nên kỳ vọng bao nhiêu?](/muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu) để có đầy đủ số liệu benchmark theo từng role và loại hình công ty trước khi bước vào bàn đàm phán.
+Xem thêm [Mức lương fresher/junior IT 2026 — Bạn nên kỳ vọng bao nhiêu?](https://khaizinam.com/muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu) để có đầy đủ số liệu benchmark theo từng role và loại hình công ty trước khi bước vào bàn đàm phán.
