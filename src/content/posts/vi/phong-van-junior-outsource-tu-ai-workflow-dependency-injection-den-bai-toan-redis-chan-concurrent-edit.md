@@ -20,17 +20,17 @@ Bạn chuẩn bị phỏng vấn vị trí Junior tại công ty outsource nhưn
 
 ### Mục Lục
 
-1\. [Công ty outsource phỏng vấn Junior theo kiểu gì?](#phan-1)
+1\. [Công ty outsource phỏng vấn Junior theo kiểu gì?](#cong-ty-outsource-phong-van-junior-theo-kieu-gi)
 
-2\. [Câu hỏi về AI — Từ "No AI" đến Power User trong vài tháng](#phan-2)
+2\. [Câu hỏi về AI — Từ "No AI" đến Power User trong vài tháng](#cau-hoi-ve-ai-tu-no-ai-den-power-user-trong-vai-thang)
 
-3\. [Dependency Injection và Interface — Câu tôi bị đứng hình](#phan-3)
+3\. [Dependency Injection và Interface — Câu tôi bị đứng hình](#dependency-injection-va-interface-cau-toi-bi-dung-hinh)
 
-4\. [Bài toán chặn concurrent edit form — Redis, Queue và Unique Action Key](#phan-4)
+4\. [Bài toán chặn concurrent edit form — Redis, Queue và Unique Action Key](#bai-toan-chan-concurrent-edit-form-redis-queue-va-unique-action-key)
 
-5\. [Diễn biến thực tế từng câu hỏi trong phòng phỏng vấn](#phan-5)
+5\. [Diễn biến thực tế từng câu hỏi trong phòng phỏng vấn](#dien-bien-thuc-te-tung-cau-hoi-trong-phong-phong-van)
 
-6\. [Những sai lầm Junior thường mắc khi phỏng vấn outsource](#phan-6)
+6\. [Những sai lầm Junior thường mắc khi phỏng vấn outsource](#nhung-sai-lam-junior-thuong-mac-khi-phong-van-outsource)
 
 7\. [FAQ — Câu hỏi thầm kín nhất trước buổi phỏng vấn](#phan-7)
 

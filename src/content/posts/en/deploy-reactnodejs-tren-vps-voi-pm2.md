@@ -17,9 +17,9 @@ description: "For web developers, owning a 1GB RAM VPS at a low cost is an ideal
 *   [I. Introduction: Why is a 1GB RAM VPS always a "nightmare"?](#tai-sao-vps-1gb-ram-la-noi-ac-mong)
 *   [II. Strategy 1: Optimizing Node.js "Breathing" (V8 Engine)](#toi-uu-hoa-hoi-tho-nodejs-v8)
 *   [III. Focus: The "Ultra-Lightweight" ecosystem.config.js Template](#tam-diem-ecosystem-file-chuan-sieu-nhe)
-*   [IV. Disk Space Solution: pm2-logrotate](#giai-phap-chong-day-o-cung-pm2-logrotate)
+*   [IV. Disk Space Solution: pm2-logrotate](#iv-disk-space-solution-pm2-logrotate)
 *   [V. Summary of "Golden" Commands to Optimize 1GB VPS](#tong-hop-lenh-vang-toi-uu-vps-yeu)
-*   [VI. Q&A: Common Errors and Troubleshooting](#qna-cac-loi-thuong-gap-khi-setup)
+*   [VI. Q&A: Common Errors and Troubleshooting](#vi-qa-common-errors-and-troubleshooting)
 
 ## I. Why is a 1GB RAM VPS always a "nightmare"?
 

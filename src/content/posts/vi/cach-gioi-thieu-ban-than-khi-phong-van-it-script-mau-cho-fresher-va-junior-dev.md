@@ -16,19 +16,19 @@ Bạn chuẩn bị kỹ thuật rất tốt nhưng lại bị loại ngay từ v
 
 ### Mục Lục
 
-1\. [Tại sao câu "giới thiệu bản thân" quan trọng hơn bạn nghĩ](#vn-1)
+1\. [Tại sao câu "giới thiệu bản thân" quan trọng hơn bạn nghĩ](#tai-sao-cau-gioi-thieu-ban-than-quan-trong-hon-ban-nghi)
 
-2\. [Cấu trúc giới thiệu bản thân chuẩn cho dev IT](#vn-2)
+2\. [Cấu trúc giới thiệu bản thân chuẩn cho dev IT](#cau-truc-gioi-thieu-ban-than-chuan-cho-dev-it)
 
-3\. [Script mẫu theo từng cấp độ — Fresher, Junior, Intern](#vn-3)
+3\. [Script mẫu theo từng cấp độ — Fresher, Junior, Intern](#script-mau-theo-tung-cap-do)
 
-4\. [Cách điều chỉnh theo từng loại công ty](#vn-4)
+4\. [Cách điều chỉnh theo từng loại công ty](#cach-dieu-chinh-theo-tung-loai-cong-ty)
 
-5\. [Những lỗi phổ biến nhất và cách tránh](#vn-5)
+5\. [Những lỗi phổ biến nhất và cách tránh](#nhung-loi-pho-bien-nhat-va-cach-tranh)
 
-6\. [Luyện tập và chuẩn bị trước ngày phỏng vấn](#vn-6)
+6\. [Luyện tập và chuẩn bị trước ngày phỏng vấn](#luyen-tap-va-chuan-bi-truoc-ngay-phong-van)
 
-7\. [FAQ — Câu hỏi thường gặp về phần giới thiệu bản thân](#vn-7)
+7\. [FAQ — Câu hỏi thường gặp về phần giới thiệu bản thân](#faq-cau-hoi-thuong-gap-ve-phan-gioi-thieu-ban-than)
 
 * * *
 

@@ -17,9 +17,9 @@ description: "Đối với các nhà phát triển Web, việc sở hữu một 
 *   [I. Mở đầu: Tại sao VPS 1GB RAM luôn là "nỗi ác mộng"?](#tai-sao-vps-1gb-ram-la-noi-ac-mong)
 *   [II. Chiến lược 1: Tối ưu hóa "hơi thở" của Node.js (V8 Engine)](#toi-uu-hoa-hoi-tho-nodejs-v8)
 *   [III. Tâm điểm: File cấu hình ecosystem.config.js chuẩn "siêu nhẹ"](#tam-diem-ecosystem-file-chuan-sieu-nhe)
-*   [IV. Giải pháp chống đầy ổ cứng: pm2-logrotate](#giai-phap-chong-day-o-cung-pm2-logrotate)
+*   [IV. Giải pháp chống đầy ổ cứng: pm2-logrotate](#iv-giai-phap-chong-day-o-cung-pm2-logrotate)
 *   [V. Tổng hợp lệnh "Vàng" để tối ưu VPS 1GB](#tong-hop-lenh-vang-toi-uu-vps-yeu)
-*   [VI. Q&A: Các lỗi thường gặp và cách xử lý (Troubleshooting)](#qna-cac-loi-thuong-gap-khi-setup)
+*   [VI. Q&A: Các lỗi thường gặp và cách xử lý (Troubleshooting)](#vi-qa-cac-loi-thuong-gap-va-cach-xu-ly-troubleshooting)
 
 ## I. Tại sao VPS 1GB RAM luôn là "nỗi ác mộng"?
 

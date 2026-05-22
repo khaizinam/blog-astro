@@ -18,13 +18,13 @@ Bạn bắt đầu dự án mới và ngay câu hỏi đầu tiên về authenti
 
 Nội dung bài viết:
 
-*   [1\. Bản chất khác biệt cốt lõi giữa Session và JWT](#ban-chat)
-*   [2\. Before/After: Chọn sai cơ chế xác thực gây ra vấn đề gì?](#truoc-sau)
-*   [3\. So sánh 6 tiêu chí kỹ thuật thực tế](#so-sanh)
-*   [4\. Khi nào chọn Session, khi nào chọn JWT?](#khi-nao)
-*   [5\. Hybrid approach — Dùng cả hai có hợp lý không?](#hybrid)
-*   [6\. 6 sai lầm phổ biến khi chọn cơ chế xác thực](#sai-lam)
-*   [7\. FAQ - Câu hỏi thường gặp](#faq)
+*   [1\. Bản chất khác biệt cốt lõi giữa Session và JWT](#1-ban-chat-khac-biet-cot-loi-giua-session-va-jwt)
+*   [2\. Before/After: Chọn sai cơ chế xác thực gây ra vấn đề gì?](#2-beforeafter-chon-sai-co-che-xac-thuc-gay-ra-van-de-gi)
+*   [3\. So sánh 6 tiêu chí kỹ thuật thực tế](#3-so-sanh-6-tieu-chi-ky-thuat-thuc-te)
+*   [4\. Khi nào chọn Session, khi nào chọn JWT?](#4-khi-nao-chon-session-khi-nao-chon-jwt)
+*   [5\. Hybrid approach — Dùng cả hai có hợp lý không?](#5-hybrid-approach-dung-ca-hai-co-hop-ly-khong)
+*   [6\. 6 sai lầm phổ biến khi chọn cơ chế xác thực](#6-6-sai-lam-pho-bien-khi-chon-co-che-xac-thuc)
+*   [7\. FAQ - Câu hỏi thường gặp](#7-faq-cau-hoi-thuong-gap-ve-session-vs-jwt)
 
 * * *
 

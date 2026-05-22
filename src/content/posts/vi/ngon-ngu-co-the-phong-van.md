@@ -22,13 +22,13 @@ Ngôn ngữ cơ thể trong phỏng vấn — những điều vô tình mất đ
 
 **Mục lục**
 
-*   [1\. Tại sao ngôn ngữ cơ thể quan trọng trong phỏng vấn IT?](#h4-van-de)
-*   [2\. Trước và sau khi chú ý ngôn ngữ cơ thể](#h4-truoc-sau)
-*   [3\. Checklist kiểm soát ngôn ngữ cơ thể trước phỏng vấn](#h4-checklist)
-*   [4\. 7 lỗi ngôn ngữ cơ thể phổ biến và cách sửa](#h4-7-loi)
-*   [5\. Case study thực tế](#h4-case-study)
-*   [6\. FAQ — Câu hỏi thường gặp](#h4-faq)
-*   [7\. Tổng kết](#h4-tong-ket)
+*   [1\. Tại sao ngôn ngữ cơ thể quan trọng trong phỏng vấn IT?](#1-tai-sao-ngon-ngu-co-the-quan-trong-trong-phong-van-it)
+*   [2\. Trước và sau khi chú ý ngôn ngữ cơ thể](#2-truoc-va-sau-khi-chu-y-ngon-ngu-co-the)
+*   [3\. Checklist kiểm soát ngôn ngữ cơ thể trước phỏng vấn](#3-checklist-kiem-soat-ngon-ngu-co-the-truoc-phong-van)
+*   [4\. 7 lỗi ngôn ngữ cơ thể phổ biến và cách sửa](#4-7-loi-ngon-ngu-co-the-pho-bien-va-cach-sua)
+*   [5\. Case study thực tế](#5-case-study-thuc-te)
+*   [6\. FAQ — Câu hỏi thường gặp](#6-faq-cau-hoi-thuong-gap-ve-ngon-ngu-co-the-phong-van-it)
+*   [7\. Tổng kết](#7-tong-ket)
 
 * * *
 

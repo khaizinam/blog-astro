@@ -18,21 +18,21 @@ Trong hầu hết các buổi phỏng vấn backend junior, câu hỏi về auth
 
 ### Mục Lục
 
-1\. [Bản chất vấn đề: tại sao authentication lại phức tạp?](#vi-jwt1)
+1\. [Bản chất vấn đề: tại sao authentication lại phức tạp?](#ban-chat-van-de-tai-sao-authentication-lai-phuc-tap)
 
-2\. [Session hoạt động như thế nào — từ request đến response](#vi-jwt2)
+2\. [Session hoạt động như thế nào — từ request đến response](#session-hoat-dong-nhu-the-nao-tu-request-den-response)
 
-3\. [JWT hoạt động như thế nào — giải phẫu một token](#vi-jwt3)
+3\. [JWT hoạt động như thế nào — giải phẫu một token](#jwt-hoat-dong-nhu-the-nao-giai-phau-mot-token)
 
-4\. [So sánh trực tiếp: Session vs JWT theo từng tiêu chí](#vi-jwt4)
+4\. [So sánh trực tiếp: Session vs JWT theo từng tiêu chí](#so-sanh-truc-tiep-session-vs-jwt-theo-tung-tieu-chi)
 
-5\. [Khi nào dùng Session, khi nào dùng JWT](#vi-jwt5)
+5\. [Khi nào dùng Session, khi nào dùng JWT](#khi-nao-dung-session-khi-nao-dung-jwt)
 
-6\. [Case study thực tế](#vi-jwt6)
+6\. [Case study thực tế](#case-study-thuc-te)
 
-7\. [Sai lầm phổ biến khi trả lời câu hỏi này](#vi-jwt7)
+7\. [Sai lầm phổ biến khi trả lời câu hỏi này](#sai-lam-pho-bien-khi-tra-loi-cau-hoi-nay)
 
-8\. [Hỏi đáp nhanh](#vi-jwt8)
+8\. [Hỏi đáp nhanh](#hoi-dap-nhanh)
 
 * * *
 

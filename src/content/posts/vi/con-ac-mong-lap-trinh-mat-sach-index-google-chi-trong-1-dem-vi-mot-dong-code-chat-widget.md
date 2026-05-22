@@ -24,21 +24,21 @@ Web chết? Không, tôi check live vẫn tải vèo vèo. Hosting sập? Cũng 
 
 #### Mục Lục
 
-1\. [Bối Cảnh Tội Ác: Sự Lừa Dối Của Javascript](#boi-canh)
+1\. [Bối Cảnh Tội Ác: Sự Lừa Dối Của Javascript](#boi-canh-toi-ac-su-lua-doi-cua-javascript)
 
-2\. [Tại Sao Việc Tự Debug Crawl Lại Cứu Sống Bạn?](#loi-ich)
+2\. [Tại Sao Việc Tự Debug Crawl Lại Cứu Sống Bạn?](#tai-sao-viec-tu-debug-crawl-lai-cuu-song-ban)
 
 3\. [Hệ Sinh Thái Giải Pháo: Đồ Nghề Khám Nghiệm Tử Thi Website](#he-sinh-thai)
 
-4\. [Hướng Dẫn Thực Hành: Trảm Sạch Script Thừa Lấy Lại Index](#thuc-hanh)
+4\. [Hướng Dẫn Thực Hành: Trảm Sạch Script Thừa Lấy Lại Index](#huong-dan-thuc-hanh-tram-sach-script-thua-lay-lai-index)
 
-5\. [Case Study Của Tôi: Cú Lừa Từ Chat Widget Cá Nhân](#case-study)
+5\. [Case Study Của Tôi: Cú Lừa Từ Chat Widget Cá Nhân](#case-study-cua-toi-cu-lua-tu-chat-widget-ca-nhan)
 
-6\. [Sai Lầm Chí Mạng Khi Code Cho Googlebot](#sai-lam)
+6\. [Sai Lầm Chí Mạng Khi Code Cho Googlebot](#sai-lam-chi-mang-khi-code-cho-googlebot)
 
-7\. [FAQ: Giải Mã Nỗi Oan Khuất Của Dev](#faq)
+7\. [FAQ: Giải Mã Nỗi Oan Khuất Của Dev](#faq-giai-ma-noi-oan-khuat-cua-dev)
 
-8\. [Cứu Vãn Tình Thế](#ket-luan)
+8\. [Cứu Vãn Tình Thế](#cuu-van-tinh-the)
 
 * * *
 

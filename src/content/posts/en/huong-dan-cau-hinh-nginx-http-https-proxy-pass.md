@@ -28,17 +28,17 @@ If you are looking for solutions to improve website performance and security, ma
 
 #### Table of Contents
 
-1\. [What is Nginx?](#nginx-la-gi)
+1\. [What is Nginx?](#what-is-nginx)
 
-2\. [Benefits of using Nginx](#loi-ich-nginx)
+2\. [Benefits of using Nginx](#benefits-of-using-nginx)
 
-3\. [Key components in Nginx configuration](#thanh-phan-chinh-nginx)
+3\. [Key components in Nginx configuration](#key-components-in-nginx-configuration)
 
-4\. [Step-by-step Nginx configuration guide](#huong-dan-cau-hinh-nginx)
+4\. [Step-by-step Nginx configuration guide](#step-by-step-nginx-configuration-guide)
 
-5\. [Common mistakes when configuring Nginx](#sai-lam-thuong-gap)
+5\. [Common mistakes when configuring Nginx](#common-mistakes-when-configuring-nginx)
 
-6\. [Frequently Asked Questions about Nginx](#faq-nginx)
+6\. [Frequently Asked Questions about Nginx](#frequently-asked-questions-about-nginx)
 
 * * *
 
@@ -232,6 +232,6 @@ During the process of working with Nginx, several common mistakes can cause issu
 
 Mastering **Nginx configuration** is a crucial skill for anyone working with web servers. From setting up HTTP and HTTPS to using \`proxypass\` to connect with backend applications and leveraging \`cache\` for speed, Nginx provides a powerful toolkit. Knowing how to block unwanted URLs also contributes to protecting your website.
 
-If you need **SEO** support or **website optimization**, contact [**khaizinam.io.vn**](https://khaizinam.com) for in-depth consultation.
+If you need **SEO** support or **website optimization**, contact [**khaizinam.io.vn**](/en) for in-depth consultation.
 
 Continue practicing and exploring more features of Nginx to optimize performance and security for your projects.

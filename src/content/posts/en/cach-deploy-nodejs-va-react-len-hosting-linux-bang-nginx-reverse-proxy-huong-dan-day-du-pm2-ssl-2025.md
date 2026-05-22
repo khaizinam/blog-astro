@@ -16,27 +16,27 @@ You built a Node.js API or React app and now you're staring at a blank Linux VPS
 
 ### Table of Contents
 
-1\. [What is Nginx Reverse Proxy and Why You Need It for Node.js](#en-1)
+1\. [What is Nginx Reverse Proxy and Why You Need It for Node.js](#what-is-nginx-reverse-proxy-and-why-you-need-it-for-nodejs)
 
-2\. [Prerequisites — What You Need Before Starting](#en-2)
+2\. [Prerequisites — What You Need Before Starting](#prerequisites-what-you-need-before-starting)
 
-3\. [Step 1 — Install Node.js on Ubuntu Linux](#en-3)
+3\. [Step 1 — Install Node.js on Ubuntu Linux](#step-1-install-nodejs-on-ubuntu-linux)
 
-4\. [Step 2 — Set Up PM2 Process Manager](#en-4)
+4\. [Step 2 — Set Up PM2 Process Manager](#step-2-set-up-pm2-process-manager)
 
-5\. [Step 3 — Install and Configure Nginx](#en-5)
+5\. [Step 3 — Install and Configure Nginx](#step-3-install-and-configure-nginx)
 
-6\. [Step 4 — Configure Nginx proxy\_pass for Node.js API](#en-6)
+6\. [Step 4 — Configure Nginx proxy\_pass for Node.js API](#step-4-configure-nginx-proxypass-for-nodejs-api)
 
-7\. [Step 5 — Deploy React Build as Static Files with Nginx](#en-7)
+7\. [Step 5 — Deploy React Build as Static Files with Nginx](#step-5-deploy-react-build-as-static-files-with-nginx)
 
-8\. [Step 6 — Enable HTTPS with Let's Encrypt (Certbot)](#en-8)
+8\. [Step 6 — Enable HTTPS with Let's Encrypt (Certbot)](#step-6-enable-https-with-lets-encrypt-certbot)
 
-9\. [Step 7 — Host Multiple Node.js Apps on One Server](#en-9)
+9\. [Step 7 — Host Multiple Node.js Apps on One Server](#step-7-host-multiple-nodejs-apps-on-one-server)
 
-10\. [Common Errors and How to Fix Them](#en-10)
+10\. [Common Errors and How to Fix Them](#common-errors-and-how-to-fix-them)
 
-11\. [FAQ](#en-11)
+11\. [FAQ](#faq)
 
 * * *
 

@@ -20,13 +20,13 @@ You've been learning React for a few months, you've built projects, but every ti
 
 Table of Contents:
 
-*   [1\. React Fundamentals — Questions You Must Know Cold](#fundamentals)
-*   [2\. React Hooks — The Most Frequently Asked Section](#hooks-en)
-*   [3\. State, Props, and Component Design](#state-props-en)
-*   [4\. Performance Optimization](#performance-en)
-*   [5\. Ecosystem — Router and State Management](#ecosystem-en)
-*   [6\. 6 Common Mistakes When Answering ReactJS Interview Questions](#mistakes-en)
-*   [7\. FAQ — Most Frequently Asked Questions](#faq-en)
+*   [1\. React Fundamentals — Questions You Must Know Cold](#1-react-fundamentals-questions-you-must-know-cold)
+*   [2\. React Hooks — The Most Frequently Asked Section](#2-react-hooks-the-most-frequently-asked-section-in-interviews)
+*   [3\. State, Props, and Component Design](#3-state-props-and-component-design)
+*   [4\. Performance Optimization](#4-performance-optimization-questions-that-separate-junior-from-mid-level)
+*   [5\. Ecosystem — Router and State Management](#5-ecosystem-react-router-and-state-management)
+*   [6\. 6 Common Mistakes When Answering ReactJS Interview Questions](#6-6-common-mistakes-when-answering-reactjs-interview-questions)
+*   [7\. FAQ — Most Frequently Asked Questions](#7-faq-most-frequently-asked-reactjs-interview-questions)
 
 * * *
 

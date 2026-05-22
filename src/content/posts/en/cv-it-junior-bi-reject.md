@@ -18,13 +18,13 @@ Have you been sending out dozens of CVs with no calls back? Did you use ChatGPT 
 
 **Table of Contents**
 
-*   [1\. Why AI-generated long CVs get brutally rejected by HR](#section-1)
-*   [2\. The truth about how HR reads a CV in 10 seconds](#section-2)
-*   [3\. What a proper 1-page IT CV for 2026 should include](#section-3)
-*   [4\. How to use AI correctly — not letting it make all the decisions](#section-4)
-*   [5\. Real case study: 3-page CV vs 1-page CV](#section-5)
-*   [6\. 6 most common IT junior CV mistakes and how to fix them](#section-6)
-*   [7\. FAQ — Common questions about IT CVs](#faq-en)
+*   [1\. Why AI-generated long CVs get brutally rejected by HR](#1-why-ai-generated-long-cvs-get-brutally-rejected-by-hr)
+*   [2\. The truth about how HR reads a CV in 10 seconds](#2-the-truth-about-how-hr-reads-a-cv-in-10-seconds)
+*   [3\. What a proper 1-page IT CV for 2026 should include](#3-what-a-proper-1-page-it-cv-for-2026-should-include)
+*   [4\. How to use AI correctly — not letting it make all the decisions](#4-how-to-use-ai-correctly-not-letting-it-make-all-the-decisions)
+*   [5\. Real case study: 3-page CV vs 1-page CV](#5-real-case-study-3-page-cv-vs-1-page-cv)
+*   [6\. 6 most common IT junior CV mistakes and how to fix them](#6-6-most-common-it-junior-cv-mistakes-and-how-to-fix-them)
+*   [7\. FAQ — Common questions about IT CVs](#7-faq-common-questions-about-it-junior-cvs)
 
 * * *
 
@@ -195,7 +195,7 @@ Three quick checks: (1) Ask someone outside IT to read it for 10 seconds, then s
 
 A 1-page IT CV isn't a "lazy" CV — it's a CV that respects how the real hiring process works. AI is a great tool for keyword optimization and language polish, but you must control the length and structure. The most important lesson: **you pass ATS to reach HR, but HR is the one who decides whether you get the interview call — and they only have 10 seconds.**
 
-If you're preparing for your next interview round, don't miss the articles on [IT junior interview tips A–Z](/en/tips-phong-van-junior-it-tong-hop-a-z-de-ban-vuot-qua-moi-vong) and [2026 IT salary benchmarks by role and experience](https://khaizinam.com/muc-luong-it-2026) on khaizinam.io.vn to prepare as thoroughly as possible.
+If you're preparing for your next interview round, don't miss the articles on [IT junior interview tips A–Z](/en/tips-phong-van-junior-it-tong-hop-a-z-de-ban-vuot-qua-moi-vong) and [2026 IT salary benchmarks by role and experience](/en/muc-luong-it-2026) on khaizinam.io.vn to prepare as thoroughly as possible.
 
 Author: Nguyen Huu Khai
 

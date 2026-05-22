@@ -18,19 +18,19 @@ Hàng trăm fresher IT mỗi năm chấp nhận mức lương thấp hơn 15–3
 
 ### Mục Lục
 
-1\. [Tại sao fresher thường bị trả thấp hơn giá trị thật](#vi-b1)
+1\. [Tại sao fresher thường bị trả thấp hơn giá trị thật](#tai-sao-fresher-thuong-bi-tra-thap-hon-gia-tri-that)
 
 2\. [Lợi ích của việc đàm phán — ngay cả khi bạn chưa có kinh nghiệm](#vi-b2)
 
-3\. [Chuẩn bị trước khi đàm phán](#vi-b3)
+3\. [Chuẩn bị trước khi đàm phán](#dieu-kien-can-chuan-bi-truoc-khi-dam-phan)
 
-4\. [Hướng dẫn đàm phán lương từng bước](#vi-b4)
+4\. [Hướng dẫn đàm phán lương từng bước](#huong-dan-dam-phan-luong-tung-buoc)
 
-5\. [Case study thực tế](#vi-b5)
+5\. [Case study thực tế](#case-study-thuc-te)
 
-6\. [Những sai lầm khiến bạn mất lợi thế](#vi-b6)
+6\. [Những sai lầm khiến bạn mất lợi thế](#nhung-sai-lam-khien-ban-mat-loi-the)
 
-7\. [Hỏi đáp nhanh](#vi-b7)
+7\. [Hỏi đáp nhanh](#hoi-dap-nhanh)
 
 * * *
 
@@ -62,7 +62,7 @@ Khi lương cơ bản không linh hoạt, bạn vẫn có thể thương lượn
 
 Đàm phán lương lần đầu luôn khó hơn lần thứ hai. Bắt đầu sớm giúp bạn xây dựng cơ bắp tư duy này ngay từ đầu sự nghiệp, thay vì phải học trong tình huống có nhiều rủi ro hơn sau này.
 
-Xem thêm [Mức lương fresher/junior IT 2026 — Bạn nên kỳ vọng bao nhiêu?](https://khaizinam.com/muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu) để có benchmark số liệu cụ thể trước khi bước vào đàm phán.
+Xem thêm [Mức lương fresher/junior IT 2026 — Bạn nên kỳ vọng bao nhiêu?](/muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu) để có benchmark số liệu cụ thể trước khi bước vào đàm phán.
 
 #### Điều Kiện Cần Chuẩn Bị Trước Khi Đàm Phán
 
@@ -146,4 +146,4 @@ HR phản hồi rằng 10 triệu vượt ngân sách, nhưng có thể offer 9 
 
 Chuẩn bị benchmark, xác định con số mục tiêu, luyện tập script nói chuyện, và bước vào với thái độ chuyên nghiệp — không xin xỏ, không đối đầu, chỉ đơn giản là hai bên cùng tìm con số công bằng.
 
-Xem thêm [Mức lương fresher/junior IT 2026 — Bạn nên kỳ vọng bao nhiêu?](https://khaizinam.com/muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu) để có đầy đủ số liệu benchmark theo từng role và loại hình công ty trước khi bước vào bàn đàm phán.
+Xem thêm [Mức lương fresher/junior IT 2026 — Bạn nên kỳ vọng bao nhiêu?](/muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu) để có đầy đủ số liệu benchmark theo từng role và loại hình công ty trước khi bước vào bàn đàm phán.

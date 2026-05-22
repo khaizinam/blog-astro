@@ -281,7 +281,7 @@ Docker will only rebuild the changes and restart the container quickly.
 
 **Optimizing project environment setup time with Docker** on a modest VPS is easy if you follow the principles: **Use Debian + Create Swap + Limit Container RAM + Bind Mount Data**. I hope this guide helps you confidently deploy your projects professionally and cost-effectively.
 
-If you need a total solution for infrastructure or **SEO** to boost your project's revenue, connect with me at [**khaizinam.io.vn**](https://khaizinam.com). Good luck!
+If you need a total solution for infrastructure or **SEO** to boost your project's revenue, connect with me at [**khaizinam.io.vn**](/en). Good luck!
 
 > See also:
 > 

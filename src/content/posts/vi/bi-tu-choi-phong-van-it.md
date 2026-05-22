@@ -22,14 +22,14 @@ Bài này không phải bài "động lực" kiểu "cứ cố gắng rồi sẽ
 
 **Mục lục**
 
-*   [1\. Tại sao bị từ chối không có nghĩa là bạn không đủ giỏi?](#h4-van-de)
-*   [2\. 6 nguyên nhân phổ biến nhất khiến fresher/junior bị từ chối](#h4-nguyen-nhan)
-*   [3\. Cách đọc feedback từ chối để tìm đúng vấn đề](#h4-phan-tich)
-*   [4\. Kế hoạch cải thiện theo từng nguyên nhân](#h4-ke-hoach)
-*   [5\. Case study — từ 0/5 offer đến nhận việc sau 6 tuần](#h4-case-study)
-*   [6\. 5 sai lầm hay mắc sau khi bị từ chối](#h4-sai-lam)
-*   [7\. FAQ — Câu hỏi thường gặp](#h4-faq)
-*   [8\. Tổng kết](#h4-tong-ket)
+*   [1\. Tại sao bị từ chối không có nghĩa là bạn không đủ giỏi?](#1-tai-sao-bi-tu-choi-khong-co-nghia-la-ban-khong-du-gioi)
+*   [2\. 6 nguyên nhân phổ biến nhất khiến fresher/junior bị từ chối](#2-6-nguyen-nhan-pho-bien-nhat-khien-fresherjunior-bi-tu-choi)
+*   [3\. Cách đọc feedback từ chối để tìm đúng vấn đề](#3-cach-doc-feedback-tu-choi-de-tim-dung-van-de)
+*   [4\. Kế hoạch cải thiện theo từng nguyên nhân](#4-ke-hoach-cai-thien-theo-tung-nguyen-nhan)
+*   [5\. Case study — từ 0/5 offer đến nhận việc sau 6 tuần](#5-case-study-tu-05-offer-den-nhan-viec-sau-6-tuan)
+*   [6\. 5 sai lầm hay mắc sau khi bị từ chối](#6-5-sai-lam-hay-mac-sau-khi-bi-tu-choi)
+*   [7\. FAQ — Câu hỏi thường gặp](#7-faq-cau-hoi-thuong-gap)
+*   [8\. Tổng kết](#8-tong-ket)
 
 * * *
 

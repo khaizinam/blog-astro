@@ -20,23 +20,23 @@ Today I want to share an interview I will never forget - my very first **Junior 
 
 ### Table of Contents
 
-1\. [The self-introduction trap](#phan-1)
+1\. [The self-introduction trap](#1-the-self-introduction-trap)
 
-2\. [Pagination without query URL - the trick question](#phan-2)
+2\. [Pagination without query URL - the trick question](#2-pagination-without-query-url-the-trick-question)
 
-3\. [CSRF vs XSS - the two most confused concepts](#phan-3)
+3\. [CSRF vs XSS - the two most confused concepts](#3-csrf-vs-xss-the-two-most-confused-concepts)
 
-4\. [Node.js Event Loop - the heart of the runtime](#phan-4)
+4\. [Node.js Event Loop - the heart of the runtime](#4-nodejs-event-loop-the-heart-of-the-runtime)
 
-5\. [O(1) sum function and the large number trap](#phan-5)
+5\. [O(1) sum function and the large number trap](#5-o1-sum-function-and-the-large-number-trap)
 
-6\. [Bonus questions they threw in](#phan-6)
+6\. [Bonus questions they threw in](#6-bonus-questions-they-threw-in)
 
-7\. [Mistakes that cost me the round](#phan-7)
+7\. [Mistakes that cost me the round](#7-mistakes-that-cost-me-the-round)
 
-8\. [Quick FAQ](#phan-8)
+8\. [Quick FAQ](#quick-faq)
 
-9\. [Wrap-up and next steps](#phan-9)
+9\. [Wrap-up and next steps](#wrap-up-and-next-steps)
 
 * * *
 

@@ -24,21 +24,21 @@ Website dead? No, I checked live and it was loading blazing fast. Hosting down? 
 
 #### Table of Contents
 
-1\. [The Scene of the Crime: The Deception of Javascript](#boi-canh)
+1\. [The Scene of the Crime: The Deception of Javascript](#the-scene-of-the-crime-the-deception-of-javascript)
 
-2\. [Why Self-Debugging Crawl Issues Saves Your Life?](#loi-ich)
+2\. [Why Self-Debugging Crawl Issues Saves Your Life?](#why-self-debugging-crawl-issues-saves-your-life)
 
 3\. [Solution Ecosystem: The Website Autopsy Toolkit](#he-sinh-thai)
 
-4\. [Practical Guide: Slashing Redundant Scripts to Regain Indexing](#thuc-hanh)
+4\. [Practical Guide: Slashing Redundant Scripts to Regain Indexing](#practical-guide-slashing-redundant-scripts-to-regain-indexing)
 
-5\. [My Case Study: The Trap from a Personal Chat Widget](#case-study)
+5\. [My Case Study: The Trap from a Personal Chat Widget](#my-case-study-the-trap-from-a-personal-chat-widget)
 
-6\. [Fatal Mistakes When Coding for Googlebot](#sai-lam)
+6\. [Fatal Mistakes When Coding for Googlebot](#fatal-mistakes-when-coding-for-googlebot)
 
-7\. [FAQ: Decoding Developers' Unjust Grievances](#faq)
+7\. [FAQ: Decoding Developers' Unjust Grievances](#faq-decoding-developers-unjust-grievances)
 
-8\. [Salvaging the Situation](#ket-luan)
+8\. [Salvaging the Situation](#salvaging-the-situation)
 
 * * *
 

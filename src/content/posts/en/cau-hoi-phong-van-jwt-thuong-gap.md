@@ -18,13 +18,13 @@ You've studied JWT, you know the basics, but the moment an interviewer goes deep
 
 Table of Contents:
 
-*   [What is JWT? Foundation Questions](#what-is-jwt)
-*   [JWT Structure - Header, Payload, Signature](#jwt-structure)
-*   [JWT vs Session: How to Answer in Interviews](#jwt-vs-session-en)
-*   [Advanced JWT Security Questions](#jwt-security)
+*   [What is JWT? Foundation Questions](#what-is-jwt-foundation-questions-you-must-answer-correctly)
+*   [JWT Structure - Header, Payload, Signature](#jwt-structure-header-payload-signature)
+*   [JWT vs Session: How to Answer in Interviews](#jwt-vs-session-how-to-answer-in-interviews)
+*   [Advanced JWT Security Questions](#advanced-jwt-security-questions)
 *   [Access Token & Refresh Token Flow](#refresh-token-en)
-*   [5 Common Mistakes When Answering JWT Questions](#common-mistakes-en)
-*   [FAQ - Frequently Asked JWT Interview Questions](#faq-jwt-en)
+*   [5 Common Mistakes When Answering JWT Questions](#5-common-mistakes-when-answering-jwt-interview-questions)
+*   [FAQ - Frequently Asked JWT Interview Questions](#faq-frequently-asked-jwt-interview-questions)
 
 * * *
 
@@ -84,7 +84,7 @@ A classic follow-up: **"Can the payload be read by anyone?"** — Answer: Yes. B
 
 ##### Before/After Using the Right Tool
 
-This is a staple question in every backend interview. The article [Session vs JWT: The Complete Theory and Most Common Interview Questions Every Junior Developer Must Know](https://khaizinam.com/en/session-vs-jwt-the-complete-theory-and-most-common-interview-questions-every-junior-developer-must-know) covers this in depth, but for interviews, remember this comparison:
+This is a staple question in every backend interview. The article [Session vs JWT: The Complete Theory and Most Common Interview Questions Every Junior Developer Must Know](/en/session-vs-jwt-the-complete-theory-and-most-common-interview-questions-every-junior-developer-must-know) covers this in depth, but for interviews, remember this comparison:
 
 *   **Session**: Stateful — server stores session data, client holds only a session ID. Great for monolith apps, easy to revoke instantly.
 *   **JWT**: Stateless — server stores nothing, everything is in the token. Great for microservices and horizontal scaling, but harder to revoke before expiry.
@@ -139,7 +139,7 @@ An attacker reuses a stolen but still-valid token. Fix: set short expiry (15 min
 4.  **Setting exp too long** → Fix: Access tokens should have short TTL (15–30 minutes). Long TTL widens the revocation window if a token is compromised.
 5.  **Not knowing the difference between HS256 and RS256** → Fix: Understand symmetric vs asymmetric signing and when each applies (see the section above).
 
-For a deeper look at JWT versus Session in real applications, read the full comparison at [Session vs JWT Interview Guide: Everything You Need to Answer With Confidence and Depth](https://khaizinam.com/en/session-vs-jwt-interview-guide-everything-you-need-to-answer-with-confidence-and-depth)
+For a deeper look at JWT versus Session in real applications, read the full comparison at [Session vs JWT Interview Guide: Everything You Need to Answer With Confidence and Depth](/en/session-vs-jwt-interview-guide-everything-you-need-to-answer-with-confidence-and-depth)
 
 #### FAQ - Frequently Asked JWT Interview Questions
 

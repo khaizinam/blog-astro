@@ -18,15 +18,15 @@ This guide answers the specific question most junior developers struggle with: w
 
 **Table of Contents**
 
-*   [1\. Why a portfolio matters more than a degree for junior developers](#h4-why-en)
-*   [2\. Before and after getting your portfolio right](#h4-ba-en)
-*   [3\. Junior developer portfolio checklist - 6 components](#h4-checklist-en)
-*   [4\. Which projects belong in your portfolio - selection criteria](#h4-project-en)
-*   [5\. Stack-specific checklist: Frontend, Backend, Fullstack](#h4-stack-en)
-*   [6\. 6 portfolio mistakes junior developers make](#h4-mistakes-en)
-*   [7\. Real-world case study](#h4-case-en)
-*   [8\. FAQ](#h4-faq-en)
-*   [9\. Summary](#h4-summary)
+*   [1\. Why a portfolio matters more than a degree for junior developers](#1-why-a-portfolio-matters-more-than-a-degree-for-junior-developers)
+*   [2\. Before and after getting your portfolio right](#2-before-and-after-getting-your-portfolio-right)
+*   [3\. Junior developer portfolio checklist - 6 components](#3-junior-developer-portfolio-checklist-6-components)
+*   [4\. Which projects belong in your portfolio - selection criteria](#4-which-projects-belong-in-your-portfolio-selection-criteria)
+*   [5\. Stack-specific checklist: Frontend, Backend, Fullstack](#5-stack-specific-checklist-frontend-backend-fullstack)
+*   [6\. 6 portfolio mistakes junior developers make](#6-6-portfolio-mistakes-junior-developers-make)
+*   [7\. Real-world case study](#7-real-world-case-study)
+*   [8\. FAQ](#8-faq)
+*   [9\. Summary](#9-summary)
 
 * * *
 

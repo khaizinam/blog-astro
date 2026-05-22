@@ -22,12 +22,12 @@ _Bóc tách thâm cung bí sử: Cách gian thương xâm nhập các nền tả
 
 **Mục lục nhanh:**
 
-*   [1\. Các "nguồn hàng" phổ biến của gian thương AI](#phan-1)
-*   [2\. Cách gian thương tối ưu lợi nhuận](#phan-2)
-*   [3\. Tại sao tài khoản rẻ vẫn "sống" được một thời gian?](#phan-3)
-*   [4\. 4 rủi ro thực sự dưới góc độ chuyên gia](#phan-4)
-*   [5\. Kết luận và lời khuyên thực tế](#ket-luan)
-*   [FAQ – Câu hỏi thường gặp](#faq)
+*   [1\. Các "nguồn hàng" phổ biến của gian thương AI](#1-cac-nguon-hang-pho-bien-cua-gian-thuong-ai)
+*   [2\. Cách gian thương tối ưu lợi nhuận](#2-cach-gian-thuong-toi-uu-loi-nhuan)
+*   [3\. Tại sao tài khoản rẻ vẫn "sống" được một thời gian?](#3-tai-sao-tai-khoan-re-van-song-duoc-mot-thoi-gian)
+*   [4\. 4 rủi ro thực sự dưới góc độ chuyên gia](#4-4-rui-ro-thuc-su-duoi-goc-do-chuyen-gia)
+*   [5\. Kết luận và lời khuyên thực tế](#5-ket-luan-va-loi-khuyen-thuc-te)
+*   [FAQ – Câu hỏi thường gặp](#faq-cau-hoi-thuong-gap)
 
 * * *
 

@@ -18,14 +18,14 @@ Bạn đã biết JWT là gì và dùng được trong dự án, nhưng liệu b
 
 Nội dung bài viết:
 
-*   [1\. Bản chất rủi ro bảo mật của JWT](#ban-chat-rui-ro)
-*   [2\. Before/After khi áp dụng đúng best practices](#truoc-sau)
-*   [3\. Chọn thuật toán ký đúng (HS256 vs RS256 vs ES256)](#chon-thuat-toan)
-*   [4\. Lưu trữ token an toàn](#luu-tru-token)
-*   [5\. Validate Claims & Expiry đúng cách](#claims-va-expiry)
-*   [6\. Xử lý Revocation & Refresh Token Rotation](#revocation)
-*   [7\. 6 sai lầm bảo mật JWT phổ biến nhất](#sai-lam)
-*   [8\. FAQ - Câu hỏi thường gặp về JWT Security](#faq)
+*   [1\. Bản chất rủi ro bảo mật của JWT](#1-ban-chat-rui-ro-bao-mat-cua-jwt)
+*   [2\. Before/After khi áp dụng đúng best practices](#2-beforeafter-khi-ap-dung-dung-jwt-security-best-practices)
+*   [3\. Chọn thuật toán ký đúng (HS256 vs RS256 vs ES256)](#3-chon-thuat-toan-ky-dung-hs256-rs256-es256)
+*   [4\. Lưu trữ token an toàn](#4-luu-tru-token-an-toan-quyet-dinh-anh-huong-toan-bo-bao-mat)
+*   [5\. Validate Claims & Expiry đúng cách](#5-validate-claims-expiry-dung-cach)
+*   [6\. Xử lý Revocation & Refresh Token Rotation](#6-xu-ly-revocation-refresh-token-rotation)
+*   [7\. 6 sai lầm bảo mật JWT phổ biến nhất](#7-6-sai-lam-bao-mat-jwt-pho-bien-nhat-va-cach-fix)
+*   [8\. FAQ - Câu hỏi thường gặp về JWT Security](#8-faq-cau-hoi-thuong-gap-ve-jwt-security)
 
 * * *
 

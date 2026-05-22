@@ -18,15 +18,15 @@ Dù đây là lần phỏng vấn đầu tiên hay lần thứ năm của bạn,
 
 ### Mục Lục
 
-[1\. Hiểu cấu trúc quy trình phỏng vấn](#vi-s1)  
-[2\. Nghiên cứu công ty trước khi bước vào](#vi-s2)  
-[3\. Chuẩn bị phần giới thiệu bản thân đúng cách](#vi-s3)  
-[4\. Cách xử lý câu hỏi kỹ thuật](#vi-s4)  
-[5\. Câu hỏi hành vi: dùng phương pháp STAR](#vi-s5)  
-[6\. Những việc cần làm tối hôm trước](#vi-s6)  
-[7\. Ngôn ngữ cơ thể và ấn tượng đầu tiên](#vi-s7)  
-[8\. Câu hỏi thông minh để hỏi ngược nhà tuyển dụng](#vi-s8)  
-[9\. Sau phỏng vấn: cách follow-up chuyên nghiệp](#vi-s9)  
+[1\. Hiểu cấu trúc quy trình phỏng vấn](#1-hieu-cau-truc-quy-trinh-phong-van)  
+[2\. Nghiên cứu công ty trước khi bước vào](#2-nghien-cuu-cong-ty-truoc-khi-buoc-vao)  
+[3\. Chuẩn bị phần giới thiệu bản thân đúng cách](#3-chuan-bi-phan-gioi-thieu-ban-than-dung-cach)  
+[4\. Cách xử lý câu hỏi kỹ thuật](#4-cach-xu-ly-cau-hoi-ky-thuat)  
+[5\. Câu hỏi hành vi: dùng phương pháp STAR](#5-cau-hoi-hanh-vi-dung-phuong-phap-star)  
+[6\. Những việc cần làm tối hôm trước](#6-nhung-viec-can-lam-toi-hom-truoc)  
+[7\. Ngôn ngữ cơ thể và ấn tượng đầu tiên](#7-ngon-ngu-co-the-va-an-tuong-dau-tien)  
+[8\. Câu hỏi thông minh để hỏi ngược nhà tuyển dụng](#8-cau-hoi-thong-minh-de-hoi-nguoc-nha-tuyen-dung)  
+[9\. Sau phỏng vấn: cách follow-up chuyên nghiệp](#9-sau-phong-van-cach-follow-up-chuyen-nghiep)  
 [10\. Sai lầm phổ biến của junior developer và cách tránh](#vi-s10)
 
 ### 1\. Hiểu Cấu Trúc Quy Trình Phỏng Vấn

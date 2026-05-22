@@ -22,14 +22,14 @@ This isn't a motivational article about "keep trying and you'll succeed." This i
 
 **Table of Contents**
 
-*   [1\. Why rejection doesn't mean you're not good enough](#h4-why-en)
-*   [2\. The 6 most common reasons freshers and juniors get rejected](#h4-reasons)
-*   [3\. How to read rejection feedback to find the real problem](#h4-read)
-*   [4\. An improvement plan for each root cause](#h4-plan)
-*   [5\. Case study — from 0/5 offers to hired in 6 weeks](#h4-case-en)
-*   [6\. 5 mistakes people make after getting rejected](#h4-mistakes-en)
-*   [7\. FAQ](#h4-faq-en)
-*   [8\. Summary](#h4-summary)
+*   [1\. Why rejection doesn't mean you're not good enough](#1-why-rejection-doesnt-mean-youre-not-good-enough)
+*   [2\. The 6 most common reasons freshers and juniors get rejected](#2-the-6-most-common-reasons-freshers-and-juniors-get-rejected)
+*   [3\. How to read rejection feedback to find the real problem](#3-how-to-read-rejection-feedback-to-find-the-real-problem)
+*   [4\. An improvement plan for each root cause](#4-an-improvement-plan-for-each-root-cause)
+*   [5\. Case study — from 0/5 offers to hired in 6 weeks](#5-case-study-from-05-offers-to-hired-in-6-weeks)
+*   [6\. 5 mistakes people make after getting rejected](#6-5-mistakes-people-make-after-getting-rejected)
+*   [7\. FAQ](#7-faq)
+*   [8\. Summary](#8-summary)
 
 * * *
 

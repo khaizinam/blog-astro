@@ -20,13 +20,13 @@ Bạn đã học React được vài tháng, build được project, nhưng mỗ
 
 Nội dung bài viết:
 
-*   [1\. Bản chất React — Câu hỏi nền tảng bắt buộc phải nắm](#ban-chat)
-*   [2\. React Hooks — Phần được hỏi nhiều nhất](#hooks)
-*   [3\. State, Props và Component Design](#state-props)
-*   [4\. Performance Optimization](#performance)
-*   [5\. Ecosystem — Router, State Management](#ecosystem)
-*   [6\. 6 sai lầm phổ biến khi trả lời phỏng vấn ReactJS](#sai-lam)
-*   [7\. FAQ — Câu hỏi thường gặp nhất](#faq)
+*   [1\. Bản chất React — Câu hỏi nền tảng bắt buộc phải nắm](#1-ban-chat-react-cau-hoi-nen-tang-bat-buoc-phai-nam)
+*   [2\. React Hooks — Phần được hỏi nhiều nhất](#2-react-hooks-phan-duoc-hoi-nhieu-nhat-trong-phong-van)
+*   [3\. State, Props và Component Design](#3-state-props-va-component-design)
+*   [4\. Performance Optimization](#4-performance-optimization-cau-hoi-phan-biet-junior-va-mid-level)
+*   [5\. Ecosystem — Router, State Management](#5-ecosystem-react-router-va-state-management)
+*   [6\. 6 sai lầm phổ biến khi trả lời phỏng vấn ReactJS](#6-6-sai-lam-pho-bien-khi-tra-loi-phong-van-reactjs)
+*   [7\. FAQ — Câu hỏi thường gặp nhất](#7-faq-cau-hoi-thuong-gap-nhat-khi-phong-van-reactjs)
 
 * * *
 

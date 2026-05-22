@@ -18,21 +18,21 @@ In most backend junior interviews, authentication questions are almost guarantee
 
 ### Table of Contents
 
-1\. [The core problem: why is authentication tricky?](#en-jwt1)
+1\. [The core problem: why is authentication tricky?](#the-core-problem-why-is-authentication-tricky)
 
-2\. [How Session works — from request to response](#en-jwt2)
+2\. [How Session works — from request to response](#how-session-works-from-request-to-response)
 
-3\. [How JWT works — anatomy of a token](#en-jwt3)
+3\. [How JWT works — anatomy of a token](#how-jwt-works-anatomy-of-a-token)
 
-4\. [Direct comparison: Session vs JWT across key criteria](#en-jwt4)
+4\. [Direct comparison: Session vs JWT across key criteria](#direct-comparison-session-vs-jwt-across-key-criteria)
 
-5\. [When to use Session, when to use JWT](#en-jwt5)
+5\. [When to use Session, when to use JWT](#when-to-use-session-when-to-use-jwt)
 
-6\. [Real-world case study](#en-jwt6)
+6\. [Real-world case study](#real-world-case-study)
 
-7\. [Common mistakes when answering this question](#en-jwt7)
+7\. [Common mistakes when answering this question](#common-mistakes-when-answering-this-question)
 
-8\. [Quick FAQ](#en-jwt8)
+8\. [Quick FAQ](#quick-faq)
 
 * * *
 

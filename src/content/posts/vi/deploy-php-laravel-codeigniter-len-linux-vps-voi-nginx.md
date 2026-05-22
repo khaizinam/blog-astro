@@ -18,17 +18,17 @@ Bạn vừa thuê xong VPS Linux và đang nhìn vào màn hình terminal trắn
 
 **Mục lục:**
 
-*   [1\. Tại sao dùng Nginx thay Apache cho PHP trên VPS?](#phan-1)
-*   [2\. Chuẩn bị trước khi bắt đầu](#phan-2)
-*   [3\. Bước 1 — SSH, cập nhật server và bật UFW firewall](#phan-3)
-*   [4\. Bước 2 — Cài PHP 8.2 và các extension cần thiết](#phan-4)
-*   [5\. Bước 3 — Cài Nginx và cấu hình PHP-FPM](#phan-5)
-*   [6\. Bước 4 — Cài MySQL bằng Docker (và tại sao nên làm vậy)](#phan-6)
-*   [7\. Bước 5 — Cấu hình Nginx server block cho PHP](#phan-7)
-*   [8\. Bước 6 — Bật HTTPS miễn phí với Certbot + Let's Encrypt](#phan-8)
-*   [9\. Bước 7 — Deploy Laravel và CodeIgniter](#phan-9)
-*   [10\. Lỗi thường gặp và cách sửa](#phan-10)
-*   [FAQ — Câu hỏi thường gặp](#faq)
+*   [1\. Tại sao dùng Nginx thay Apache cho PHP trên VPS?](#1-tai-sao-dung-nginx-thay-apache-cho-php-tren-vps)
+*   [2\. Chuẩn bị trước khi bắt đầu](#2-chuan-bi-truoc-khi-bat-dau)
+*   [3\. Bước 1 — SSH, cập nhật server và bật UFW firewall](#3-buoc-1-ssh-cap-nhat-server-va-bat-ufw-firewall)
+*   [4\. Bước 2 — Cài PHP 8.2 và các extension cần thiết](#4-buoc-2-cai-php-82-va-cac-extension-can-thiet)
+*   [5\. Bước 3 — Cài Nginx và cấu hình PHP-FPM](#5-buoc-3-cai-nginx)
+*   [6\. Bước 4 — Cài MySQL bằng Docker (và tại sao nên làm vậy)](#6-buoc-4-cai-mysql-bang-docker-va-tai-sao-nen-lam-vay)
+*   [7\. Bước 5 — Cấu hình Nginx server block cho PHP](#7-buoc-5-cau-hinh-nginx-server-block-cho-php)
+*   [8\. Bước 6 — Bật HTTPS miễn phí với Certbot + Let's Encrypt](#8-buoc-6-bat-https-mien-phi-voi-certbot-lets-encrypt)
+*   [9\. Bước 7 — Deploy Laravel và CodeIgniter](#9-buoc-7-deploy-laravel-va-codeigniter)
+*   [10\. Lỗi thường gặp và cách sửa](#10-loi-thuong-gap-va-cach-sua)
+*   [FAQ — Câu hỏi thường gặp](#faq-cau-hoi-thuong-gap)
 
 * * *
 

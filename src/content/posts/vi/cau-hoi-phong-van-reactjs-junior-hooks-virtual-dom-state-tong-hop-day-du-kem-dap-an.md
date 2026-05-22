@@ -18,21 +18,21 @@ ReactJS là framework frontend phổ biến nhất Việt Nam hiện tại, và 
 
 ### Mục Lục
 
-1\. [Bản chất React và Virtual DOM](#vi-rx1)
+1\. [Bản chất React và Virtual DOM](#ban-chat-react-va-virtual-dom)
 
-2\. [Câu hỏi về Hooks — useState, useEffect, useCallback, useMemo](#vi-rx2)
+2\. [Câu hỏi về Hooks — useState, useEffect, useCallback, useMemo](#cau-hoi-ve-hooks)
 
-3\. [Câu hỏi về State và Props](#vi-rx3)
+3\. [Câu hỏi về State và Props](#cau-hoi-ve-state-va-props)
 
-4\. [Câu hỏi về Component lifecycle và re-render](#vi-rx4)
+4\. [Câu hỏi về Component lifecycle và re-render](#cau-hoi-ve-component-lifecycle-va-re-render)
 
-5\. [Câu hỏi về State management — Context vs Redux](#vi-rx5)
+5\. [Câu hỏi về State management — Context vs Redux](#cau-hoi-ve-state-management)
 
-6\. [Case study thực tế](#vi-rx6)
+6\. [Case study thực tế](#case-study-thuc-te)
 
-7\. [Sai lầm phổ biến khi trả lời câu hỏi ReactJS](#vi-rx7)
+7\. [Sai lầm phổ biến khi trả lời câu hỏi ReactJS](#sai-lam-pho-bien-khi-tra-loi-cau-hoi-reactjs)
 
-8\. [Hỏi đáp nhanh](#vi-rx8)
+8\. [Hỏi đáp nhanh](#hoi-dap-nhanh)
 
 * * *
 
@@ -157,7 +157,7 @@ Linh chỉ ra được ba vấn đề: dùng `index` làm key thay vì `p.id`, a
 
 Interviewer hỏi thêm: "Bạn sẽ fix như thế nào?" — Linh đề xuất dùng `p.id` làm key, wrap callback bằng useCallback, và thêm React.memo cho ProductCard. **Kết quả: Linh được nhận vào với mức lương cao hơn offer ban đầu vì cho thấy tư duy performance từ code review, không chỉ biết viết feature.**
 
-Để chuẩn bị tốt hơn cho phần tư duy kỹ thuật, đọc thêm [Tips phỏng vấn junior IT A-Z](https://khaizinam.com/tips-phong-van-junior-it-tong-hop-a-z-de-ban-vuot-qua-moi-vong) về cách xử lý câu hỏi kỹ thuật khi bị hỏi sâu hơn dự kiến.
+Để chuẩn bị tốt hơn cho phần tư duy kỹ thuật, đọc thêm [Tips phỏng vấn junior IT A-Z](/tips-phong-van-junior-it-tong-hop-a-z-de-ban-vuot-qua-moi-vong) về cách xử lý câu hỏi kỹ thuật khi bị hỏi sâu hơn dự kiến.
 
 #### Sai Lầm Phổ Biến Khi Trả Lời Câu Hỏi ReactJS
 
@@ -197,4 +197,4 @@ Interviewer hỏi thêm: "Bạn sẽ fix như thế nào?" — Linh đề xuất
 
 Bước tiếp theo: tự build một mini project — ví dụ một todo app có filter và sort — chỉ dùng useState, useEffect, useCallback, và Context API mà không dùng bất kỳ thư viện state management nào. Sau đó refactor để thêm Redux Toolkit. Quá trình này sẽ cho bạn cảm nhận thực tế về khi nào mỗi giải pháp phù hợp hơn, và đó là thứ interviewer muốn nghe nhất.
 
-Đọc thêm [Câu hỏi phỏng vấn backend junior](https://khaizinam.com/cau-hoi-phong-van-backend-junior-tong-hop-day-du-tu-database-den-api-auth-va-cache) nếu bạn đang chuẩn bị cho vị trí fullstack hoặc muốn hiểu phần API mà ReactJS frontend sẽ consume.
+Đọc thêm [Câu hỏi phỏng vấn backend junior](/cau-hoi-phong-van-backend-junior-tong-hop-day-du-tu-database-den-api-auth-va-cache) nếu bạn đang chuẩn bị cho vị trí fullstack hoặc muốn hiểu phần API mà ReactJS frontend sẽ consume.

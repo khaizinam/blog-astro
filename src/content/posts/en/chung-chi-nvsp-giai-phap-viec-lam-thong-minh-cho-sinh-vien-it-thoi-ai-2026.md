@@ -20,13 +20,13 @@ AI is replacing entry-level programming work at scale — code generation, bug f
 
 Table of Contents:
 
-*   [1\. The Core Problem: Why AI Has Made the Junior Developer Path Harder Than Ever](#core-problem)
-*   [2\. What Is the NVSP Certificate and Who Needs It?](#what-is-nvsp)
-*   [3\. Before/After: From Struggling Developer to In-Demand Instructor](#before-after-en)
-*   [4\. Requirements, Process, and Costs](#requirements)
-*   [5\. Real Career Opportunities After Getting the NVSP](#opportunities)
-*   [6\. 5 Common Misconceptions About the IT Instructor Career Path](#misconceptions)
-*   [7\. FAQ – Frequently Asked Questions About NVSP](#faq-en)
+*   [1\. The Core Problem: Why AI Has Made the Junior Developer Path Harder Than Ever](#1-the-core-problem-why-ai-has-made-the-junior-developer-path-harder-than-ever)
+*   [2\. What Is the NVSP Certificate and Who Needs It?](#2-what-is-the-nvsp-certificate-and-who-needs-it)
+*   [3\. Before/After: From Struggling Developer to In-Demand Instructor](#3-beforeafter-from-struggling-developer-to-in-demand-instructor)
+*   [4\. Requirements, Process, and Costs](#4-requirements-process-and-costs)
+*   [5\. Real Career Opportunities After Getting the NVSP](#5-real-career-opportunities-after-getting-the-nvsp)
+*   [6\. 5 Common Misconceptions About the IT Instructor Career Path](#6-5-common-misconceptions-about-the-it-instructor-career-path)
+*   [7\. FAQ – Frequently Asked Questions About NVSP](#7-faq-frequently-asked-questions-about-the-nvsp-certificate)
 
 * * *
 

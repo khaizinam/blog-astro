@@ -20,21 +20,21 @@ Bạn đã implement JWT được rồi, access token chạy ổn, nhưng mỗi 
 
 Nội dung bài viết:
 
-[1\. Refresh Token là gì và tại sao cần thiết?](#ban-chat)
+[1\. Refresh Token là gì và tại sao cần thiết?](#1-refresh-token-la-gi-va-tai-sao-can-thiet)
 
-[2\. Before/After khi implement đúng Refresh Token](#truoc-sau)
+[2\. Before/After khi implement đúng Refresh Token](#2-beforeafter-khi-implement-dung-refresh-token)
 
-[3\. Thiết kế Database Schema](#database)
+[3\. Thiết kế Database Schema](#3-thiet-ke-database-schema-cho-refresh-token)
 
-[4\. Implement Refresh Token trong Node.js (Express)](#nodejs)
+[4\. Implement Refresh Token trong Node.js (Express)](#4-implement-refresh-token-trong-nodejs-express)
 
-[5\. Implement Refresh Token trong Laravel PHP](#laravel)
+[5\. Implement Refresh Token trong Laravel PHP](#5-implement-refresh-token-trong-laravel-php)
 
-[6\. Refresh Token Rotation — Phát hiện token theft](#rotation)
+[6\. Refresh Token Rotation — Phát hiện token theft](#6-refresh-token-rotation-phat-hien-token-theft)
 
-[7\. 6 sai lầm phổ biến khi implement Refresh Token](#sai-lam)
+[7\. 6 sai lầm phổ biến khi implement Refresh Token](#7-6-sai-lam-pho-bien-khi-implement-refresh-token)
 
-[8\. FAQ - Câu hỏi thường gặp](#faq)
+[8\. FAQ - Câu hỏi thường gặp](#8-faq-cau-hoi-thuong-gap-ve-refresh-token)
 
 * * *
 
@@ -579,12 +579,12 @@ app.post('/auth/refresh', async (req, res) => {
 
 1.  **Lưu raw refresh token trong DB** → Fix: luôn lưu SHA-256 hash. Nếu DB bị dump, attacker có hash nhưng không thể dùng để authenticate vì server so sánh hash(rawToken) với giá trị lưu trong DB.
 2.  **Không implement rotation — dùng một refresh token mãi mãi** → Fix: mỗi lần refresh phải cấp token mới và revoke token cũ. Không có rotation đồng nghĩa với không có khả năng phát hiện token theft.
-3.  **Lưu refresh token trong localStorage thay vì httpOnly cookie** → Fix: refresh token còn quan trọng hơn access token về mặt bảo mật — TTL dài hơn nhiều. Bắt buộc lưu httpOnly cookie. Xem thêm tại bài [JWT Security Best Practices](https://khaizinam.com/jwt-security-best-practices-bao-mat-jwt-dung-cach-trong-du-an-thuc-te-2026).
+3.  **Lưu refresh token trong localStorage thay vì httpOnly cookie** → Fix: refresh token còn quan trọng hơn access token về mặt bảo mật — TTL dài hơn nhiều. Bắt buộc lưu httpOnly cookie. Xem thêm tại bài [JWT Security Best Practices](/jwt-security-best-practices-bao-mat-jwt-dung-cach-trong-du-an-thuc-te-2026).
 4.  **Không xóa token cũ sau rotation — để bảng refresh\_tokens phình to vô hạn** → Fix: đặt cronjob chạy mỗi đêm xóa token đã revoke hoặc hết hạn quá 7 ngày. Bảng lớn ảnh hưởng hiệu năng query.
 5.  **Trả refresh token trong response body thay vì cookie** → Fix: refresh token trong httpOnly cookie, access token trong body. Nhiều tutorial trả cả hai trong body — sai hoàn toàn về bảo mật.
 6.  **Không implement logout-all — không có cách revoke khi tài khoản bị xâm phạm** → Fix: luôn có endpoint **/auth/logout-all** revoke tất cả refresh token theo user\_id. Đây là tính năng bắt buộc cho production.
 
-Để hiểu đầy đủ bức tranh bảo mật JWT, đọc thêm bài [JWT Security Best Practices 2026](https://khaizinam.com/jwt-security-best-practices-bao-mat-jwt-dung-cach-trong-du-an-thuc-te-2026). Nếu bạn còn phân vân giữa Session và JWT cho dự án của mình, bài [Session vs JWT: Developer nên chọn cái nào?](https://khaizinam.com/session-vs-jwt-developer-nen-chon-cai-nao-so-sanh-thuc-te-2026) sẽ giúp bạn quyết định dứt khoát.
+Để hiểu đầy đủ bức tranh bảo mật JWT, đọc thêm bài [JWT Security Best Practices 2026](/jwt-security-best-practices-bao-mat-jwt-dung-cach-trong-du-an-thuc-te-2026). Nếu bạn còn phân vân giữa Session và JWT cho dự án của mình, bài [Session vs JWT: Developer nên chọn cái nào?](/session-vs-jwt-developer-nen-chon-cai-nao-so-sanh-thuc-te-2026) sẽ giúp bạn quyết định dứt khoát.
 
 #### 8\. FAQ - Câu hỏi thường gặp về Refresh Token
 

@@ -225,7 +225,7 @@ Mỗi khi bạn thay đổi một dòng code và build lại Image, nếu Docker
 Để tiện lợi, nhiều người chạy mọi thứ dưới quyền Root. Nếu container bị hack, kẻ tấn công có thể chiếm luôn quyền điều khiển VPS.   
 **Khắc phục:** Luôn tìm hiểu cách phân quyền `User` trong Dockerfile và sử dụng file `.env` để bảo mật thông tin nhạy cảm. Đây là một phần quan trọng trong việc **tối ưu thời gian setup môi trường dự án với Docker** nhưng vẫn đảm bảo an toàn dữ liệu.
 
-> Nếu bạn đang gặp khó khăn trong việc cấu hình hoặc muốn kiểm tra xem hệ thống của mình đã thực sự bảo mật và tối ưu hay chưa, đừng ngần ngại liên hệ với tôi tại [**khaizinam.io.vn**](https://khaizinam.com) để nhận được sự hỗ trợ kỹ thuật chuyên sâu nhất.
+> Nếu bạn đang gặp khó khăn trong việc cấu hình hoặc muốn kiểm tra xem hệ thống của mình đã thực sự bảo mật và tối ưu hay chưa, đừng ngần ngại liên hệ với tôi tại [**khaizinam.io.vn**](/) để nhận được sự hỗ trợ kỹ thuật chuyên sâu nhất.
 
 ### **6\. Câu hỏi thường gặp (FAQ) về vận hành Docker trên VPS 2GB RAM**
 
@@ -257,7 +257,7 @@ Docker sẽ chỉ build lại những phần thay đổi và khởi động lạ
 
 Việc **tối ưu thời gian setup môi trường dự án với Docker** trên một chiếc VPS cấu hình khiêm tốn không hề khó nếu bạn nắm vững các nguyên tắc: **Dùng Debian + Tạo Swap + Giới hạn RAM cho Container + Bind Mount dữ liệu**. Hy vọng chuỗi hướng dẫn này sẽ giúp bạn tự tin triển khai các dự án cá nhân hoặc cho khách hàng một cách chuyên nghiệp, ổn định và tiết kiệm chi phí nhất.
 
-Nếu bạn cần một giải pháp tổng thể về hạ tầng hoặc **SEO** để bứt phá doanh thu cho dự án của mình, hãy kết nối với tôi tại [**khaizinam.io.vn**](https://khaizinam.com). Chúc các bạn thành công!
+Nếu bạn cần một giải pháp tổng thể về hạ tầng hoặc **SEO** để bứt phá doanh thu cho dự án của mình, hãy kết nối với tôi tại [**khaizinam.io.vn**](/). Chúc các bạn thành công!
 
 > Xem thêm:
 > 

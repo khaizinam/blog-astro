@@ -18,15 +18,15 @@ Bài này không dạy bạn đòi lương vô lý. Bài này hướng dẫn cá
 
 **Mục lục**
 
-*   [1\. Tại sao fresher IT vẫn nên đàm phán lương?](#h4-van-de)
-*   [2\. Trước và sau khi biết cách đàm phán](#h4-truoc-sau)
-*   [3\. Research mức lương thị trường — làm đúng trước khi nói số](#h4-research)
-*   [4\. Quy trình đàm phán lương 4 bước cho fresher](#h4-buoc)
-*   [5\. Script mẫu — nói gì trong từng tình huống](#h4-script)
-*   [6\. 5 sai lầm hay mắc khi đàm phán lương lần đầu](#h4-sai-lam)
-*   [7\. Case study thực tế](#h4-case-study)
-*   [8\. FAQ — Câu hỏi thường gặp](#h4-faq)
-*   [9\. Tổng kết](#h4-tong-ket)
+*   [1\. Tại sao fresher IT vẫn nên đàm phán lương?](#1-tai-sao-fresher-it-van-nen-dam-phan-luong)
+*   [2\. Trước và sau khi biết cách đàm phán](#2-truoc-va-sau-khi-biet-cach-dam-phan)
+*   [3\. Research mức lương thị trường — làm đúng trước khi nói số](#3-research-muc-luong-thi-truong-lam-dung-truoc-khi-noi-so)
+*   [4\. Quy trình đàm phán lương 4 bước cho fresher](#4-quy-trinh-dam-phan-luong-4-buoc-cho-fresher)
+*   [5\. Script mẫu — nói gì trong từng tình huống](#5-script-mau-noi-gi-trong-tung-tinh-huong)
+*   [6\. 5 sai lầm hay mắc khi đàm phán lương lần đầu](#6-5-sai-lam-hay-mac-khi-dam-phan-luong-lan-dau)
+*   [7\. Case study thực tế](#7-case-study-thuc-te)
+*   [8\. FAQ — Câu hỏi thường gặp](#8-faq-cau-hoi-thuong-gap-ve-dam-phan-luong-fresher-it)
+*   [9\. Tổng kết](#9-tong-ket)
 
 * * *
 

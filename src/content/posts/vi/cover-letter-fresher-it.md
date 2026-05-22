@@ -18,15 +18,15 @@ Bài này hướng dẫn cách viết cover letter IT khi chưa có kinh nghiệ
 
 **Mục lục**
 
-*   [1\. Cover letter có còn quan trọng trong ngành IT không?](#h4-van-de)
-*   [2\. Trước và sau khi có cover letter đúng cách](#h4-truoc-sau)
-*   [3\. Cấu trúc cover letter IT cho fresher - 5 đoạn](#h4-cau-truc)
-*   [4\. Mẫu cover letter tiếng Việt - có thể dùng ngay](#h4-mau-vi)
-*   [5\. Mẫu cover letter tiếng Anh - có thể dùng ngay](#h4-mau-en)
-*   [6\. 6 lỗi cover letter fresher hay mắc](#h4-sai-lam)
-*   [7\. Case study thực tế](#h4-case-study)
-*   [8\. FAQ - Câu hỏi thường gặp](#h4-faq)
-*   [9\. Tổng kết](#h4-tong-ket)
+*   [1\. Cover letter có còn quan trọng trong ngành IT không?](#1-cover-letter-co-con-quan-trong-trong-nganh-it-khong)
+*   [2\. Trước và sau khi có cover letter đúng cách](#2-truoc-va-sau-khi-co-cover-letter-dung-cach)
+*   [3\. Cấu trúc cover letter IT cho fresher - 5 đoạn](#3-cau-truc-cover-letter-it-cho-fresher-5-doan)
+*   [4\. Mẫu cover letter tiếng Việt - có thể dùng ngay](#4-mau-cover-letter-tieng-viet-co-the-dung-ngay)
+*   [5\. Mẫu cover letter tiếng Anh - có thể dùng ngay](#5-mau-cover-letter-tieng-anh-co-the-dung-ngay)
+*   [6\. 6 lỗi cover letter fresher hay mắc](#6-6-loi-cover-letter-fresher-hay-mac)
+*   [7\. Case study thực tế](#7-case-study-thuc-te)
+*   [8\. FAQ - Câu hỏi thường gặp](#8-faq-cau-hoi-thuong-gap-ve-cover-letter-it)
+*   [9\. Tổng kết](#9-tong-ket)
 
 * * *
 

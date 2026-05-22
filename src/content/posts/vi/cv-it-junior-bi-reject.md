@@ -20,13 +20,13 @@ Bạn đang gửi CV đi hàng chục nơi nhưng điện thoại im lặng như
 
 **Mục lục**
 
-*   [1\. Vì sao CV AI dài lại bị HR reject không thương tiếc](#phan-1)
-*   [2\. Sự thật về cách HR đọc CV trong 10 giây](#phan-2)
-*   [3\. CV IT 1 trang chuẩn 2026 cần gồm những gì](#phan-3)
-*   [4\. Cách dùng AI build CV đúng cách — không phải để AI quyết định tất cả](#phan-4)
-*   [5\. Case study thực tế: CV 3 trang vs CV 1 trang](#phan-5)
-*   [6\. 6 lỗi CV IT junior phổ biến nhất và cách sửa](#phan-6)
-*   [7\. FAQ — Câu hỏi thường gặp về CV IT](#faq)
+*   [1\. Vì sao CV AI dài lại bị HR reject không thương tiếc](#1-vi-sao-cv-ai-dai-lai-bi-hr-reject-khong-thuong-tiec)
+*   [2\. Sự thật về cách HR đọc CV trong 10 giây](#2-su-that-ve-cach-hr-doc-cv-trong-10-giay)
+*   [3\. CV IT 1 trang chuẩn 2026 cần gồm những gì](#3-cv-it-1-trang-chuan-2026-can-gom-nhung-gi)
+*   [4\. Cách dùng AI build CV đúng cách — không phải để AI quyết định tất cả](#4-cach-dung-ai-build-cv-dung-cach-khong-phai-de-ai-quyet-dinh-tat-ca)
+*   [5\. Case study thực tế: CV 3 trang vs CV 1 trang](#5-case-study-thuc-te-cv-3-trang-vs-cv-1-trang)
+*   [6\. 6 lỗi CV IT junior phổ biến nhất và cách sửa](#6-6-loi-cv-it-junior-pho-bien-nhat-va-cach-sua)
+*   [7\. FAQ — Câu hỏi thường gặp về CV IT](#7-faq-cau-hoi-thuong-gap-ve-cv-it-junior)
 
 * * *
 

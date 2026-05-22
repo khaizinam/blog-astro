@@ -22,13 +22,13 @@ Body Language in Tech Interviews: 7 Mistakes That Cost You the Offer
 
 **Table of Contents**
 
-*   [1\. Why does body language matter in IT interviews?](#h4-why)
-*   [2\. Before and after you control your body language](#h4-before-after)
-*   [3\. Pre-interview body language checklist](#h4-checklist-en)
-*   [4\. 7 common body language mistakes and how to fix them](#h4-7-mistakes)
-*   [5\. Real-world case study](#h4-case-study-en)
-*   [6\. FAQ — Common questions about interview body language](#h4-faq-en)
-*   [7\. Summary](#h4-summary)
+*   [1\. Why does body language matter in IT interviews?](#1-why-does-body-language-matter-in-it-interviews)
+*   [2\. Before and after you control your body language](#2-before-and-after-you-control-your-body-language)
+*   [3\. Pre-interview body language checklist](#3-pre-interview-body-language-checklist)
+*   [4\. 7 common body language mistakes and how to fix them](#4-7-common-body-language-mistakes-and-how-to-fix-them)
+*   [5\. Real-world case study](#5-real-world-case-study)
+*   [6\. FAQ — Common questions about interview body language](#6-faq-common-questions-about-interview-body-language)
+*   [7\. Summary](#7-summary)
 
 * * *
 

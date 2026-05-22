@@ -18,14 +18,14 @@ Câu hỏi **"Vì sao bạn chọn ngành IT?"** tưởng chừng chỉ là câu
 
 **Mục lục:**
 
-*   [1\. HR hỏi câu này để đo cái gì?](#h4-1)
-*   [2\. Trước và sau khi áp dụng framework đúng](#h4-2)
-*   [3\. Framework xây dựng câu trả lời theo hoàn cảnh](#h4-3)
-*   [4\. Script mẫu theo từng trường hợp](#h4-4)
-*   [5\. Case study thực tế](#h4-5)
-*   [6\. 6 lỗi thường gặp và cách sửa](#h4-6)
-*   [7\. FAQ — Câu hỏi thường gặp](#h4-7)
-*   [8\. Tổng kết](#h4-8)
+*   [1\. HR hỏi câu này để đo cái gì?](#1-hr-hoi-cau-nay-de-do-cai-gi)
+*   [2\. Trước và sau khi áp dụng framework đúng](#2-truoc-va-sau-khi-ap-dung-framework-dung)
+*   [3\. Framework xây dựng câu trả lời theo hoàn cảnh](#3-framework-xay-dung-cau-tra-loi-theo-hoan-canh)
+*   [4\. Script mẫu theo từng trường hợp](#4-script-mau-theo-tung-truong-hop)
+*   [5\. Case study thực tế](#5-case-study-thuc-te)
+*   [6\. 6 lỗi thường gặp và cách sửa](#6-6-loi-thuong-gap-va-cach-sua)
+*   [7\. FAQ — Câu hỏi thường gặp](#7-faq-cau-hoi-thuong-gap)
+*   [8\. Tổng kết](#8-tong-ket)
 
 * * *
 

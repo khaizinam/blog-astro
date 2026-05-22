@@ -18,14 +18,14 @@ At the end of almost every interview, the interviewer asks: **"Do you have any q
 
 **Table of Contents:**
 
-*   [1\. Why Reverse Questions Matter More Than You Think](#h4-en-1)
-*   [2\. Before & After: What Prepared Questions Look Like](#h4-en-2)
-*   [3\. Four Categories of Reverse Questions by Purpose](#h4-en-3)
-*   [4\. 20+ Real Questions Organized by Interview Round](#h4-en-4)
-*   [5\. Real-World Case Studies](#h4-en-5)
-*   [6\. 6 Common Mistakes and How to Fix Them](#h4-en-6)
-*   [7\. FAQ](#h4-en-7)
-*   [8\. Summary](#h4-en-8)
+*   [1\. Why Reverse Questions Matter More Than You Think](#1-why-reverse-questions-matter-more-than-you-think)
+*   [2\. Before & After: What Prepared Questions Look Like](#2-before-after-what-prepared-questions-look-like)
+*   [3\. Four Categories of Reverse Questions by Purpose](#3-four-categories-of-reverse-questions-by-purpose)
+*   [4\. 20+ Real Questions Organized by Interview Round](#4-20-real-questions-organized-by-interview-round)
+*   [5\. Real-World Case Studies](#5-real-world-case-studies)
+*   [6\. 6 Common Mistakes and How to Fix Them](#6-6-common-mistakes-and-how-to-fix-them)
+*   [7\. FAQ](#7-faq)
+*   [8\. Summary](#8-summary)
 
 * * *
 

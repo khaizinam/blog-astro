@@ -18,14 +18,14 @@ Tất cả các con số trong bài được tổng hợp từ dữ liệu thị
 
 ### Mục Lục
 
-[1\. Tại sao khoảng lương IT lại chênh lệch nhiều như vậy](#vi-w1)  
-[2\. Mức lương fresher IT theo vị trí (thị trường Việt Nam)](#vi-w2)  
-[3\. Mức lương junior IT theo vị trí (thị trường Việt Nam)](#vi-w3)  
-[4\. Lương theo loại hình công ty: startup vs. outsource vs. product](#vi-w4)  
-[5\. TP.HCM vs. Hà Nội vs. các tỉnh thành khác](#vi-w5)  
-[6\. Mức lương remote và thị trường quốc tế](#vi-w6)  
-[7\. Những gì thực sự giúp bạn tăng lương nhanh hơn](#vi-w7)  
-[8\. Cách thương lượng mức lương IT đầu tiên của bạn](#vi-w8)
+[1\. Tại sao khoảng lương IT lại chênh lệch nhiều như vậy](#1-tai-sao-khoang-luong-it-lai-chenh-lech-nhieu-nhu-vay)  
+[2\. Mức lương fresher IT theo vị trí (thị trường Việt Nam)](#2-muc-luong-fresher-it-theo-vi-tri-thi-truong-viet-nam-2026)  
+[3\. Mức lương junior IT theo vị trí (thị trường Việt Nam)](#3-muc-luong-junior-it-theo-vi-tri-thi-truong-viet-nam-2026)  
+[4\. Lương theo loại hình công ty: startup vs. outsource vs. product](#4-luong-theo-loai-hinh-cong-ty-startup-vs-outsource-vs-product)  
+[5\. TP.HCM vs. Hà Nội vs. các tỉnh thành khác](#5-tphcm-vs-ha-noi-vs-cac-tinh-thanh-khac)  
+[6\. Mức lương remote và thị trường quốc tế](#6-muc-luong-remote-va-thi-truong-quoc-te)  
+[7\. Những gì thực sự giúp bạn tăng lương nhanh hơn](#7-nhung-gi-thuc-su-giup-ban-tang-luong-nhanh-hon)  
+[8\. Cách thương lượng mức lương IT đầu tiên của bạn](#8-cach-thuong-luong-muc-luong-it-dau-tien-cua-ban)
 
 ### 1\. Tại Sao Khoảng Lương IT Lại Chênh Lệch Nhiều Như Vậy
 
@@ -39,7 +39,7 @@ Nếu bạn đã xem qua các tin tuyển dụng gần đây, hẳn bạn nhận
 
 **Chất lượng portfolio quan trọng hơn GPA.** Một fresher có hai dự án đã deploy và GitHub với commit đều đặn sẽ nhận được offer cao hơn người có GPA 3.8 nhưng không có code nào ngoài thực tế. Nhà tuyển dụng đang mua output tương lai của bạn, không phải điểm số trong quá khứ.
 
-![Mức Lương Fresher & Junior IT 2026: Bạn Nên Kỳ Vọng Bao Nhiêu?](https://khaizinam.com/storage/blogs/gemini-generated-image-bzoi43bzoi43bzoi.jpg)
+![Mức Lương Fresher & Junior IT 2026: Bạn Nên Kỳ Vọng Bao Nhiêu?](https://cdn.khaizinam.io.vn/blog/gemini-generated-image-bzoi43bzoi43bzoi.jpg)
 
   
 Mức Lương Fresher & Junior IT 2026: Bạn Nên Kỳ Vọng Bao Nhiêu?

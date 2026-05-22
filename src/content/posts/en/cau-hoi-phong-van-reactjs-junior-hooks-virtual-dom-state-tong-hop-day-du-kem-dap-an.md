@@ -20,21 +20,21 @@ ReactJS is the most widely used frontend framework in Vietnam's job market, and 
 
 ### Table of Contents
 
-1\. [React fundamentals and Virtual DOM](#en-rx1)
+1\. [React fundamentals and Virtual DOM](#react-fundamentals-and-virtual-dom)
 
-2\. [Hooks questions — useState, useEffect, useCallback, useMemo](#en-rx2)
+2\. [Hooks questions — useState, useEffect, useCallback, useMemo](#hooks-questions)
 
-3\. [State and Props questions](#en-rx3)
+3\. [State and Props questions](#state-and-props-questions)
 
-4\. [Component lifecycle and re-render questions](#en-rx4)
+4\. [Component lifecycle and re-render questions](#component-lifecycle-and-re-render-questions)
 
 5\. [State management — Context vs Redux](#en-rx5)
 
-6\. [Real-world case study](#en-rx6)
+6\. [Real-world case study](#real-world-case-study)
 
-7\. [Common mistakes when answering ReactJS questions](#en-rx7)
+7\. [Common mistakes when answering ReactJS questions](#common-mistakes-when-answering-reactjs-questions)
 
-8\. [Quick FAQ](#en-rx8)
+8\. [Quick FAQ](#quick-faq)
 
 * * *
 
@@ -154,7 +154,7 @@ Linh identified three issues: using `index` as the key instead of `p.id`, the in
 
 The interviewer followed up: "How would you fix it?" — Linh proposed using `p.id` as the key, wrapping the callback with useCallback, and adding React.memo to ProductCard. **Result: Linh received an offer above the initial proposal — specifically because she demonstrated performance-aware code review thinking, not just feature-writing ability.**
 
-For more on how to handle technical deep-dives in interviews, read [Junior IT Interview Tips A-Z](https://khaizinam.com/en/junior-it-interview-tips-the-complete-a-z-guide-to-getting-hired) — covering how to reason out loud and handle questions that go deeper than you expected.
+For more on how to handle technical deep-dives in interviews, read [Junior IT Interview Tips A-Z](/en/junior-it-interview-tips-the-complete-a-z-guide-to-getting-hired) — covering how to reason out loud and handle questions that go deeper than you expected.
 
 #### Common Mistakes When Answering ReactJS Questions
 
@@ -194,4 +194,4 @@ For more on how to handle technical deep-dives in interviews, read [Junior IT In
 
 Your next step: build a small project — a todo app with filtering and sorting — using only useState, useEffect, useCallback, and Context API, with no external state management library. Then refactor it to add Redux Toolkit. This hands-on process will give you genuine intuition about when each solution fits better — and that's exactly what interviewers want to hear.
 
-Also read [Backend Junior Interview Questions](https://khaizinam.com/en/backend-junior-interview-questions-the-complete-guide-covering-apis-databases-auth-and-caching) if you're preparing for a fullstack role or want to understand the API layer that your React frontend will consume.
+Also read [Backend Junior Interview Questions](/en/backend-junior-interview-questions-the-complete-guide-covering-apis-databases-auth-and-caching) if you're preparing for a fullstack role or want to understand the API layer that your React frontend will consume.

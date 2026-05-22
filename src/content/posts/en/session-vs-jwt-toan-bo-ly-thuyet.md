@@ -16,21 +16,21 @@ Nearly 100% of backend interviews include questions about authentication — and
 
 ### Table of Contents
 
-1\. [The Nature of Authentication — Why Do We Need Session or JWT?](#phan-1)
+1\. [The Nature of Authentication — Why Do We Need Session or JWT?](#the-nature-of-authentication-why-do-we-need-session-or-jwt)
 
-2\. [What Is a Session — How It Works and Where It's Stored](#phan-2)
+2\. [What Is a Session — How It Works and Where It's Stored](#what-is-a-session-how-it-works-and-where-its-stored)
 
-3\. [What Is JWT — Structure, Mechanism, and Where It's Stored](#phan-3)
+3\. [What Is JWT — Structure, Mechanism, and Where It's Stored](#what-is-jwt-structure-mechanism-and-where-its-stored)
 
-4\. [Detailed Comparison: Session vs JWT — Similarities and Differences](#phan-4)
+4\. [Detailed Comparison: Session vs JWT — Similarities and Differences](#detailed-comparison-session-vs-jwt-similarities-and-differences)
 
-5\. [When to Use Session, When to Use JWT](#phan-5)
+5\. [When to Use Session, When to Use JWT](#when-to-use-session-when-to-use-jwt)
 
-6\. [Real Interview Questions and How to Answer Them Correctly](#phan-6)
+6\. [Real Interview Questions and How to Answer Them Correctly](#real-interview-questions-and-how-to-answer-them-correctly)
 
-7\. [Common Mistakes When Implementing and Answering Interview Questions](#phan-7)
+7\. [Common Mistakes When Implementing and Answering Interview Questions](#common-mistakes-when-implementing-and-answering-interview-questions)
 
-8\. [FAQ — The Deepest Questions About Session and JWT](#phan-8)
+8\. [FAQ — The Deepest Questions About Session and JWT](#faq-the-deepest-questions-about-session-and-jwt)
 
 * * *
 
@@ -279,7 +279,7 @@ After all that theory, here's the simplest way to remember: **Session is like a 
 
 Choose Session when you need absolute control — immediate revocation, full audit trail, always-fresh data. Choose JWT when you need flexibility — multiple clients, multiple domains, horizontal scaling without shared storage.
 
-See more articles in the [Interview Series](https://khaizinam.com/tag/seriesphongvan)
+See more articles in the [Interview Series](/en/tag/seriesphongvan)
 
 **Practical next step:** Open an old Laravel project and try implementing both mechanisms — Session for web routes, Sanctum token for API routes. Write a `/me` endpoint that works with both guards. Once you've implemented it yourself and debugged real errors, this interview topic will no longer be a challenge.
 

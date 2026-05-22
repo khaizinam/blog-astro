@@ -18,16 +18,16 @@ Whether you're applying for a developer, QA, or IT support role, these questions
 
 ### Table of Contents
 
-[1\. Tell me about yourself](#en-q1)  
-[2\. Why did you choose IT as your career?](#en-q2)  
-[3\. What programming languages do you know?](#en-q3)  
-[4\. Explain OOP concepts](#en-q4)  
-[5\. What is the difference between Stack and Queue?](#en-q5)  
-[6\. What is a REST API?](#en-q6)  
-[7\. How does Git work?](#en-q7)  
-[8\. What is your biggest weakness?](#en-q8)  
-[9\. Describe a project you're proud of](#en-q9)  
-[10\. Where do you see yourself in 3 years?](#en-q10)
+[1\. Tell me about yourself](#1-tell-me-about-yourself)  
+[2\. Why did you choose IT as your career?](#2-why-did-you-choose-it-as-your-career)  
+[3\. What programming languages do you know?](#3-what-programming-languages-do-you-know)  
+[4\. Explain OOP concepts](#4-explain-object-oriented-programming-oop-concepts)  
+[5\. What is the difference between Stack and Queue?](#5-what-is-the-difference-between-a-stack-and-a-queue)  
+[6\. What is a REST API?](#6-what-is-a-rest-api-how-does-it-work)  
+[7\. How does Git work?](#7-how-does-git-work-walk-me-through-your-typical-workflow)  
+[8\. What is your biggest weakness?](#8-what-is-your-biggest-weakness)  
+[9\. Describe a project you're proud of](#9-describe-a-project-youre-proud-of)  
+[10\. Where do you see yourself in 3 years?](#10-where-do-you-see-yourself-in-3-years)
 
 #### 1\. "Tell me about yourself."
 

@@ -18,15 +18,15 @@ This guide explains how to write an IT cover letter with no work experience - in
 
 **Table of Contents**
 
-*   [1\. Does a cover letter still matter in IT?](#h4-matter)
-*   [2\. Before and after getting your cover letter right](#h4-ba-en)
-*   [3\. Cover letter structure for IT freshers - 5 paragraphs](#h4-structure)
-*   [4\. Vietnamese cover letter template - ready to use](#h4-template-vi)
-*   [5\. English cover letter template - ready to use](#h4-template-en)
-*   [6\. 6 cover letter mistakes freshers make](#h4-mistakes-en)
-*   [7\. Real-world case study](#h4-case-en)
-*   [8\. FAQ](#h4-faq-en)
-*   [9\. Summary](#h4-summary)
+*   [1\. Does a cover letter still matter in IT?](#1-does-a-cover-letter-still-matter-in-it)
+*   [2\. Before and after getting your cover letter right](#2-before-and-after-getting-your-cover-letter-right)
+*   [3\. Cover letter structure for IT freshers - 5 paragraphs](#3-cover-letter-structure-for-it-freshers-5-paragraphs)
+*   [4\. Vietnamese cover letter template - ready to use](#4-vietnamese-cover-letter-template-ready-to-use)
+*   [5\. English cover letter template - ready to use](#5-english-cover-letter-template-ready-to-use)
+*   [6\. 6 cover letter mistakes freshers make](#6-6-cover-letter-mistakes-freshers-make)
+*   [7\. Real-world case study](#7-real-world-case-study)
+*   [8\. FAQ](#8-faq)
+*   [9\. Summary](#9-summary)
 
 * * *
 

@@ -20,23 +20,23 @@ Hôm nay mình muốn kể lại một buổi phỏng vấn mà mình không bao
 
 ### Mục Lục
 
-1\. [Màn giới thiệu bản thân - cái bẫy đầu tiên](#phan-1)
+1\. [Màn giới thiệu bản thân - cái bẫy đầu tiên](#1-man-gioi-thieu-ban-than-cai-bay-dau-tien)
 
-2\. [Pagination không dùng query URL - câu hỏi gài bẫy](#phan-2)
+2\. [Pagination không dùng query URL - câu hỏi gài bẫy](#2-pagination-khong-dung-query-url-cau-hoi-gai-bay)
 
-3\. [CSRF vs XSS - hai thứ hay bị nhầm nhất](#phan-3)
+3\. [CSRF vs XSS - hai thứ hay bị nhầm nhất](#3-csrf-vs-xss-hai-thu-hay-bi-nham-nhat)
 
-4\. [Event Loop Node.js - trái tim của runtime](#phan-4)
+4\. [Event Loop Node.js - trái tim của runtime](#4-event-loop-nodejs-trai-tim-cua-runtime)
 
-5\. [Hàm O(1) tính tổng 1→N và bẫy số lớn](#phan-5)
+5\. [Hàm O(1) tính tổng 1→N và bẫy số lớn](#5-ham-o1-tinh-tong-1n-va-bay-so-lon)
 
-6\. [Những câu hỏi bonus họ hỏi thêm](#phan-6)
+6\. [Những câu hỏi bonus họ hỏi thêm](#6-nhung-cau-hoi-bonus-ho-hoi-them)
 
-7\. [Sai lầm hay gặp và cách tránh](#phan-7)
+7\. [Sai lầm hay gặp và cách tránh](#7-nhung-sai-lam-hay-gap-va-cach-tranh)
 
-8\. [Hỏi đáp nhanh (FAQ)](#phan-8)
+8\. [Hỏi đáp nhanh (FAQ)](#hoi-dap-nhanh-faq)
 
-9\. [Tổng kết và bước tiếp theo](#phan-9)
+9\. [Tổng kết và bước tiếp theo](#tong-ket-va-buoc-tiep-theo)
 
 * * *
 

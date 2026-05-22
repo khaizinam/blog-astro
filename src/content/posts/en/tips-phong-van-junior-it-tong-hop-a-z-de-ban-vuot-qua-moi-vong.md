@@ -20,16 +20,16 @@ Whether this is your first interview or your fifth, treat this as your complete 
 
 ### Table of Contents
 
-[1\. Understand the interview structure](#en-s1)  
-[2\. Research the company before you walk in](#en-s2)  
-[3\. Prepare your self-introduction (the right way)](#en-s3)  
-[4\. How to handle technical questions](#en-s4)  
-[5\. Behavioral questions: use the STAR method](#en-s5)  
-[6\. Things to do the night before](#en-s6)  
-[7\. Body language and first impressions](#en-s7)  
-[8\. Smart questions to ask the interviewer](#en-s8)  
-[9\. After the interview: follow-up etiquette](#en-s9)  
-[10\. Common mistakes junior developers make — and how to avoid them](#en-s10)
+[1\. Understand the interview structure](#1-understand-the-interview-structure)  
+[2\. Research the company before you walk in](#2-research-the-company-before-you-walk-in)  
+[3\. Prepare your self-introduction (the right way)](#3-prepare-your-self-introduction-the-right-way)  
+[4\. How to handle technical questions](#4-how-to-handle-technical-questions)  
+[5\. Behavioral questions: use the STAR method](#5-behavioral-questions-use-the-star-method)  
+[6\. Things to do the night before](#6-things-to-do-the-night-before)  
+[7\. Body language and first impressions](#7-body-language-and-first-impressions)  
+[8\. Smart questions to ask the interviewer](#8-smart-questions-to-ask-the-interviewer)  
+[9\. After the interview: follow-up etiquette](#9-after-the-interview-follow-up-etiquette)  
+[10\. Common mistakes junior developers make — and how to avoid them](#10-common-mistakes-junior-developers-make-and-how-to-avoid-them)
 
 ### 1\. Understand the Interview Structure
 

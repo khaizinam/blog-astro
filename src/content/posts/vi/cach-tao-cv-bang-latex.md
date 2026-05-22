@@ -30,7 +30,7 @@ Bạn vừa tốt nghiệp, cầm tấm bằng IT trên tay nhưng gửi hàng c
 
 6\. [Những sai lầm "đốt thời gian" cần tránh](#sai-lam)
 
-7\. [Hỏi đáp nhanh (FAQ)](#faq)
+7\. [Hỏi đáp nhanh (FAQ)](#7-hoi-dap-nhanh-faq)
 
 * * *
 

@@ -18,14 +18,14 @@ Cuối buổi phỏng vấn, interviewer hỏi: **"Bạn có câu hỏi gì cho 
 
 **Mục lục:**
 
-*   [1\. Tại sao câu hỏi ngược quan trọng hơn bạn nghĩ?](#h4-1)
-*   [2\. Trước và sau khi chuẩn bị câu hỏi ngược đúng cách](#h4-2)
-*   [3\. Phân loại câu hỏi ngược theo mục đích](#h4-3)
-*   [4\. Danh sách 20+ câu hỏi thực tế theo từng vòng](#h4-4)
-*   [5\. Case study thực tế](#h4-5)
-*   [6\. 6 lỗi thường gặp và cách sửa](#h4-6)
-*   [7\. FAQ — Câu hỏi thường gặp](#h4-7)
-*   [8\. Tổng kết](#h4-8)
+*   [1\. Tại sao câu hỏi ngược quan trọng hơn bạn nghĩ?](#1-tai-sao-cau-hoi-nguoc-quan-trong-hon-ban-nghi)
+*   [2\. Trước và sau khi chuẩn bị câu hỏi ngược đúng cách](#2-truoc-va-sau-khi-chuan-bi-cau-hoi-nguoc-dung-cach)
+*   [3\. Phân loại câu hỏi ngược theo mục đích](#3-phan-loai-cau-hoi-nguoc-theo-muc-dich)
+*   [4\. Danh sách 20+ câu hỏi thực tế theo từng vòng](#4-danh-sach-20-cau-hoi-thuc-te-theo-tung-vong)
+*   [5\. Case study thực tế](#5-case-study-thuc-te)
+*   [6\. 6 lỗi thường gặp và cách sửa](#6-6-loi-thuong-gap-va-cach-sua)
+*   [7\. FAQ — Câu hỏi thường gặp](#7-faq-cau-hoi-thuong-gap)
+*   [8\. Tổng kết](#8-tong-ket)
 
 * * *
 

@@ -20,13 +20,13 @@ AI đang thay thế hàng loạt công việc lập trình entry-level — code 
 
 Nội dung bài viết:
 
-*   [1\. Bản chất vấn đề: Tại sao AI khiến con đường fresher developer khó hơn bao giờ hết?](#ban-chat)
-*   [2\. Chứng chỉ NVSP là gì và ai cần có?](#nvsp-la-gi)
-*   [3\. Before/After: Từ developer loay hoay đến giảng viên được săn đón](#truoc-sau)
-*   [4\. Điều kiện, quy trình và chi phí lấy chứng chỉ NVSP](#dieu-kien)
-*   [5\. Cơ hội việc làm thực tế sau khi có NVSP](#co-hoi)
-*   [6\. 5 hiểu lầm phổ biến về con đường giảng viên IT](#sai-lam)
-*   [7\. FAQ – Câu hỏi thường gặp về chứng chỉ NVSP](#faq)
+*   [1\. Bản chất vấn đề: Tại sao AI khiến con đường fresher developer khó hơn bao giờ hết?](#1-ban-chat-van-de-tai-sao-ai-khien-con-duong-fresher-developer-kho-hon-bao-gio-het)
+*   [2\. Chứng chỉ NVSP là gì và ai cần có?](#2-chung-chi-nvsp-la-gi-va-ai-can-co)
+*   [3\. Before/After: Từ developer loay hoay đến giảng viên được săn đón](#3-beforeafter-tu-developer-loay-hoay-den-giang-vien-duoc-san-don)
+*   [4\. Điều kiện, quy trình và chi phí lấy chứng chỉ NVSP](#4-dieu-kien-quy-trinh-va-chi-phi-lay-chung-chi-nvsp)
+*   [5\. Cơ hội việc làm thực tế sau khi có NVSP](#5-co-hoi-viec-lam-thuc-te-sau-khi-co-nvsp)
+*   [6\. 5 hiểu lầm phổ biến về con đường giảng viên IT](#6-5-hieu-lam-pho-bien-ve-con-duong-giang-vien-it)
+*   [7\. FAQ – Câu hỏi thường gặp về chứng chỉ NVSP](#7-faq-cau-hoi-thuong-gap-ve-chung-chi-nvsp)
 
 * * *
 

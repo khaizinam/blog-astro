@@ -18,15 +18,15 @@ This isn't a guide on how to demand an unreasonable salary. It's a practical wal
 
 **Table of Contents**
 
-*   [1\. Why IT freshers should still negotiate salary](#h4-why-en)
-*   [2\. Before and after knowing how to negotiate](#h4-ba-en)
-*   [3\. Researching market rates — do this before you name a number](#h4-research-en)
-*   [4\. A 4-step salary negotiation process for freshers](#h4-steps)
-*   [5\. Word-for-word scripts for every situation](#h4-scripts)
-*   [6\. 5 mistakes first-time negotiators make](#h4-mistakes-en)
-*   [7\. Real-world case study](#h4-case-en)
-*   [8\. FAQ](#h4-faq-en)
-*   [9\. Summary](#h4-summary)
+*   [1\. Why IT freshers should still negotiate salary](#1-why-it-freshers-should-still-negotiate-salary)
+*   [2\. Before and after knowing how to negotiate](#2-before-and-after-knowing-how-to-negotiate)
+*   [3\. Researching market rates — do this before you name a number](#3-researching-market-rates-do-this-before-you-name-a-number)
+*   [4\. A 4-step salary negotiation process for freshers](#4-a-4-step-salary-negotiation-process-for-freshers)
+*   [5\. Word-for-word scripts for every situation](#5-word-for-word-scripts-for-every-situation)
+*   [6\. 5 mistakes first-time negotiators make](#6-5-mistakes-first-time-negotiators-make)
+*   [7\. Real-world case study](#7-real-world-case-study)
+*   [8\. FAQ](#8-faq)
+*   [9\. Summary](#9-summary)
 
 * * *
 

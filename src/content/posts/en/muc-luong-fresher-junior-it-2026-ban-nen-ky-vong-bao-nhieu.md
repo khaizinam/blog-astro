@@ -18,14 +18,14 @@ All figures in this article are based on market data aggregated from job posting
 
 ### Table of Contents
 
-[1\. Why salary ranges vary so much in IT](#en-w1)  
-[2\. Fresher IT salary by role (Vietnam market)](#en-w2)  
-[3\. Junior IT salary by role (Vietnam market)](#en-w3)  
-[4\. Salary by company type: startup vs. outsource vs. product](#en-w4)  
-[5\. Ho Chi Minh City vs. Hanoi vs. other cities](#en-w5)  
-[6\. Remote and international salary benchmarks](#en-w6)  
-[7\. What actually moves your salary up faster](#en-w7)  
-[8\. How to negotiate your first IT salary](#en-w8)
+[1\. Why salary ranges vary so much in IT](#1-why-salary-ranges-vary-so-much-in-it)  
+[2\. Fresher IT salary by role (Vietnam market)](#2-fresher-it-salary-by-role-vietnam-market-2026)  
+[3\. Junior IT salary by role (Vietnam market)](#3-junior-it-salary-by-role-vietnam-market-2026)  
+[4\. Salary by company type: startup vs. outsource vs. product](#4-salary-by-company-type-startup-vs-outsource-vs-product)  
+[5\. Ho Chi Minh City vs. Hanoi vs. other cities](#5-ho-chi-minh-city-vs-hanoi-vs-other-cities)  
+[6\. Remote and international salary benchmarks](#6-remote-and-international-salary-benchmarks)  
+[7\. What actually moves your salary up faster](#7-what-actually-moves-your-salary-up-faster)  
+[8\. How to negotiate your first IT salary](#8-how-to-negotiate-your-first-it-salary)
 
 ### 1\. Why Salary Ranges Vary So Much in IT
 
@@ -39,7 +39,7 @@ If you've looked at job postings lately, you've probably noticed that two "junio
 
 **Portfolio quality trumps GPA.** A fresher with two deployed side projects and a GitHub with consistent commits will receive higher offers than one with a 3.8 GPA and no code in the wild. Employers are buying future output, not past grades.
 
-![IT Fresher & Junior Developer Salary in 2026: How Much Should You Expect?](https://khaizinam.com/storage/blogs/gemini-generated-image-bzoi43bzoi43bzoi.jpg)
+![IT Fresher & Junior Developer Salary in 2026: How Much Should You Expect?](https://cdn.khaizinam.io.vn/blog/gemini-generated-image-bzoi43bzoi43bzoi.jpg)
 
 IT Fresher & Junior Developer Salary in 2026: How Much Should You Expect?
 

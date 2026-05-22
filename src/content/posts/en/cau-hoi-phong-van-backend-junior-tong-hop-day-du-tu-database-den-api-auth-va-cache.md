@@ -20,21 +20,21 @@ Backend junior is one of the broadest roles in IT interviews. It's not just one 
 
 ### Table of Contents
 
-1\. [What backend junior interviews actually test](#en-bk1)
+1\. [What backend junior interviews actually test](#what-backend-junior-interviews-actually-test)
 
-2\. [REST API and API design questions](#en-bk2)
+2\. [REST API and API design questions](#rest-api-and-api-design-questions)
 
-3\. [Database and SQL questions](#en-bk3)
+3\. [Database and SQL questions](#database-and-sql-questions)
 
-4\. [Authentication and security questions](#en-bk4)
+4\. [Authentication and security questions](#authentication-and-security-questions)
 
-5\. [Caching and performance questions](#en-bk5)
+5\. [Caching and performance questions](#caching-and-performance-questions)
 
-6\. [Case study: a real backend interview](#en-bk6)
+6\. [Case study: a real backend interview](#case-study-a-real-backend-interview)
 
-7\. [Common mistakes when answering backend questions](#en-bk7)
+7\. [Common mistakes when answering backend questions](#common-mistakes-when-answering-backend-questions)
 
-8\. [Quick FAQ](#en-bk8)
+8\. [Quick FAQ](#quick-faq)
 
 * * *
 
@@ -102,7 +102,7 @@ SQL fits when your data is structured, you need ACID transactions, and relations
 
 **Session** is stateful — the server stores session state, the client only holds a session ID. **JWT** is stateless — all user information is encoded in the token itself, and the server stores nothing. JWT scales more easily because any server instance can verify the token without a shared session store. JWT's downside: you cannot instantly invalidate a token before it expires.
 
-For a deep dive, read [Session vs JWT Interview Guide — full theory and real questions](https://khaizinam.com/session-vs-jwt-phong-van) before your interview.
+For a deep dive, read [Session vs JWT Interview Guide — full theory and real questions](/en/session-vs-jwt-phong-van) before your interview.
 
 ##### What is OAuth 2.0 — explain the basic flow?
 
@@ -182,4 +182,4 @@ Final section: design an endpoint to process payments. Tuan proactively mentione
 
 Don't try to memorize every possible question. Instead, understand each topic deeply enough to answer the interviewer's follow-up question after your first answer — that's what separates candidates who get hired from those who don't.
 
-Next step: work through the [Session vs JWT interview guide](https://khaizinam.com/session-vs-jwt-phong-van) and practice writing real SQL queries on at least 20 problems on LeetCode or HackerRank's SQL track before your interview.
+Next step: work through the [Session vs JWT interview guide](/en/session-vs-jwt-phong-van) and practice writing real SQL queries on at least 20 problems on LeetCode or HackerRank's SQL track before your interview.

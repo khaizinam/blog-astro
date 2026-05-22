@@ -16,21 +16,21 @@ Gần như 100% buổi phỏng vấn backend có hỏi về authentication — v
 
 ### Mục Lục
 
-1\. [Bản chất của Authentication — Tại sao cần Session hay JWT?](#phan-1)
+1\. [Bản chất của Authentication — Tại sao cần Session hay JWT?](#ban-chat-cua-authentication-tai-sao-can-session-hay-jwt)
 
-2\. [Session là gì — Cơ chế hoạt động và lưu trữ ở đâu](#phan-2)
+2\. [Session là gì — Cơ chế hoạt động và lưu trữ ở đâu](#session-la-gi-co-che-hoat-dong-va-luu-tru-o-dau)
 
-3\. [JWT là gì — Cấu trúc, cơ chế và lưu trữ ở đâu](#phan-3)
+3\. [JWT là gì — Cấu trúc, cơ chế và lưu trữ ở đâu](#jwt-la-gi-cau-truc-co-che-va-luu-tru-o-dau)
 
-4\. [So sánh chi tiết Session vs JWT — Giống nhau, khác nhau](#phan-4)
+4\. [So sánh chi tiết Session vs JWT — Giống nhau, khác nhau](#so-sanh-chi-tiet-session-vs-jwt-giong-nhau-khac-nhau)
 
-5\. [Khi nào dùng Session, khi nào dùng JWT](#phan-5)
+5\. [Khi nào dùng Session, khi nào dùng JWT](#khi-nao-dung-session-khi-nao-dung-jwt)
 
-6\. [Những câu hỏi phỏng vấn thực tế và cách trả lời chuẩn](#phan-6)
+6\. [Những câu hỏi phỏng vấn thực tế và cách trả lời chuẩn](#nhung-cau-hoi-phong-van-thuc-te-va-cach-tra-loi-chuan)
 
-7\. [Những sai lầm hay gặp khi implement và trả lời phỏng vấn](#phan-7)
+7\. [Những sai lầm hay gặp khi implement và trả lời phỏng vấn](#nhung-sai-lam-hay-gap-khi-implement-va-tra-loi-phong-van)
 
-8\. [FAQ — Câu hỏi đào sâu nhất về Session và JWT](#phan-8)
+8\. [FAQ — Câu hỏi đào sâu nhất về Session và JWT](#faq-cau-hoi-dao-sau-nhat-ve-session-va-jwt)
 
 * * *
 
@@ -281,7 +281,7 @@ Sau tất cả lý thuyết, có một cách nhớ đơn giản nhất: **Sessio
 
 Chọn Session khi bạn cần kiểm soát tuyệt đối — thu hồi ngay, audit đầy đủ, dữ liệu luôn mới nhất. Chọn JWT khi bạn cần linh hoạt — nhiều client, nhiều domain, scale ngang không cần shared storage.
 
-Xem thêm các bài viết thuộc [Series Phỏng vấn](https://khaizinam.com/tag/seriesphongvan)
+Xem thêm các bài viết thuộc [Series Phỏng vấn](/tag/seriesphongvan)
 
 **Bước tiếp theo thực tế:** Mở một project Laravel cũ của bạn, thử implement cả hai cơ chế — Session cho web routes, Sanctum token cho API routes. Viết một endpoint `/me` hoạt động với cả hai guard. Khi bạn tự tay implement và debug lỗi thực tế, phỏng vấn về chủ đề này sẽ không còn là thách thức nữa.
 

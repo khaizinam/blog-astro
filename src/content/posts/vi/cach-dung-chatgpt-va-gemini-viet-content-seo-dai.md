@@ -20,14 +20,14 @@ Bạn đang dùng Claude để viết content SEO cho blog và nhận ra đây l
 
 Nội dung bài viết:
 
-*   [1\. Tại sao Claude được đánh giá là AI viết content tốt nhất hiện nay](#tai-sao-claude-tot)
-*   [2\. Giới hạn token — bức tường mà content creator gặp mỗi ngày](#gioi-han-token)
-*   [3\. Tại sao ChatGPT và Gemini không thể thay thế trực tiếp](#van-de-chatgpt-gemini)
-*   [4\. Workflow chuẩn: Dàn ý → Từng đoạn → Ghép bài](#workflow)
-*   [5\. Tạo thumbnail bìa bài viết bằng Gemini Imagen miễn phí](#thumbnail)
-*   [6\. Template prompt mẫu sẵn dùng](#template-prompt)
-*   [7\. 5 sai lầm hay gặp khi dùng ChatGPT/Gemini thay Claude](#sai-lam)
-*   [8\. FAQ — Câu hỏi thường gặp](#faq)
+*   [1\. Tại sao Claude được đánh giá là AI viết content tốt nhất hiện nay](#1-tai-sao-claude-duoc-danh-gia-la-ai-viet-content-tot-nhat-hien-nay)
+*   [2\. Giới hạn token — bức tường mà content creator gặp mỗi ngày](#2-gioi-han-token-buc-tuong-ma-content-creator-gap-moi-ngay)
+*   [3\. Tại sao ChatGPT và Gemini không thể thay thế trực tiếp](#3-tai-sao-chatgpt-va-gemini-khong-the-thay-the-truc-tiep)
+*   [4\. Workflow chuẩn: Dàn ý → Từng đoạn → Ghép bài](#4-workflow-chuan-dan-y-tung-doan-ghep-bai)
+*   [5\. Tạo thumbnail bìa bài viết bằng Gemini Imagen miễn phí](#5-tao-thumbnail-bia-bai-viet-bang-gemini-imagen-mien-phi)
+*   [6\. Template prompt mẫu sẵn dùng](#6-template-prompt-mau-san-dung)
+*   [7\. 5 sai lầm hay gặp khi dùng ChatGPT/Gemini thay Claude](#7-5-sai-lam-hay-gap-khi-dung-chatgptgemini-thay-claude)
+*   [8\. FAQ — Câu hỏi thường gặp](#8-faq-cau-hoi-thuong-gap)
 
 * * *
 

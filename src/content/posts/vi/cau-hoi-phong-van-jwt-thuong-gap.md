@@ -18,13 +18,13 @@ Bạn chuẩn bị phỏng vấn vị trí Backend hoặc Fullstack nhưng mỗi
 
 Nội dung bài viết:
 
-*   [JWT là gì? Câu hỏi nền tảng](#jwt-la-gi)
-*   [Cấu trúc JWT - Header, Payload, Signature](#cau-truc-jwt)
-*   [JWT vs Session: So sánh trong phỏng vấn](#jwt-vs-session)
-*   [Câu hỏi bảo mật JWT nâng cao](#bao-mat-jwt)
-*   [Access Token & Refresh Token](#refresh-token)
-*   [5 sai lầm hay gặp khi trả lời về JWT](#sai-lam-pho-bien)
-*   [FAQ - Câu hỏi thường gặp về JWT](#faq-jwt)
+*   [JWT là gì? Câu hỏi nền tảng](#jwt-la-gi-cau-hoi-nen-tang-ban-phai-tra-loi-duoc)
+*   [Cấu trúc JWT - Header, Payload, Signature](#cau-truc-jwt-header-payload-signature)
+*   [JWT vs Session: So sánh trong phỏng vấn](#jwt-vs-session-so-sanh-trong-phong-van)
+*   [Câu hỏi bảo mật JWT nâng cao](#cau-hoi-bao-mat-jwt-nang-cao)
+*   [Access Token & Refresh Token](#access-token-refresh-token-flow-thuc-te)
+*   [5 sai lầm hay gặp khi trả lời về JWT](#5-sai-lam-pho-bien-khi-tra-loi-cau-hoi-ve-jwt-trong-phong-van)
+*   [FAQ - Câu hỏi thường gặp về JWT](#faq-cau-hoi-thuong-gap-ve-jwt-trong-phong-van)
 
 * * *
 

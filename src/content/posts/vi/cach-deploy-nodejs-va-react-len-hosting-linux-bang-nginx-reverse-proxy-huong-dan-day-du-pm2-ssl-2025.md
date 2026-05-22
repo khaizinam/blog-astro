@@ -16,27 +16,27 @@ Bạn đã build xong app Node.js hoặc React và đang nhìn vào màn hình t
 
 ### Mục Lục
 
-1\. [Nginx Reverse Proxy Là Gì Và Tại Sao Node.js Cần Nó](#vn-1)
+1\. [Nginx Reverse Proxy Là Gì Và Tại Sao Node.js Cần Nó](#nginx-reverse-proxy-la-gi-va-tai-sao-nodejs-can-no)
 
-2\. [Chuẩn Bị Trước Khi Bắt Đầu](#vn-2)
+2\. [Chuẩn Bị Trước Khi Bắt Đầu](#chuan-bi-truoc-khi-bat-dau)
 
-3\. [Bước 1 — Cài Node.js Trên Ubuntu Linux](#vn-3)
+3\. [Bước 1 — Cài Node.js Trên Ubuntu Linux](#buoc-1-cai-nodejs-tren-ubuntu-linux)
 
-4\. [Bước 2 — Cài Và Cấu Hình PM2 Process Manager](#vn-4)
+4\. [Bước 2 — Cài Và Cấu Hình PM2 Process Manager](#buoc-2-cai-va-cau-hinh-pm2-process-manager)
 
-5\. [Bước 3 — Cài Và Cấu Hình Nginx](#vn-5)
+5\. [Bước 3 — Cài Và Cấu Hình Nginx](#buoc-3-cai-va-cau-hinh-nginx)
 
-6\. [Bước 4 — Cấu Hình Nginx proxy\_pass Cho Node.js API](#vn-6)
+6\. [Bước 4 — Cấu Hình Nginx proxy\_pass Cho Node.js API](#buoc-4-cau-hinh-nginx-proxypass-cho-nodejs-api)
 
-7\. [Bước 5 — Deploy React Build Tĩnh Với Nginx](#vn-7)
+7\. [Bước 5 — Deploy React Build Tĩnh Với Nginx](#buoc-5-deploy-react-build-tinh-voi-nginx)
 
-8\. [Bước 6 — Bật HTTPS Miễn Phí Với Let's Encrypt](#vn-8)
+8\. [Bước 6 — Bật HTTPS Miễn Phí Với Let's Encrypt](#buoc-6-bat-https-mien-phi-voi-lets-encrypt)
 
-9\. [Bước 7 — Chạy Nhiều App Node.js Trên Một Server](#vn-9)
+9\. [Bước 7 — Chạy Nhiều App Node.js Trên Một Server](#buoc-7-chay-nhieu-app-nodejs-tren-mot-server)
 
-10\. [Lỗi Thường Gặp Và Cách Sửa](#vn-10)
+10\. [Lỗi Thường Gặp Và Cách Sửa](#loi-thuong-gap-va-cach-sua)
 
-11\. [Câu Hỏi Thường Gặp](#vn-11)
+11\. [Câu Hỏi Thường Gặp](#cau-hoi-thuong-gap)
 
 * * *
 

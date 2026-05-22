@@ -16,19 +16,19 @@ You spent weeks sharpening your technical skills, yet the interviewer seemed uni
 
 ### Table of Contents
 
-1\. [Why "tell me about yourself" matters more than you think](#en-1)
+1\. [Why "tell me about yourself" matters more than you think](#why-tell-me-about-yourself-matters-more-than-you-think)
 
-2\. [The P-S-T-G framework — a proven structure for dev introductions](#en-2)
+2\. [The P-S-T-G framework — a proven structure for dev introductions](#the-p-s-t-g-framework-a-proven-structure-for-dev-introductions)
 
-3\. [Script templates by experience level — Intern, Fresher, Junior](#en-3)
+3\. [Script templates by experience level — Intern, Fresher, Junior](#script-templates-by-experience-level)
 
-4\. [How to adapt your introduction for different company types](#en-4)
+4\. [How to adapt your introduction for different company types](#how-to-adapt-your-introduction-for-different-company-types)
 
-5\. [The 7 most common mistakes and how to avoid them](#en-5)
+5\. [The 7 most common mistakes and how to avoid them](#the-7-most-common-mistakes-and-how-to-avoid-them)
 
-6\. [How to practice and prepare before interview day](#en-6)
+6\. [How to practice and prepare before interview day](#how-to-practice-and-prepare-before-interview-day)
 
-7\. [FAQ — Common questions about self-introductions](#en-7)
+7\. [FAQ — Common questions about self-introductions](#faq-common-questions-about-self-introductions)
 
 * * *
 

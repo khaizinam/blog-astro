@@ -22,12 +22,12 @@ _Exposing the inner workings: How fraudsters infiltrate major AI platforms like 
 
 **Quick Navigation:**
 
-*   [1\. Common "supply sources" used by AI resellers](#en-part-1)
-*   [2\. How resellers optimize profit margins](#en-part-2)
-*   [3\. Why cheap accounts still "work" for a while](#en-part-3)
-*   [4\. The 4 real risks from an expert perspective](#en-part-4)
-*   [5\. Conclusion and practical advice](#en-conclusion)
-*   [FAQ – Frequently Asked Questions](#en-faq)
+*   [1\. Common "supply sources" used by AI resellers](#1-common-supply-sources-used-by-ai-resellers)
+*   [2\. How resellers optimize profit margins](#2-how-resellers-optimize-profit-margins)
+*   [3\. Why cheap accounts still "work" for a while](#3-why-cheap-accounts-still-work-for-a-while)
+*   [4\. The 4 real risks from an expert perspective](#4-the-4-real-risks-from-an-expert-perspective)
+*   [5\. Conclusion and practical advice](#5-conclusion-and-practical-advice)
+*   [FAQ – Frequently Asked Questions](#faq-frequently-asked-questions)
 
 * * *
 

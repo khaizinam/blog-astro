@@ -18,19 +18,19 @@ Every year, hundreds of IT freshers accept salaries 15–30% below the company's
 
 ### Table of Contents
 
-1\. [Why freshers are often paid below their actual value](#en-b1)
+1\. [Why freshers are often paid below their actual value](#why-freshers-are-often-paid-below-their-actual-value)
 
-2\. [The real benefits of negotiating — even without experience](#en-b2)
+2\. [The real benefits of negotiating — even without experience](#the-real-benefits-of-negotiating-even-without-experience)
 
-3\. [What to prepare before negotiating](#en-b3)
+3\. [What to prepare before negotiating](#what-to-prepare-before-negotiating)
 
-4\. [Step-by-step salary negotiation guide](#en-b4)
+4\. [Step-by-step salary negotiation guide](#step-by-step-salary-negotiation-guide)
 
-5\. [Real-world case study](#en-b5)
+5\. [Real-world case study](#real-world-case-study)
 
-6\. [Mistakes that cost you leverage](#en-b6)
+6\. [Mistakes that cost you leverage](#mistakes-that-cost-you-leverage)
 
-7\. [Quick FAQ](#en-b7)
+7\. [Quick FAQ](#quick-faq)
 
 * * *
 
@@ -62,7 +62,7 @@ When base salary isn't flexible, you can still negotiate: training budgets, remo
 
 Your first salary negotiation is always harder than your second. Starting early builds this thinking muscle from the beginning of your career, rather than having to learn it in higher-stakes situations later.
 
-See also: [IT Fresher & Junior Salary 2026 — How Much Should You Expect?](https://khaizinam.com/muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu) for specific benchmark numbers before entering any negotiation.
+See also: [IT Fresher & Junior Salary 2026 — How Much Should You Expect?](/en/muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu) for specific benchmark numbers before entering any negotiation.
 
 #### What to Prepare Before Negotiating
 
@@ -146,4 +146,4 @@ HR responded that 10M was over budget, but could offer 9M and an earlier review 
 
 Prepare your benchmarks, define your target number, practice your scripts, and walk in with a professional mindset — not begging, not confrontational, simply two parties finding a fair number together.
 
-See also: [IT Fresher & Junior Salary 2026 — How Much Should You Expect?](https://khaizinam.com/muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu) for full benchmark data by role and company type before entering any salary negotiation.
+See also: [IT Fresher & Junior Salary 2026 — How Much Should You Expect?](/en/muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu) for full benchmark data by role and company type before entering any salary negotiation.

@@ -18,14 +18,14 @@ You've prepared your self introduction, revised your technical concepts, and res
 
 **Table of Contents:**
 
-*   [1\. What the "Greatest Weakness" Question Is Actually Measuring](#h4-en-1)
-*   [2\. Before & After: What a Structured Answer Looks Like](#h4-en-2)
-*   [3\. The 3-Step RAI Framework for Answering Weakness Questions](#h4-en-3)
-*   [4\. Script Templates by Weakness Type](#h4-en-4)
-*   [5\. Real-World Case Studies](#h4-en-5)
-*   [6\. 6 Common Mistakes and How to Fix Them](#h4-en-6)
-*   [7\. FAQ](#h4-en-7)
-*   [8\. Summary](#h4-en-8)
+*   [1\. What the "Greatest Weakness" Question Is Actually Measuring](#1-what-the-greatest-weakness-question-is-actually-measuring)
+*   [2\. Before & After: What a Structured Answer Looks Like](#2-before-after-what-a-structured-answer-looks-like)
+*   [3\. The 3-Step RAI Framework for Answering Weakness Questions](#3-the-3-step-rai-framework-for-answering-weakness-questions)
+*   [4\. Script Templates by Weakness Type](#4-script-templates-by-weakness-type)
+*   [5\. Real-World Case Studies](#5-real-world-case-studies)
+*   [6\. 6 Common Mistakes and How to Fix Them](#6-6-common-mistakes-and-how-to-fix-them)
+*   [7\. FAQ](#7-faq)
+*   [8\. Summary](#8-summary)
 
 * * *
 

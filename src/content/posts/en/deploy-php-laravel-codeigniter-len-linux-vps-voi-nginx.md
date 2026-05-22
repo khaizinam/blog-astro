@@ -18,17 +18,17 @@ You just spun up a Linux VPS and you're staring at a blank terminal not knowing 
 
 **Table of Contents:**
 
-*   [1\. Why Nginx instead of Apache for PHP on a VPS?](#en-part-1)
-*   [2\. Prerequisites](#en-part-2)
-*   [3\. Step 1 — SSH in, update the server, and enable UFW firewall](#en-part-3)
-*   [4\. Step 2 — Install PHP 8.2 and required extensions](#en-part-4)
-*   [5\. Step 3 — Install Nginx](#en-part-5)
-*   [6\. Step 4 — Install MySQL via Docker (and why you should)](#en-part-6)
-*   [7\. Step 5 — Configure Nginx server block for PHP](#en-part-7)
-*   [8\. Step 6 — Enable free HTTPS with Certbot + Let's Encrypt](#en-part-8)
-*   [9\. Step 7 — Deploy Laravel and CodeIgniter](#en-part-9)
-*   [10\. Common errors and fixes](#en-part-10)
-*   [FAQ](#en-faq)
+*   [1\. Why Nginx instead of Apache for PHP on a VPS?](#1-why-nginx-instead-of-apache-for-php-on-a-vps)
+*   [2\. Prerequisites](#2-prerequisites)
+*   [3\. Step 1 — SSH in, update the server, and enable UFW firewall](#3-step-1-ssh-in-update-the-server-and-enable-ufw-firewall)
+*   [4\. Step 2 — Install PHP 8.2 and required extensions](#4-step-2-install-php-82-and-required-extensions)
+*   [5\. Step 3 — Install Nginx](#5-step-3-install-nginx)
+*   [6\. Step 4 — Install MySQL via Docker (and why you should)](#6-step-4-install-mysql-via-docker-and-why-you-should)
+*   [7\. Step 5 — Configure Nginx server block for PHP](#7-step-5-configure-nginx-server-block-for-php)
+*   [8\. Step 6 — Enable free HTTPS with Certbot + Let's Encrypt](#8-step-6-enable-free-https-with-certbot-lets-encrypt)
+*   [9\. Step 7 — Deploy Laravel and CodeIgniter](#9-step-7-deploy-laravel-and-codeigniter)
+*   [10\. Common errors and fixes](#10-common-errors-and-fixes)
+*   [FAQ](#faq-frequently-asked-questions)
 
 * * *
 
