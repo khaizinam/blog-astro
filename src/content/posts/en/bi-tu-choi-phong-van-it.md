@@ -8,7 +8,7 @@ translationKey: post-234
 featured: false
 draft: false
 tags:
-  []
+  - "NgoaiLe"
 description: "Getting rejected from an IT job interview is something almost every fresher and junior developer goes through at least once — usually more. That first rejection can make you question your abilities, but in the vast majority of cases, interview failures have specific, identifiable, fixable causes that can be addressed in a matter of weeks if you know where to look."
 ---
 

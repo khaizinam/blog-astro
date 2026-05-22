@@ -8,7 +8,7 @@ translationKey: post-239
 featured: false
 draft: false
 tags:
-  []
+  - "NgoaiLe"
 description: "Ngành IT tại Việt Nam tiếp tục giữ mặt bằng lương cao so với nhiều ngành khác, đặc biệt tập trung tại TP.HCM và Hà Nội. Hai thành phố này hiện là trung tâm tuyển dụng công nghệ lớn nhất cả nước, nơi tập trung nhiều công ty outsourcing, product, fintech, AI và startup quốc tế."
 ---
 

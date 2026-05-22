@@ -8,7 +8,7 @@ translationKey: post-238
 featured: false
 draft: false
 tags:
-  []
+  - "NgoaiLe"
 description: "Top 5 web đọc truyện tranh miễn phí vẫn còn hoạt động hiện nay 1. NetTruyen — Cái tên lâu đời không thể bỏ qua NetTruyen là một trong những nền tảng đọc truyện tranh online lâu đời và quen thuộc nhất với cộng đồng Việt Nam."
 ---
 

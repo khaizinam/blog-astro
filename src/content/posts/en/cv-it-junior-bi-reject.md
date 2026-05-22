@@ -8,7 +8,7 @@ translationKey: post-229
 featured: false
 draft: false
 tags:
-  []
+  - "NgoaiLe"
 description: "1-page IT CV or multi-page — this seemingly simple question determines whether HR will call you or quietly drop your application. This article shares a real developer's experience after rebuilding their CV using AI, discovering the harsh truth about how HR actually reads resumes in 2026."
 ---
 

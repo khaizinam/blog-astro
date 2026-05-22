@@ -8,7 +8,7 @@ translationKey: post-229
 featured: false
 draft: false
 tags:
-  []
+  - "NgoaiLe"
 description: "CV IT 1 trang hay nhiều trang — đây là câu hỏi tưởng đơn giản nhưng lại quyết định xem bạn có được HR gọi điện hay chỉ lặng lẽ bị cho vào thùng rác. Bài viết này chia sẻ trải nghiệm thực tế từ một developer sau khi rebuild CV bằng AI, nhận ra sự thật phũ phàng về cách HR thực sự đọc hồ sơ năm 2026."
 ---
 

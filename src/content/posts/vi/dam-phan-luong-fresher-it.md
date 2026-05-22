@@ -8,7 +8,7 @@ translationKey: post-237
 featured: false
 draft: false
 tags:
-  []
+  - "NgoaiLe"
 description: "Đàm phán lương fresher IT là quá trình thương lượng mức lương với nhà tuyển dụng sau khi nhận được offer — một bước mà hầu hết sinh viên mới ra trường bỏ qua hoàn toàn vì nghĩ \"fresher thì không có quyền mặc cả.\" Thực tế ngược lại: hầu hết công ty đều chừa ra biên độ thương lượng ngay cả với fresher, và không đàm phán nghĩa là bạn đang tự để lại tiền trên bàn mà không biết."
 ---
 

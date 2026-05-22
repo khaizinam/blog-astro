@@ -8,7 +8,7 @@ translationKey: post-223
 featured: false
 draft: false
 tags:
-  []
+  - "NgoaiLe"
 description: "Trong thời đại số, khi các nền tảng mạng xã hội như Facebook, Telegram trở thành nơi giao thương nhộn nhịp, thì cũng là lúc những \"con mồi\" tiềm năng bị đưa vào tầm ngắm của những kẻ lừa đảo. Chưa bao giờ, những lời mời chào về một công việc \"việc nhẹ lương cao\", \"ngồi nhà kiếm tiền triệu\", hay \"không cần kinh nghiệm, được đào tạo từ A-Z\" lại xuất hiện dày đặc như hiện nay."
 ---
 

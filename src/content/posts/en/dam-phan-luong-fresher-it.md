@@ -8,7 +8,7 @@ translationKey: post-237
 featured: false
 draft: false
 tags:
-  []
+  - "NgoaiLe"
 description: "Salary negotiation for IT freshers is the process of discussing and adjusting your compensation after receiving a job offer — a step that most new graduates skip entirely because they believe \"freshers have no bargaining power.\" The reality is the opposite: nearly every company builds a negotiation buffer into their offers even for entry-level candidates, and not negotiating means you're leaving m"
 ---
 

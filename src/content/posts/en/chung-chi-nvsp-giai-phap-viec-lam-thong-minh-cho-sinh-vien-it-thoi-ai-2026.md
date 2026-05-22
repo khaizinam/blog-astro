@@ -8,7 +8,7 @@ translationKey: post-221
 featured: false
 draft: false
 tags:
-  []
+  - "NgoaiLe"
 description: "A complete guide to Vietnam's Nghiệp vụ Sư phạm (NVSP) teaching certificate — what it is, eligibility requirements, costs, and why the path to becoming an IT lecturer at universities, colleges, or training centers is a stable and long-term valuable career choice for Vietnamese developers in 2026."
 ---
 

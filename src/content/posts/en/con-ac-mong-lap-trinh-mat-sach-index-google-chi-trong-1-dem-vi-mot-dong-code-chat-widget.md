@@ -8,7 +8,7 @@ translationKey: post-187
 featured: true
 draft: false
 tags:
-  []
+  - "NgoaiLe"
 description: "Did your website suddenly vanish from Google for no apparent reason? Discover this real-life case study of how a chat widget snippet blocked Googlebot and learn the ultimate fix. Read now!"
 ---
 

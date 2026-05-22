@@ -8,7 +8,7 @@ translationKey: post-234
 featured: false
 draft: false
 tags:
-  []
+  - "NgoaiLe"
 description: "Bị từ chối phỏng vấn IT là trải nghiệm mà hầu như mọi fresher và junior developer đều trải qua ít nhất một lần — thường là nhiều hơn thế. Cú từ chối đầu tiên có thể khiến bạn nghi ngờ năng lực bản thân, nhưng thực tế phần lớn các trường hợp thất bại đều có nguyên nhân cụ thể, có thể xác định và có thể khắc phục trong vòng vài tuần nếu bạn biết nhìn đúng chỗ."
 ---
 

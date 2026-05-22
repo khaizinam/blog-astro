@@ -8,7 +8,7 @@ translationKey: post-223
 featured: false
 draft: false
 tags:
-  []
+  - "NgoaiLe"
 description: "In the digital age, as social media platforms like Facebook and Telegram become bustling marketplaces, potential \"prey\" are increasingly being targeted by scammers. Never before have invitations for \"easy work with high pay,\" \"earn millions from home,\" or \"no experience required, A-Z training provided\" appeared as frequently as they do today."
 ---
 

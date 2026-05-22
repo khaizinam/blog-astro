@@ -8,7 +8,7 @@ translationKey: post-213
 featured: false
 draft: false
 tags:
-  []
+  - "NgoaiLe"
 description: "Bạn vừa tốt nghiệp, cầm tấm bằng IT trên tay nhưng gửi hàng chục CV đi mà chỉ nhận lại sự im lặng? Tôi cũng từng như bạn, loay hoay với Microsoft Word, cố gắng căn chỉnh từng dòng kẻ để rồi khi xuất PDF, định dạng lại nhảy lung tung. Nỗi đau lớn nhất của dân kỹ thuật không phải là thiếu kỹ năng, mà là không biết cách \"đóng gói\" giá trị bản thân vào một bản CV chuyên nghiệp."
 ---
 

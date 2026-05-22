@@ -8,7 +8,7 @@ translationKey: post-159
 featured: false
 draft: false
 tags:
-  []
+  - "NgoaiLe"
 description: "Khám phá cách cấu hình Nginx hiệu quả cho HTTP, HTTPS, Proxy Pass và chặn URL. Tối ưu website của bạn ngay hôm nay!"
 ---
 

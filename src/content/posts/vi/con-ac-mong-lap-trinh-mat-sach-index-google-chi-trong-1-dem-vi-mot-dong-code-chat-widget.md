@@ -8,7 +8,7 @@ translationKey: post-187
 featured: true
 draft: false
 tags:
-  []
+  - "NgoaiLe"
 description: "Web bạn đột nhiên bốc hơi khỏi Google không rõ lý do? Khám phá ngay case study thực tế từ một đoạn mã chat widget chặn Googlebot và cách fix triệt để. Đọc ngay!"
 ---
 

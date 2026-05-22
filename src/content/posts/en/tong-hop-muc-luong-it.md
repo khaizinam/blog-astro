@@ -8,7 +8,7 @@ translationKey: post-239
 featured: false
 draft: false
 tags:
-  []
+  - "NgoaiLe"
 description: "The IT industry in Vietnam continues to maintain a higher salary range compared to many other industries, especially in Ho Chi Minh City and Hanoi. These two cities are currently the country’s largest technology recruitment hubs, attracting outsourcing companies, product-based firms, fintech businesses, AI startups, and international tech corporations."
 ---
 

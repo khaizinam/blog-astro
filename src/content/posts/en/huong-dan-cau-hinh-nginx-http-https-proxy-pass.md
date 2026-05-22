@@ -8,7 +8,7 @@ translationKey: post-159
 featured: false
 draft: false
 tags:
-  []
+  - "NgoaiLe"
 description: "Discover how to configure Nginx effectively for HTTP, HTTPS, Proxy Pass, and URL blocking. Optimize your website today!"
 ---
 
