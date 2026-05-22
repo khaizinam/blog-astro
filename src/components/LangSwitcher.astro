@@ -1,0 +1,99 @@
+---
+/**
+ * LangSwitcher.astro
+ *
+ * Renders a VI / EN toggle button on a post page.
+ * Shows only when a translation exists for the current post.
+ *
+ * Props:
+ *  - currentLang: "vi" | "en"
+ *  - translationUrl: string | undefined  (URL of the translated version)
+ */
+
+interface Props {
+  currentLang: string;
+  translationUrl?: string;
+}
+
+const { currentLang, translationUrl } = Astro.props;
+
+// Nothing to render if there's no translation
+if (!translationUrl) return;
+
+const targetLang = currentLang === "vi" ? "en" : "vi";
+const label = currentLang === "vi" ? "Read in English" : "Đọc bằng tiếng Việt";
+const flagEmoji = currentLang === "vi" ? "🇬🇧" : "🇻🇳";
+---
+
+<div class="lang-switcher-wrap">
+  <a
+    id="lang-switcher"
+    href={translationUrl}
+    class="lang-switcher"
+    aria-label={label}
+    title={label}
+    data-current-lang={currentLang}
+    data-target-lang={targetLang}
+  >
+    <span class="lang-flag" aria-hidden="true">{flagEmoji}</span>
+    <span class="lang-label">{label}</span>
+    <svg
+      class="lang-arrow"
+      xmlns="http://www.w3.org/2000/svg"
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M5 12h14M12 5l7 7-7 7"/>
+    </svg>
+  </a>
+</div>
+
+<style>
+  .lang-switcher-wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.5rem;
+  }
+
+  .lang-switcher {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1.5px solid var(--color-accent);
+    color: var(--color-accent);
+    background: transparent;
+    transition: background 0.18s, color 0.18s, transform 0.15s;
+    white-space: nowrap;
+  }
+
+  .lang-switcher:hover {
+    background: var(--color-accent);
+    color: var(--color-background);
+    transform: translateY(-1px);
+  }
+
+  .lang-flag {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .lang-arrow {
+    transition: transform 0.18s;
+  }
+
+  .lang-switcher:hover .lang-arrow {
+    transform: translateX(3px);
+  }
+</style>
