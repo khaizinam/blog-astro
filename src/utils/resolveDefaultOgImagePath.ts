@@ -22,6 +22,12 @@ export function resolveDefaultOgImagePath(
   config: ResolvedAstroPaperConfig
 ): string {
   const filename = config.site.ogImage;
+  
+  // If the configured ogImage is an absolute URL, return it directly
+  if (filename.startsWith("http://") || filename.startsWith("https://")) {
+    return filename;
+  }
+
   if (
     filename.includes("..") ||
     filename.includes("/") ||

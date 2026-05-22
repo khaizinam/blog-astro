@@ -43,8 +43,8 @@ const rssHref = getRelativeLocaleUrl(
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/svg+xml" href={getAssetPath("favicon.svg")} />
-    <link rel="icon" href={getAssetPath("favicon.ico")} />
+    <link rel="icon" type="image/png" href="https://cdn.khaizinam.io.vn/blog/logo.png" />
+    <link rel="llms" type="text/plain" href="/llms.txt" />
     <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
 
@@ -115,11 +115,7 @@ const rssHref = getRelativeLocaleUrl(
     -->
     <script is:inline>
       (function () {
-        const stored = localStorage.getItem("theme");
-        const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
-        ).matches;
-        const theme = stored ?? (prefersDark ? "dark" : "light");
+        const theme = stored ?? "light";
         document.firstElementChild?.setAttribute("data-theme", theme);
         // Expose value so theme.ts can skip re-detection.
         window.__theme = { value: theme };

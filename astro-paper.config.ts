@@ -8,7 +8,7 @@ export default defineAstroPaperConfig({
       "Blog cá nhân về công nghệ, lập trình, kinh nghiệm thực tế và chia sẻ kiến thức từ góc nhìn của một developer Việt Nam.",
     author: "KhaiziNam",
     profile: "https://khaizinam.com",
-    ogImage: "default-og.jpg",
+    ogImage: "https://cdn.khaizinam.io.vn/blog/nextjs-vibe-coding.jpg",
     lang: "vi",
     timezone: "Asia/Ho_Chi_Minh",
     dir: "ltr",
