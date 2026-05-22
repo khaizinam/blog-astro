@@ -16,7 +16,7 @@ description: "Trong thời đại số, khi các nền tảng mạng xã hội n
 
 Trong thời đại số, khi các nền tảng mạng xã hội như Facebook, Telegram trở thành nơi giao thương nhộn nhịp, thì cũng là lúc những "**con mồi**" tiềm năng bị đưa vào tầm ngắm của những kẻ lừa đảo. Chưa bao giờ, những lời mời chào về một công việc "**việc nhẹ lương cao**", "**ngồi nhà kiếm tiền triệu**", hay "**không cần kinh nghiệm, được đào tạo từ A-Z**" lại xuất hiện dày đặc như hiện nay. 
 
-!["Cái bẫy" mang tên việc làm không cần kinh nghiệm](https://khaizinam.com/storage/blogs/blog-2026-04-17.webp)
+!["Cái bẫy" mang tên việc làm không cần kinh nghiệm](https://cdn.khaizinam.io.vn/blogs/blog-2026-04-17.webp)
 
 "Cái bẫy" mang tên việc làm không cần kinh nghiệm
 
@@ -44,7 +44,7 @@ Lúc này, "người hướng dẫn" (mentor) xuất hiện. Với phong thái c
 
 Để qua mặt hệ thống bảo mật của các nền tảng thanh toán và cơ quan chức năng, chúng hướng dẫn "học viên" sử dụng các công cụ như VPN, Fake IP, và Proxy để thay đổi địa chỉ mạng và danh tính kỹ thuật số. Mục đích là để giả lập hàng loạt người dùng thật, nhằm "rửa" tiền hoặc mua hàng hóa bằng thông tin thẻ bị đánh cắp trước khi tẩu tán tài sản.
 
-![Bóc trần bản chất: Black MMO và những rủi ro pháp lý](https://khaizinam.com/storage/blogs/google-mat-index.jpg)
+![Bóc trần bản chất: Black MMO và những rủi ro pháp lý](https://cdn.khaizinam.io.vn/blogs/google-mat-index.jpg)
 
 Bóc trần bản chất: Black MMO và những rủi ro pháp lý
 

@@ -14,7 +14,7 @@ description: "Web bạn đột nhiên bốc hơi khỏi Google không rõ lý do
 
 Đó là một buổi sáng thứ ba tồi tệ nhất trong sự nghiệp gõ phím của tôi. Tôi mở Google Analytics lên và đập vào mắt là một biểu đồ cắm đầu xuống đất.
 
-![Cơn Ác Mộng Lập Trình: Mất Sạch Index Google Chỉ Trong 1 Đêm Vì Một Dòng Code Chat Widget!](https://khaizinam.com/storage/blogs/google-mat-index.jpg)
+![Cơn Ác Mộng Lập Trình: Mất Sạch Index Google Chỉ Trong 1 Đêm Vì Một Dòng Code Chat Widget!](https://cdn.khaizinam.io.vn/blogs/google-mat-index.jpg)
 
 Cơn Ác Mộng Lập Trình: Mất Sạch Index Google Chỉ Trong 1 Đêm Vì Một Dòng Code Chat Widget!
 

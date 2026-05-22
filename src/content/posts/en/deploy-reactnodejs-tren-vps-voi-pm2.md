@@ -25,7 +25,7 @@ description: "For web developers, owning a 1GB RAM VPS at a low cost is an ideal
 
 For Web developers, owning a 1GB RAM VPS with a low cost is an ideal starting choice. However, the reality of deployment often turns into a "nightmare" when the application continuously crashes for unknown reasons. The core issue lies in two main factors:
 
-![Secrets to Deploying React/Node.js on 1GB RAM VPS with PM2: Never Run Out of Memory (OOM)](https://khaizinam.com/storage/blogs/gemini-generated-image-z2uuv6z2uuv6z2uu.jpg)
+![Secrets to Deploying React/Node.js on 1GB RAM VPS with PM2: Never Run Out of Memory (OOM)](https://cdn.khaizinam.io.vn/blogs/gemini-generated-image-z2uuv6z2uuv6z2uu.jpg)
 
 Secrets to Deploying React/Node.js on 1GB RAM VPS with PM2: Never Run Out of Memory (OOM)
 

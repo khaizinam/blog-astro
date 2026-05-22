@@ -14,7 +14,7 @@ description: "Getting rejected from an IT job interview is something almost ever
 
 Getting rejected from an IT job interview is something almost every fresher and junior developer goes through at least once — usually more. That first rejection can make you question your abilities, but in the vast majority of cases, interview failures have specific, identifiable, fixable causes that can be addressed in a matter of weeks if you know where to look.
 
-![I Failed My IT Job Interview — Here's What I Changed to Get Hired](https://khaizinam.com/storage/blog-folder/2026-04/images.jpg)
+![I Failed My IT Job Interview — Here's What I Changed to Get Hired](https://cdn.khaizinam.io.vn/blog-folder/2026-04/images.jpg)
 
 I Failed My IT Job Interview — Here's What I Changed to Get Hired
 

@@ -150,7 +150,7 @@ A follow-up question often asked: **"Does an HttpOnly cookie protect against XSS
 
 #### 4\. Node.js Event Loop - The Heart of the Runtime
 
-![Node.js Event Loop - The Heart of the Runtime](https://khaizinam.com/storage/blogs/2b46af9a-6e8f-4e5f-a88c-4aa0c25e4e95.webp)
+![Node.js Event Loop - The Heart of the Runtime](https://cdn.khaizinam.io.vn/blogs/2b46af9a-6e8f-4e5f-a88c-4aa0c25e4e95.webp)
 
 Node.js Event Loop - The Heart of the Runtime
 

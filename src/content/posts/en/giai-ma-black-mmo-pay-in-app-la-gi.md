@@ -16,7 +16,7 @@ description: "In the digital age, Pay in-app (in-app purchasing) has become an i
 
 In the digital age, **Pay in-app** (in-app purchasing) has become an indispensable part of the experience, allowing users to easily buy game items, upgrade service packages, or subscribe to memberships with just a few taps.
 
-![In the digital age, Pay in-app has become an indispensable part](https://khaizinam.com/storage/black-mmo-blog/black-mmo-1.webp)
+![In the digital age, Pay in-app has become an indispensable part](https://cdn.khaizinam.io.vn/black-mmo-blog/black-mmo-1.webp)
 
 In the digital age, Pay in-app has become an indispensable part
 
@@ -32,7 +32,7 @@ This article aims to provide a multi-dimensional look at device "spoofing" techn
 
 In the world of Black MMO (illegal Make Money Online), **Pay in-app** is understood as a sub-branch of **Carding**. This is the act of using stolen international payment card information to pay for app packages, top up games, buy donate coins, or VIP upgrade services.
 
-![In the Black MMO world, Pay in-app is a branch of Carding](https://khaizinam.com/storage/black-mmo-blog/black-mmo-2.webp)
+![In the Black MMO world, Pay in-app is a branch of Carding](https://cdn.khaizinam.io.vn/black-mmo-blog/black-mmo-2.webp)
 
 In the Black MMO world, Pay in-app is a branch of Carding
 
@@ -69,7 +69,7 @@ The Pay in-app system exploits almost all types of cards from major internationa
 
 Pay In-App activities in the underground world are no longer isolated acts but have transformed into professional operating systems, clearly categorized like a tech company. Each group in the chain has specific tasks to optimize profit and minimize the risk of being traced.
 
-![Operational process of a Pay In-App ring](https://khaizinam.com/storage/black-mmo-blog/black-mmo-3.webp)
+![Operational process of a Pay In-App ring](https://cdn.khaizinam.io.vn/black-mmo-blog/black-mmo-3.webp)
 
 Operational process of a Pay In-App ring
 
@@ -102,7 +102,7 @@ This hierarchy helps the ring operate smoothly: Hackers don't worry about small-
 
 For a Pay In-App transaction to be successfully approved, the Miner must pass Google's extremely strict behavioral scanning and device identification systems. The core goal is to make the system believe the device is being used by a "real user" and that the transaction is completely valid from the cardholder's perspective.
 
-![Security Bypass Techniques](https://khaizinam.com/storage/black-mmo-blog/black-mmo-4.webp)
+![Security Bypass Techniques](https://cdn.khaizinam.io.vn/black-mmo-blog/black-mmo-4.webp)
 
 Security Bypass Techniques
 
@@ -141,7 +141,7 @@ A small technical error can cause a card to "die" instantly. Miners perform deep
 
 The ultimate goal of the Pay In-App process is to turn virtual in-app values into cash or tradable assets. Here are the most common liquidation methods used by Miners:
 
-![Common Liquidation Methods](https://khaizinam.com/storage/black-mmo-blog/black-mmo-5.webp)
+![Common Liquidation Methods](https://cdn.khaizinam.io.vn/black-mmo-blog/black-mmo-5.webp)
 
 Common Liquidation Methods
 
@@ -178,7 +178,7 @@ This is a sophisticated technique requiring programming knowledge to optimize pr
 
 During the In-App payment process, Google's security system frequently returns error codes to block suspicious transactions or due to technical issues. Understanding these codes helps users (or Miners) accurately identify the problem.
 
-![Decoding Google Play Error Codes](https://khaizinam.com/storage/black-mmo-blog/black-mmo-6.webp)
+![Decoding Google Play Error Codes](https://cdn.khaizinam.io.vn/black-mmo-blog/black-mmo-6.webp)
 
 Decoding Google Play Error Codes
 
@@ -244,7 +244,7 @@ Understanding these error codes not only assists in troubleshooting but also ser
 
 To ensure professionalism and reliability, we must recognize that Pay In-App is not just a money-making trick but a behavior with serious risks for all involved parties.
 
-![Risks and Warnings](https://khaizinam.com/storage/black-mmo-blog/black-mmo-7.webp)
+![Risks and Warnings](https://cdn.khaizinam.io.vn/black-mmo-blog/black-mmo-7.webp)
 
 Risks and Warnings
 

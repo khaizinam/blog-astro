@@ -14,7 +14,7 @@ description: "Did your website suddenly vanish from Google for no apparent reaso
 
 It was the worst Tuesday morning of my typing career. I opened Google Analytics and was hit by a graph nose-diving into the ground.
 
-![Programmer's Nightmare: Losing All Google Indexing in 1 Night Because of a Single Chat Widget Code Line!](https://khaizinam.com/storage/blogs/google-mat-index.jpg)
+![Programmer's Nightmare: Losing All Google Indexing in 1 Night Because of a Single Chat Widget Code Line!](https://cdn.khaizinam.io.vn/blogs/google-mat-index.jpg)
 
 Programmer's Nightmare: Losing All Google Indexing in 1 Night Because of a Single Chat Widget Code Line!
 

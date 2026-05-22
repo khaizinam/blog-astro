@@ -18,7 +18,7 @@ description: "Discover how to configure Nginx effectively for HTTP, HTTPS, Proxy
 
 In the modern web world, owning a powerful and flexible web server is key to ensuring performance and security for your website. Nginx, with its asynchronous architecture and high traffic handling capabilities, has become the top choice for many developers and system administrators. This article will dive deep into **how to use Nginx**, explaining important configuration rules such as HTTP, HTTPS, proxy pass, cache, and how to block unwanted URLs.
 
-![Nginx Configuration Guide: HTTP, HTTPS, Proxy Pass](https://khaizinam.com/storage/blogs/612493203-1455239526604230-4049589168133588422-n.jpg)
+![Nginx Configuration Guide: HTTP, HTTPS, Proxy Pass](https://cdn.khaizinam.io.vn/blogs/612493203-1455239526604230-4049589168133588422-n.jpg)
 
 **Nginx Configuration Guide: HTTP, HTTPS, Proxy Pass**
 

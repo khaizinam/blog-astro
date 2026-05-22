@@ -47,7 +47,7 @@ Understanding this philosophy correctly is the foundation for answering every re
 
 #### What Is a Session — How It Works and Where It's Stored
 
-![What Is a Session — How It Works and Where It's Stored](https://khaizinam.com/storage/blogs/session-la-gi.jpg)
+![What Is a Session — How It Works and Where It's Stored](https://cdn.khaizinam.io.vn/blogs/session-la-gi.jpg)
 
 What Is a Session — How It Works and Where It's Stored
 
@@ -92,7 +92,7 @@ On the client side, the Session ID is stored in a **cookie**. The cookie should 
 
 #### What Is JWT — Structure, Mechanism, and Where It's Stored
 
-![What Is JWT — Structure, Mechanism, and Where It's Stored](https://khaizinam.com/storage/blogs/jwt-la-gi.jpg)
+![What Is JWT — Structure, Mechanism, and Where It's Stored](https://cdn.khaizinam.io.vn/blogs/jwt-la-gi.jpg)
 
 What Is JWT — Structure, Mechanism, and Where It's Stored
 

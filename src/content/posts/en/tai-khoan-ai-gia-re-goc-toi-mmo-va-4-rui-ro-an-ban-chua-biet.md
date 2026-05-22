@@ -16,7 +16,7 @@ This article provides a technical analysis of the cheap AI account market in Vie
 
 Are you considering buying ChatGPT Plus or Claude Pro for just 50,000–150,000 VND instead of the official $20/month (~500,000 VND)? These offers flood Facebook groups, Zalo chats, and Telegram channels daily. But what actually lies behind these "impossible" prices? Is it a genuine discount or a trap you haven't seen yet? This article breaks down the full mechanism — from a technical and MMO practitioner perspective — so you can make an informed decision.
 
-![blog-1](https://khaizinam.com/storage/blogs/blog-1.jpg)
+![blog-1](https://cdn.khaizinam.io.vn/blogs/blog-1.jpg)
 
 _Exposing the inner workings: How fraudsters infiltrate major AI platforms like ChatGPT and Claude._
 
@@ -35,7 +35,7 @@ _Exposing the inner workings: How fraudsters infiltrate major AI platforms like 
 
 It's no coincidence that a ChatGPT Plus account can be sold for the equivalent of $3. Behind every cheap account, there are at least four distinct supply methods that MMO resellers exploit.
 
-![The production pipeline for ultra-cheap AI accounts: abusing virtual VCCs and Auto Reg/Chargeback scripts.](https://khaizinam.com/storage/blogs/blog-2.jpg)
+![The production pipeline for ultra-cheap AI accounts: abusing virtual VCCs and Auto Reg/Chargeback scripts.](https://cdn.khaizinam.io.vn/blogs/blog-2.jpg)
 
 The production pipeline for ultra-cheap AI accounts: abusing virtual VCCs and Auto Reg/Chargeback scripts.
 
@@ -63,7 +63,7 @@ This is the most common model. A single ChatGPT Plus account is shared among 20�
 
 #### 2\. How Resellers Optimize Profit Margins
 
-![The MMO profit gap: How fraudsters optimize API usage and exploit dirty money flows.](https://khaizinam.com/storage/blogs/blog-3.jpg)
+![The MMO profit gap: How fraudsters optimize API usage and exploit dirty money flows.](https://cdn.khaizinam.io.vn/blogs/blog-3.jpg)
 
 The MMO profit gap: How fraudsters optimize API usage and exploit dirty money flows.
 
@@ -103,7 +103,7 @@ By routing connections through real residential IP addresses in the US or Europe
 
 #### 4\. The 4 Real Risks from an Expert Perspective
 
-![The real consequences: risk of sensitive Prompt data exposure and permanent account termination.](https://khaizinam.com/storage/blogs/blog-4.jpg)
+![The real consequences: risk of sensitive Prompt data exposure and permanent account termination.](https://cdn.khaizinam.io.vn/blogs/blog-4.jpg)
 
 The real consequences: risk of sensitive Prompt data exposure and permanent account termination.
 

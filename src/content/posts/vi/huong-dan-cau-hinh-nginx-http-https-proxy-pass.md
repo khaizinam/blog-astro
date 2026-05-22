@@ -18,7 +18,7 @@ description: "Khám phá cách cấu hình Nginx hiệu quả cho HTTP, HTTPS, P
 
 Trong thế giới web hiện đại, việc sở hữu một máy chủ web mạnh mẽ và linh hoạt là yếu tố then chốt để đảm bảo hiệu suất và bảo mật cho website của bạn. Nginx, với kiến trúc bất đồng bộ và khả năng xử lý lưu lượng truy cập cao, đã trở thành lựa chọn hàng đầu của nhiều nhà phát triển và quản trị viên hệ thống. Bài viết này sẽ đi sâu vào **cách sử dụng Nginx**, giải thích các quy tắc cấu hình quan trọng như HTTP, HTTPS, proxypass, cache, và cách chặn các URL không mong muốn.
 
-![Hướng dẫn Cấu hình Nginx: HTTP, HTTPS, Proxy Pass](https://khaizinam.com/storage/blogs/612493203-1455239526604230-4049589168133588422-n.jpg)
+![Hướng dẫn Cấu hình Nginx: HTTP, HTTPS, Proxy Pass](https://cdn.khaizinam.io.vn/blogs/612493203-1455239526604230-4049589168133588422-n.jpg)
 
 **Hướng dẫn Cấu hình Nginx: HTTP, HTTPS, Proxy Pass**
 

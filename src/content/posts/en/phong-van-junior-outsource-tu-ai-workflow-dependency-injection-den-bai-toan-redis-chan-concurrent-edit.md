@@ -14,7 +14,7 @@ description: "Bạn chuẩn bị phỏng vấn vị trí Junior tại công ty o
 
 Bạn chuẩn bị phỏng vấn vị trí Junior tại công ty outsource nhưng không biết họ thực sự hỏi gì sau câu "em tự giới thiệu đi"? Nếu chỉ ôn thuần lý thuyết OOP hay cú pháp Laravel, bạn có thể bị bất ngờ hoàn toàn khi gặp các câu hỏi về AI workflow, Dependency Injection, Interface pattern hay bài toán chặn nhiều người edit cùng một form. Bài này tôi kể lại nguyên xi buổi phỏng vấn của mình — từng câu hỏi, từng lần ngập ngừng, và cả những lúc tôi không biết câu trả lời nhưng vẫn vượt qua được nhờ tư duy đúng hướng.
 
-![Phỏng Vấn Junior Outsource: Từ AI Workflow, Dependency Injection Đến Bài Toán Redis Chặn Concurrent Edit](https://khaizinam.com/storage/screenshot-2026-03-19-155713.png)
+![Phỏng Vấn Junior Outsource: Từ AI Workflow, Dependency Injection Đến Bài Toán Redis Chặn Concurrent Edit](https://cdn.khaizinam.io.vn/screenshot-2026-03-19-155713.png)
 
 **Phỏng Vấn Junior Outsource: Từ AI Workflow, Dependency Injection Đến Bài Toán Redis Chặn Concurrent Edit**
 

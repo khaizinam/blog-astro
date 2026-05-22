@@ -16,7 +16,7 @@ Body language in tech interviews refers to the non-verbal signals — posture, e
 
 Many freshers and junior developers lose points not because of weak technical knowledge, but because of things they never notice: staring at the floor while answering, crossing their arms when a tough question comes up, or nodding continuously without actually understanding what was asked. A typical interview lasts 45 minutes, but first impressions form in under 7 seconds — and most of that impression comes from your body, not your words.
 
-![Body Language in Tech Interviews: 7 Mistakes That Cost You the Offer](https://khaizinam.com/storage/blog-folder/2026-04/photo-5-1518939893024943632782.webp)
+![Body Language in Tech Interviews: 7 Mistakes That Cost You the Offer](https://cdn.khaizinam.io.vn/blog-folder/2026-04/photo-5-1518939893024943632782.webp)
 
 Body Language in Tech Interviews: 7 Mistakes That Cost You the Offer
 
