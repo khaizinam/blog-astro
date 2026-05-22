@@ -25,7 +25,6 @@ The name **KhaiZiNam** originated from a shared passion for gaming back in the Z
 *   **Author:** Nguyen Huu Khai (khaizinam)
 *   **Website:** [khaizinam.com](https://khaizinam.com)
 *   **Portfolio:** [KhaiZiNam Portfolio](https://khaizinam.github.io/cv_port/)
-*   **Email:** [khaizinam@gmail.com](mailto:khaizinam@gmail.com)
 *   **Phone/Zalo:** +84 846 141 788
 *   **Languages:** Vietnamese & English (Bilingual)
 *   **Target Audience:** Vietnamese software engineers, particularly Junior Developers and IT Freshers.
@@ -76,6 +75,7 @@ If you are looking for a development partner or technical consultation, I offer 
 
 *   **Frontend:** React, Vue 3, NuxtJS, Next.js, TailwindCSS, TypeScript, Angular
 *   **Backend:** Laravel, CodeIgniter 4, Node.js, Java Spring Boot
+*   **CMS & Enterprise:** Botble CMS (Laravel-based), Multi-tenancy (tenancy-for-laravel)
 *   **Mobile:** React Native (iOS & Android)
 *   **DevOps:** Docker, Nginx, Cloudflare, Git, Linux, PM2
 *   **Database:** MySQL, PostgreSQL, MongoDB, Redis
@@ -85,12 +85,35 @@ If you are looking for a development partner or technical consultation, I offer 
 
 ## Highlighted Projects
 
-*   **Automotive Systems:** Kia Vietnam / THACO AUTO / THACO AGRI.
-*   **Manga Platforms:** MangaK — Online manga reader with 10,000+ DAU.
-*   **Fintech Plugins:** Payment integration plugins for SePay.
-*   **International E-commerce:** TLFparts (Netherlands) — Auto parts e-commerce site.
-*   **F&B Retail:** Annam Gourmet — Premium imported grocery store web app.
-*   **Blockchain Game:** TON Blockchain NFT Game.
+### Automotive Multi-brand Platform — Major Vietnamese Automotive Group
+
+Designed and built end-to-end for one of Vietnam's leading automotive groups:
+
+*   **Architecture:** Multi-tenant, multi-brand — each brand runs on its own domain/subdomain with fully isolated data, powered by a shared Laravel + Botble CMS core using the tenancy-for-laravel plugin.
+*   **Tech stack:** PHP Laravel + **Botble CMS**, MySQL, **NuxtJS** (for ecommerce/sales pages), Redis, queue/job system
+*   **Scope:** Database schema design, migration strategy, multi-tenant domain routing, permission & content workflow for multiple editorial teams, SEO infrastructure at scale across multiple brands, production deployment & CI/CD pipeline
+*   **Complexity:** Tenancy requires careful query isolation, preventing session/cache/queue leaks across tenants, and safe migration strategies — a pattern many developers avoid because of the high risk of data corruption in production
+
+---
+
+### MangaK — Online Manga Platform
+
+Built and operated end-to-end — manga/manhwa/manhhua reading platform with **1,000+ DAU**:
+
+*   **Stack:** CodeIgniter 4 (CI4) API + VueJS, MySQL, Redis cache, CDN
+*   **Features:** Chapter delivery system, user subscriptions, real-time socket chat, custom queue worker, content crawler, notifications, integrated farming game
+*   **SEO:** Self-managed technical and content SEO — on-page optimization, sitemap, structured data, page speed, and organic traffic growth strategy
+*   **Fanpage & Community:** Self-managed fanpage, content calendar, follower growth campaigns, and reader community engagement
+*   **Security & Infrastructure:** Cloudflare configuration (WAF, DDoS protection, caching rules, rate limiting), hosting management, database security (backups, access control, query hardening)
+
+---
+
+### Other Projects
+
+*   **Fintech Plugins:** Payment gateway integrations (SePay, VietQR, VNPAY) across multiple systems
+*   **International E-commerce:** TLFparts (Netherlands) — Mobile phone & components e-commerce platform
+*   **F&B Retail:** Annam Gourmet — Premium imported grocery web platform
+*   **Blockchain Game:** TON Blockchain NFT Game
 
 ---
 

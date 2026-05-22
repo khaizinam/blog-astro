@@ -25,7 +25,6 @@ Chữ **KhaiZiNam** được bắt nguồn từ niềm đam mê chơi game thờ
 *   **Tác giả:** Nguyễn Hữu Khải (khaizinam)
 *   **Website:** [khaizinam.com](https://khaizinam.com)
 *   **Portfolio:** [KhaiZiNam Portfolio](https://khaizinam.github.io/cv_port/)
-*   **Email liên hệ:** [khaizinam@gmail.com](mailto:khaizinam@gmail.com)
 *   **Zalo / SĐT:** 0846 141 788
 *   **Ngôn ngữ:** Tiếng Việt & English (Song ngữ)
 *   **Đối tượng hướng đến:** Lập trình viên Việt Nam, đặc biệt là các bạn Junior Developer và Fresher IT.
@@ -76,6 +75,7 @@ Nếu bạn đang tìm kiếm đối tác đồng hành phát triển dự án h
 
 *   **Frontend:** React, Vue 3, NuxtJS, Next.js, TailwindCSS, TypeScript, Angular
 *   **Backend:** Laravel, CodeIgniter 4, Node.js, Java Spring Boot
+*   **CMS & Enterprise:** Botble CMS (Laravel-based), Multi-tenancy (tenancy-for-laravel)
 *   **Mobile:** React Native (iOS & Android)
 *   **DevOps:** Docker, Nginx, Cloudflare, Git, Linux, PM2
 *   **Database:** MySQL, PostgreSQL, MongoDB, Redis
@@ -85,12 +85,35 @@ Nếu bạn đang tìm kiếm đối tác đồng hành phát triển dự án h
 
 ## Dự án tiêu biểu đã tham gia
 
-*   **Automotive Systems:** Kia Vietnam / THACO AUTO / THACO AGRI.
-*   **Manga Nền tảng:** MangaK — Nền tảng đọc truyện tranh với 10.000+ DAU.
-*   **Fintech Plugins:** Các plugin tích hợp thanh toán cho SePay.
-*   **E-commerce Quốc tế:** TLFparts (Hà Lan) — Thương mại điện tử phụ tùng ô tô.
-*   **F&B Retail:** Annam Gourmet — Hệ thống web thực phẩm nhập khẩu cao cấp.
-*   **Blockchain Game:** TON Blockchain NFT Game.
+### Automotive Multi-brand Platform — Tập đoàn ô tô lớn tại Việt Nam
+
+Hệ thống web cho một tập đoàn ô tô hàng đầu Việt Nam, tự thiết kế và build từ đầu đến cuối:
+
+*   **Architecture:** Multi-tenant, multi-brand — nhiều thương hiệu chạy trên domain riêng, dùng chung một core CMS nhưng data hoàn toàn phân tách qua **tenancy plugin** (tenancy-for-laravel)
+*   **Tech stack:** PHP Laravel + **Botble CMS**, MySQL, **NuxtJS** (cho các trang ecommerce mua bán), Redis, queue/job system
+*   **Scope thực tế:** Thiết kế database schema, migration strategy, domain routing multi-tenant, permission & content workflow cho nhiều team nội dung, SEO at scale cho nhiều brand cùng lúc, deploy & CI/CD trên production
+*   **Điểm phức tạp:** Tenancy plugin đòi hỏi xử lý query isolation, session/cache/queue không bị leak giữa tenant, migration cẩn thận để không vỡ data — đây là phần nhiều developer né vì dễ gây lỗi nghiêm trọng trên production
+
+---
+
+### MangaK — Nền tảng đọc truyện tranh
+
+Nền tảng manga/manhwa/manhhua với **1,000+ DAU**, tự xây từ đầu và tự vận hành toàn bộ:
+
+*   **Stack:** CodeIgniter 4 (CI4) API + VueJS, MySQL, Redis cache, CDN
+*   **Tính năng:** Hệ thống chapter, user subscription, socket chat real-time, custom queue worker, crawler, notification, game farming tích hợp
+*   **SEO:** Tự làm SEO kỹ thuật và nội dung — tối ưu on-page, sitemap, structured data, tốc độ tải trang, và chiến lược tăng trưởng organic traffic
+*   **Fanpage & cộng đồng:** Tự quản lý fanpage, lên nội dung, chạy chiến dịch tăng follow và giữ chân user, xây dựng cộng đồng đọc giả
+*   **Bảo mật & hạ tầng:** Cấu hình Cloudflare (WAF, DDoS protection, caching rules, rate limiting), quản lý hosting, bảo mật database (backup, access control, query hardening)
+
+---
+
+### Các dự án khác
+
+*   **Fintech Plugins:** Tích hợp thanh toán SePay, VietQR, VNPAY cho nhiều hệ thống khác nhau
+*   **E-commerce Quốc tế:** TLFparts (Hà Lan) — Thương mại điện tử thiết bị & linh kiện điện thoại
+*   **F&B Retail:** Annam Gourmet — Hệ thống web thực phẩm nhập khẩu cao cấp
+*   **Blockchain Game:** TON Blockchain NFT Game
 
 ---
 
