@@ -26,18 +26,39 @@ const {
   alternateLang,
 } = Astro.props;
 
+const sameAs = [
+  site.profile,
+  ...config.socials.map(s => s.url),
+].filter(Boolean) as string[];
+
+const currentLang = Astro.currentLocale ?? site.lang;
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   headline: title ?? site.title,
-  image: ogImage,
+  description: description ?? site.description,
+  image: ogImage ?? site.ogImage,
+  url: canonicalURL,
+  inLanguage: currentLang,
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": canonicalURL,
+  },
   ...(pubDatetime && { datePublished: pubDatetime.toISOString() }),
   ...(modDatetime && { dateModified: modDatetime.toISOString() }),
+  publisher: {
+    "@type": "Person",
+    name: site.author,
+    ...(site.profile && { url: site.profile }),
+    ...(sameAs.length > 1 && { sameAs }),
+  },
   author: [
     {
       "@type": "Person",
       name: site.author,
       ...(site.profile && { url: site.profile }),
+      ...(sameAs.length > 1 && { sameAs }),
     },
   ],
 };
@@ -70,6 +91,17 @@ const structuredData = {
       is:inline
       set:html={JSON.stringify(structuredData)}
     />
+
+    {/* x-default hreflang: point to the canonical vi version (default locale) */}
+    {
+      canonicalURL && currentLang === "en" && (
+        <link
+          rel="alternate"
+          hreflang="x-default"
+          href={new URL(alternateURL ?? canonicalURL, Astro.site ?? Astro.url).href}
+        />
+      )
+    }
   </Fragment>
 
   <slot />
