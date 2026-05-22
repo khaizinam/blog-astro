@@ -48,6 +48,10 @@ Không phải ai cũng có cơ hội thực tập tại công ty lớn. Portfoli
 
 Profile GitHub có 30 repository nhưng 28 cái là fork, 1 cái là project todo-list tutorial copy-paste, 1 cái là bài tập trên lớp không có README. Commit history toàn màu xám. Khi nhà tuyển dụng click vào, họ không tìm được thứ gì để đánh giá. CV nói "thành thạo React và Node.js" nhưng không có gì để kiểm chứng.
 
+![Github rất cần thiết cho portfolio của bạn](https://cdn.khaizinam.io.vn/blog-folder/2026-05/portfolio-github-blog.webp)
+
+Github rất cần thiết cho portfolio của bạn
+
 ##### 2.2. Sau - ít hơn nhưng rõ hơn
 
 Cùng developer đó sau khi dọn lại: ẩn toàn bộ fork và bài tập, giữ lại 3 project tự làm, viết README đầy đủ có ảnh screenshot, link demo, mô tả bài toán và hướng dẫn chạy cho cả 3. Thêm pinned repositories lên đầu profile. Kết quả: tỷ lệ được gọi phỏng vấn tăng rõ rệt dù không thay đổi bất kỳ kỹ năng nào - chỉ thay đổi cách trình bày những gì đã có.
@@ -67,6 +71,10 @@ Portfolio của junior developer không cần phức tạp - cần đủ 6 thàn
 ##### 3.2. Project có README hoàn chỉnh
 
 Mỗi project trong portfolio cần có README tối thiểu gồm: tên và mô tả ngắn bài toán giải quyết, tech stack sử dụng, ảnh screenshot hoặc GIF demo, hướng dẫn cài đặt và chạy local (không quá 5 bước), và link demo nếu có. README là thứ đầu tiên technical lead đọc khi vào repo - nếu không có README, repo đó coi như không tồn tại.
+
+![Portfolio readme example](https://cdn.khaizinam.io.vn/blog-folder/2026-05/portfolio-readme.webp)
+
+Portfolio readme example
 
 ##### 3.3. Ít nhất một project có link demo trực tiếp
 

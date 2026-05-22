@@ -48,6 +48,10 @@ Not everyone has the opportunity to intern at a well-known company. A well-built
 
 A GitHub profile with thirty repositories where twenty-eight are forks, one is a copy-paste todo list tutorial, and one is a class assignment with no README. The commit graph is almost entirely grey. When a recruiter clicks through, there's nothing to evaluate. The CV says "proficient in React and Node.js" but nothing in the GitHub profile verifies it.
 
+![Github is need for your portfolio](https://cdn.khaizinam.io.vn/blog-folder/2026-05/portfolio-github-blog.webp)
+
+Github is need for your portfolio
+
 ##### 2.2. After - fewer repositories, much clearer signal
 
 The same developer after a portfolio cleanup: all forks and class assignments hidden, three self-built projects remaining, each with a complete README including screenshots, a live demo link, problem description, and setup instructions. Pinned repositories placed at the top of the profile. The result: interview callback rate improved noticeably without changing any underlying technical skills - only changing how existing work was presented.
@@ -67,6 +71,10 @@ A junior developer portfolio doesn't need to be complex - it needs these six com
 ##### 3.2. Projects with complete READMEs
 
 Every portfolio project needs a README that contains at minimum: the project name and a short description of the problem it solves, the tech stack used, screenshots or a GIF demo, setup instructions that take no more than five steps, and a live demo link if one exists. The README is the first thing a technical lead reads when they open your repository - if there's no README, that repository effectively doesn't exist.
+
+![Portfolio readme example](https://cdn.khaizinam.io.vn/blog-folder/2026-05/portfolio-readme.webp)
+
+Portfolio readme example
 
 ##### 3.3. At least one project with a live demo link
 
