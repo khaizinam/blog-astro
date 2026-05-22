@@ -14,13 +14,50 @@ import {
   transformerNotationHighlight,
   transformerNotationWordHighlight,
 } from "@shikijs/transformers";
+import { visit } from "unist-util-visit";
 import { transformerFileName } from "./src/utils/transformers/fileName";
 import config from "./astro-paper.config";
+
+// Helpers for clean accent-free slugs
+function getNodeText(node: any): string {
+  if (node.type === "text") return node.value || "";
+  if (node.children && Array.isArray(node.children)) {
+    return node.children.map(getNodeText).join("");
+  }
+  return "";
+}
+
+function cleanSlugify(text: string): string {
+  return text
+    .toString()
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "") // Remove Vietnamese accents
+    .replace(/[đĐ]/g, "d")
+    .replace(/[^a-z0-9\s-]/g, "") // Remove special characters
+    .trim()
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-");
+}
+
+function rehypeCleanSlugs() {
+  return (tree: any) => {
+    visit(tree, "element", (node: any) => {
+      if (["h1", "h2", "h3", "h4", "h5", "h6"].includes(node.tagName)) {
+        const text = getNodeText(node);
+        node.properties = node.properties || {};
+        node.properties.id = cleanSlugify(text);
+      }
+    });
+  };
+}
 
 export default defineConfig({
   site: config.site.url,
   integrations: [
-    mdx(),
+    mdx({
+      rehypePlugins: [rehypeCleanSlugs],
+    }),
     sitemap({
       filter: page =>
         config.features?.showArchives !== false || !page.endsWith("/archives/"),
@@ -35,6 +72,7 @@ export default defineConfig({
   },
   markdown: {
     remarkPlugins: [remarkToc, [remarkCollapse, { test: "Table of contents" }]],
+    rehypePlugins: [rehypeCleanSlugs],
     shikiConfig: {
       themes: { light: "min-light", dark: "night-owl" },
       defaultColor: false,

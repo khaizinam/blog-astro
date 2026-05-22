@@ -6,13 +6,13 @@ function slugify(text) {
   return text
     .toString()
     .toLowerCase()
-    .normalize('NFD') // Tách các ký tự có dấu tiếng Việt
-    .replace(/[\u0300-\u036f]/g, '') // Xoá các dấu tiếng Việt rời
-    .replace(/[đĐ]/g, 'd') // Chuyển đ -> d
-    .replace(/[^a-z0-9\s-]/g, '') // Loại bỏ ký tự đặc biệt
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "") // Remove Vietnamese accents
+    .replace(/[đĐ]/g, "d")
+    .replace(/[^a-z0-9\s-]/g, "") // Remove special characters
     .trim()
-    .replace(/\s+/g, '-') // Thay khoảng trắng bằng dấu -
-    .replace(/-+/g, '-'); // Tránh các dấu - lặp lại
+    .replace(/\s+/g, "-") // Replace spaces with hyphens
+    .replace(/-+/g, "-"); // Collapse multiple hyphens
 }
 
 const POSTS_DIR_VI = path.join(__dirname, '../content/posts/vi');
