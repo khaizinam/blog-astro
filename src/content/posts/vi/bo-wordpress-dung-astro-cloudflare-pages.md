@@ -48,6 +48,10 @@ Update plugin xong site lỗi. Plugin conflict. CPU tăng vô lý. Bot scan wp-l
 
 #### 2. Chi phí âm thầm mà bạn không thấy ngay
 
+![Chi phí âm thầm mà bạn không thấy ngay](https://cdn.khaizinam.io.vn/blog-folder/2026-05/cloudflare-page-astro.jpg)
+
+Chi phí âm thầm mà bạn không thấy ngay
+
 ##### 2.1. Chi phí tài chính cộng dồn
 
 Hosting, backup, CDN, plugin premium, anti-malware, cache plugin — đôi khi cả VPS. Riêng lẻ từng thứ trông không lớn, nhưng cộng lại theo năm thì con số bắt đầu đáng kể, đặc biệt khi blog không tạo ra doanh thu.

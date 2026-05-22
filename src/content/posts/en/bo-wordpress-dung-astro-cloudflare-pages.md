@@ -48,6 +48,10 @@ Plugin update breaks the site. Plugin conflict. CPU spikes for no reason. Bots c
 
 #### 2. The hidden costs you don't notice right away
 
+![The hidden costs you don't notice right away](https://cdn.khaizinam.io.vn/blog-folder/2026-05/cloudflare-page-astro.jpg)
+
+The hidden costs you don't notice right away
+
 ##### 2.1. Financial costs that stack up
 
 Hosting, backups, CDN, premium plugins, anti-malware, cache plugins — sometimes a VPS. Each line item looks small, but added up over a year the number becomes significant, especially when the blog isn't generating any revenue.
