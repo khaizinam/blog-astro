@@ -39,7 +39,7 @@ If you've looked at job postings lately, you've probably noticed that two "junio
 
 **Portfolio quality trumps GPA.** A fresher with two deployed side projects and a GitHub with consistent commits will receive higher offers than one with a 3.8 GPA and no code in the wild. Employers are buying future output, not past grades.
 
-![IT Fresher & Junior Developer Salary in 2026: How Much Should You Expect?](https://cdn.khaizinam.io.vn/blog/gemini-generated-image-bzoi43bzoi43bzoi.jpg)
+![IT Fresher & Junior Developer Salary in 2026: How Much Should You Expect?](https://cdn.khaizinam.io.vn/blog/bang-luong-fresher-it-2026.jpg)
 
 IT Fresher & Junior Developer Salary in 2026: How Much Should You Expect?
 
