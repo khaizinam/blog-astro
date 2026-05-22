@@ -7,7 +7,7 @@ lang: vi
 featured: false
 draft: false
 tags:
-  - "NgoaiLe"
+  - "Links"
 ogImage: "https://cdn.khaizinam.io.vn/blog-folder/2026-05/og-banner.jpg"
 description: "Top 5 web đọc truyện tranh miễn phí vẫn còn hoạt động hiện nay 1. NetTruyen — Cái tên lâu đời không thể bỏ qua NetTruyen là một trong những nền tảng đọc truyện tranh online lâu đời và quen thuộc nhất với cộng đồng Việt Nam."
 ---
