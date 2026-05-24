@@ -1,6 +1,6 @@
 ---
 title: "Secrets to Deploying React/Node.js on a 1GB RAM VPS with PM2: Never Run Out of Memory 2026"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-21T09:52:37.000Z
 slug: deploy-reactnodejs-tren-vps-voi-pm2
 lang: en

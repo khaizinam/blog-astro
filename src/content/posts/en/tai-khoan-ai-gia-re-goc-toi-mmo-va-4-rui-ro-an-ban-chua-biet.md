@@ -1,6 +1,6 @@
 ---
 title: "Cheap AI Accounts: The Dark Side of MMO Reselling and 4 Hidden Risks You Need to Know (2026)"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-20T18:23:49.000Z
 slug: tai-khoan-ai-gia-re-goc-toi-mmo-va-4-rui-ro-an-ban-chua-biet
 lang: en

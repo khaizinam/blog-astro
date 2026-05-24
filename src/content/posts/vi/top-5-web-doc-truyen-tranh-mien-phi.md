@@ -1,6 +1,6 @@
 ---
 title: "Top 5 web đọc truyện tranh miễn phí 2026"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-05-21T15:23:52.000Z
 slug: top-5-web-doc-truyen-tranh-mien-phi
 lang: vi

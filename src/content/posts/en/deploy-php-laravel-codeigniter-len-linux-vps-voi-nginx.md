@@ -1,6 +1,6 @@
 ---
 title: "Deploy PHP, Laravel, CodeIgniter on Linux VPS with Nginx + MySQL Docker + SSL 2026"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-20T19:22:46.000Z
 slug: deploy-php-laravel-codeigniter-len-linux-vps-voi-nginx
 lang: en

@@ -1,6 +1,6 @@
 ---
 title: "Cách đặt câu hỏi ngược khi phỏng vấn IT — đừng chỉ hỏi lương"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-23T09:13:22.000Z
 slug: cau-hoi-nguoc-phong-van
 lang: vi

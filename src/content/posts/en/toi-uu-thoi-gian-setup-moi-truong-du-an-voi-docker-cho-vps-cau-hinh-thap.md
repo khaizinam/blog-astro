@@ -1,6 +1,6 @@
 ---
 title: "Optimizing Project Environment Setup Time with Docker for Low-Config VPS"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-01-07T15:01:18.000Z
 slug: toi-uu-thoi-gian-setup-moi-truong-du-an-voi-docker-cho-vps-cau-hinh-thap
 lang: en

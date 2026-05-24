@@ -1,6 +1,6 @@
 ---
 title: "Câu Hỏi Phỏng Vấn Backend Junior: Tổng Hợp Đầy Đủ Từ Database Đến API, Auth và Cache"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-01T13:48:29.000Z
 slug: cau-hoi-phong-van-backend-junior-tong-hop-day-du-tu-database-den-api-auth-va-cache
 lang: vi

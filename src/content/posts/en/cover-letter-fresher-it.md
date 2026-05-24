@@ -1,6 +1,6 @@
 ---
 title: "How to Write a Junior Developer Cover Letter With No Experience"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-05-06T09:12:43.000Z
 slug: cover-letter-fresher-it
 lang: en

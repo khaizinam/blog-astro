@@ -1,6 +1,6 @@
 ---
-title: "Cách tự giới thiệu bản thân khi phỏng vấn IT (script mẫu cho fresher & junior)"
-author: KhaiziNam
+title: "Giới thiệu bản thân phỏng vấn IT chuẩn: .NET, Java, React, Node"
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-03-25T22:03:01.000Z
 slug: cach-gioi-thieu-ban-than-khi-phong-van-it-script-mau-cho-fresher-va-junior-dev
 lang: vi
@@ -9,26 +9,30 @@ featured: false
 draft: false
 tags:
   - "SeriesPhongVan"
-description: "Bạn chuẩn bị kỹ thuật rất tốt nhưng lại bị loại ngay từ vòng đầu chỉ vì phần giới thiệu bản thân lộn xộn, lan man hoặc quá ngắn đến mức interviewer không có gì để hỏi tiếp? Đây là sai lầm phổ biến nhất của fresher và junior IT — bởi vì \"hãy tự giới thiệu về bản thân\" trông có vẻ dễ nhưng thực ra là câu hỏi đặt nền tảng cho toàn bộ buổi phỏng vấn. Bài này tôi chia sẻ đúng cấu trúc"
+description: "Cách giới thiệu bản thân khi phỏng vấn IT — script mẫu cho .NET, Java, Flutter, React, PHP. Cấu trúc P-S-T-G, điều chỉnh theo stack, công ty, và kinh nghiệm (fresher, junior)."
 ---
+
+## Cách tự giới thiệu bản thân khi phỏng vấn IT (script mẫu cho fresher & junior)
 
 Bạn chuẩn bị kỹ thuật rất tốt nhưng lại bị loại ngay từ vòng đầu chỉ vì phần giới thiệu bản thân lộn xộn, lan man hoặc quá ngắn đến mức interviewer không có gì để hỏi tiếp? Đây là sai lầm phổ biến nhất của fresher và junior IT — bởi vì "hãy tự giới thiệu về bản thân" trông có vẻ dễ nhưng thực ra là câu hỏi đặt nền tảng cho toàn bộ buổi phỏng vấn. Bài này tôi chia sẻ đúng cấu trúc, script mẫu thực tế, và những lỗi cần tránh để bạn tạo ấn tượng ngay từ những giây đầu tiên.
 
 ### Mục Lục
 
-1\. [Tại sao câu "giới thiệu bản thân" quan trọng hơn bạn nghĩ](#tai-sao-cau-gioi-thieu-ban-than-quan-trong-hon-ban-nghi)
+1. [Tại sao câu "giới thiệu bản thân" quan trọng hơn bạn nghĩ](#tai-sao-cau-gioi-thieu-ban-than-quan-trong-hon-ban-nghi)
 
-2\. [Cấu trúc giới thiệu bản thân chuẩn cho dev IT](#cau-truc-gioi-thieu-ban-than-chuan-cho-dev-it)
+2. [Cấu trúc giới thiệu bản thân chuẩn cho dev IT](#cau-truc-gioi-thieu-ban-than-chuan-cho-dev-it)
 
-3\. [Script mẫu theo từng cấp độ — Fresher, Junior, Intern](#script-mau-theo-tung-cap-do)
+3. [Script mẫu theo từng cấp độ — Fresher, Junior, Intern](#script-mau-theo-tung-cap-do)
 
-4\. [Cách điều chỉnh theo từng loại công ty](#cach-dieu-chinh-theo-tung-loai-cong-ty)
+4. [Script điều chỉnh theo stack kỹ thuật](#script-dieu-chinh-theo-stack-ky-thuat)
 
-5\. [Những lỗi phổ biến nhất và cách tránh](#nhung-loi-pho-bien-nhat-va-cach-tranh)
+5. [Cách điều chỉnh theo từng loại công ty](#cach-dieu-chinh-theo-tung-loai-cong-ty)
 
-6\. [Luyện tập và chuẩn bị trước ngày phỏng vấn](#luyen-tap-va-chuan-bi-truoc-ngay-phong-van)
+6. [Những lỗi phổ biến nhất và cách tránh](#nhung-loi-pho-bien-nhat-va-cach-tranh)
 
-7\. [FAQ — Câu hỏi thường gặp về phần giới thiệu bản thân](#faq-cau-hoi-thuong-gap-ve-phan-gioi-thieu-ban-than)
+7. [Luyện tập và chuẩn bị trước ngày phỏng vấn](#luyen-tap-va-chuan-bi-truoc-ngay-phong-van)
+
+8. [FAQ — Câu hỏi thường gặp về phần giới thiệu bản thân](#faq-cau-hoi-thuong-gap-ve-phan-gioi-thieu-ban-than)
 
 * * *
 
@@ -109,6 +113,28 @@ _Stack em làm chính là Laravel và Node.js. Trong thời gian vừa rồi em 
 
 _Em đang muốn tìm một môi trường có nhiều technical challenge hơn — cụ thể là được làm việc với hệ thống có traffic cao hơn hoặc được tiếp cận với system design. Em thấy bên mình đang scale product lên nên em nghĩ đây là thời điểm tốt để tham gia và học hỏi."_
 
+#### Script Điều Chỉnh Theo Stack Kỹ Thuật
+
+Phần T (Track record) trong khung P-S-T-G cần thay đổi theo stack để interviewer nhận ra bạn đang làm đúng ngôn ngữ và công nghệ họ cần. Dưới đây là các ví dụ để bạn điều chỉnh:
+
+##### Nếu bạn là .NET Developer (C#, ASP.NET Core)
+_"Em vừa hoàn thành một project quản lý kho hàng sử dụng ASP.NET Core Web API kết hợp với Entity Framework Core. Em có triển khai Repository pattern để tách biệt logic và dùng SQL Server làm database. Hiện tại em đang tìm hiểu thêm về xUnit để viết test cho API của mình."_
+
+##### Nếu bạn là Java Developer (Spring Boot)
+_"Gần đây em đã build một hệ thống booking vé xem phim bằng Spring Boot. Trong dự án này, em đã tự cấu hình Spring Security cho phần phân quyền (JWT) và dùng Hibernate để tương tác với MySQL. Em quen thuộc với hệ sinh thái Maven và đang tập tành dùng Docker để đóng gói ứng dụng."_
+
+##### Nếu bạn là Flutter/Mobile Developer
+_"Em đang tự phát triển một ứng dụng theo dõi chi tiêu cá nhân bằng Flutter. Ứng dụng tích hợp Firebase Auth để đăng nhập và Cloud Firestore để lưu dữ liệu realtime. Em đang sử dụng Riverpod (hoặc BLoC) để quản lý state và đã tự đẩy một phiên bản beta lên Google Play Store."_
+
+##### Nếu bạn là PHP/Laravel Developer
+_"Trong thời gian làm đồ án, em có xây dựng một trang e-commerce bằng Laravel. Em đã làm quen với hệ thống routing, Eloquent ORM và sử dụng middleware để kiểm tra quyền admin. Đồng thời, em cũng tích hợp một cổng thanh toán giả lập thông qua REST API."_
+
+##### Nếu bạn là React/Vue Frontend Developer
+_"Em tập trung mạnh vào phần Frontend với ReactJS và TypeScript. Project nổi bật nhất của em là clone lại giao diện của Trello, trong đó em dùng Redux Toolkit để quản lý state phức tạp và React Router cho phần điều hướng. Em luôn chú trọng đến việc chia nhỏ component để dễ tái sử dụng."_
+
+##### Nếu bạn là Node.js Developer
+_"Dự án gần đây nhất của em là một ứng dụng chat realtime dùng Node.js, Express và Socket.io. Em tập trung tối ưu tốc độ response bằng cách lưu cache session trên Redis. Em cũng đã tự viết các middleware để validate dữ liệu đầu vào trước khi lưu xuống MongoDB."_
+
 #### Cách Điều Chỉnh Theo Từng Loại Công Ty
 
 Một script giới thiệu bản thân không phù hợp cho tất cả công ty. Bạn cần điều chỉnh tông và trọng tâm tùy theo loại công ty đang phỏng vấn.
@@ -180,6 +206,14 @@ Trước khi vào phòng phỏng vấn, tìm một góc vắng và nói to phầ
 ##### Hỏi: Phỏng vấn nhiều vòng, mỗi vòng giới thiệu có khác nhau không?
 
 **Đáp:** Nên khác đôi chút. Vòng HR: nhấn nhiều hơn vào story và motivation. Vòng technical với dev lead: nhấn nhiều hơn vào tech stack và project cụ thể. Vòng với manager hoặc C-level: nhấn vào impact và mục tiêu dài hạn. Cùng một "nguyên liệu" nhưng điều chỉnh tỷ lệ theo audience.
+
+##### Hỏi: Giới thiệu bản thân khi phỏng vấn .NET developer khác gì các stack khác?
+
+**Đáp:** Với .NET, các nhà tuyển dụng thường chú trọng đến tính hệ thống và enterprise. Thay vì chỉ nói "em biết C#", hãy nói về hệ sinh thái bạn dùng: ASP.NET Core, Entity Framework, SQL Server, và kiến trúc bạn theo đuổi (như Repository pattern, Dependency Injection). Thể hiện được tư duy thiết kế phần mềm sẽ giúp bạn ghi điểm mạnh mẽ.
+
+##### Hỏi: Script phần Stack trong P-S-T-G nên nói gì nếu tôi là Java Spring Boot developer?
+
+**Đáp:** Hãy làm nổi bật việc bạn hiểu framework cốt lõi. Hãy đề cập đến Spring Boot, Spring Data JPA, và Spring Security. Nếu có thể, hãy nhắc đến các công cụ liên đới thường gặp ở các hệ thống Java như Maven/Gradle, Git, và cơ sở dữ liệu quan hệ (PostgreSQL/Oracle) để chứng minh bạn có thể nhảy vào dự án ngay.
 
 #### Tổng Kết — Đầu Tư 2 Phút Để Thắng Cả Buổi Phỏng Vấn
 

@@ -1,6 +1,6 @@
 ---
 title: "ReactJS Junior Interview Questions: 30+ Real Questions With Answers 2026"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-09T10:55:30.000Z
 slug: cau-hoi-phong-van-reactjs-junior-30
 lang: en

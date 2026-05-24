@@ -1,6 +1,6 @@
 ---
 title: "My Junior Intern Backend Node.js TypeScript Interview - What They Asked and How I Answered"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-03-09T09:05:00.000Z
 slug: ke-chuyen-phong-van-junior-intern-backend-nodejs-typescript-ho-hoi-gi-minh-tra-loi-ra-sao
 lang: en

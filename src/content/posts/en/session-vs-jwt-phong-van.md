@@ -1,6 +1,6 @@
 ---
 title: "Session vs JWT Interview Guide: Everything You Need to Answer With Confidence and Depth"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-02T12:17:09.000Z
 slug: session-vs-jwt-phong-van
 lang: en

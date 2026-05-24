@@ -1,6 +1,6 @@
 ---
 title: "1-Page vs 3-Page IT CV: Hard Lessons Learned After Letting AI Build Your Resume"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-21T15:50:35.000Z
 slug: cv-it-junior-bi-reject
 lang: en

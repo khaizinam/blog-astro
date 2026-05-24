@@ -1,6 +1,6 @@
 ---
 title: "NVSP Teaching Certificate: A Smart Career Alternative for IT Graduates in the AI Era 2026"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-14T15:36:04.000Z
 slug: chung-chi-nvsp-giai-phap-viec-lam-thong-minh-cho-sinh-vien-it-thoi-ai-2026
 lang: en

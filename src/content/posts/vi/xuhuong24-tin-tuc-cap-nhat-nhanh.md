@@ -1,6 +1,6 @@
 ---
 title: "Xu Hướng 24 – Trang cập nhật xu hướng và tin tức nổi bật"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-05-22T09:52:44.000Z
 slug: xuhuong24-tin-tuc-cap-nhat-nhanh
 lang: vi

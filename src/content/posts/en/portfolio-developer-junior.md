@@ -1,6 +1,6 @@
 ---
 title: "Junior Developer Portfolio: What to Include to Get Interview Calls"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-05-07T18:06:44.000Z
 slug: portfolio-developer-junior
 lang: en

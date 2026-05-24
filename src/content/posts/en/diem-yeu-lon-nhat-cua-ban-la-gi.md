@@ -1,6 +1,6 @@
 ---
 title: "'What Is Your Greatest Weakness?' — IT Interview Answer That Won't Get You Rejected"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-22T16:13:35.000Z
 slug: diem-yeu-lon-nhat-cua-ban-la-gi
 lang: en

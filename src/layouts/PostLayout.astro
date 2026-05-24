@@ -33,10 +33,12 @@ const sameAs = [
 
 const currentLang = Astro.currentLocale ?? site.lang;
 
+const cleanTitle = title ? title.replace(` | ${site.title}`, "") : site.title;
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: title ?? site.title,
+  headline: cleanTitle,
   description: description ?? site.description,
   image: ogImage ?? site.ogImage,
   url: canonicalURL,

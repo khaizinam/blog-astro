@@ -1,6 +1,6 @@
 ---
 title: "Giải mã Black MMO Pay In App là gì?"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-18T09:52:17.000Z
 slug: giai-ma-black-mmo-pay-in-app-la-gi
 lang: vi

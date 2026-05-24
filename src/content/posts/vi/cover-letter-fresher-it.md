@@ -1,6 +1,6 @@
 ---
 title: "Cover Letter Fresher IT: Cách Viết Để Được Gọi Phỏng Vấn"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-05-06T09:12:43.000Z
 slug: cover-letter-fresher-it
 lang: vi

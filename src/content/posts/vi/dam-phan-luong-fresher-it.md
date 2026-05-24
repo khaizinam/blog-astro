@@ -1,6 +1,6 @@
 ---
 title: "Cách đàm phán lương khi mới ra trường — fresher IT không nên bỏ qua"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-05-16T08:31:03.000Z
 slug: dam-phan-luong-fresher-it
 lang: vi

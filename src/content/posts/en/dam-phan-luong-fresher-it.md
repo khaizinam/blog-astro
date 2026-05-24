@@ -1,6 +1,6 @@
 ---
 title: "Salary Negotiation for Fresh IT Graduates: Stop Leaving Money on the Table"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-05-24 08:00:00
 slug: dam-phan-luong-fresher-it
 lang: en

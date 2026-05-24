@@ -1,6 +1,6 @@
 ---
 title: "Hướng dẫn Cấu hình Nginx: HTTP, HTTPS, Proxy Pass"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-01-08T13:47:42.000Z
 slug: huong-dan-cau-hinh-nginx-http-https-proxy-pass
 lang: vi

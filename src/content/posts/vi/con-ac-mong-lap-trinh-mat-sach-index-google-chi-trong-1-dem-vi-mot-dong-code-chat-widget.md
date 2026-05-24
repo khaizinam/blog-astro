@@ -1,6 +1,6 @@
 ---
 title: "Cơn Ác Mộng Lập Trình: Mất Sạch Index Google Chỉ Trong 1 Đêm Vì Một Dòng Code Chat Widget!"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-02-24T19:46:10.000Z
 slug: con-ac-mong-lap-trinh-mat-sach-index-google-chi-trong-1-dem-vi-mot-dong-code-chat-widget
 lang: vi

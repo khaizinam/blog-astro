@@ -1,6 +1,6 @@
 ---
 title: "Phỏng Vấn Junior Outsource: Từ AI Workflow, Dependency Injection Đến Bài Toán Redis Chặn Concurrent Edit"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-03-19T16:03:51.000Z
 slug: phong-van-junior-outsource-tu-ai-workflow-dependency-injection-den-bai-toan-redis-chan-concurrent-edit
 lang: vi

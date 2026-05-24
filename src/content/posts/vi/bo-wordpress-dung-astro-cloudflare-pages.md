@@ -1,6 +1,6 @@
 ---
 title: "Bỏ WordPress: Blog cá nhân gần như miễn phí với Astro + Cloudflare"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-05-22T08:00:00.000Z
 slug: bo-wordpress-dung-astro-cloudflare-pages
 lang: vi

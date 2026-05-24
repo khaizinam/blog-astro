@@ -1,6 +1,6 @@
 ---
 title: "Session vs JWT Phỏng Vấn: Hướng Dẫn Đầy Đủ Để Không Bao Giờ Bị Hỏi Khó"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-02T12:17:09.000Z
 slug: session-vs-jwt-phong-van
 lang: vi

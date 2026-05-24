@@ -1,6 +1,6 @@
 ---
 title: "Tổng hợp mức lương IT theo level tại TP.HCM và Hà Nội năm 2025 - 2026"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-05-21T15:45:04.000Z
 slug: tong-hop-muc-luong-it
 lang: vi

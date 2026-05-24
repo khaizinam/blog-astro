@@ -1,6 +1,6 @@
 ---
 title: "Kể Chuyện Phỏng Vấn Junior Intern Backend Node.js TypeScript - Họ Hỏi Gì, Mình Trả Lời Ra Sao?"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-03-09T09:05:00.000Z
 slug: ke-chuyen-phong-van-junior-intern-backend-nodejs-typescript-ho-hoi-gi-minh-tra-loi-ra-sao
 lang: vi

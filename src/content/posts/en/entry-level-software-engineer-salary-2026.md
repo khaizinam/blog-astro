@@ -1,6 +1,6 @@
 ---
 title: "Entry-Level Software Engineer Salary in 2026: Global Benchmarks"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-05-22 08:00:00
 slug: entry-level-software-engineer-salary-2026
 lang: en

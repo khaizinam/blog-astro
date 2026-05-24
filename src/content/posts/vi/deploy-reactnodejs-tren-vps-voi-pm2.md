@@ -1,6 +1,6 @@
 ---
 title: "Bí quyết Deploy React/Node.js trên VPS 1GB RAM với PM2: Không bao giờ bị Out of Memory 2026"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-21T09:52:37.000Z
 slug: deploy-reactnodejs-tren-vps-voi-pm2
 lang: vi

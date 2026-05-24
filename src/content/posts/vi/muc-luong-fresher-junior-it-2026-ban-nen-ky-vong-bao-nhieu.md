@@ -1,6 +1,6 @@
 ---
 title: "Mức Lương Fresher & Junior IT 2026: Bạn Nên Kỳ Vọng Bao Nhiêu?"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-03-30T09:51:10.000Z
 slug: muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu
 lang: vi

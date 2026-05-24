@@ -1,6 +1,6 @@
 ---
 title: "Body Language in Tech Interviews: 7 Mistakes That Cost You the Offer"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-24T09:21:09.000Z
 slug: ngon-ngu-co-the-phong-van
 lang: en

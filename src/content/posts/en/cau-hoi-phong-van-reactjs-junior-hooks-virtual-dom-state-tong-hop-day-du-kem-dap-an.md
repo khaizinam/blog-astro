@@ -1,6 +1,6 @@
 ---
 title: "ReactJS Junior Interview Questions: Hooks, Virtual DOM, and State — Complete Guide With Answers"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-04T11:36:05.000Z
 slug: cau-hoi-phong-van-reactjs-junior-hooks-virtual-dom-state-tong-hop-day-du-kem-dap-an
 lang: en

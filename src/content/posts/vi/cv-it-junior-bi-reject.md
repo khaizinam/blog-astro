@@ -1,6 +1,6 @@
 ---
 title: "CV IT 1 Trang Hay 3 Trang: Bài Học Đắt Giá Khi Để AI Build CV Giúp Bạn"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-21T15:50:35.000Z
 slug: cv-it-junior-bi-reject
 lang: vi

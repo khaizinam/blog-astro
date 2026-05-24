@@ -1,6 +1,6 @@
 ---
 title: "Điểm yếu lớn nhất của bạn là gì — cách trả lời không bị loại ngay khi phỏng vấn IT"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-22T16:13:35.000Z
 slug: diem-yeu-lon-nhat-cua-ban-la-gi
 lang: vi

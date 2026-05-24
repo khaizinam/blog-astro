@@ -1,6 +1,6 @@
 ---
 title: "Tối ưu thời gian setup môi trường dự án với Docker cho VPS cấu hình thấp"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-01-07T15:01:18.000Z
 slug: toi-uu-thoi-gian-setup-moi-truong-du-an-voi-docker-cho-vps-cau-hinh-thap
 lang: vi

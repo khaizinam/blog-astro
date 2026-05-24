@@ -1,6 +1,6 @@
 ---
 title: "Why Did You Choose IT? An Interview Answer That Actually Impresses Recruiters"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-22T16:58:13.000Z
 slug: vi-sao-chon-nganh-it
 lang: en

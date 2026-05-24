@@ -1,6 +1,6 @@
 ---
 title: "10 Most Common IT Fresher Interview Questions You Should Prepare For"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-03-27T09:52:44.000Z
 slug: 10-cau-hoi-phong-van-fresher-it-hay-gap-nhat-ban-can-chuan-bi
 lang: en

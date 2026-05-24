@@ -1,6 +1,6 @@
 ---
 title: "Cách Đàm Phán Lương Khi Mới Ra Trường: Bí Quyết Để Không Bị Trả Giá Thấp Hơn Giá Trị Thật"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-03-30T10:25:29.000Z
 slug: cach-dam-phan-luong-khi-moi-ra-truong-bi-quyet-de-khong-bi-tra-gia-thap-hon-gia-tri-that
 lang: vi

@@ -1,6 +1,6 @@
 ---
 title: "Câu Hỏi Phỏng Vấn ReactJS Junior: Hooks, Virtual DOM, State — Tổng Hợp Đầy Đủ Kèm Đáp Án"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-04T11:36:05.000Z
 slug: cau-hoi-phong-van-reactjs-junior-hooks-virtual-dom-state-tong-hop-day-du-kem-dap-an
 lang: vi

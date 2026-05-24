@@ -1,6 +1,6 @@
 ---
 title: "JWT Security Best Practices: How to Secure JSON Web Tokens in Production 2026"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-06T09:01:23.000Z
 slug: jwt-security-best-practices
 lang: en

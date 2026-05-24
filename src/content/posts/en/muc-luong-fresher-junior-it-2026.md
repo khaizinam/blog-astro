@@ -1,6 +1,6 @@
 ---
 title: "IT Fresher & Junior Salary 2026: PHP, Node.js, React, Flutter - Real Market Data"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-05-22T06:06:17.000Z
 slug: muc-luong-fresher-junior-it-2026
 lang: en

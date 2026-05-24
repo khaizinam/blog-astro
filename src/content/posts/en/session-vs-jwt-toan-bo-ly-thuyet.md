@@ -1,6 +1,6 @@
 ---
 title: "Session vs JWT: The Complete Theory and Most Common Interview Questions Every Junior Developer Must Know"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-03-19T19:26:34.000Z
 slug: session-vs-jwt-toan-bo-ly-thuyet
 lang: en

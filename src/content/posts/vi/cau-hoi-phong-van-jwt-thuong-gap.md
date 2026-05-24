@@ -1,6 +1,6 @@
 ---
 title: "JWT Interview Questions and Answers (2026)"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-05T20:43:26.000Z
 slug: cau-hoi-phong-van-jwt-thuong-gap
 lang: vi

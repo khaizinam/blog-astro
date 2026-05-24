@@ -1,6 +1,6 @@
 ---
 title: "Warning: \"Black MMO PayinApp\" Scams in 2026"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-17T19:58:40.000Z
 slug: canh-bao-chieu-tro-lua-dao-black-mmo-payinapp-2026
 lang: en

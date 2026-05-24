@@ -1,6 +1,6 @@
 ---
 title: "I Failed My IT Job Interview — Here's What I Changed to Get Hired"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-05-03T12:11:54.000Z
 slug: bi-tu-choi-phong-van-it
 lang: en

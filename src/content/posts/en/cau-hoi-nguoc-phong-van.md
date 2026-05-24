@@ -1,6 +1,6 @@
 ---
 title: "Questions to Ask Your Interviewer as a Junior Dev (Beyond Just Salary)"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-23T09:13:22.000Z
 slug: cau-hoi-nguoc-phong-van
 lang: en

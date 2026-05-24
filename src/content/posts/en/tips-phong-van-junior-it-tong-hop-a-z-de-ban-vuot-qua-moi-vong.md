@@ -1,6 +1,6 @@
 ---
 title: "Junior IT Interview Tips: The Complete A-Z Guide to Getting Hired"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-03-28T15:49:05.000Z
 slug: tips-phong-van-junior-it-tong-hop-a-z-de-ban-vuot-qua-moi-vong
 lang: en

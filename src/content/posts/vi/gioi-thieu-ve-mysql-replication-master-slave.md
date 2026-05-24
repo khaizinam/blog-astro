@@ -1,6 +1,6 @@
 ---
 title: "Giới thiệu về MySQL Replication Master-Slave"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-16T22:24:16.000Z
 slug: gioi-thieu-ve-mysql-replication-master-slave
 lang: vi

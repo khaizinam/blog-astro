@@ -1,6 +1,6 @@
 ---
 title: "JWT Security Best Practices: Bảo mật JWT đúng cách trong dự án thực tế 2026"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-06T09:01:23.000Z
 slug: jwt-security-best-practices
 lang: vi

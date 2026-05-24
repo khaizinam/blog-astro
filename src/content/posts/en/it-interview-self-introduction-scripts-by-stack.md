@@ -16,21 +16,21 @@ You spent weeks sharpening your technical skills, yet the interviewer seemed uni
 
 ### Table of Contents
 
-1. [Why "tell me about yourself" matters more than you think](#why-tell-me-about-yourself-matters-more-than-you-think)
+1\. [Why "tell me about yourself" matters more than you think](#why-tell-me-about-yourself-matters-more-than-you-think)
 
-2. [The P-S-T-G framework — a proven structure for dev introductions](#the-p-s-t-g-framework-a-proven-structure-for-dev-introductions)
+2\. [The P-S-T-G framework — a proven structure for dev introductions](#the-p-s-t-g-framework-a-proven-structure-for-dev-introductions)
 
-3. [Script templates by experience level — Intern, Fresher, Junior](#script-templates-by-experience-level)
+3\. [Script templates by experience level — Intern, Fresher, Junior](#script-templates-by-experience-level)
 
-4. [Script templates by tech stack](#script-templates-by-tech-stack)
+4\. [Script templates by tech stack](#script-templates-by-tech-stack)
 
-5. [How to adapt your introduction for different company types](#how-to-adapt-your-introduction-for-different-company-types)
+5\. [How to adapt your introduction for different company types](#how-to-adapt-your-introduction-for-different-company-types)
 
-6. [The 7 most common mistakes and how to avoid them](#the-7-most-common-mistakes-and-how-to-avoid-them)
+6\. [The 7 most common mistakes and how to avoid them](#the-7-most-common-mistakes-and-how-to-avoid-them)
 
-7. [How to practice and prepare before interview day](#how-to-practice-and-prepare-before-interview-day)
+7\. [How to practice and prepare before interview day](#how-to-practice-and-prepare-before-interview-day)
 
-8. [FAQ — Common questions about self-introductions](#faq-common-questions-about-self-introductions)
+8\. [FAQ — Common questions about self-introductions](#faq-common-questions-about-self-introductions)
 
 * * *
 

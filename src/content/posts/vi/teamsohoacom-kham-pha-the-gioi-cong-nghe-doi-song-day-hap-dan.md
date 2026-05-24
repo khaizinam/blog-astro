@@ -1,6 +1,6 @@
 ---
 title: "TeamSoHoa.com: Khám Phá Thế Giới Công Nghệ & Đời Sống Đầy Hấp Dẫn"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2025-12-27T19:29:58.000Z
 slug: teamsohoacom-kham-pha-the-gioi-cong-nghe-doi-song-day-hap-dan
 lang: vi

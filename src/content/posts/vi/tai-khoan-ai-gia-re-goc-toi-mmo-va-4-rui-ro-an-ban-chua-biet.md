@@ -1,6 +1,6 @@
 ---
 title: "Tài Khoản AI Giá Rẻ: Góc Tối MMO Và 4 Rủi Ro Ẩn Bạn Chưa Biết (2026)"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-20T18:23:49.000Z
 slug: tai-khoan-ai-gia-re-goc-toi-mmo-va-4-rui-ro-an-ban-chua-biet
 lang: vi

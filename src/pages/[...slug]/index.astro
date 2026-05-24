@@ -73,6 +73,7 @@ const locale = "vi";
 
 const {
   title,
+  author,
   description,
   ogImage: initOgImage,
   canonicalURL,
@@ -152,6 +153,10 @@ const relatedPosts = otherPosts
 
     <div class="my-2 flex items-center gap-2">
       <Datetime {pubDatetime} {modDatetime} {timezone} size="lg" />
+      <span aria-hidden="true" class="text-muted-foreground">•</span>
+      <a href="/about" class="text-muted-foreground hover:text-accent transition-colors text-sm sm:text-base">
+        {author}
+      </a>
       <span
         aria-hidden="true"
         class:list={[

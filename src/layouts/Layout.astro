@@ -19,13 +19,15 @@ type Props = {
 const { site } = config;
 
 const {
-  title = site.title,
+  title: rawTitle = site.title,
   description = site.description,
   ogImage = resolveDefaultOgImagePath(config),
   canonicalURL = new URL(Astro.url.pathname, Astro.site).href,
   alternateURL,
   alternateLang,
 } = Astro.props;
+
+const title = rawTitle.replace(` | ${site.title}`, "");
 
 const socialImageURL = new URL(ogImage, Astro.site ?? Astro.url);
 const rssHref = getRelativeLocaleUrl(

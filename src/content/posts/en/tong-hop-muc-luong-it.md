@@ -1,6 +1,6 @@
 ---
 title: "IT Salary Levels in Ho Chi Minh City and Hanoi (2025 - 2026 Overview)"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-05-21T15:45:04.000Z
 slug: tong-hop-muc-luong-it
 lang: en

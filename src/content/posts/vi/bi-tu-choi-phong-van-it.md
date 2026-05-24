@@ -1,6 +1,6 @@
 ---
 title: "Bị từ chối phỏng vấn IT — tôi đã làm gì để pass lần sau"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-05-03T12:11:54.000Z
 slug: bi-tu-choi-phong-van-it
 lang: vi

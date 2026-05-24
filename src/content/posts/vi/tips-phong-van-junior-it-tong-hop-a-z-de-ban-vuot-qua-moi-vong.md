@@ -1,6 +1,6 @@
 ---
 title: "Tips Phỏng Vấn Junior IT: Tổng Hợp A-Z Để Bạn Vượt Qua Mọi Vòng"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-03-28T15:49:05.000Z
 slug: tips-phong-van-junior-it-tong-hop-a-z-de-ban-vuot-qua-moi-vong
 lang: vi

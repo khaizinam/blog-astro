@@ -1,6 +1,6 @@
 ---
 title: "Refresh Token Node.js và Laravel: Hướng Dẫn Implement Chuẩn Production 2026"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-06T19:56:15.000Z
 slug: refresh-token-nodejs-va-laravel-huong-dan-implement-chuan-production-2026
 lang: vi

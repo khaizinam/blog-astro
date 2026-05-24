@@ -1,6 +1,6 @@
 ---
 title: "Mức lương fresher junior IT 2026 - PHP, NodeJS, React, Flutter thực tế"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-05-22T06:06:17.000Z
 slug: muc-luong-fresher-junior-it-2026
 lang: vi

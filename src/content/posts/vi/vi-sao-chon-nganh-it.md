@@ -1,6 +1,6 @@
 ---
 title: "Vì sao bạn chọn ngành IT — câu trả lời tạo ấn tượng với HR khi phỏng vấn"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-22T16:58:13.000Z
 slug: vi-sao-chon-nganh-it
 lang: vi

@@ -1,6 +1,6 @@
 ---
 title: "Backend Junior Interview Questions: The Complete Guide Covering APIs, Databases, Auth, and Caching"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-01T13:48:29.000Z
 slug: cau-hoi-phong-van-backend-junior-tong-hop-day-du-tu-database-den-api-auth-va-cache
 lang: en

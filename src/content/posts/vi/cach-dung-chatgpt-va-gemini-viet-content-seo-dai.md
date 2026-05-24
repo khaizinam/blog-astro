@@ -1,6 +1,6 @@
 ---
 title: "Claude Hết Token? Cách Dùng ChatGPT và Gemini Viết Content SEO Dài Chuẩn Chất 2026"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-19T09:24:43.000Z
 slug: cach-dung-chatgpt-va-gemini-viet-content-seo-dai
 lang: vi

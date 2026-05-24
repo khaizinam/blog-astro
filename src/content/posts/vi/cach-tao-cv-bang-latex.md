@@ -1,6 +1,6 @@
 ---
 title: "Cách Tạo CV IT Cho Fresher Bằng LaTeX Và AI"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-01T19:19:43.000Z
 slug: cach-tao-cv-bang-latex
 lang: vi

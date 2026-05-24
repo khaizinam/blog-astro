@@ -1,6 +1,6 @@
 ---
 title: "Ngôn ngữ cơ thể trong phỏng vấn — những điều vô tình mất điểm"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-24T09:21:09.000Z
 slug: ngon-ngu-co-the-phong-van
 lang: vi

@@ -1,6 +1,6 @@
 ---
 title: "Session vs JWT: Toàn Bộ Lý Thuyết Và Câu Hỏi Phỏng Vấn Hay Gặp Nhất Mà Junior Cần Nắm Chắc"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-03-19T19:26:34.000Z
 slug: session-vs-jwt-toan-bo-ly-thuyet
 lang: vi
