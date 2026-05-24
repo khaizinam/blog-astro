@@ -1,0 +1,72 @@
+---
+import config from "@/config";
+
+interface Props {
+  lang?: "vi" | "en";
+}
+
+const { lang = "vi" } = Astro.props;
+const giscusConfig = config.giscus;
+---
+
+{giscusConfig?.repoId ? (
+  <div class="mt-12 border-t border-dashed border-border pt-8">
+    <div class="giscus"></div>
+  </div>
+
+  <script is:inline define:vars={{ lang, giscusConfig }}>
+    function loadGiscus() {
+      const container = document.querySelector(".giscus");
+      if (!container || container.hasChildNodes()) return;
+
+      const theme = document.documentElement.getAttribute("data-theme") === "dark" ? "transparent_dark" : "light";
+
+      const script = document.createElement("script");
+      script.src = "https://giscus.app/client.js";
+      script.setAttribute("data-repo", giscusConfig.repo);
+      script.setAttribute("data-repo-id", giscusConfig.repoId);
+      script.setAttribute("data-category", giscusConfig.category);
+      script.setAttribute("data-category-id", giscusConfig.categoryId);
+      script.setAttribute("data-mapping", "title");
+      script.setAttribute("data-strict", "1");
+      script.setAttribute("data-reactions-enabled", "1");
+      script.setAttribute("data-emit-metadata", "0");
+      script.setAttribute("data-input-position", "bottom");
+      script.setAttribute("data-theme", theme);
+      script.setAttribute("data-lang", lang);
+      script.setAttribute("crossorigin", "anonymous");
+      script.async = true;
+
+      container.appendChild(script);
+    }
+
+    // Load Giscus initially
+    loadGiscus();
+
+    // Listen for view transitions if enabled
+    document.addEventListener("astro:page-load", loadGiscus);
+
+    // Dynamic theme switcher for Giscus
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.attributeName === "data-theme") {
+          const theme = document.documentElement.getAttribute("data-theme") === "dark" ? "transparent_dark" : "light";
+          const iframe = document.querySelector("iframe.giscus-frame");
+          if (iframe && iframe.contentWindow) {
+            iframe.contentWindow.postMessage(
+              { giscus: { setConfig: { theme } } },
+              "https://giscus.app"
+            );
+          }
+        }
+      });
+    });
+
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+  </script>
+) : (
+  <div class="mt-12 border-t border-dashed border-border pt-8 text-center text-muted-foreground text-sm">
+    <p>Giscus comment system is not configured yet.</p>
+    <p>Please update `giscus` in <code class="bg-muted px-1 py-0.5 rounded">astro-paper.config.ts</code> with your repository IDs.</p>
+  </div>
+)}

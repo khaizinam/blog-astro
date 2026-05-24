@@ -39,4 +39,10 @@ export default defineAstroPaperConfig({
     { name: "whatsapp", url: "https://wa.me/?text=" },
     { name: "pinterest", url: "https://pinterest.com/pin/create/button/?url=" },
   ],
+  giscus: {
+    repo: "khaizinam/blog-astro",
+    repoId: "R_kgDOSkhfmg",
+    category: "General",
+    categoryId: "DIC_kwDOSkhfms4C9tiU",
+  },
 });

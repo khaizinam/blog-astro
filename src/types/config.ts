@@ -100,6 +100,7 @@ interface AstroPaperConfig {
   socials?: SocialLink[];
   /** Share links shown on post detail pages */
   shareLinks?: ShareLink[];
+  giscus?: { repo: string; repoId: string; category: string; categoryId: string; };
 }
 
 type ResolvedSiteConfig = Required<
@@ -123,6 +124,7 @@ export interface ResolvedAstroPaperConfig {
   features: Required<FeaturesConfig>;
   socials: SocialLink[];
   shareLinks: ShareLink[];
+  giscus?: { repo: string; repoId: string; category: string; categoryId: string; };
 }
 
 /**
