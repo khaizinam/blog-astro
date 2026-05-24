@@ -185,7 +185,11 @@ Hầu hết JD DevOps yêu cầu ít nhất 1–2 năm kinh nghiệm dev hoặc 
 ##### PHP chỉ có 23 jobs - PHP dev nên lo lắng đến mức nào?
  
 Lo lắng ở mức đủ để hành động, không phải hoảng loạn. PHP vẫn chạy hàng triệu website và WordPress ecosystem vẫn lớn. Nhưng nếu bạn muốn làm ở các công ty tech lớn hoặc startup, bổ sung thêm một backend language khác trong 6–12 tháng tới là bước đi khôn ngoan.
- 
+
+Một điểm quan trọng cần đọc đúng: 23 jobs trên ITViec không phản ánh toàn bộ thị trường PHP. ITViec thiên về công ty tech vừa và lớn - phần lớn nhu cầu PHP thực tế lại nằm ở SME, agency, và các dự án freelance không bao giờ được đăng tuyển chính thức. Nếu bạn chịu khó tìm trong các hội nhóm Facebook như "Tìm việc làm IT", "Laravel Vietnam", hay "WordPress Vietnam", bạn sẽ thấy một lượng job PHP nhỏ lẻ nhưng liên tục - bảo trì website, làm plugin WordPress, custom Laravel theo yêu cầu. Những job này không hào nhoáng nhưng vẫn đang trả tiền đều đặn.
+
+Tóm lại: PHP thấp trên ITViec là tín hiệu về định hướng của các công ty tech lớn, không phải tín hiệu PHP đang chết. Mở rộng kênh tìm việc sang Facebook group và freelance platform là bước thực tế nhất cho PHP dev lúc này - song song với việc nâng thêm một skill backend khác để không bị giới hạn trong dài hạn.
+
 ---
  
 #### Tổng kết
