@@ -64,7 +64,7 @@ When base salary isn't flexible, you can still negotiate: training budgets, remo
 
 Your first salary negotiation is always harder than your second. Starting early builds this thinking muscle from the beginning of your career, rather than having to learn it in higher-stakes situations later.
 
-See also: [IT Fresher & Junior Salary 2026 — How Much Should You Expect?](/en/muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu) for benchmark context before entering any negotiation.
+See also: [IT Fresher & Junior Salary 2026 — How Much Should You Expect?](/en/entry-level-software-engineer-salary-2026) for benchmark context before entering any negotiation.
 
 #### A Note on Cultural Context
 
@@ -162,4 +162,4 @@ The company came back 10% below her ask but agreed to her second request: a dedi
 
 Prepare your benchmarks, define your target number, practice your scripts, and walk in with a professional mindset — not begging, not confrontational, simply two parties finding a fair number together. This works whether you're in Warsaw, Bangalore, Manila, or anywhere else in the world.
 
-See also: [IT Fresher & Junior Salary 2026 — How Much Should You Expect?](/en/muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu) for full benchmark context before entering any salary negotiation.
+See also: [IT Fresher & Junior Salary 2026 — How Much Should You Expect?](/en/entry-level-software-engineer-salary-2026) for full benchmark context before entering any salary negotiation.

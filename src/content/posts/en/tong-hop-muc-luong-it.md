@@ -145,4 +145,4 @@ To accelerate income growth in the IT industry today, the most valuable career p
 *   Product Engineering
 *   Strong English communication skills
 
-Read more: [Fresher & Junior IT Salary Expectations in 2026](/en/muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu)
+Read more: [Fresher & Junior IT Salary Expectations in 2026](/en/entry-level-software-engineer-salary-2026)

@@ -7,7 +7,7 @@
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
-  --font-app: var(--font-google-sans-code);
+  --font-app: "Be Vietnam Pro", "Inter", sans-serif;
 }
 
 /* Light theme values */
@@ -24,11 +24,11 @@
 
 /* Dark theme values */
 [data-theme="dark"] {
-  --background: #212737;
-  --foreground: #eaedf3;
+  --background: #0f0f11;
+  --foreground: #e2e8f0;
   --accent: #ff6b01;
   --accent-foreground: #ffffff;
-  --muted: #343f60;
-  --muted-foreground: #afb9ca;
+  --muted: #1e1e24;
+  --muted-foreground: #94a3b8;
   --border: #ab4b08;
 }
