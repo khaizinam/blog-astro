@@ -231,15 +231,7 @@ const relatedPosts = otherPosts
   <Footer />
 </PostLayout>
 
-<script>
-  import mediumZoom from "medium-zoom";
-  document.addEventListener("astro:page-load", () => {
-    mediumZoom("#article img", {
-      margin: 24,
-      background: "rgba(0, 0, 0, 0.85)",
-    });
-  });
-</script>
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" is:inline></script>
 
 <script is:inline data-astro-rerun>
   function createProgressBar() {
@@ -338,6 +330,13 @@ const relatedPosts = otherPosts
     }
   }
   attachCopyButtons();
+
+  if (typeof mediumZoom === 'function') {
+    mediumZoom("#article img", {
+      margin: 24,
+      background: "rgba(0, 0, 0, 0.85)",
+    });
+  }
 
   document.addEventListener("astro:after-swap", () =>
     window.scrollTo({ left: 0, top: 0, behavior: "instant" })
