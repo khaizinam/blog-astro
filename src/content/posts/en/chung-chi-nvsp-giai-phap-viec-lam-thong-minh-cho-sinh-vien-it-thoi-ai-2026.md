@@ -106,7 +106,7 @@ Minh enrolled in a 3-month NVSP program at a local pedagogical college for 3.5 m
 
 This is the key point rarely discussed. Technical education graduates are well trained in pedagogy — but lack real-world industry experience. Conversely, a developer with 2+ years of actual enterprise experience knows exactly what companies need, what real-world bugs look like, and how projects actually work — things that don't exist in any textbook. Combine a developer's practical depth with the pedagogical skills from NVSP: this is a profile with no direct competition in today's IT education market.
 
-If you're also preparing for the traditional job application path in parallel, check out [Fresher Junior IT Salary 2026](/en/muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu) and [How to Negotiate Salary as a Fresh Graduate](/en/cach-dam-phan-luong-khi-moi-ra-truong-bi-quyet-de-khong-bi-tra-gia-thap-hon-gia-tri-that) to benchmark the market and assess which path fits your situation better.
+If you're also preparing for the traditional job application path in parallel, check out [Fresher Junior IT Salary 2026](/en/muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu) and [Junior Developer Salary Negotiation](/en/cach-dam-phan-luong-khi-moi-ra-truong-bi-quyet-de-khong-bi-tra-gia-thap-hon-gia-tri-that) to benchmark the market and assess which path fits your situation better.
 
 #### 6\. 5 Common Misconceptions About the IT Instructor Career Path
 
