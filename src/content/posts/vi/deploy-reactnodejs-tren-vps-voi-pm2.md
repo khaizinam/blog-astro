@@ -44,7 +44,7 @@ Nhiều bạn vẫn giữ thói quen chạy ứng dụng bằng lệnh `npm star
 *   **Gánh nặng Process con:** Khi chạy qua `npm`, hệ thống phải khởi chạy thêm một tiến trình trung gian chỉ để quản lý script. Điều này khiến bạn mất thêm hàng chục đến hàng trăm MB RAM một cách vô ích.
 *   **Kéo theo công cụ phát triển:** Trong nhiều trường hợp, lệnh start này vô tình kích hoạt các công cụ giám sát file (như nodemon) hoặc các trình biên dịch không cần thiết, làm tiêu tốn đáng kể CPU và RAM của VPS.
 
-Thay vì để ứng dụng "tự bơi" trong một môi trường khắc nghiệt, chúng ta cần một chiến thuật điều phối tài nguyên thông minh hơn thông qua **PM2** – một trình quản lý tiến trình chuyên nghiệp giúp chúng ta kiểm soát từng byte RAM và ngăn chặn "nhát dao" từ OOM Killer.
+Thay vì để ứng dụng "tự bơi" trong một môi trường khắc nghiệt, chúng ta cần một chiến thuật điều phối tài nguyên thông minh hơn thông qua **PM2** - một trình quản lý tiến trình chuyên nghiệp giúp chúng ta kiểm soát từng byte RAM và ngăn chặn "nhát dao" từ OOM Killer.
 
 ## II. Chiến lược 1: Tối ưu hóa Node.js (V8 Engine)
 

@@ -11,7 +11,7 @@ description: "Giới thiệu bản thân và mục tiêu xây dựng KhaiziNam B
 
 ## Giới thiệu về KhaiZiNam
 
-Chào mừng bạn đến với KhaiZiNam – Không gian chia sẻ kiến thức, kinh nghiệm và những cập nhật mới nhất trong thế giới công nghệ và lập trình.
+Chào mừng bạn đến với KhaiZiNam - Không gian chia sẻ kiến thức, kinh nghiệm và những cập nhật mới nhất trong thế giới công nghệ và lập trình.
 
 Blog được xây dựng từ niềm đam mê với những dòng code và mong muốn kết nối cộng đồng lập trình viên Việt Nam. Đây là nơi lưu trữ và chia sẻ những bài viết từ căn bản đến chuyên sâu, giúp mọi người cùng nhau học hỏi và phát triển nghề nghiệp.
 

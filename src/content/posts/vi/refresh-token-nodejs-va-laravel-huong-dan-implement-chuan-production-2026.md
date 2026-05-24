@@ -46,8 +46,8 @@ JWT access token có một tension cơ bản: token càng ngắn hạn thì càn
 
 Refresh token giải quyết tension này bằng cách tách thành hai loại token với hai mục đích khác nhau:
 
-*   **Access Token**: TTL ngắn (15–30 phút), dùng để xác thực từng API request. Stateless, không lưu DB.
-*   **Refresh Token**: TTL dài (7–30 ngày), chỉ dùng để lấy access token mới khi hết hạn. Lưu trong DB, có thể revoke bất kỳ lúc nào.
+*   **Access Token**: TTL ngắn (15-30 phút), dùng để xác thực từng API request. Stateless, không lưu DB.
+*   **Refresh Token**: TTL dài (7-30 ngày), chỉ dùng để lấy access token mới khi hết hạn. Lưu trong DB, có thể revoke bất kỳ lúc nào.
 
 ##### 1.2 Flow hoạt động tổng quan
 
@@ -608,7 +608,7 @@ app.post('/auth/refresh', async (req, res) => {
 
 ##### 8.1 Nên đặt TTL refresh token bao lâu là hợp lý?
 
-Phụ thuộc vào use case. Ứng dụng consumer (social app, e-commerce): 30–90 ngày — user không muốn login lại thường xuyên. Ứng dụng nhạy cảm (banking, fintech, admin tool): 1–7 ngày — cân bằng giữa UX và bảo mật. Một số hệ thống còn implement "sliding expiry" — mỗi lần dùng refresh token, TTL được gia hạn thêm, chỉ thực sự hết hạn khi user không dùng trong X ngày liên tiếp.
+Phụ thuộc vào use case. Ứng dụng consumer (social app, e-commerce): 30-90 ngày — user không muốn login lại thường xuyên. Ứng dụng nhạy cảm (banking, fintech, admin tool): 1-7 ngày — cân bằng giữa UX và bảo mật. Một số hệ thống còn implement "sliding expiry" — mỗi lần dùng refresh token, TTL được gia hạn thêm, chỉ thực sự hết hạn khi user không dùng trong X ngày liên tiếp.
 
 ##### 8.2 Refresh token có cần JWT format không?
 

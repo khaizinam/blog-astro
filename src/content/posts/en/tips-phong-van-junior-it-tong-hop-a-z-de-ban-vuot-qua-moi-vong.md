@@ -35,7 +35,7 @@ Whether this is your first interview or your fifth, treat this as your complete 
 
 Most IT companies run junior candidates through a multi-stage process. Knowing what to expect at each stage removes a huge amount of anxiety and lets you prepare specifically for each round.
 
-A typical junior IT interview pipeline looks like this: an initial HR screening call (15–30 minutes) to verify your background and communication skills, followed by a technical interview with a developer or tech lead (45–90 minutes), and sometimes a practical coding test or take-home assignment. Final-stage interviews at larger companies may include a culture fit discussion with the team or a manager.
+A typical junior IT interview pipeline looks like this: an initial HR screening call (15-30 minutes) to verify your background and communication skills, followed by a technical interview with a developer or tech lead (45-90 minutes), and sometimes a practical coding test or take-home assignment. Final-stage interviews at larger companies may include a culture fit discussion with the team or a manager.
 
 Not every company runs all four stages — startups often compress this into one or two rounds. But knowing the full spectrum means you won't be caught off guard if a company adds an extra step.
 
@@ -43,7 +43,7 @@ Not every company runs all four stages — startups often compress this into one
 
 ### 2\. Research the Company Before You Walk In
 
-Nothing signals lack of preparation more clearly than a candidate who can't answer "What do you know about us?" Researching the company takes 30–60 minutes and gives you a significant edge over unprepared candidates.
+Nothing signals lack of preparation more clearly than a candidate who can't answer "What do you know about us?" Researching the company takes 30-60 minutes and gives you a significant edge over unprepared candidates.
 
 **What to research:**
 
@@ -58,10 +58,10 @@ Use this research actively during the interview. When asked "Why do you want to 
 
 Your self-introduction sets the tone for the entire interview. A confident, well-structured intro signals that you've prepared and you know how to communicate — two things every interviewer wants to see in a junior developer.
 
-Use the **Present–Past–Future** structure:
+Use the **Present-Past-Future** structure:
 
 *   **Present:** Who you are right now — your current status, degree, or most recent experience.
-*   **Past:** 1–2 relevant projects or experiences that demonstrate your skills.
+*   **Past:** 1-2 relevant projects or experiences that demonstrate your skills.
 *   **Future:** What you're looking for in this role and why this company fits your goals.
 
 Keep it between 90 seconds and 2 minutes. Practice it out loud at least five times before the interview — not to memorize it word for word, but to make it feel natural and conversational.
@@ -91,7 +91,7 @@ Behavioral questions — "Tell me about a time you...", "Describe a situation wh
 *   **Action:** What specific steps did you personally take? (This is the most important part — be detailed.)
 *   **Result:** What was the measurable or observable outcome? What did you learn?
 
-Prepare 3–4 STAR stories before the interview covering: a technical problem you solved, a time you worked under pressure, a time you made a mistake and recovered, and a project you're proud of. Most behavioral questions can be answered with one of these four stories.
+Prepare 3-4 STAR stories before the interview covering: a technical problem you solved, a time you worked under pressure, a time you made a mistake and recovered, and a project you're proud of. Most behavioral questions can be answered with one of these four stories.
 
 ### 6\. Things to Do the Night Before
 
@@ -108,7 +108,7 @@ How you spend the 12 hours before your interview has a bigger impact than most p
 
 ### 7\. Body Language and First Impressions
 
-Studies consistently show that interviewers form a strong impression within the first 60–90 seconds of meeting a candidate. Technical skills matter — but so does how you carry yourself in the room (or on screen).
+Studies consistently show that interviewers form a strong impression within the first 60-90 seconds of meeting a candidate. Technical skills matter — but so does how you carry yourself in the room (or on screen).
 
 **In person:** Arrive 10 minutes early. Greet the receptionist and interviewer by name with a firm handshake and eye contact. Sit up straight and avoid crossed arms — open posture signals confidence and engagement. Nod occasionally while the interviewer speaks to show you're actively listening.
 

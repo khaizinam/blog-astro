@@ -44,7 +44,7 @@ Many developers maintain the habit of running applications using `npm start` or 
 *   **Child Process Burden:** When running via `npm`, the system must launch an intermediate process just to manage the script. This causes you to lose dozens to hundreds of MB of RAM uselessly.
 *   **Development Tools Overhead:** In many cases, this start command unintentionally activates file monitoring tools (like nodemon) or unnecessary compilers, significantly consuming the VPS's CPU and RAM.
 
-Instead of letting the application "fend for itself" in a harsh environment, we need a smarter resource coordination strategy through **PM2** – a professional process manager that helps us control every byte of RAM and prevent the OOM Killer's "strike."
+Instead of letting the application "fend for itself" in a harsh environment, we need a smarter resource coordination strategy through **PM2** - a professional process manager that helps us control every byte of RAM and prevent the OOM Killer's "strike."
 
 ## II. Strategy 1: Optimizing Node.js (V8 Engine)
 

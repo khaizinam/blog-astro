@@ -51,7 +51,7 @@ What makes this even more important: the self-introduction is the **one question
 
 There is no single "perfect" self-introduction, but there is a structure that works consistently across different company types, experience levels, and technical backgrounds. I call it the **P-S-T-G framework**: Profile → Stack → Track record → Goal.
 
-##### P — Profile (10–15 seconds)
+##### P — Profile (10-15 seconds)
 
 Who you are and where you are in your career journey. **No need for a full biography** — just one clear positioning sentence so the interviewer immediately understands who they are talking to.
 
@@ -59,14 +59,14 @@ Who you are and where you are in your career journey. **No need for a full biogr
 *   Good: _"I graduated in Software Engineering this past June and I'm looking for a Junior Backend Developer role."_
 *   Avoid: _"My name is Nguyen Van A, born March 15th 2001, my hometown is..."_ — this is filling out a form, not a professional introduction.
 
-##### S — Stack (20–30 seconds)
+##### S — Stack (20-30 seconds)
 
-The technical skills you work with most confidently. **Do not list everything you have ever touched** — pick the 2–3 things you are genuinely solid on, and if possible, connect them into a coherent narrative about what kind of developer you are.
+The technical skills you work with most confidently. **Do not list everything you have ever touched** — pick the 2-3 things you are genuinely solid on, and if possible, connect them into a coherent narrative about what kind of developer you are.
 
 *   Good: _"My primary stack is React on the frontend and Node.js on the backend, and I've been adding TypeScript over the past few months. I'm comfortable with REST API design and have basic knowledge of Docker."_
 *   Avoid: _"I know HTML, CSS, JavaScript, React, Vue, Angular, Node, PHP, Laravel, Python, Java, MySQL, MongoDB, Redis, Docker, Kubernetes..."_ — an undifferentiated list of everything makes interviewers doubt how deeply you know any of it.
 
-##### T — Track record (30–40 seconds)
+##### T — Track record (30-40 seconds)
 
 This is the most important part and the most commonly skipped. What have you **actually done** with those skills? Real projects, internships, freelance work, open source contributions — any concrete evidence that you have applied your knowledge to solve real problems. Numbers and specifics are your best friends here.
 
@@ -74,7 +74,7 @@ This is the most important part and the most commonly skipped. What have you **a
 *   Good: _"I interned for three months at Company X, mainly working on the payment module in Laravel. During that time I tracked down and fixed a race condition bug that had been causing occasional double charges."_
 *   Avoid: _"I've done some projects at university..."_ — too vague to create any memorable anchor point.
 
-##### G — Goal (15–20 seconds)
+##### G — Goal (15-20 seconds)
 
 What you want next, and why this specific role fits that direction. **This must be linked to the company you are interviewing with** — a generic statement about wanting to "learn and grow in a good environment" signals you did not bother to research who you are talking to.
 
@@ -103,7 +103,7 @@ _While I was studying I took on some freelance work and built an order managemen
 
 _What I'm looking for in my first role is an environment with a strong code review culture — I want to learn how to write production-ready code, not just code that runs. From the job description, it sounds like that culture exists here, which is the main reason I applied."_
 
-##### Template for Junior with 6–12 months experience
+##### Template for Junior with 6-12 months experience
 
 _"Hi, I'm Tuan. I've been working as a Junior Backend Developer for about a year, mostly on outsourced projects for clients in the Netherlands and Germany._
 
@@ -187,7 +187,7 @@ Before walking into the interview room, find a quiet corner and say your introdu
 
 ##### Q: How long should the self-introduction be?
 
-**A:** 90 seconds to 2 minutes is the sweet spot for most IT interviews. Some interviewers will let you go longer if you are engaging; others may cut you off after 2 minutes regardless. If the interviewer says "briefly introduce yourself," aim for 60–75 seconds and be more selective. When in doubt, land closer to 90 seconds than 2 minutes — leaving the interviewer wanting to ask more is better than watching them start to drift.
+**A:** 90 seconds to 2 minutes is the sweet spot for most IT interviews. Some interviewers will let you go longer if you are engaging; others may cut you off after 2 minutes regardless. If the interviewer says "briefly introduce yourself," aim for 60-75 seconds and be more selective. When in doubt, land closer to 90 seconds than 2 minutes — leaving the interviewer wanting to ask more is better than watching them start to drift.
 
 ##### Q: What if I have no real projects to mention?
 

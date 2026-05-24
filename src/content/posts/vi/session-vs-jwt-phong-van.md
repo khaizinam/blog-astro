@@ -88,7 +88,7 @@ User đăng nhập → server tạo JWT, ký bằng secret key, trả về clien
 
 *   **Không thể revoke trước khi hết hạn:** Đây là nhược điểm lớn nhất. Nếu token bị đánh cắp hoặc user bị ban, bạn không thể invalidate token đó ngay lập tức — phải chờ đến khi token tự hết hạn (exp). Giải pháp phổ biến: dùng access token ngắn hạn (15 phút) + refresh token dài hạn, hoặc maintain một token blacklist (nhưng cách này làm mất đi tính stateless).
 *   **Payload bị expose:** Không bao giờ lưu thông tin nhạy cảm (password hash, số thẻ, v.v.) trong JWT payload vì bất kỳ ai cũng có thể decode.
-*   **Token size lớn hơn session ID:** JWT thường dài 200–500 bytes so với session ID chỉ 32 bytes — tốn bandwidth hơn khi gửi kèm mọi request.
+*   **Token size lớn hơn session ID:** JWT thường dài 200-500 bytes so với session ID chỉ 32 bytes — tốn bandwidth hơn khi gửi kèm mọi request.
 
 #### So Sánh Trực Tiếp: Session vs JWT Theo Từng Tiêu Chí
 
@@ -158,7 +158,7 @@ Interviewer hỏi tiếp: "Nếu user bị mất điện thoại, bạn xử lý
 
 ##### Hỏi: Refresh token là gì và tại sao cần?
 
-**Đáp:** Access token JWT thường có thời gian sống ngắn (5–15 phút) để giảm rủi ro nếu bị đánh cắp. Nhưng không thể bắt user đăng nhập lại mỗi 15 phút — đây là lúc refresh token vào cuộc. Refresh token là một token riêng biệt, thời gian sống dài (7–30 ngày), được lưu an toàn. Khi access token hết hạn, client dùng refresh token để lấy access token mới mà không cần user nhập lại password. Refresh token được lưu phía server — có thể revoke bất cứ lúc nào.
+**Đáp:** Access token JWT thường có thời gian sống ngắn (5-15 phút) để giảm rủi ro nếu bị đánh cắp. Nhưng không thể bắt user đăng nhập lại mỗi 15 phút — đây là lúc refresh token vào cuộc. Refresh token là một token riêng biệt, thời gian sống dài (7-30 ngày), được lưu an toàn. Khi access token hết hạn, client dùng refresh token để lấy access token mới mà không cần user nhập lại password. Refresh token được lưu phía server — có thể revoke bất cứ lúc nào.
 
 ##### Hỏi: Phỏng vấn NodeJS và PHP có hỏi khác nhau về Session/JWT không?
 

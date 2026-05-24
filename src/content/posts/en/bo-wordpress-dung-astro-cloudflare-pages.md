@@ -127,7 +127,7 @@ When all you need is to write and publish posts, the entire WordPress ecosystem 
 
 ##### 7.1. Migrating all old content before the theme is stable
 
-Most people start by exporting all WordPress content into Astro immediately. The result: hours fixing formatting, broken image links, content that doesn't render correctly. Better approach: get the theme stable, test with 5–10 posts first, then do the bulk migration.
+Most people start by exporting all WordPress content into Astro immediately. The result: hours fixing formatting, broken image links, content that doesn't render correctly. Better approach: get the theme stable, test with 5-10 posts first, then do the bulk migration.
 
 ##### 7.2. Picking a complex template then getting stuck customizing it
 
@@ -153,15 +153,15 @@ If you know basic Git and have used ChatGPT to ask technical questions, you have
 
 ##### What does the Astro + Cloudflare stack actually cost?
 
-For a personal blog with low to moderate traffic: Cloudflare Pages is free, R2 is free up to 10GB storage and 1 million requests per month, domain runs about $10–15 per year. Total cost is essentially just the domain — compared to WordPress which can run $50–200+ per year depending on hosting.
+For a personal blog with low to moderate traffic: Cloudflare Pages is free, R2 is free up to 10GB storage and 1 million requests per month, domain runs about $10-15 per year. Total cost is essentially just the domain — compared to WordPress which can run $50-200+ per year depending on hosting.
 
 ##### How long does migrating from WordPress to Astro take?
 
-For a blog under 50 posts: 1–2 weeks working evenings. The most time-consuming parts are choosing a theme, setting it up, and handling old images. The content migration itself is actually fast if you use a script to convert WordPress XML to Markdown.
+For a blog under 50 posts: 1-2 weeks working evenings. The most time-consuming parts are choosing a theme, setting it up, and handling old images. The content migration itself is actually fast if you use a script to convert WordPress XML to Markdown.
 
 ##### Will my SEO take a hit when migrating?
 
-There's risk if you don't set up redirects correctly. With proper 301 redirects from old URLs to new ones and preserved content structure, SEO typically recovers within 4–8 weeks. Static sites have a significant Core Web Vitals advantage over WordPress — PageSpeed scores usually jump considerably after migration.
+There's risk if you don't set up redirects correctly. With proper 301 redirects from old URLs to new ones and preserved content structure, SEO typically recovers within 4-8 weeks. Static sites have a significant Core Web Vitals advantage over WordPress — PageSpeed scores usually jump considerably after migration.
 
 ##### Is writing on Astro more inconvenient than WordPress?
 

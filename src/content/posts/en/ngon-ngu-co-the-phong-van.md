@@ -52,7 +52,7 @@ A typical fresher walks into an interview visibly tense: eyes drifting to the ce
 
 ##### 2.2. After — when you learn to control your signals
 
-The same candidate, after two weeks of deliberate body language practice: sitting upright, maintaining eye contact 60–70% of the time, resting hands comfortably on the table, pausing for 2 seconds before answering tough questions instead of fumbling immediately. Result: offer received from a top-5 outsourcing company in Ho Chi Minh City with a starting salary 15% higher than the company originally planned to offer — as reported by the candidate themselves.
+The same candidate, after two weeks of deliberate body language practice: sitting upright, maintaining eye contact 60-70% of the time, resting hands comfortably on the table, pausing for 2 seconds before answering tough questions instead of fumbling immediately. Result: offer received from a top-5 outsourcing company in Ho Chi Minh City with a starting salary 15% higher than the company originally planned to offer — as reported by the candidate themselves.
 
 #### 3\. Pre-interview body language checklist
 
@@ -70,7 +70,7 @@ Here are the 7 most common body language mistakes freshers and junior developers
 
 ##### 4.1. Avoiding eye contact
 
-**What it looks like:** Constantly looking down at the table, gazing away, or staring at the ceiling while thinking. **Why it's wrong:** Recruiters interpret this as a lack of confidence or an attempt to conceal something. **Fix:** Aim for eye contact about 60–70% of the time. When you need a moment to think, glance toward a corner of the room rather than down at the floor — this looks natural and still signals focus.
+**What it looks like:** Constantly looking down at the table, gazing away, or staring at the ceiling while thinking. **Why it's wrong:** Recruiters interpret this as a lack of confidence or an attempt to conceal something. **Fix:** Aim for eye contact about 60-70% of the time. When you need a moment to think, glance toward a corner of the room rather than down at the floor — this looks natural and still signals focus.
 
 ##### 4.2. Crossing your arms
 
@@ -82,7 +82,7 @@ Here are the 7 most common body language mistakes freshers and junior developers
 
 ##### 4.4. Slouching or leaning back
 
-**What it looks like:** Sinking into your chair, a rounded spine, or leaning back as if you're relaxing. **Why it's wrong:** This posture communicates either a lack of seriousness or overconfidence — neither works for a fresher or junior in learning mode. **Fix:** Sit upright with your back lightly touching the chair, and lean forward about 10–15 degrees when you want to signal engagement. A slight lean toward the interviewer is one of the strongest positive signals in a conversation.
+**What it looks like:** Sinking into your chair, a rounded spine, or leaning back as if you're relaxing. **Why it's wrong:** This posture communicates either a lack of seriousness or overconfidence — neither works for a fresher or junior in learning mode. **Fix:** Sit upright with your back lightly touching the chair, and lean forward about 10-15 degrees when you want to signal engagement. A slight lean toward the interviewer is one of the strongest positive signals in a conversation.
 
 ##### 4.5. Too many or too few hand gestures
 
@@ -116,7 +116,7 @@ Yes, unless there's a specific reason not to (e.g., cleanroom environment, healt
 
 ##### A technical question freezes me completely — how do I not show it?
 
-A deliberate pause is always better than an immediate wrong answer. When you hit a tough question: give one slow nod (signals processing), glance briefly to one side for 2–3 seconds, then return your gaze and say "Good question — the way I'd approach this is..." A confident posture during a short pause communicates far more than stuttering immediately through an uncertain answer.
+A deliberate pause is always better than an immediate wrong answer. When you hit a tough question: give one slow nod (signals processing), glance briefly to one side for 2-3 seconds, then return your gaze and say "Good question — the way I'd approach this is..." A confident posture during a short pause communicates far more than stuttering immediately through an uncertain answer.
 
 ##### Is smiling a lot in an interview seen as not serious?
 
@@ -124,4 +124,4 @@ A natural, contextually appropriate smile is a strong positive signal — it dem
 
 #### 7\. Summary
 
-Body language in interviews is not a talent you're born with — it's a skill you can build and improve in 1–2 weeks with conscious practice. The 7 most common mistakes (avoiding eye contact, crossing arms, mindless nodding, poor posture, uncontrolled gestures, trailing voice, checking your phone) can all be corrected through deliberate practice in front of a mirror or by reviewing recorded mock interviews. Combining strong body language control with solid technical preparation is the formula for leaving a complete, lasting impression on interviewers. For the full list of common technical questions, see [10 IT Fresher Interview Questions You'll Actually Face](/en/10-cau-hoi-phong-van-fresher-it-hay-gap-nhat-ban-can-chuan-bi) — and go into your next interview prepared on every front.
+Body language in interviews is not a talent you're born with — it's a skill you can build and improve in 1-2 weeks with conscious practice. The 7 most common mistakes (avoiding eye contact, crossing arms, mindless nodding, poor posture, uncontrolled gestures, trailing voice, checking your phone) can all be corrected through deliberate practice in front of a mirror or by reviewing recorded mock interviews. Combining strong body language control with solid technical preparation is the formula for leaving a complete, lasting impression on interviewers. For the full list of common technical questions, see [10 IT Fresher Interview Questions You'll Actually Face](/en/10-cau-hoi-phong-van-fresher-it-hay-gap-nhat-ban-can-chuan-bi) — and go into your next interview prepared on every front.

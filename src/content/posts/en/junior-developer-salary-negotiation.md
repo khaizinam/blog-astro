@@ -9,12 +9,12 @@ featured: false
 draft: false
 tags:
   - "SeriesPhongVan"
-description: "Most entry-level developers accept the first salary offer without pushing back — and leave 15–25% on the table permanently. This guide gives you market research tools, step-by-step negotiation scripts, and two real case studies from developers in Southeast Asia and Eastern Europe. Works regardless of your market or stack."
+description: "Most entry-level developers accept the first salary offer without pushing back — and leave 15-25% on the table permanently. This guide gives you market research tools, step-by-step negotiation scripts, and two real case studies from developers in Southeast Asia and Eastern Europe. Works regardless of your market or stack."
 ---
 
 You're about to receive your first IT offer but don't know whether to accept immediately or push back? This is a practical guide for freshers and junior developers to negotiate confidently, backed by data, without risking the offer — applicable from your very first interview.
 
-Every year, thousands of IT freshers accept salaries 15–30% below the company's actual budget — not because they lack ability, but because they lack the tools. This guide gives you exactly what you need: market benchmarks, negotiation psychology, and real scripts you can use immediately — wherever you are in the world.
+Every year, thousands of IT freshers accept salaries 15-30% below the company's actual budget — not because they lack ability, but because they lack the tools. This guide gives you exactly what you need: market benchmarks, negotiation psychology, and real scripts you can use immediately — wherever you are in the world.
 
 ### Table of Contents
 
@@ -50,7 +50,7 @@ Many freshers believe salary negotiation is a privilege reserved for experienced
 
 ##### Benefit 1: A higher base — compounding effect over years
 
-If you raise your starting salary by even 15–20%, the impact isn't linear. With typical annual raises applied as a percentage, the gap between those who negotiated and those who didn't compounds significantly over 3–5 years. **The gap grows — it doesn't shrink.** Starting higher means every subsequent raise builds on a larger base.
+If you raise your starting salary by even 15-20%, the impact isn't linear. With typical annual raises applied as a percentage, the gap between those who negotiated and those who didn't compounds significantly over 3-5 years. **The gap grows — it doesn't shrink.** Starting higher means every subsequent raise builds on a larger base.
 
 ##### Benefit 2: A signal of self-awareness and maturity
 
@@ -58,7 +58,7 @@ Contrary to what many fear, professional negotiation rarely causes employers to 
 
 ##### Benefit 3: Negotiation isn't just salary — total compensation is what matters
 
-When base salary isn't flexible, you can still negotiate: training budgets, remote work, shorter review cycles (3–6 months instead of 12), equipment allowances, or extra leave days. A package with full remote and a 6-month review cycle may have higher real value than a higher base with nothing else attached. Think in terms of total value, not just the monthly number.
+When base salary isn't flexible, you can still negotiate: training budgets, remote work, shorter review cycles (3-6 months instead of 12), equipment allowances, or extra leave days. A package with full remote and a 6-month review cycle may have higher real value than a higher base with nothing else attached. Think in terms of total value, not just the monthly number.
 
 ##### Benefit 4: Building the negotiation muscle early
 
@@ -98,19 +98,19 @@ When you receive the offer, don't respond immediately. Say: **"Thank you so much
 
 ##### Step 4 — Deliver a reasoned counter-offer
 
-Real script: **"I'm really excited about this offer and genuinely want to join the team. Based on my research into market rates for [Role] in [City], and given my experience with [1–2 specific points], I was hoping we could adjust to [your target number]. Is that something we could explore?"**
+Real script: **"I'm really excited about this offer and genuinely want to join the team. Based on my research into market rates for [Role] in [City], and given my experience with [1-2 specific points], I was hoping we could adjust to [your target number]. Is that something we could explore?"**
 
 Important: give a specific number, not a range. A range signals uncertainty — a specific number signals research.
 
 ##### Step 5 — Handle rejection or inflexibility
 
-If the company says the salary isn't flexible, pivot to non-salary terms: **"I understand completely. In that case, would it be possible to consider a salary review at 4–6 months rather than 12? Or is there a training or certification budget available?"** — this is how you extract value when the primary path is blocked.
+If the company says the salary isn't flexible, pivot to non-salary terms: **"I understand completely. In that case, would it be possible to consider a salary review at 4-6 months rather than 12? Or is there a training or certification budget available?"** — this is how you extract value when the primary path is blocked.
 
 #### Real-World Case Studies
 
 ##### Case Study 1 — Backend Developer, Southeast Asia
 
-Kai had just graduated with a Computer Science degree and applied for a Backend Developer role at a software agency. After the technical round, HR came back with an offer at the lower end of the market range for his city. Rather than accepting immediately, Kai spent a day cross-referencing Glassdoor and local tech community salary threads for his stack, confirming the role typically paid 20–35% more for candidates with any production experience.
+Kai had just graduated with a Computer Science degree and applied for a Backend Developer role at a software agency. After the technical round, HR came back with an offer at the lower end of the market range for his city. Rather than accepting immediately, Kai spent a day cross-referencing Glassdoor and local tech community salary threads for his stack, confirming the role typically paid 20-35% more for candidates with any production experience.
 
 Kai had one strong differentiator: he had self-deployed a real application to a VPS — something not every fresh graduate could show. The next day, he called HR back: **"I'm genuinely happy to receive this offer and want to join. However, based on my market research and the fact that I already have hands-on production deployment experience, I was hoping we could move the offer up by around 20%. Would that be possible?"**
 
@@ -150,7 +150,7 @@ The company came back 10% below her ask but agreed to her second request: a dedi
 
 ##### Q: How much above the offer is reasonable for a counter?
 
-**A:** For freshers, 15–25% above the initial offer is reasonable when backed by market data. Countering 40–50% higher without special justification destroys goodwill. Always pair your number with a specific reason — a number without context carries no weight.
+**A:** For freshers, 15-25% above the initial offer is reasonable when backed by market data. Countering 40-50% higher without special justification destroys goodwill. Always pair your number with a specific reason — a number without context carries no weight.
 
 ##### Q: What if the offer is already higher than I expected?
 
@@ -158,7 +158,7 @@ The company came back 10% below her ask but agreed to her second request: a dedi
 
 #### Final Thoughts
 
-**Negotiating salary as a fresh graduate is not overreaching — it is a basic career skill you should master from day one.** Every percentage point you gain at your starting point compounds into significant money over the first 3–5 years of your career.
+**Negotiating salary as a fresh graduate is not overreaching — it is a basic career skill you should master from day one.** Every percentage point you gain at your starting point compounds into significant money over the first 3-5 years of your career.
 
 Prepare your benchmarks, define your target number, practice your scripts, and walk in with a professional mindset — not begging, not confrontational, simply two parties finding a fair number together. This works whether you're in Warsaw, Bangalore, Manila, or anywhere else in the world.
 

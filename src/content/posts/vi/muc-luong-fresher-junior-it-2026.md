@@ -33,33 +33,33 @@ Tất cả con số dưới đây là lương gross (chưa trừ thuế, chưa t
 
 ##### 1.1. PHP / Laravel
 
-*   **Fresher (0-6 tháng kinh nghiệm):** 7 – 12 triệu/tháng
-*   **Junior (6-18 tháng):** 12 – 18 triệu/tháng
-*   **Junior có thêm Docker + Redis + hiểu query optimization:** 18 – 22 triệu tại công ty product
+*   **Fresher (0-6 tháng kinh nghiệm):** 7 - 12 triệu/tháng
+*   **Junior (6-18 tháng):** 12 - 18 triệu/tháng
+*   **Junior có thêm Docker + Redis + hiểu query optimization:** 18 - 22 triệu tại công ty product
 
 PHP là stack phổ biến nhất trong outsource Việt Nam - cầu cao nhưng cung cũng lớn, nên mức khởi điểm không phải cao nhất. Điểm bứt phá nằm ở việc biết Laravel patterns thực chiến (Repository, Service Layer) và MySQL optimization, thứ mà fresher học online ít ai nắm được.
 
 ##### 1.2. Node.js / Express / NestJS
 
-*   **Fresher (0-6 tháng):** 8 – 14 triệu/tháng
-*   **Junior (6-18 tháng):** 14 – 20 triệu/tháng
-*   **Junior có NestJS + TypeScript + biết microservices cơ bản:** 20 – 28 triệu
+*   **Fresher (0-6 tháng):** 8 - 14 triệu/tháng
+*   **Junior (6-18 tháng):** 14 - 20 triệu/tháng
+*   **Junior có NestJS + TypeScript + biết microservices cơ bản:** 20 - 28 triệu
 
 Node.js đang tăng mạnh ở startup và product company. Fresher Node.js nhận được offer cao hơn PHP cùng level vì nguồn cung ít hơn. Năm 2026, TypeScript không còn là "nice to have" - nhiều JD đã ghi là bắt buộc. Nếu bạn đang học Node.js, đầu tư TypeScript sớm là quyết định đúng nhất.
 
 ##### 1.3. ReactJS / Frontend
 
-*   **Fresher Frontend (0-6 tháng):** 8 – 13 triệu/tháng
-*   **Junior React (6-18 tháng):** 13 – 20 triệu/tháng
-*   **Junior React có Next.js + Tailwind + đã deploy dự án thực:** 18 – 25 triệu tại product company
+*   **Fresher Frontend (0-6 tháng):** 8 - 13 triệu/tháng
+*   **Junior React (6-18 tháng):** 13 - 20 triệu/tháng
+*   **Junior React có Next.js + Tailwind + đã deploy dự án thực:** 18 - 25 triệu tại product company
 
 Frontend đang hưởng lợi từ làn sóng startup SaaS nội địa. Điểm phân biệt rõ nhất giữa fresher 9 triệu và fresher 13 triệu không phải là số lượng khóa học - mà là có dự án thực với traffic thật hay không. Core Web Vitals và Next.js SSR là hai kỹ năng đẩy junior React từ nhóm 13M lên nhóm 18-20M nhanh nhất.
 
 ##### 1.4. Flutter / React Native
 
-*   **Fresher Mobile (0-6 tháng):** 9 – 15 triệu/tháng
-*   **Junior Flutter (6-18 tháng):** 15 – 22 triệu/tháng
-*   **Junior React Native có kinh nghiệm deploy App Store / Play Store:** 18 – 26 triệu
+*   **Fresher Mobile (0-6 tháng):** 9 - 15 triệu/tháng
+*   **Junior Flutter (6-18 tháng):** 15 - 22 triệu/tháng
+*   **Junior React Native có kinh nghiệm deploy App Store / Play Store:** 18 - 26 triệu
 
 Flutter junior là phân khúc thiếu hụt nhất thị trường IT Việt Nam hiện tại. Cầu cao, cung thấp, learning curve với Dart dốc hơn các stack khác - nên mức starting wage luôn nhỉnh hơn. Fresher Flutter có 1 app đã publish trên store có lợi thế cực kỳ rõ ràng ngay từ vòng CV.
 

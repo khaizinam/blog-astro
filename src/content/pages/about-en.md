@@ -11,7 +11,7 @@ description: "Introducing myself and the goals of KhaiZiNam Blog."
 
 ## About KhaiZiNam
 
-Welcome to KhaiZiNam – A space for sharing knowledge, experience, and the latest updates in the world of technology and programming.
+Welcome to KhaiZiNam - A space for sharing knowledge, experience, and the latest updates in the world of technology and programming.
 
 This blog was built from a passion for code and a desire to connect the Vietnamese developer community. It serves as a repository for sharing articles ranging from foundational concepts to deep dives, helping everyone learn and grow their careers together.
 

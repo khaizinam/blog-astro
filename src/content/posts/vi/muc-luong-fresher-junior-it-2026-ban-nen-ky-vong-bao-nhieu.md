@@ -29,13 +29,13 @@ Tất cả các con số trong bài được tổng hợp từ dữ liệu thị
 
 ### 1\. Tại Sao Khoảng Lương IT Lại Chênh Lệch Nhiều Như Vậy
 
-Nếu bạn đã xem qua các tin tuyển dụng gần đây, hẳn bạn nhận ra hai vị trí "junior developer" có thể đăng mức lương chênh nhau đến 10–15 triệu đồng mỗi tháng. Điều này không phải ngẫu nhiên. Một số yếu tố then chốt tạo ra sự chênh lệch này, và hiểu được chúng giúp bạn nhắm đúng cơ hội và đưa ra lập luận thuyết phục hơn trong đàm phán.
+Nếu bạn đã xem qua các tin tuyển dụng gần đây, hẳn bạn nhận ra hai vị trí "junior developer" có thể đăng mức lương chênh nhau đến 10-15 triệu đồng mỗi tháng. Điều này không phải ngẫu nhiên. Một số yếu tố then chốt tạo ra sự chênh lệch này, và hiểu được chúng giúp bạn nhắm đúng cơ hội và đưa ra lập luận thuyết phục hơn trong đàm phán.
 
 **Tech stack quan trọng hơn chức danh.** Một junior developer làm việc với Go, Kotlin, hoặc cloud-native infrastructure được trả cao hơn người làm PHP thuần hoặc jQuery — không phải vì họ thông minh hơn, mà vì cầu vượt cung ở các stack chuyên biệt. Công ty sẵn sàng trả thêm cho kỹ năng khó tìm người.
 
-**Loại hình công ty quyết định mức trần.** Một product company (công ty tự xây dựng và bán sản phẩm phần mềm của mình) thường trả cao hơn 20–40% so với công ty outsourcing cho cùng một vị trí. Điều này phản ánh giá trị thương mại cao hơn của sản phẩm và việc product company đầu tư nhiều hơn vào giữ chân nhân tài kỹ thuật.
+**Loại hình công ty quyết định mức trần.** Một product company (công ty tự xây dựng và bán sản phẩm phần mềm của mình) thường trả cao hơn 20-40% so với công ty outsourcing cho cùng một vị trí. Điều này phản ánh giá trị thương mại cao hơn của sản phẩm và việc product company đầu tư nhiều hơn vào giữ chân nhân tài kỹ thuật.
 
-**Tiếng Anh là hệ số nhân thực sự.** Trong thị trường IT Việt Nam, ứng viên giao tiếp tiếng Anh tự tin — không chỉ đọc tài liệu mà thực sự nói và viết được — nhất quán kiếm được nhiều hơn 15–25%. Khoảng cách này tăng đáng kể nếu bạn theo đuổi công việc remote cho khách hàng nước ngoài.
+**Tiếng Anh là hệ số nhân thực sự.** Trong thị trường IT Việt Nam, ứng viên giao tiếp tiếng Anh tự tin — không chỉ đọc tài liệu mà thực sự nói và viết được — nhất quán kiếm được nhiều hơn 15-25%. Khoảng cách này tăng đáng kể nếu bạn theo đuổi công việc remote cho khách hàng nước ngoài.
 
 **Chất lượng portfolio quan trọng hơn GPA.** Một fresher có hai dự án đã deploy và GitHub với commit đều đặn sẽ nhận được offer cao hơn người có GPA 3.8 nhưng không có code nào ngoài thực tế. Nhà tuyển dụng đang mua output tương lai của bạn, không phải điểm số trong quá khứ.
 
@@ -46,7 +46,7 @@ Mức Lương Fresher & Junior IT 2026: Bạn Nên Kỳ Vọng Bao Nhiêu?
 
 ### 2\. Mức Lương Fresher IT Theo Vị Trí (Thị Trường Việt Nam, 2026)
 
-Các khoảng lương dưới đây đại diện cho mức lương gross hàng tháng (trước thuế) điển hình cho fresher có 0–12 tháng kinh nghiệm trên thị trường Việt Nam. Đây là khoảng thị trường rộng — bạn rơi vào vị trí nào trong khoảng đó phụ thuộc vào các yếu tố ở Mục 1.
+Các khoảng lương dưới đây đại diện cho mức lương gross hàng tháng (trước thuế) điển hình cho fresher có 0-12 tháng kinh nghiệm trên thị trường Việt Nam. Đây là khoảng thị trường rộng — bạn rơi vào vị trí nào trong khoảng đó phụ thuộc vào các yếu tố ở Mục 1.
 
 #### Theo chuyên môn:
 
@@ -73,7 +73,7 @@ Thành thạo Python, SQL, và quen với các công cụ như Power BI hoặc T
 
 ### 3\. Mức Lương Junior IT Theo Vị Trí (Thị Trường Việt Nam, 2026)
 
-Junior thường có nghĩa là 1–3 năm kinh nghiệm làm việc thực tế — không phải thực tập, mà là các vị trí được trả lương nơi bạn đã ship code production. Bước nhảy từ fresher lên junior về mặt thu nhập rất đáng kể và phản ánh việc cần ít sự hỗ trợ hơn từ senior team.
+Junior thường có nghĩa là 1-3 năm kinh nghiệm làm việc thực tế — không phải thực tập, mà là các vị trí được trả lương nơi bạn đã ship code production. Bước nhảy từ fresher lên junior về mặt thu nhập rất đáng kể và phản ánh việc cần ít sự hỗ trợ hơn từ senior team.
 
 **Frontend Developer (React, Vue):** 12.000.000 - 20.000.000 VNĐ/tháng
 
@@ -89,29 +89,29 @@ Junior thường có nghĩa là 1–3 năm kinh nghiệm làm việc thực tế
 
 **Data Engineer / ML Engineer (Junior):** 14.000.000 - 24.000.000 VNĐ/tháng
 
-Ở cấp junior, độ trải rộng trong mỗi khoảng tăng lên. Một junior backend developer tại product company với tiếng Anh tốt và track record tự chủ công việc có thể đạt 22–25 triệu, trong khi cùng chức danh tại công ty outsourcing nhỏ có thể chỉ đến 15 triệu. Chức danh một mình không nói lên nhiều — bối cảnh mới là tất cả.
+Ở cấp junior, độ trải rộng trong mỗi khoảng tăng lên. Một junior backend developer tại product company với tiếng Anh tốt và track record tự chủ công việc có thể đạt 22-25 triệu, trong khi cùng chức danh tại công ty outsourcing nhỏ có thể chỉ đến 15 triệu. Chức danh một mình không nói lên nhiều — bối cảnh mới là tất cả.
 
 ### 4\. Lương Theo Loại Hình Công Ty: Startup vs. Outsource vs. Product
 
 Bạn làm việc ở đâu thường quan trọng hơn bạn biết gì khi nói về thu nhập ở cấp junior. Dưới đây là so sánh ba loại hình công ty chính.
 
-**Công ty outsourcing** là điểm vào phổ biến nhất cho fresher tại Việt Nam. Họ cung cấp công việc ổn định, team có cấu trúc, và băng lương tương đối dễ đoán. Đánh đổi là mức trần lương thấp hơn đáng kể so với product company — thường thấp hơn 10–30% cho cùng vị trí và kinh nghiệm. Fresher tại outsourcing có thể kỳ vọng 7–12 triệu; junior thường cap khoảng 15–18 triệu trong hầu hết trường hợp trừ khi chuyển sang track team lead.
+**Công ty outsourcing** là điểm vào phổ biến nhất cho fresher tại Việt Nam. Họ cung cấp công việc ổn định, team có cấu trúc, và băng lương tương đối dễ đoán. Đánh đổi là mức trần lương thấp hơn đáng kể so với product company — thường thấp hơn 10-30% cho cùng vị trí và kinh nghiệm. Fresher tại outsourcing có thể kỳ vọng 7-12 triệu; junior thường cap khoảng 15-18 triệu trong hầu hết trường hợp trừ khi chuyển sang track team lead.
 
-**Product company** (cả Việt Nam lẫn nước ngoài) trả lương cơ bản cao nhất thị trường. Họ đầu tư mạnh vào tuyển dụng vì kỹ sư của họ tác động trực tiếp đến thành công thương mại của sản phẩm. Fresher tại startup có funding hoặc product company ổn định có thể bắt đầu ở 10–14 triệu; junior với 2+ năm có thể đạt 20–28 triệu. Điểm trừ: bar tuyển dụng cao hơn, quy trình phỏng vấn nghiêm ngặt hơn, và cạnh tranh gay gắt hơn.
+**Product company** (cả Việt Nam lẫn nước ngoài) trả lương cơ bản cao nhất thị trường. Họ đầu tư mạnh vào tuyển dụng vì kỹ sư của họ tác động trực tiếp đến thành công thương mại của sản phẩm. Fresher tại startup có funding hoặc product company ổn định có thể bắt đầu ở 10-14 triệu; junior với 2+ năm có thể đạt 20-28 triệu. Điểm trừ: bar tuyển dụng cao hơn, quy trình phỏng vấn nghiêm ngặt hơn, và cạnh tranh gay gắt hơn.
 
 **Startup giai đoạn sớm** là biến số nhất. Một startup Series A có funding tốt có thể trả cao hơn thị trường để thu hút nhân tài. Một startup tự bootstrap có thể trả lương thấp hơn thị trường nhưng bù lại bằng equity, tăng trưởng sự nghiệp nhanh hơn, và trách nhiệm rộng hơn. Nếu gia nhập early-stage, luôn làm rõ "equity" thực sự có nghĩa gì về mặt thực tế trước khi nhận lời.
 
-**Công ty nước ngoài và chi nhánh** (ví dụ: công ty công nghệ Nhật, Hàn, châu Âu hoạt động tại Việt Nam) thường trả cao hơn 15–25% so với mặt bằng địa phương, nhưng thường có kỳ vọng văn hóa nghiêm ngặt hơn về phân cấp và chuẩn mực làm thêm giờ. Khả năng ngoại ngữ (tiếng Anh hoặc tiếng Nhật) là yêu cầu cứng với hầu hết.
+**Công ty nước ngoài và chi nhánh** (ví dụ: công ty công nghệ Nhật, Hàn, châu Âu hoạt động tại Việt Nam) thường trả cao hơn 15-25% so với mặt bằng địa phương, nhưng thường có kỳ vọng văn hóa nghiêm ngặt hơn về phân cấp và chuẩn mực làm thêm giờ. Khả năng ngoại ngữ (tiếng Anh hoặc tiếng Nhật) là yêu cầu cứng với hầu hết.
 
 ### 5\. TP.HCM vs. Hà Nội vs. Các Tỉnh Thành Khác
 
 Thị trường việc làm IT Việt Nam tập trung ở hai thành phố lớn, và địa lý vẫn ảnh hưởng đến thu nhập trong năm 2026 — dù khoảng cách đã thu hẹp nhờ chính sách remote-friendly trở thành tiêu chuẩn ở nhiều công ty.
 
-**TP. Hồ Chí Minh** vẫn là thị trường trả lương cao nhất cho vị trí IT, được thúc đẩy bởi mật độ cao nhất của product company, công ty công nghệ nước ngoài và startup có funding. Mức lương ở đây cao hơn khoảng 10–20% so với mức trung bình toàn quốc trên tất cả các vị trí IT.
+**TP. Hồ Chí Minh** vẫn là thị trường trả lương cao nhất cho vị trí IT, được thúc đẩy bởi mật độ cao nhất của product company, công ty công nghệ nước ngoài và startup có funding. Mức lương ở đây cao hơn khoảng 10-20% so với mức trung bình toàn quốc trên tất cả các vị trí IT.
 
-**Hà Nội** là thị trường lớn thứ hai và đã phát triển đáng kể trong những năm gần đây, đặc biệt trong lĩnh vực banking tech, IT chính phủ và outsourcing. Lương tại Hà Nội thường thấp hơn 5–15% so với TP.HCM cho các vị trí tương đương, dù khoảng cách nhỏ hơn ở cấp senior.
+**Hà Nội** là thị trường lớn thứ hai và đã phát triển đáng kể trong những năm gần đây, đặc biệt trong lĩnh vực banking tech, IT chính phủ và outsourcing. Lương tại Hà Nội thường thấp hơn 5-15% so với TP.HCM cho các vị trí tương đương, dù khoảng cách nhỏ hơn ở cấp senior.
 
-**Đà Nẵng, Cần Thơ và các tỉnh thành khác** đang có cộng đồng IT đang phát triển, đặc biệt Đà Nẵng đã thu hút nhiều công ty outsourcing. Lương thường thấp hơn 15–25% so với TP.HCM, nhưng chi phí sinh hoạt cũng thấp hơn đáng kể. Với fresher, tham gia công ty địa phương và làm remote cho employer tại TP.HCM hoặc Hà Nội ngày càng phổ biến và thực tế hơn.
+**Đà Nẵng, Cần Thơ và các tỉnh thành khác** đang có cộng đồng IT đang phát triển, đặc biệt Đà Nẵng đã thu hút nhiều công ty outsourcing. Lương thường thấp hơn 15-25% so với TP.HCM, nhưng chi phí sinh hoạt cũng thấp hơn đáng kể. Với fresher, tham gia công ty địa phương và làm remote cho employer tại TP.HCM hoặc Hà Nội ngày càng phổ biến và thực tế hơn.
 
 ### 6\. Mức Lương Remote Và Thị Trường Quốc Tế
 
@@ -124,7 +124,7 @@ Với các developer Việt Nam tiếp cận được công việc remote cho kh
 *   **Mobile (React Native, Flutter):** $25 - $45/giờ
 *   **DevOps / Cloud:** $30 - $55/giờ
 
-Với 20 giờ billable mỗi tuần — tốc độ bền vững cho junior freelancer đang quản lý phạm vi dự án và giao tiếp khách hàng — ngay cả mức thấp nhất của các mức phí này cũng tạo ra thu nhập tháng $1.200–$1.600 USD, tương đương khoảng 30–40 triệu VNĐ. Con số này gấp 2–3 lần những gì hầu hết công ty Việt Nam trả ở cùng cấp độ kinh nghiệm.
+Với 20 giờ billable mỗi tuần — tốc độ bền vững cho junior freelancer đang quản lý phạm vi dự án và giao tiếp khách hàng — ngay cả mức thấp nhất của các mức phí này cũng tạo ra thu nhập tháng $1.200-$1.600 USD, tương đương khoảng 30-40 triệu VNĐ. Con số này gấp 2-3 lần những gì hầu hết công ty Việt Nam trả ở cùng cấp độ kinh nghiệm.
 
 Điều kiện tiên quyết là giao tiếp tiếng Anh tốt, portfolio có thể chứng minh được, và kỷ luật để tự quản lý quan hệ khách hàng. Những kỹ năng này không đến trong một đêm, nhưng xây dựng hướng tới chúng từ ngày đầu tiên đặt bạn vào vị thế mạnh hơn đáng kể vào năm hai hoặc ba trong sự nghiệp.
 
@@ -132,11 +132,11 @@ Với 20 giờ billable mỗi tuần — tốc độ bền vững cho junior fre
 
 Chờ đợi chu kỳ đánh giá hàng năm là con đường chậm nhất để tăng lương. Dưới đây là những gì thực sự tăng tốc tăng trưởng thu nhập trong sự nghiệp IT.
 
-**Chuyển việc có chiến lược.** Trong thị trường IT Việt Nam, bước nhảy lương nhanh nhất thường đến từ việc đổi công ty — không phải từ tăng lương nội bộ. Một developer ở cùng công ty 3 năm có thể thấy mức tăng 8–12% mỗi năm. Cùng developer đó chuyển một lần sau 18 tháng rồi thêm một lần nữa sau 18 tháng có thể thực tế nhân đôi lương trong cùng khoảng thời gian.
+**Chuyển việc có chiến lược.** Trong thị trường IT Việt Nam, bước nhảy lương nhanh nhất thường đến từ việc đổi công ty — không phải từ tăng lương nội bộ. Một developer ở cùng công ty 3 năm có thể thấy mức tăng 8-12% mỗi năm. Cùng developer đó chuyển một lần sau 18 tháng rồi thêm một lần nữa sau 18 tháng có thể thực tế nhân đôi lương trong cùng khoảng thời gian.
 
 **Nâng cấp lên vị trí có giá trị cao hơn trong chuỗi kỹ năng.** Lương đi theo sự khan hiếm. Học cloud infrastructure, system design, hoặc các framework chuyên biệt như Go hay Kotlin đẩy bạn vào nhóm nhân tài mỏng hơn và biện hộ cho offer cao hơn. Mở rộng kỹ năng là tốt; đào sâu vào niche nhu cầu cao là nhanh hơn.
 
-**Xây dựng track record có thể nhìn thấy được.** Đóng góp open-source, viết blog kỹ thuật, nói chuyện tại meetup địa phương, hoặc duy trì GitHub profile mạnh đều tạo uy tín mà đàm phán lương đơn thuần không thể tạo ra. Một số developer đã thương lượng được offer cao hơn 20–30% chỉ vì team tuyển dụng đã biết đến công việc của họ trước buổi phỏng vấn.
+**Xây dựng track record có thể nhìn thấy được.** Đóng góp open-source, viết blog kỹ thuật, nói chuyện tại meetup địa phương, hoặc duy trì GitHub profile mạnh đều tạo uy tín mà đàm phán lương đơn thuần không thể tạo ra. Một số developer đã thương lượng được offer cao hơn 20-30% chỉ vì team tuyển dụng đã biết đến công việc của họ trước buổi phỏng vấn.
 
 **Đầu tư vào tiếng Anh.** Dành 6 tháng nghiêm túc cải thiện tiếng Anh trong công việc — không chỉ ngữ pháp mà thực sự là khả năng nói trôi chảy và viết rõ ràng — có ROI thuộc hàng cao nhất trong bất kỳ khoản đầu tư kỹ năng nào mà junior developer Việt Nam có thể thực hiện. Mức tăng lương là ngay lập tức và bền vững.
 

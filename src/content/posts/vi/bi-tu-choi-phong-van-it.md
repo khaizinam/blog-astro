@@ -43,7 +43,7 @@ Từ chối do **năng lực chưa đủ** và từ chối do **không match** l
 
 ##### 1.2. Tỷ lệ từ chối là bình thường trong ngành
 
-Ngay cả developer có kinh nghiệm tại các công ty lớn cũng trải qua tỷ lệ từ chối 70–80% khi chuyển việc — con số này cao hơn ở fresher. Mục tiêu không phải là không bị từ chối, mà là rút ngắn số lần cần thử trước khi có offer đầu tiên. Và điều đó hoàn toàn có thể làm được bằng cách phân tích đúng nguyên nhân.
+Ngay cả developer có kinh nghiệm tại các công ty lớn cũng trải qua tỷ lệ từ chối 70-80% khi chuyển việc — con số này cao hơn ở fresher. Mục tiêu không phải là không bị từ chối, mà là rút ngắn số lần cần thử trước khi có offer đầu tiên. Và điều đó hoàn toàn có thể làm được bằng cách phân tích đúng nguyên nhân.
 
 #### 2\. 6 nguyên nhân phổ biến nhất khiến fresher/junior bị từ chối
 
@@ -69,7 +69,7 @@ Câu trả lời đúng nhưng thiếu tự tin trong cách diễn đạt. Khôn
 
 ##### 2.6. Apply sai loại công ty hoặc sai vị trí
 
-Apply vào công ty product yêu cầu tư duy sản phẩm trong khi bạn chỉ quen outsource task. Apply vị trí "junior" nhưng JD thực ra đòi hỏi 2–3 năm kinh nghiệm thực chiến. Apply stack bạn chỉ học lý thuyết nhưng chưa có project thực. Đây là nguyên nhân mà nhiều người không nhận ra vì nó xảy ra trước khi vào phòng phỏng vấn.
+Apply vào công ty product yêu cầu tư duy sản phẩm trong khi bạn chỉ quen outsource task. Apply vị trí "junior" nhưng JD thực ra đòi hỏi 2-3 năm kinh nghiệm thực chiến. Apply stack bạn chỉ học lý thuyết nhưng chưa có project thực. Đây là nguyên nhân mà nhiều người không nhận ra vì nó xảy ra trước khi vào phòng phỏng vấn.
 
 #### 3\. Cách đọc feedback từ chối để tìm đúng vấn đề
 
@@ -94,7 +94,7 @@ Không học rải — học theo cluster câu hỏi phỏng vấn thực tế. 
 
 ##### 4.2. Nếu bị loại do thiếu project thực tế
 
-Không cần build app hoành tráng. Chọn một bài toán nhỏ nhưng thực tế: clone một tính năng cụ thể (auth flow, CRUD với pagination, REST API với rate limiting), deploy lên Vercel/Railway/Render, viết README có ảnh screenshot và hướng dẫn chạy. Một project như vậy mất 1–2 tuần và có giá trị cao hơn 10 project tutorial copy-paste không có gì để nói thêm.
+Không cần build app hoành tráng. Chọn một bài toán nhỏ nhưng thực tế: clone một tính năng cụ thể (auth flow, CRUD với pagination, REST API với rate limiting), deploy lên Vercel/Railway/Render, viết README có ảnh screenshot và hướng dẫn chạy. Một project như vậy mất 1-2 tuần và có giá trị cao hơn 10 project tutorial copy-paste không có gì để nói thêm.
 
 ##### 4.3. Nếu bị loại do giao tiếp và trình bày
 
@@ -112,7 +112,7 @@ Hùng — fresher backend PHP tốt nghiệp tháng 3/2024 — apply 5 công ty 
 
 ##### 6.1. Apply ngay lập tức vào công ty khác mà không phân tích
 
-Phản xạ tự nhiên sau khi bị từ chối là "apply thêm chỗ khác." Nhưng nếu vấn đề nằm ở kiến thức hoặc project — apply thêm 10 chỗ chỉ tạo thêm 10 lần thất bại tương tự. Dừng lại ít nhất 3–5 ngày để phân tích trước khi apply tiếp.
+Phản xạ tự nhiên sau khi bị từ chối là "apply thêm chỗ khác." Nhưng nếu vấn đề nằm ở kiến thức hoặc project — apply thêm 10 chỗ chỉ tạo thêm 10 lần thất bại tương tự. Dừng lại ít nhất 3-5 ngày để phân tích trước khi apply tiếp.
 
 ##### 6.2. Học thêm công nghệ mới thay vì củng cố nền tảng
 
@@ -132,9 +132,9 @@ Tâm lý tránh né sau nhiều lần thất bại là bình thường nhưng ng
 
 #### 7\. FAQ — Câu hỏi thường gặp
 
-##### Bị từ chối 3–4 lần liên tiếp — có nên tiếp tục apply ngành IT không?
+##### Bị từ chối 3-4 lần liên tiếp — có nên tiếp tục apply ngành IT không?
 
-3–4 lần từ chối không phải dấu hiệu bạn không phù hợp với ngành. Hầu hết developer cần 5–15 buổi phỏng vấn trước khi có offer đầu tiên, tùy vào thị trường và mức độ chuẩn bị. Câu hỏi không phải là "có nên tiếp tục không" mà là "tôi đang bị loại ở vòng nào và vì lý do gì?" — sau đó fix đúng điểm đó.
+3-4 lần từ chối không phải dấu hiệu bạn không phù hợp với ngành. Hầu hết developer cần 5-15 buổi phỏng vấn trước khi có offer đầu tiên, tùy vào thị trường và mức độ chuẩn bị. Câu hỏi không phải là "có nên tiếp tục không" mà là "tôi đang bị loại ở vòng nào và vì lý do gì?" — sau đó fix đúng điểm đó.
 
 ##### Có nên xin feedback sau khi bị từ chối không — có bị đánh giá xấu không?
 
@@ -142,11 +142,11 @@ Không. Xin feedback một cách lịch sự và ngắn gọn là hành động 
 
 ##### Nên chờ bao lâu trước khi apply lại vào cùng công ty đó?
 
-Thông thường 3–6 tháng là khoảng thời gian phù hợp để apply lại vào cùng một vị trí tại cùng công ty — đủ để bạn cải thiện đáng kể và đủ để họ không nhớ rõ chi tiết buổi trước. Nếu công ty đó có vị trí khác phù hợp hơn với bạn hiện tại, có thể apply sớm hơn với cover letter giải thích ngắn gọn.
+Thông thường 3-6 tháng là khoảng thời gian phù hợp để apply lại vào cùng một vị trí tại cùng công ty — đủ để bạn cải thiện đáng kể và đủ để họ không nhớ rõ chi tiết buổi trước. Nếu công ty đó có vị trí khác phù hợp hơn với bạn hiện tại, có thể apply sớm hơn với cover letter giải thích ngắn gọn.
 
 ##### CV không ai gọi — vấn đề ở đâu?
 
-Nếu apply 15–20 chỗ mà không có cuộc gọi nào, vấn đề gần như chắc chắn nằm ở CV: thiếu từ khóa kỹ thuật mà ATS (Applicant Tracking System) quét, format quá phức tạp khiến hệ thống không đọc được, hoặc không có project/kinh nghiệm thực tế phù hợp với JD. Thử đổi sang CV format đơn giản (một cột, không dùng bảng và graphic), thêm từ khóa kỹ thuật cụ thể từ JD vào phần kỹ năng, và đảm bảo có ít nhất một project có thể link hoặc demo.
+Nếu apply 15-20 chỗ mà không có cuộc gọi nào, vấn đề gần như chắc chắn nằm ở CV: thiếu từ khóa kỹ thuật mà ATS (Applicant Tracking System) quét, format quá phức tạp khiến hệ thống không đọc được, hoặc không có project/kinh nghiệm thực tế phù hợp với JD. Thử đổi sang CV format đơn giản (một cột, không dùng bảng và graphic), thêm từ khóa kỹ thuật cụ thể từ JD vào phần kỹ năng, và đảm bảo có ít nhất một project có thể link hoặc demo.
 
 ##### Fresher không có kinh nghiệm thực tập — bất lợi lớn không?
 

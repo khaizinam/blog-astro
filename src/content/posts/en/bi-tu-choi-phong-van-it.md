@@ -43,7 +43,7 @@ Rejection due to **insufficient skills** and rejection due to **a poor match** a
 
 ##### 1.2. Rejection rates are normal in this industry
 
-Even experienced developers at major companies face 70–80% rejection rates when switching jobs — and that number is higher for freshers. The goal isn't to avoid rejection. It's to reduce the number of attempts needed before landing the first offer. That's entirely achievable by correctly diagnosing what went wrong.
+Even experienced developers at major companies face 70-80% rejection rates when switching jobs — and that number is higher for freshers. The goal isn't to avoid rejection. It's to reduce the number of attempts needed before landing the first offer. That's entirely achievable by correctly diagnosing what went wrong.
 
 #### 2\. The 6 most common reasons freshers and juniors get rejected
 
@@ -69,7 +69,7 @@ Technically correct answers delivered without confidence. Avoiding eye contact. 
 
 ##### 2.6. Applying to the wrong companies or wrong roles
 
-Applying to product companies that require product thinking when your only experience is outsource task execution. Applying to "junior" roles whose job description actually requires 2–3 years of hands-on experience. Applying for a stack you've only studied in theory with no real project to show. These are causes that eliminate you before you even walk into the interview room.
+Applying to product companies that require product thinking when your only experience is outsource task execution. Applying to "junior" roles whose job description actually requires 2-3 years of hands-on experience. Applying for a stack you've only studied in theory with no real project to show. These are causes that eliminate you before you even walk into the interview room.
 
 #### 3\. How to read rejection feedback to find the real problem
 
@@ -132,7 +132,7 @@ Avoidance after repeated failure is natural but dangerous. Every interview sessi
 
 #### 7\. FAQ
 
-##### Rejected 3–4 times in a row — should I keep pursuing a career in IT?
+##### Rejected 3-4 times in a row — should I keep pursuing a career in IT?
 
 Three or four rejections are not a signal that you don't belong in the industry. Most developers need five to fifteen interview sessions before their first offer, depending on the market and how prepared they are. The question isn't "should I keep going" — it's "which round am I being eliminated at and why?" Fix that specific thing and the numbers shift.
 

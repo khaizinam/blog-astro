@@ -75,7 +75,7 @@ Kết thúc bằng hướng đi cụ thể của bạn trong IT — không phả
 
 ##### 4.1. Script cho fresher học CNTT từ đầu
 
-\[Spark — khoảnh khắc cụ thể, 1–2 câu\]
+\[Spark — khoảnh khắc cụ thể, 1-2 câu\]
 "Em thực sự muốn theo IT từ \[thời điểm cụ thể\], khi em
 \[sự kiện cụ thể: tự build thứ gì, giải bài toán nào,
 thấy kết quả thế nào\]."
@@ -84,7 +84,7 @@ thấy kết quả thế nào\]."
 "Từ đó em bắt đầu \[tự học thêm / làm dự án cá nhân /
 tham gia X\] ngoài những gì học trên lớp."
 
-\[Direction — định hướng hiện tại, 1–2 câu\]
+\[Direction — định hướng hiện tại, 1-2 câu\]
 "Hiện tại em đang tập trung vào \[hướng cụ thể: stack,
 domain\]. Em apply vị trí này vì \[lý do cụ thể kết nối
 với JD hoặc tech stack của công ty\]."
@@ -97,7 +97,7 @@ với JD hoặc tech stack của công ty\]."
 xúc với IT theo cách nào\], em thấy đây là thứ em
 đang tìm."
 
-\[Movement — bằng chứng chuyển đổi có chủ đích, 1–2 câu\]
+\[Movement — bằng chứng chuyển đổi có chủ đích, 1-2 câu\]
 "Em đã \[học bootcamp / tự học online X tháng / build
 dự án đầu tiên\] trước khi bắt đầu apply. \[Kết quả
 cụ thể hoặc dự án đã làm được\]."
@@ -119,7 +119,7 @@ Linh làm kế toán 3 năm, tự học lập trình 8 tháng rồi apply vị t
 #### 6\. 6 lỗi thường gặp và cách sửa
 
 *   **Lỗi 1: Nêu lý do lương cao hoặc nhiều cơ hội việc làm.** Sửa: Những lý do này không sai nhưng không nói được gì về bạn. Thay bằng một khoảnh khắc cụ thể — dù nhỏ — đã khiến bạn chủ động chọn IT.
-*   **Lỗi 2: Câu trả lời quá dài, kể toàn bộ hành trình từ cấp 3 đến hiện tại.** Sửa: Giữ trong 60–75 giây. Chọn một khoảnh khắc đại diện, không phải toàn bộ tiểu sử.
+*   **Lỗi 2: Câu trả lời quá dài, kể toàn bộ hành trình từ cấp 3 đến hiện tại.** Sửa: Giữ trong 60-75 giây. Chọn một khoảnh khắc đại diện, không phải toàn bộ tiểu sử.
 *   **Lỗi 3: Không có định hướng rõ ràng trong phần kết.** Sửa: Kết thúc bằng hướng kỹ thuật cụ thể bạn đang theo đuổi, không phải "muốn phát triển bản thân trong ngành IT nói chung".
 *   **Lỗi 4: Career changer xin lỗi vì background không phải CNTT.** Sửa: Background khác ngành là lợi thế nếu bạn biết kết nối đúng cách — kinh nghiệm domain giúp bạn hiểu bài toán thực tế tốt hơn fresher thuần kỹ thuật.
 *   **Lỗi 5: Dùng cùng một câu trả lời cho mọi loại công ty.** Sửa: Phần Direction nên được điều chỉnh theo loại công ty — outsource, product, startup — và kết nối với tech stack hoặc domain của công ty đang apply.

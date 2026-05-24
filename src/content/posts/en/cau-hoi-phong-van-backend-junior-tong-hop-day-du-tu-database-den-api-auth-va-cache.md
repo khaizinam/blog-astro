@@ -170,7 +170,7 @@ Final section: design an endpoint to process payments. Tuan proactively mentione
 
 ##### Q: Do backend junior candidates need to understand microservices?
 
-**A:** Knowing the concept is necessary; deep expertise is not required. You should understand what microservices are, the trade-offs versus monolith, and why microservices aren't always the right choice. That's enough for a junior-level interview. Hands-on experience with microservices typically comes after 1–2 years of working in production environments.
+**A:** Knowing the concept is necessary; deep expertise is not required. You should understand what microservices are, the trade-offs versus monolith, and why microservices aren't always the right choice. That's enough for a junior-level interview. Hands-on experience with microservices typically comes after 1-2 years of working in production environments.
 
 ##### Q: Do backend interviews commonly ask about Docker and CI/CD?
 

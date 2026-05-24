@@ -36,7 +36,7 @@ There's a deeply ingrained misconception among new graduates: "I'm a fresher wit
 
 ##### 1.1. Companies always build in a negotiation buffer
 
-When a company decides to make you an offer, they've already determined an acceptable salary range — typically 10–20% above the figure they lead with. The first number in an offer letter is almost never the maximum they're willing to pay. If you don't ask, you'll never know where that ceiling is. And if you ask professionally, the odds are good that they'll move.
+When a company decides to make you an offer, they've already determined an acceptable salary range — typically 10-20% above the figure they lead with. The first number in an offer letter is almost never the maximum they're willing to pay. If you don't ask, you'll never know where that ceiling is. And if you ask professionally, the odds are good that they'll move.
 
 ##### 1.2. Your starting salary has a longer tail than you think
 
@@ -50,7 +50,7 @@ HR asks "What are your salary expectations?" — the fresher either goes quiet o
 
 ##### 2.2. After — data, strategy, and a script
 
-Same situation, but the fresher has done their research: they know the market rate for their specific stack and company type, they name a figure anchored 10–15% above their real target, and they have a prepared response for each possible HR reaction. The result: a final offer 8–15% higher than the first one, with the professional relationship intact.
+Same situation, but the fresher has done their research: they know the market rate for their specific stack and company type, they name a figure anchored 10-15% above their real target, and they have a prepared response for each possible HR reaction. The result: a final offer 8-15% higher than the first one, with the professional relationship intact.
 
 #### 3. Researching market rates — do this before you name a number
 
@@ -77,7 +77,7 @@ Entry-level developer salaries vary widely depending on the type of company — 
 
 ##### 4.1. Step 1 — Set your target range before the interview
 
-Before walking into any interview, define three numbers: your **floor** (the minimum you'll accept — below this you walk away), your **target** (what you actually want), and your **anchor** (what you'll say first — about 10–15% above your target). For example: floor at $55k, target at $65k, anchor at $75k. Never enter an interview without these three numbers clear in your head.
+Before walking into any interview, define three numbers: your **floor** (the minimum you'll accept — below this you walk away), your **target** (what you actually want), and your **anchor** (what you'll say first — about 10-15% above your target). For example: floor at $55k, target at $65k, anchor at $75k. Never enter an interview without these three numbers clear in your head.
 
 ##### 4.2. Step 2 — Answer the salary expectations question correctly
 
@@ -85,7 +85,7 @@ When HR asks "What are your salary expectations?" — don't deflect and don't an
 
 ##### 4.3. Step 3 — Respond to a formal offer professionally
 
-Never accept an offer immediately, no matter how good it sounds — thank them, ask for 24–48 hours to consider, and use that time to evaluate and prepare a counter-offer if needed. If the offer is below your target: respond with a specific counter-offer. "Thank you for the offer — I'm genuinely excited about this opportunity. Is there flexibility to move to [specific number]? I believe that reflects the market rate more accurately for my skills and this role."
+Never accept an offer immediately, no matter how good it sounds — thank them, ask for 24-48 hours to consider, and use that time to evaluate and prepare a counter-offer if needed. If the offer is below your target: respond with a specific counter-offer. "Thank you for the offer — I'm genuinely excited about this opportunity. Is there flexibility to move to [specific number]? I believe that reflects the market rate more accurately for my skills and this role."
 
 ##### 4.4. Step 4 — Know when to stop and decide
 
@@ -111,7 +111,7 @@ Negotiation has a natural end point — it's not an infinite loop. If the compan
 
 ##### 5.4. When you need more time to decide
 
-"Thank you so much for the offer. This is an important decision for me and I want to give it the consideration it deserves. Could I have until [specific date — typically 24–48 hours] to get back to you with my answer?"
+"Thank you so much for the offer. This is an important decision for me and I want to give it the consideration it deserves. Could I have until [specific date — typically 24-48 hours] to get back to you with my answer?"
 
 #### 6. 5 mistakes first-time negotiators make
 
@@ -125,7 +125,7 @@ This is the most common mistake. The first number you say has a powerful anchori
 
 ##### 6.3. Accepting or rejecting an offer on the spot
 
-Accepting immediately signals you weren't seriously evaluating it — and sometimes makes the company wonder if they offered more than necessary. Rejecting immediately without a counter-offer closes a door that didn't need to close. Always ask for 24–48 hours — this is the most professional response in any situation.
+Accepting immediately signals you weren't seriously evaluating it — and sometimes makes the company wonder if they offered more than necessary. Rejecting immediately without a counter-offer closes a door that didn't need to close. Always ask for 24-48 hours — this is the most professional response in any situation.
 
 ##### 6.4. Negotiating over text instead of phone or video call
 
@@ -137,7 +137,7 @@ If asked "What are you currently earning?" or "What has another company offered 
 
 #### 7. Real-world case study
 
-Alex, a recent Computer Science graduate, received his first offer for a Junior Full-Stack Developer position at a mid-sized SaaS company in Austin, Texas: $65,000 per year. His instinct was to accept immediately — "for a fresher, it's my first job." After checking Levels.fyi and local Glassdoor data, he learned that the market range for a junior full-stack developer at similar product companies in the area was $70,000–$80,000. 
+Alex, a recent Computer Science graduate, received his first offer for a Junior Full-Stack Developer position at a mid-sized SaaS company in Austin, Texas: $65,000 per year. His instinct was to accept immediately — "for a fresher, it's my first job." After checking Levels.fyi and local Glassdoor data, he learned that the market range for a junior full-stack developer at similar product companies in the area was $70,000-$80,000. 
 
 He asked for 48 hours to consider, then scheduled a quick call with the recruiter: thanked them for the offer, proposed a counter of $75,000 referencing the local market benchmarks he'd found and a specific internship project he had deployed. The company came back with $72,000 and added a $3,000 signing bonus. That difference adds up to over $10,000 in total compensation in the first year alone — from a single well-researched conversation. He joined the company with no negative impact on his relationship with the team.
 
@@ -153,7 +153,7 @@ Never negotiate during the technical round — that's for evaluating your skills
 
 ##### If you only have one offer — should you still negotiate?
 
-Yes. Having only one offer doesn't mean you have no leverage. Your leverage is: the company has invested time putting you through multiple interview rounds, they want you to start soon, and finding a replacement costs more than a 5–10% salary increase. A polite counter-offer with a reasonable number still works even without a competing offer.
+Yes. Having only one offer doesn't mean you have no leverage. Your leverage is: the company has invested time putting you through multiple interview rounds, they want you to start soon, and finding a replacement costs more than a 5-10% salary increase. A polite counter-offer with a reasonable number still works even without a competing offer.
 
 ##### Beyond base salary, what else can be negotiated?
 
@@ -165,4 +165,4 @@ Market data and demonstrable value — not years of experience. If you have real
 
 #### 9. Summary
 
-Salary negotiation isn't a privilege reserved for experienced developers — it's a skill any fresher can practice from their very first offer. The four core steps are: research the market rate using global tools like Levels.fyi or Glassdoor, define your three numbers (floor, target, anchor) before the interview, use prepared scripts instead of reacting on instinct, and always ask for 24–48 hours before responding to any offer. Your starting salary shapes the entire trajectory of your income — 30 minutes of research and one well-planned conversation can create a difference of thousands of dollars in your first year of work.
+Salary negotiation isn't a privilege reserved for experienced developers — it's a skill any fresher can practice from their very first offer. The four core steps are: research the market rate using global tools like Levels.fyi or Glassdoor, define your three numbers (floor, target, anchor) before the interview, use prepared scripts instead of reacting on instinct, and always ask for 24-48 hours before responding to any offer. Your starting salary shapes the entire trajectory of your income — 30 minutes of research and one well-planned conversation can create a difference of thousands of dollars in your first year of work.

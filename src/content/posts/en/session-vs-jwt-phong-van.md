@@ -88,7 +88,7 @@ User logs in → server creates a JWT, signs it with the secret key, returns it 
 
 *   **Cannot revoke before expiry:** This is JWT's biggest weakness. If a token is stolen or a user is banned, you cannot immediately invalidate that token — you must wait for it to expire naturally. Common workarounds: use short-lived access tokens (15 minutes) plus longer-lived refresh tokens, or maintain a token blacklist (though this reintroduces statefulness).
 *   **Payload is readable:** Never store sensitive data (password hashes, card numbers, etc.) in a JWT payload — anyone can decode and read it.
-*   **Larger token size:** A JWT is typically 200–500 bytes versus a session ID of ~32 bytes — more bandwidth consumed on every request.
+*   **Larger token size:** A JWT is typically 200-500 bytes versus a session ID of ~32 bytes — more bandwidth consumed on every request.
 
 #### Direct Comparison: Session vs JWT Across Key Criteria
 
@@ -158,7 +158,7 @@ The interviewer followed up: "What if the user loses their phone?" — Hung resp
 
 ##### Q: What is a refresh token and why is it necessary?
 
-**A:** JWT access tokens typically have a short lifespan (5–15 minutes) to minimize the damage window if stolen. But you can't force users to re-login every 15 minutes — this is where refresh tokens come in. A refresh token is a separate, longer-lived token (7–30 days), stored securely. When the access token expires, the client uses the refresh token to obtain a new access token silently, without requiring the user to enter their password again. Refresh tokens are stored server-side and can be revoked at any time.
+**A:** JWT access tokens typically have a short lifespan (5-15 minutes) to minimize the damage window if stolen. But you can't force users to re-login every 15 minutes — this is where refresh tokens come in. A refresh token is a separate, longer-lived token (7-30 days), stored securely. When the access token expires, the client uses the refresh token to obtain a new access token silently, without requiring the user to enter their password again. Refresh tokens are stored server-side and can be revoked at any time.
 
 ##### Q: Do Node.js and PHP interviews ask about Session/JWT differently?
 

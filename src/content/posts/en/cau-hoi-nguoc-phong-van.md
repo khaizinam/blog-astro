@@ -63,7 +63,7 @@ Result: two specific, non-Googleable questions that address real practical conce
 
 ##### 3.1. Category 1 — Questions About Day-to-Day Work Reality (Ask the Tech Lead or Hiring Manager)
 
-The most important category — these tell you what an actual workday looks like. Best asked in the technical round or when meeting the direct manager. Purpose: understand the real scope of work, team workflows, and what to expect in the first 30–90 days.
+The most important category — these tell you what an actual workday looks like. Best asked in the technical round or when meeting the direct manager. Purpose: understand the real scope of work, team workflows, and what to expect in the first 30-90 days.
 
 ##### 3.2. Category 2 — Questions About Team and Technical Environment (Ask the Tech Lead)
 

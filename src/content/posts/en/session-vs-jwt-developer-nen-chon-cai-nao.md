@@ -132,13 +132,13 @@ A B2B SaaS issued JWT access tokens with a 24-hour TTL because they were hesitan
 
 **JWT clearly wins.** Completely stateless — any server can verify the token as long as it has the secret/public key. No dependency on a shared store, no sticky sessions, scales infinitely.
 
-**Session requires additional infrastructure.** Must use Redis or a database-backed session store to share sessions between servers. Redis adds a dependency, another point of failure, and latency of ~0.1–1ms per request.
+**Session requires additional infrastructure.** Must use Redis or a database-backed session store to share sessions between servers. Redis adds a dependency, another point of failure, and latency of ~0.1-1ms per request.
 
 ##### 3.3 Performance
 
 **JWT is faster at high-throughput.** Verifying a signature is a pure CPU operation (HMAC ~microseconds), with no network round-trip. At 10,000 req/s, JWT saves 10,000 Redis reads/s — significant at large scale.
 
-**Session adds small but stable latency.** Redis lookup is ~0.1–1ms if in the same datacenter — usually not a bottleneck. But if Redis is under high load or network latency increases, every request is affected.
+**Session adds small but stable latency.** Redis lookup is ~0.1-1ms if in the same datacenter — usually not a bottleneck. But if Redis is under high load or network latency increases, every request is affected.
 
 ##### 3.4 Security
 

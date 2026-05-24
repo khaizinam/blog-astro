@@ -170,7 +170,7 @@ Phần cuối: thiết kế endpoint để xử lý thanh toán. Tuấn chủ đ
 
 ##### Hỏi: Backend junior có cần hiểu về microservices không?
 
-**Đáp:** Biết khái niệm là cần, hiểu sâu là không bắt buộc. Bạn nên biết microservices là gì, trade-off so với monolith, và tại sao không phải lúc nào cũng nên dùng microservices. Điều này đủ để trả lời câu hỏi phỏng vấn ở cấp junior. Kinh nghiệm thực chiến với microservices thường đến sau khi bạn đã đi làm 1–2 năm.
+**Đáp:** Biết khái niệm là cần, hiểu sâu là không bắt buộc. Bạn nên biết microservices là gì, trade-off so với monolith, và tại sao không phải lúc nào cũng nên dùng microservices. Điều này đủ để trả lời câu hỏi phỏng vấn ở cấp junior. Kinh nghiệm thực chiến với microservices thường đến sau khi bạn đã đi làm 1-2 năm.
 
 ##### Hỏi: Phỏng vấn backend có hay hỏi về Docker và CI/CD không?
 

@@ -31,33 +31,33 @@ All figures are estimated gross annual salaries (Base + Bonus) in USD. Remember 
 
 ##### 1.1. Node.js / Express / NestJS
 
-*   **Global Remote (LCOL/MCOL):** $40,000 – $70,000 / year
-*   **US Tech Hubs (HCOL):** $90,000 – $130,000 / year
-*   **European Hubs (London/Berlin):** €50,000 – €75,000 / year
+*   **Global Remote (LCOL/MCOL):** $40,000 - $70,000 / year
+*   **US Tech Hubs (HCOL):** $90,000 - $130,000 / year
+*   **European Hubs (London/Berlin):** €50,000 - €75,000 / year
 
 Node.js remains dominant in startups globally. As of 2026, TypeScript is no longer optional - it's a hard requirement. Junior developers who combine Node.js with NestJS and basic microservices knowledge are highly sought after by global remote companies.
 
 ##### 1.2. ReactJS / Frontend (Next.js)
 
-*   **Global Remote (LCOL/MCOL):** $35,000 – $65,000 / year
-*   **US Tech Hubs (HCOL):** $85,000 – $120,000 / year
-*   **European Hubs:** €45,000 – €70,000 / year
+*   **Global Remote (LCOL/MCOL):** $35,000 - $65,000 / year
+*   **US Tech Hubs (HCOL):** $85,000 - $120,000 / year
+*   **European Hubs:** €45,000 - €70,000 / year
 
 Frontend developers are riding the wave of AI-integrated SaaS products. The gap between a low-tier and high-tier offer is SSR experience (Next.js) and a robust portfolio of deployed, production-ready applications with real users.
 
 ##### 1.3. Flutter / React Native (Mobile)
 
-*   **Global Remote (LCOL/MCOL):** $45,000 – $80,000 / year
-*   **US Tech Hubs (HCOL):** $95,000 – $135,000 / year
-*   **European Hubs:** €55,000 – €80,000 / year
+*   **Global Remote (LCOL/MCOL):** $45,000 - $80,000 / year
+*   **US Tech Hubs (HCOL):** $95,000 - $135,000 / year
+*   **European Hubs:** €55,000 - €80,000 / year
 
 Mobile development often pays a premium over web development globally because the talent pool is thinner. A junior Flutter developer with apps published on the App Store or Google Play holds significant leverage in remote job markets.
 
 ##### 1.4. PHP / Laravel
 
-*   **Global Remote (LCOL/MCOL):** $30,000 – $55,000 / year
-*   **US Tech Hubs (HCOL):** $70,000 – $100,000 / year
-*   **European Hubs:** €40,000 – €60,000 / year
+*   **Global Remote (LCOL/MCOL):** $30,000 - $55,000 / year
+*   **US Tech Hubs (HCOL):** $70,000 - $100,000 / year
+*   **European Hubs:** €40,000 - €60,000 / year
 
 While PHP still powers a massive portion of the web, global salaries are slightly lower on average due to a massive global supply of developers and many legacy codebases. Deep knowledge of Laravel architecture (Service Layer, Repository Pattern) helps push these numbers up.
 

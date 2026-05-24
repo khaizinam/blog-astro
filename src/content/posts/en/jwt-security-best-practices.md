@@ -169,7 +169,7 @@ if ($decoded->aud !== 'api') {
 
 ##### 5.2 Clock Skew — The issue few notice
 
-In distributed environments, clocks between servers can drift by a few seconds. A newly created token might be rejected by another service for "not yet valid (nbf)" or "expired (exp)". Best practice: allow a clock skew of up to 30–60 seconds during validation.
+In distributed environments, clocks between servers can drift by a few seconds. A newly created token might be rejected by another service for "not yet valid (nbf)" or "expired (exp)". Best practice: allow a clock skew of up to 30-60 seconds during validation.
 
 #### 6\. Handling Revocation & Refresh Token Rotation
 
@@ -242,7 +242,7 @@ async function refreshTokens(oldRefreshToken) {
 1.  **Using weak secrets or hardcoding them** → Fix: Generate using **crypto.randomBytes(32)**, store in environment variables, and never commit to Git. Rotate keys periodically.
 2.  **Not whitelisting algorithms** → Fix: Always pass **algorithms: \['RS256'\]** when verifying. Attackers won't be able to switch to alg:none or bypass security using public keys.
 3.  **Storing access tokens in localStorage** → Fix: Access token in-memory, refresh token in httpOnly cookie. Accept the UX trade-off for security.
-4.  **TTLs that are too long (24h, 7 days) for access tokens** → Fix: Access token 15 minutes, refresh token 7–30 days. Use silent refresh to maintain UX.
+4.  **TTLs that are too long (24h, 7 days) for access tokens** → Fix: Access token 15 minutes, refresh token 7-30 days. Use silent refresh to maintain UX.
 5.  **Not validating iss and aud** → Fix: Always set issuer and audience when signing, and verify when decoding. Crucial in multi-service architectures.
 6.  **Storing sensitive information in payload** → Fix: Payload should only contain userId, role, exp — no emails, passwords, or PII. The payload is only encoded, not encrypted.
 

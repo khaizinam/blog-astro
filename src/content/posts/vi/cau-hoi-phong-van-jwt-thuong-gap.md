@@ -161,7 +161,7 @@ Trong kiến trúc microservices, nhiều service cần verify JWT. Nếu dùng 
 
 ##### JWT size có ảnh hưởng performance không?
 
-Có, đặc biệt khi gọi API nhiều. JWT thường nặng hơn Session ID (vài byte) do chứa claims. Một JWT điển hình dài 200–500 byte; nếu nhồi nhiều claim thì có thể lên đến 1KB+. Với hệ thống gọi 100+ API/giây, overhead này tích lũy đáng kể. Best practice: chỉ đặt vào payload những thông tin thực sự cần dùng trong request — không lưu toàn bộ profile user.
+Có, đặc biệt khi gọi API nhiều. JWT thường nặng hơn Session ID (vài byte) do chứa claims. Một JWT điển hình dài 200-500 byte; nếu nhồi nhiều claim thì có thể lên đến 1KB+. Với hệ thống gọi 100+ API/giây, overhead này tích lũy đáng kể. Best practice: chỉ đặt vào payload những thông tin thực sự cần dùng trong request — không lưu toàn bộ profile user.
 
 #### Tổng kết & Bước tiếp theo
 

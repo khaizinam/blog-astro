@@ -30,7 +30,7 @@ All figures in this article are based on market data aggregated from Glassdoor, 
 
 If you've looked at job postings lately, you've probably noticed that two "junior developer" roles can list salaries that differ by $40,000 to $80,000 per year. This isn't random. Several factors drive the variance, and understanding them helps you target the right opportunities.
 
-**Company type sets the ceiling.** A Big Tech company or a well-funded Unicorn typically pays 50–100% more than a traditional IT services agency for the exact same role. This reflects the higher business value of the product and the fact that top-tier companies offer Restricted Stock Units (RSUs) on top of base pay.
+**Company type sets the ceiling.** A Big Tech company or a well-funded Unicorn typically pays 50-100% more than a traditional IT services agency for the exact same role. This reflects the higher business value of the product and the fact that top-tier companies offer Restricted Stock Units (RSUs) on top of base pay.
 
 **Tech stack and specialization.** A junior developer working in Machine Learning, Go, or cloud-native infrastructure commands a higher salary than one working in plain PHP or WordPress. Companies pay a premium for skills that are harder to find.
 
@@ -38,7 +38,7 @@ If you've looked at job postings lately, you've probably noticed that two "junio
 
 ### 2. Entry-Level IT Salary by Role (Global Benchmarks, 2026)
 
-The following ranges represent typical annual total compensation (Base + Bonus + Equity) for fresh graduates (0–12 months of experience) in major tech markets (US/EU/Global Remote). These are broad market ranges — your specific offer will depend on your region and company type.
+The following ranges represent typical annual total compensation (Base + Bonus + Equity) for fresh graduates (0-12 months of experience) in major tech markets (US/EU/Global Remote). These are broad market ranges — your specific offer will depend on your region and company type.
 
 **Frontend Developer (React, Vue, Angular):** $65,000 - $110,000 / year  
 Demand remains strong, especially for React developers. Deep knowledge of TypeScript and modern state management gives you an edge at the upper end of this range.
@@ -63,7 +63,7 @@ Python proficiency, SQL competence, and familiarity with cloud data warehouses (
 
 ### 3. Junior IT Salary by Role (1-3 Years Experience)
 
-Junior typically means 1–3 years of real work experience — not internships, but paid positions where you shipped production code. The jump from entry-level to junior compensation is significant and reflects your ability to work independently.
+Junior typically means 1-3 years of real work experience — not internships, but paid positions where you shipped production code. The jump from entry-level to junior compensation is significant and reflects your ability to work independently.
 
 **Frontend Developer:** $85,000 - $140,000 / year  
 **Backend Developer:** $90,000 - $150,000 / year  
@@ -80,13 +80,13 @@ At the junior level, the spread within each range widens. A junior backend devel
 Where you work often matters more than what you know when it comes to compensation. Here's how the three main company types compare.
 
 **Big Tech / FAANG (Meta, Amazon, Apple, Google, etc.):** 
-They pay the highest total compensation in the market. Entry-level engineers frequently clear $130,000–$180,000 total compensation. The catch: hiring bars are incredibly high, interview processes require months of LeetCode prep, and competition is global.
+They pay the highest total compensation in the market. Entry-level engineers frequently clear $130,000-$180,000 total compensation. The catch: hiring bars are incredibly high, interview processes require months of LeetCode prep, and competition is global.
 
 **Product Companies / Funded Startups (Series A to Unicorn):**
-These companies invest heavily in hiring because their engineers directly impact the product's commercial success. Base salaries are highly competitive ($90k–$130k), and they often grant stock options. 
+These companies invest heavily in hiring because their engineers directly impact the product's commercial success. Base salaries are highly competitive ($90k-$130k), and they often grant stock options. 
 
 **IT Services / Outsourcing Agencies:**
-Agencies offer stable work and exposure to many projects. The trade-off is a salary ceiling that's noticeably lower than product companies — typically 20–40% less for the same role. Agencies operate on profit margins from billable hours, which naturally caps developer salaries.
+Agencies offer stable work and exposure to many projects. The trade-off is a salary ceiling that's noticeably lower than product companies — typically 20-40% less for the same role. Agencies operate on profit margins from billable hours, which naturally caps developer salaries.
 
 ### 5. Geography: Tech Hubs vs. Remote Work
 
@@ -96,7 +96,7 @@ Geography still affects compensation in 2026, though the landscape is highly dec
 Salaries here represent the absolute top of the market. However, a $150,000 salary in SF may yield less disposable income than a $100,000 salary in a smaller city due to rent and taxes.
 
 **Medium/Low Cost of Living (LCOL) & Remote:**
-Many global companies have shifted to location-agnostic pay or regional tiering. A developer working remotely from Eastern Europe, Latin America, or Southeast Asia for a US company might earn $60,000–$90,000. While lower than a US-based employee, this represents a massive premium (often 3x to 5x) over their local domestic job market.
+Many global companies have shifted to location-agnostic pay or regional tiering. A developer working remotely from Eastern Europe, Latin America, or Southeast Asia for a US company might earn $60,000-$90,000. While lower than a US-based employee, this represents a massive premium (often 3x to 5x) over their local domestic job market.
 
 ### 6. What Actually Moves Your Salary Up Faster
 
@@ -106,7 +106,7 @@ Waiting for annual review cycles is the slowest path to a higher salary (typical
 
 **Moving up the value chain of skills.** Salaries follow scarcity. Learning cloud infrastructure, system design, or specialized frameworks pushes you into a thinner talent pool and justifies higher offers. Broadening skills is good; deepening into high-demand niches is faster.
 
-**Building a visible track record.** Open-source contributions, technical blog posts, or maintaining a strong GitHub profile signal credibility. Several developers have negotiated 20–30% higher offers simply because the hiring team had already encountered their work in the community before the interview.
+**Building a visible track record.** Open-source contributions, technical blog posts, or maintaining a strong GitHub profile signal credibility. Several developers have negotiated 20-30% higher offers simply because the hiring team had already encountered their work in the community before the interview.
 
 ### 7. How to Leverage This Data in Negotiations
 

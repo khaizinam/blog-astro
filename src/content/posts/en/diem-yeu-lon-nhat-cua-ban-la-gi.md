@@ -61,7 +61,7 @@ Use the **RAI framework: Real → Action → Improvement** across all three comp
 
 ##### 3.1. Step 1 — Real: Name a Genuine, Controlled Weakness
 
-Choose a weakness that genuinely exists but does not undermine the core requirements of the role. Ground it with one specific situation (1–2 sentences) where it affected your work. Avoid weaknesses that are too vague ("I get anxious sometimes") or too severe ("I miss deadlines regularly"). Good weakness options for developers include: poor time estimation, difficulty saying no to scope creep on side projects, not asking for help early enough when blocked, or not writing unit tests consistently enough.
+Choose a weakness that genuinely exists but does not undermine the core requirements of the role. Ground it with one specific situation (1-2 sentences) where it affected your work. Avoid weaknesses that are too vague ("I get anxious sometimes") or too severe ("I miss deadlines regularly"). Good weakness options for developers include: poor time estimation, difficulty saying no to scope creep on side projects, not asking for help early enough when blocked, or not writing unit tests consistently enough.
 
 ##### 3.2. Step 2 — Action: Describe a Specific Improvement Action You Are Taking
 
@@ -76,7 +76,7 @@ If you have any measurable result — even a small one — include it. It transf
 ##### 4.1. Template for a Technical Skill Gap
 
 "One area I'm actively working on is \[specific technical skill\].
-\[1–2 sentence example: when it came up, what the short-term
+\[1-2 sentence example: when it came up, what the short-term
 impact was\].
 I'm addressing this by \[specific action: course, side project,
 reading + immediate application\].
@@ -86,7 +86,7 @@ reading + immediate application\].
 
 "Something I've identified as a development area is
 \[specific, non-vague soft skill related to work\].
-This affected me when \[short, real situation — 1–2 sentences\].
+This affected me when \[short, real situation — 1-2 sentences\].
 I've been working on it by \[specific action + tool or method\].
 Recently \[small measurable improvement or feedback received\]."
 
@@ -103,9 +103,9 @@ Hang had two years of React experience and answered with "I'm a perfectionist, s
 #### 6\. 6 Common Mistakes and How to Fix Them
 
 *   **Mistake 1: Giving a fake weakness disguised as a strength.** Fix: Choose a real weakness that doesn't undermine the role. Interviewers have heard "perfectionist" too many times — it now actively signals low self-awareness.
-*   **Mistake 2: Naming a weakness that directly conflicts with core JD requirements.** Fix: Read the job description first. Identify the 2–3 non-negotiable skills for the role, and avoid mentioning any of those as weaknesses.
+*   **Mistake 2: Naming a weakness that directly conflicts with core JD requirements.** Fix: Read the job description first. Identify the 2-3 non-negotiable skills for the role, and avoid mentioning any of those as weaknesses.
 *   **Mistake 3: No concrete improvement action.** Fix: The Action component of the RAI framework is mandatory. At minimum, name one specific thing you are doing or have done — not just "trying to improve."
-*   **Mistake 4: Answer too long, drifting into multiple weaknesses.** Fix: State exactly one weakness. The ideal answer is 45–75 seconds. Listing multiple weaknesses is self-defeating and suggests poor judgment about what to share.
+*   **Mistake 4: Answer too long, drifting into multiple weaknesses.** Fix: State exactly one weakness. The ideal answer is 45-75 seconds. Listing multiple weaknesses is self-defeating and suggests poor judgment about what to share.
 *   **Mistake 5: Ending with an apologetic or self-deprecating tone.** Fix: Always close on the improvement or result — never with "I hope this doesn't affect your evaluation too much."
 *   **Mistake 6: Not preparing for follow-up questions.** Fix: After writing your answer, generate three follow-up questions an interviewer might ask and prepare responses for each one.
 

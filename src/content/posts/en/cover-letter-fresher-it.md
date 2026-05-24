@@ -160,7 +160,7 @@ Best regards,
 
 ##### 6.4. Writing a cover letter that's too long
 
-**What it looks like:** Two pages covering your love of computers since middle school and your entire educational philosophy. **Fix:** Keep it to 250–350 words - a maximum of one A4 page. For every sentence, ask: "Does this sentence make HR more likely to call me?" If the answer is no, cut it.
+**What it looks like:** Two pages covering your love of computers since middle school and your entire educational philosophy. **Fix:** Keep it to 250-350 words - a maximum of one A4 page. For every sentence, ask: "Does this sentence make HR more likely to call me?" If the answer is no, cut it.
 
 ##### 6.5. No specific project to reference
 
@@ -186,7 +186,7 @@ Both, depending on how the company receives applications. If applying by direct 
 
 ##### How long should a fresher's cover letter be?
 
-250–350 words - roughly three to four short paragraphs, fitting comfortably on one A4 page with standard margins. Under 150 words is usually too thin to convey enough. Over 450 words is a signal that you're trying to say too many things at once. If your draft is too long, ask each sentence: "Does this make HR more likely to call me?" Cut the ones that don't.
+250-350 words - roughly three to four short paragraphs, fitting comfortably on one A4 page with standard margins. Under 150 words is usually too thin to convey enough. Over 450 words is a signal that you're trying to say too many things at once. If your draft is too long, ask each sentence: "Does this make HR more likely to call me?" Cut the ones that don't.
 
 ##### I don't know the HR's name - how should I open the letter?
 
@@ -194,7 +194,7 @@ In order of preference: (1) Search LinkedIn for the company name plus "HR" or "T
 
 ##### The job doesn't require a cover letter - should I send one anyway?
 
-Yes, if you're a fresher and want to increase your chances. Write a shorter version (150–200 words), label it clearly as "Cover Letter - \[Role Title\]" so HR understands it's a supplementary document. This is one of the simplest ways to stand out because so few freshers do it - it automatically signals initiative and seriousness. For a complete interview preparation guide, see [Junior IT Interview Tips A-Z](/en/tips-phong-van-junior-it-tong-hop-a-z-de-ban-vuot-qua-moi-vong), and for self-introduction scripts and templates, see [IT Interview Self-Introduction Templates](/en/it-interview-self-introduction-scripts-by-stack).
+Yes, if you're a fresher and want to increase your chances. Write a shorter version (150-200 words), label it clearly as "Cover Letter - \[Role Title\]" so HR understands it's a supplementary document. This is one of the simplest ways to stand out because so few freshers do it - it automatically signals initiative and seriousness. For a complete interview preparation guide, see [Junior IT Interview Tips A-Z](/en/tips-phong-van-junior-it-tong-hop-a-z-de-ban-vuot-qua-moi-vong), and for self-introduction scripts and templates, see [IT Interview Self-Introduction Templates](/en/it-interview-self-introduction-scripts-by-stack).
 
 #### 9\. Summary
 

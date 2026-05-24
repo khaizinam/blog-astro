@@ -127,7 +127,7 @@ Khi nhu cầu chỉ là viết và publish bài, toàn bộ hệ sinh thái Word
 
 ##### 7.1. Migrate toàn bộ content cũ trước khi có theme ổn định
 
-Hầu hết người dùng bắt đầu bằng cách export toàn bộ WordPress content sang Astro ngay từ đầu. Kết quả: mất nhiều thời gian fix format, ảnh broken link, nội dung không đúng kiểu. Hướng đúng hơn: dựng theme ổn định, test với 5–10 bài trước, rồi mới migrate hàng loạt.
+Hầu hết người dùng bắt đầu bằng cách export toàn bộ WordPress content sang Astro ngay từ đầu. Kết quả: mất nhiều thời gian fix format, ảnh broken link, nội dung không đúng kiểu. Hướng đúng hơn: dựng theme ổn định, test với 5-10 bài trước, rồi mới migrate hàng loạt.
 
 ##### 7.2. Chọn template quá phức tạp rồi mắc kẹt khi customize
 
@@ -153,15 +153,15 @@ Nếu bạn biết Git cơ bản và đã từng dùng ChatGPT để hỏi kỹ 
 
 ##### Chi phí thực tế của stack Astro + Cloudflare là bao nhiêu?
 
-Với blog cá nhân traffic thấp đến trung bình: Cloudflare Pages miễn phí, R2 miễn phí đến 10GB storage và 1 triệu request/tháng, domain khoảng 200–300k/năm. Tổng chi phí gần như chỉ là tiền domain — so với WordPress có thể từ 1–5 triệu/năm tùy hosting.
+Với blog cá nhân traffic thấp đến trung bình: Cloudflare Pages miễn phí, R2 miễn phí đến 10GB storage và 1 triệu request/tháng, domain khoảng 200-300k/năm. Tổng chi phí gần như chỉ là tiền domain — so với WordPress có thể từ 1-5 triệu/năm tùy hosting.
 
 ##### Migrate từ WordPress sang Astro mất bao lâu?
 
-Với blog dưới 50 bài: 1–2 tuần nếu làm sau giờ làm. Phần tốn thời gian nhất là chọn theme, setup theme và xử lý ảnh cũ. Phần migrate content thực ra khá nhanh nếu dùng script convert WordPress XML sang Markdown.
+Với blog dưới 50 bài: 1-2 tuần nếu làm sau giờ làm. Phần tốn thời gian nhất là chọn theme, setup theme và xử lý ảnh cũ. Phần migrate content thực ra khá nhanh nếu dùng script convert WordPress XML sang Markdown.
 
 ##### SEO có bị ảnh hưởng khi migrate không?
 
-Có nguy cơ nếu không setup redirect đúng. Nếu redirect 301 đầy đủ từ URL cũ sang mới và giữ nguyên cấu trúc nội dung, SEO thường phục hồi sau 4–8 tuần. Static site thực ra có lợi thế lớn về Core Web Vitals so với WordPress — điểm PageSpeed thường tăng đáng kể sau migrate.
+Có nguy cơ nếu không setup redirect đúng. Nếu redirect 301 đầy đủ từ URL cũ sang mới và giữ nguyên cấu trúc nội dung, SEO thường phục hồi sau 4-8 tuần. Static site thực ra có lợi thế lớn về Core Web Vitals so với WordPress — điểm PageSpeed thường tăng đáng kể sau migrate.
 
 ##### Viết bài trên Astro có bất tiện hơn WordPress không?
 

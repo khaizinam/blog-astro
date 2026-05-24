@@ -203,4 +203,4 @@ Trên đây là tất cả những gì tôi tìm hiểu được về MySQL Repl
 
 [How To Set Up Master Slave Replication in MySQL](https://www.digitalocean.com/community/tutorials/how-to-set-up-master-slave-replication-in-mysql)
 
-[MySQL Replication – Creating a New Master/Slave Topology with or without Virtual Machines](https://scriptingmysql.wordpress.com/2013/02/21/mysql-replication-creating-a-new-masterslave-topology-with-or-without-virtual-machines/)
+[MySQL Replication - Creating a New Master/Slave Topology with or without Virtual Machines](https://scriptingmysql.wordpress.com/2013/02/21/mysql-replication-creating-a-new-masterslave-topology-with-or-without-virtual-machines/)

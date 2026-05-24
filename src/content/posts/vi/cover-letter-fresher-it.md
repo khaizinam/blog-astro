@@ -32,11 +32,11 @@ Bài này hướng dẫn cách viết cover letter IT khi chưa có kinh nghiệ
 
 #### 1\. Cover letter có còn quan trọng trong ngành IT không?
 
-Câu trả lời ngắn: có - đặc biệt khi bạn là fresher. Với developer có 3–5 năm kinh nghiệm, portfolio và GitHub nói thay cover letter. Nhưng với fresher, CV thường chỉ có phần học vấn, một vài project cá nhân, và danh sách kỹ năng - không có gì để phân biệt bạn với 50 hồ sơ tương tự khác nộp cùng JD đó.
+Câu trả lời ngắn: có - đặc biệt khi bạn là fresher. Với developer có 3-5 năm kinh nghiệm, portfolio và GitHub nói thay cover letter. Nhưng với fresher, CV thường chỉ có phần học vấn, một vài project cá nhân, và danh sách kỹ năng - không có gì để phân biệt bạn với 50 hồ sơ tương tự khác nộp cùng JD đó.
 
 ##### 1.1. HR đọc cover letter như thế nào trên thực tế
 
-HR không đọc cover letter từ đầu đến cuối như đọc tiểu thuyết. Họ scan trong 15–20 giây và tìm ba thứ: bạn muốn vị trí gì, bạn có gì liên quan, và bạn có vẻ là người cẩn thận hay gửi hàng loạt không. Cover letter dài hai trang với văn phong sáo rỗng sẽ bị bỏ qua. Cover letter ngắn gọn, cụ thể, có tên công ty và tên vị trí đúng chỗ sẽ được đọc hết.
+HR không đọc cover letter từ đầu đến cuối như đọc tiểu thuyết. Họ scan trong 15-20 giây và tìm ba thứ: bạn muốn vị trí gì, bạn có gì liên quan, và bạn có vẻ là người cẩn thận hay gửi hàng loạt không. Cover letter dài hai trang với văn phong sáo rỗng sẽ bị bỏ qua. Cover letter ngắn gọn, cụ thể, có tên công ty và tên vị trí đúng chỗ sẽ được đọc hết.
 
 ##### 1.2. Cover letter đặc biệt quan trọng khi apply công ty nước ngoài
 
@@ -160,7 +160,7 @@ Best regards,
 
 ##### 6.4. Cover letter quá dài
 
-**Biểu hiện:** Hai trang A4, kể từ hồi cấp 3 thích máy tính đến lý do chọn ngành CNTT. **Fix:** Giới hạn 250–350 từ, tối đa một trang A4. Mỗi câu phải trả lời câu hỏi: "Câu này có giúp HR muốn gọi mình phỏng vấn không?" Nếu không - xóa.
+**Biểu hiện:** Hai trang A4, kể từ hồi cấp 3 thích máy tính đến lý do chọn ngành CNTT. **Fix:** Giới hạn 250-350 từ, tối đa một trang A4. Mỗi câu phải trả lời câu hỏi: "Câu này có giúp HR muốn gọi mình phỏng vấn không?" Nếu không - xóa.
 
 ##### 6.5. Không có project cụ thể để dẫn chứng
 
@@ -186,7 +186,7 @@ Cả hai tùy theo cách công ty nhận hồ sơ. Nếu apply qua email trực 
 
 ##### Cover letter cho fresher nên dài bao nhiêu là đủ?
 
-250–350 từ - tương đương 3–4 đoạn ngắn, vừa một trang A4 với margin bình thường. Dưới 150 từ thường quá ngắn để truyền đủ thông tin. Trên 450 từ là dấu hiệu bạn đang cố nói quá nhiều thứ cùng lúc. Nếu viết xong quá dài, hãy hỏi từng câu: câu này có giúp tôi được gọi phỏng vấn không - nếu không, xóa.
+250-350 từ - tương đương 3-4 đoạn ngắn, vừa một trang A4 với margin bình thường. Dưới 150 từ thường quá ngắn để truyền đủ thông tin. Trên 450 từ là dấu hiệu bạn đang cố nói quá nhiều thứ cùng lúc. Nếu viết xong quá dài, hãy hỏi từng câu: câu này có giúp tôi được gọi phỏng vấn không - nếu không, xóa.
 
 ##### Không biết tên HR thì viết lời chào thế nào?
 
@@ -194,7 +194,7 @@ Thứ tự ưu tiên: (1) Tìm tên HR/hiring manager trên LinkedIn bằng các
 
 ##### Apply vị trí không yêu cầu cover letter - có nên gửi không?
 
-Nên gửi nếu bạn là fresher và muốn tăng cơ hội. Viết ngắn hơn (150–200 từ), đặt tiêu đề rõ là "Cover Letter - \[Tên vị trí\]" để HR biết đây là tài liệu bổ sung, không phải nhầm file. Đây là cách thể hiện sự chủ động và nghiêm túc mà không ít fresher làm - tức là nó tự động tạo ra sự khác biệt. Xem thêm cách chuẩn bị phỏng vấn toàn diện tại bài [Tips phỏng vấn junior IT A-Z](/tips-phong-van-junior-it-tong-hop-a-z-de-ban-vuot-qua-moi-vong) và cách tự giới thiệu bản thân tại bài [Cách giới thiệu bản thân khi phỏng vấn IT](/cach-gioi-thieu-ban-than-khi-phong-van-it-script-mau-cho-fresher-va-junior-dev).
+Nên gửi nếu bạn là fresher và muốn tăng cơ hội. Viết ngắn hơn (150-200 từ), đặt tiêu đề rõ là "Cover Letter - \[Tên vị trí\]" để HR biết đây là tài liệu bổ sung, không phải nhầm file. Đây là cách thể hiện sự chủ động và nghiêm túc mà không ít fresher làm - tức là nó tự động tạo ra sự khác biệt. Xem thêm cách chuẩn bị phỏng vấn toàn diện tại bài [Tips phỏng vấn junior IT A-Z](/tips-phong-van-junior-it-tong-hop-a-z-de-ban-vuot-qua-moi-vong) và cách tự giới thiệu bản thân tại bài [Cách giới thiệu bản thân khi phỏng vấn IT](/cach-gioi-thieu-ban-than-khi-phong-van-it-script-mau-cho-fresher-va-junior-dev).
 
 #### 9\. Tổng kết
 

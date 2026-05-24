@@ -169,7 +169,7 @@ if ($decoded->aud !== 'api') {
 
 ##### 5.2 Clock Skew — Vấn đề ít ai để ý
 
-Trong môi trường distributed, đồng hồ giữa các server có thể lệch vài giây. Token vừa tạo có thể bị reject bởi service khác vì "chưa đến nbf" hoặc "đã quá exp". Best practice: cho phép clock skew tối đa 30–60 giây khi validate.
+Trong môi trường distributed, đồng hồ giữa các server có thể lệch vài giây. Token vừa tạo có thể bị reject bởi service khác vì "chưa đến nbf" hoặc "đã quá exp". Best practice: cho phép clock skew tối đa 30-60 giây khi validate.
 
 #### 6\. Xử lý Revocation & Refresh Token Rotation
 
@@ -244,7 +244,7 @@ async function refreshTokens(oldRefreshToken) {
 1.  **Dùng secret key yếu hoặc hardcode trong code** → Fix: generate bằng **crypto.randomBytes(32)**, lưu trong environment variable, không commit lên Git. Rotate key định kỳ hoặc khi có nghi ngờ lộ.
 2.  **Không whitelist algorithm** → Fix: luôn truyền **algorithms: \['RS256'\]** hoặc **algorithms: \['HS256'\]** khi verify. Attacker không thể chuyển sang alg:none hay nhầm sang HS256 dùng public key.
 3.  **Lưu access token trong localStorage** → Fix: access token in-memory, refresh token trong httpOnly cookie. Chấp nhận đánh đổi UX (mất token khi F5) để đổi lấy bảo mật.
-4.  **TTL quá dài (24h, 7 ngày) cho access token** → Fix: access token 15 phút, refresh token 7–30 ngày. Kết hợp với silent refresh để UX không bị ảnh hưởng.
+4.  **TTL quá dài (24h, 7 ngày) cho access token** → Fix: access token 15 phút, refresh token 7-30 ngày. Kết hợp với silent refresh để UX không bị ảnh hưởng.
 5.  **Không validate iss và aud** → Fix: luôn set issuer và audience khi sign, luôn verify khi decode. Đặc biệt quan trọng trong kiến trúc multi-service.
 6.  **Lưu thông tin nhạy cảm trong payload** → Fix: payload chỉ chứa userId, role, exp — không chứa email, password, số điện thoại, số thẻ. Payload chỉ Base64URL encode, không encrypt.
 

@@ -75,7 +75,7 @@ Close with your specific direction in IT — not "develop myself in the tech ind
 
 ##### 4.1. Template for a Fresher Who Studied Computer Science
 
-\[Spark — specific moment, 1–2 sentences\]
+\[Spark — specific moment, 1-2 sentences\]
 "I genuinely committed to IT in \[specific time\], when I
 \[specific event: built something, solved a problem,
 saw a concrete result for the first time\]."
@@ -84,7 +84,7 @@ saw a concrete result for the first time\]."
 "After that I started \[learning outside the curriculum /
 building personal projects / doing X\] on my own."
 
-\[Direction — current focus, 1–2 sentences\]
+\[Direction — current focus, 1-2 sentences\]
 "Right now I'm focused on \[specific direction: stack,
 domain\]. I'm applying here because \[specific reason
 connecting to the company's stack or product\]."
@@ -96,7 +96,7 @@ connecting to the company's stack or product\]."
 realized was \[what was missing\] — and when I started
 \[first contact with IT\], I found what I was looking for."
 
-\[Movement — evidence of deliberate transition, 1–2 sentences\]
+\[Movement — evidence of deliberate transition, 1-2 sentences\]
 "I \[studied at a bootcamp / self-taught for X months /
 built my first project\] before applying for any roles.
 \[Specific outcome or project built\]."
@@ -118,7 +118,7 @@ Linh worked as an accountant for three years, then self-studied web development 
 #### 6\. 6 Common Mistakes and How to Fix Them
 
 *   **Mistake 1: Leading with salary or job market opportunity as the reason.** Fix: These reasons aren't wrong, but they say nothing specific about you. Replace with one concrete moment — however small — where you actively chose IT.
-*   **Mistake 2: Answer is too long and covers your entire background from high school onward.** Fix: Keep to 60–75 seconds. Choose one representative moment, not a full biography.
+*   **Mistake 2: Answer is too long and covers your entire background from high school onward.** Fix: Keep to 60-75 seconds. Choose one representative moment, not a full biography.
 *   **Mistake 3: No clear direction at the end of the answer.** Fix: Always close with a specific technical direction you're pursuing — not "grow in the IT industry generally."
 *   **Mistake 4: Career changers apologizing for not having a CS degree.** Fix: A non-CS background is an advantage if you frame it correctly. Domain knowledge from a previous field makes you better at understanding real-world problems than a purely technical fresher.
 *   **Mistake 5: Using the exact same answer for every company.** Fix: The Direction component should be adjusted based on the company type — outsource, product, startup — and connected to their specific stack or domain where possible.

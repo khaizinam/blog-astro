@@ -132,13 +132,13 @@ Một SaaS B2B cấp JWT access token TTL 24 giờ vì ngại xây refresh token
 
 **JWT thắng rõ ràng.** Stateless hoàn toàn — bất kỳ server nào cũng verify được token chỉ cần có secret/public key. Không phụ thuộc shared store, không sticky session, scale không giới hạn.
 
-**Session cần thêm infrastructure.** Phải dùng Redis hoặc database-backed session store để share session giữa các server. Redis thêm một dependency, thêm một điểm có thể fail, thêm latency ~0.1–1ms mỗi request.
+**Session cần thêm infrastructure.** Phải dùng Redis hoặc database-backed session store để share session giữa các server. Redis thêm một dependency, thêm một điểm có thể fail, thêm latency ~0.1-1ms mỗi request.
 
 ##### 3.3 Performance — Hiệu năng
 
 **JWT nhanh hơn ở high-throughput.** Verify signature là phép toán CPU thuần (HMAC ~microseconds), không có network round-trip. Tại 10.000 req/s, JWT tiết kiệm 10.000 Redis reads/s — đáng kể ở scale lớn.
 
-**Session thêm latency nhỏ nhưng ổn định.** Redis lookup ~0.1–1ms nếu cùng datacenter — thường không phải bottleneck. Nhưng nếu Redis bị tải cao hoặc network latency tăng, mọi request đều bị ảnh hưởng.
+**Session thêm latency nhỏ nhưng ổn định.** Redis lookup ~0.1-1ms nếu cùng datacenter — thường không phải bottleneck. Nhưng nếu Redis bị tải cao hoặc network latency tăng, mọi request đều bị ảnh hưởng.
 
 ##### 3.4 Security — Bảo mật
 

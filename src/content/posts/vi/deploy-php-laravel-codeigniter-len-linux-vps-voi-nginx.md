@@ -34,7 +34,7 @@ Bạn vừa thuê xong VPS Linux và đang nhìn vào màn hình terminal trắn
 
 #### 1\. Tại Sao Dùng Nginx Thay Apache Cho PHP Trên VPS?
 
-Apache từng là web server mặc định của thế giới PHP — và vẫn hoạt động tốt — nhưng Nginx có lợi thế rõ ràng hơn trên VPS tài nguyên hạn chế. Nginx xử lý concurrent request theo mô hình event-driven không đồng bộ, tiêu thụ RAM thấp hơn Apache theo mô hình process-per-request khi traffic tăng cao. Với VPS 1–2GB RAM, sự khác biệt này rất đáng kể.
+Apache từng là web server mặc định của thế giới PHP — và vẫn hoạt động tốt — nhưng Nginx có lợi thế rõ ràng hơn trên VPS tài nguyên hạn chế. Nginx xử lý concurrent request theo mô hình event-driven không đồng bộ, tiêu thụ RAM thấp hơn Apache theo mô hình process-per-request khi traffic tăng cao. Với VPS 1-2GB RAM, sự khác biệt này rất đáng kể.
 
 Nginx không thực thi PHP trực tiếp — nó ủy quyền xử lý PHP cho **PHP-FPM** (FastCGI Process Manager) qua socket Unix hoặc TCP port. Kiến trúc tách biệt này có nghĩa:
 
@@ -167,7 +167,7 @@ sudo chmod +x /usr/local/bin/composer
 composer --version
 ```
 
-**📌 Giải thích thuật ngữ:** _php8.2-opcache_ — Extension cache bytecode PHP đã biên dịch vào RAM, giúp tăng tốc độ thực thi PHP 2–5 lần bằng cách bỏ qua bước parse/compile PHP script mỗi request.
+**📌 Giải thích thuật ngữ:** _php8.2-opcache_ — Extension cache bytecode PHP đã biên dịch vào RAM, giúp tăng tốc độ thực thi PHP 2-5 lần bằng cách bỏ qua bước parse/compile PHP script mỗi request.
 
 * * *
 

@@ -1,5 +1,5 @@
 ---
-title: "Xu Hướng 24 – Trang cập nhật xu hướng và tin tức nổi bật"
+title: "Xu Hướng 24 - Trang cập nhật xu hướng và tin tức nổi bật"
 author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-05-22T09:52:44.000Z
 slug: xuhuong24-tin-tuc-cap-nhat-nhanh
@@ -12,7 +12,7 @@ tags:
 description:  "Giới thiệu nền tảng tổng hợp tin tức Xu Hướng 24 với giao diện tối giản, tốc độ tải nhanh và nội dung đa dạng."
 ---
 
-# Xu Hướng 24 – Trang cập nhật xu hướng và tin tức nổi bật
+# Xu Hướng 24 - Trang cập nhật xu hướng và tin tức nổi bật
 
 Giữa lượng thông tin quá lớn trên mạng xã hội hiện nay, nhiều người có xu hướng tìm các nền tảng tổng hợp tin tức gọn, dễ đọc và cập nhật nhanh. [Xu Hướng 24](https://xuhuong24.com) là một website theo hướng đó, tập trung vào các chủ đề đang được quan tâm như công nghệ, giải trí, thể thao, đời sống và xu hướng online.
 

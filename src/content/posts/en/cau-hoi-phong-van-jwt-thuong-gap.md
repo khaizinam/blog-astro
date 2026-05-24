@@ -123,7 +123,7 @@ An attacker reuses a stolen but still-valid token. Fix: set short expiry (15 min
 ##### Step-by-Step Production Flow
 
 1.  User logs in with email/password.
-2.  Server verifies credentials, issues an **access token** (TTL: 15 minutes) and a **refresh token** (TTL: 7–30 days).
+2.  Server verifies credentials, issues an **access token** (TTL: 15 minutes) and a **refresh token** (TTL: 7-30 days).
 3.  Access token sent in the Authorization header; refresh token stored in httpOnly cookie.
 4.  When access token expires, client sends refresh token to get a new access token.
 5.  Server verifies refresh token, issues new access token + **rotates the refresh token** (invalidating the old one).
@@ -136,7 +136,7 @@ An attacker reuses a stolen but still-valid token. Fix: set short expiry (15 min
 1.  **Calling JWT "encrypted"** → Fix: JWT is signed, not encrypted. Use "encode" and "verify signature" for precision.
 2.  **Not knowing how to revoke a JWT** → Fix: JWT can't self-revoke, but you can blacklist the jti in Redis, or rely on short-lived access tokens + revocable refresh tokens.
 3.  **Storing JWT in localStorage and calling it secure** → Fix: localStorage is XSS-vulnerable. Best practice: store refresh tokens in httpOnly cookies.
-4.  **Setting exp too long** → Fix: Access tokens should have short TTL (15–30 minutes). Long TTL widens the revocation window if a token is compromised.
+4.  **Setting exp too long** → Fix: Access tokens should have short TTL (15-30 minutes). Long TTL widens the revocation window if a token is compromised.
 5.  **Not knowing the difference between HS256 and RS256** → Fix: Understand symmetric vs asymmetric signing and when each applies (see the section above).
 
 For a deeper look at JWT versus Session in real applications, read the full comparison at [Session vs JWT Interview Guide: Everything You Need to Answer With Confidence and Depth](/en/session-vs-jwt-interview-guide-everything-you-need-to-answer-with-confidence-and-depth)
@@ -161,7 +161,7 @@ In a microservices architecture, multiple services need to verify JWTs. With HS2
 
 ##### Does JWT size impact performance?
 
-Yes, especially in high-frequency API calls. JWT is significantly heavier than a session ID (a few bytes) because it carries claims. A typical JWT is 200–500 bytes; a heavily loaded one can exceed 1KB. At 100+ API calls per second, this overhead accumulates. Best practice: only include claims that are actually needed per request — don't serialize the entire user profile into the token.
+Yes, especially in high-frequency API calls. JWT is significantly heavier than a session ID (a few bytes) because it carries claims. A typical JWT is 200-500 bytes; a heavily loaded one can exceed 1KB. At 100+ API calls per second, this overhead accumulates. Best practice: only include claims that are actually needed per request — don't serialize the entire user profile into the token.
 
 #### Summary & Next Steps
 

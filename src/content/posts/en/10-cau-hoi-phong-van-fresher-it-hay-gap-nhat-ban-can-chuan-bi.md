@@ -33,7 +33,7 @@ Whether you're applying for a developer, QA, or IT support role, these questions
 
 **What they're testing:** Your communication skills, self-awareness, and how well you can summarize your background in a structured way.
 
-**How to answer:** Use the Present–Past–Future formula. Start with your current status ("I just graduated with a degree in Computer Science"), mention relevant past projects briefly, then explain what you're looking for next.
+**How to answer:** Use the Present-Past-Future formula. Start with your current status ("I just graduated with a degree in Computer Science"), mention relevant past projects briefly, then explain what you're looking for next.
 
 **Example answer:** "I recently graduated from \[University\] with a degree in Software Engineering. During my studies, I built a web-based inventory system using Laravel and Vue.js as my thesis project. I'm now looking for a backend developer role where I can grow my skills in a real production environment."
 
@@ -116,7 +116,7 @@ Also cover: branching strategy (feature branches vs. main/develop), how you hand
 
 **Example answer:** "During my final year, I built an online booking system for a local clinic as my thesis. The main challenge was handling concurrent appointments without double-booking. I solved it using row-level locking in MySQL. The system handled around 200 active users during our testing phase. I'm particularly proud of the clean architecture — my supervisor used it as a best-practice example for other students."
 
-**Pro tip:** Prepare 2–3 projects before the interview. Different interviewers may ask follow-up questions in very different directions, so having variety gives you flexibility.
+**Pro tip:** Prepare 2-3 projects before the interview. Different interviewers may ask follow-up questions in very different directions, so having variety gives you flexibility.
 
 #### 10\. "Where do you see yourself in 3 years?"
 

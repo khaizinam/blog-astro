@@ -46,8 +46,8 @@ JWT access tokens have a fundamental tension: the shorter the TTL, the more secu
 
 Refresh tokens solve this tension by splitting into two token types with two distinct purposes:
 
-*   **Access Token**: Short TTL (15–30 minutes), used to authenticate each API request. Stateless, not stored in DB.
-*   **Refresh Token**: Long TTL (7–30 days), used only to obtain a new access token when the current one expires. Stored in DB, revocable at any time.
+*   **Access Token**: Short TTL (15-30 minutes), used to authenticate each API request. Stateless, not stored in DB.
+*   **Refresh Token**: Long TTL (7-30 days), used only to obtain a new access token when the current one expires. Stored in DB, revocable at any time.
 
 ##### 1.2 High-Level Flow Overview
 
@@ -527,7 +527,7 @@ For the full JWT security picture, read [JWT Security Best Practices 2026](/en/j
 
 ##### 8.1 How long should the refresh token TTL be?
 
-It depends on the use case. Consumer apps (social, e-commerce): 30–90 days — users don't want to log in frequently. Sensitive apps (banking, fintech, admin tools): 1–7 days — balance between UX and security. Some systems implement "sliding expiry" — each time the refresh token is used, the TTL is extended, and it only truly expires after X consecutive days of inactivity.
+It depends on the use case. Consumer apps (social, e-commerce): 30-90 days — users don't want to log in frequently. Sensitive apps (banking, fintech, admin tools): 1-7 days — balance between UX and security. Some systems implement "sliding expiry" — each time the refresh token is used, the TTL is extended, and it only truly expires after X consecutive days of inactivity.
 
 ##### 8.2 Does the refresh token need to be in JWT format?
 

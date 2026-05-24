@@ -34,7 +34,7 @@ You just spun up a Linux VPS and you're staring at a blank terminal not knowing 
 
 #### 1\. Why Nginx Instead of Apache for PHP on a VPS?
 
-Apache has been the default web server for PHP for decades — and it still works well — but Nginx has a clear advantage on resource-constrained VPS environments. Nginx handles concurrent requests using an event-driven asynchronous model, consuming significantly less RAM than Apache's process-per-request model under load. On a 1–2GB RAM VPS, this difference is substantial.
+Apache has been the default web server for PHP for decades — and it still works well — but Nginx has a clear advantage on resource-constrained VPS environments. Nginx handles concurrent requests using an event-driven asynchronous model, consuming significantly less RAM than Apache's process-per-request model under load. On a 1-2GB RAM VPS, this difference is substantial.
 
 > See more: [How to Deploy Node.js and React Apps on Linux Hosting with Nginx Reverse Proxy](/en/cach-deploy-nodejs-va-react-len-hosting-linux-bang-nginx-reverse-proxy-huong-dan-day-du-pm2-ssl-2025)
 
