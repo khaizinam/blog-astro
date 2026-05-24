@@ -231,6 +231,16 @@ const relatedPosts = otherPosts
   <Footer />
 </PostLayout>
 
+<script>
+  import mediumZoom from "medium-zoom";
+  document.addEventListener("astro:page-load", () => {
+    mediumZoom("#article img", {
+      margin: 24,
+      background: "rgba(0, 0, 0, 0.85)",
+    });
+  });
+</script>
+
 <script is:inline data-astro-rerun>
   function createProgressBar() {
     const progressContainer = document.createElement("div");

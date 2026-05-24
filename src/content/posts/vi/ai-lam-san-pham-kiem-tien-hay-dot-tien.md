@@ -77,7 +77,7 @@ Tôi đã từng làm việc chung với [Datlechin Ngô Quốc Đạt](https://
 
 Đạt không phải người build một lần rồi thành công ngay. Trước [TablePro](https://tablepro.app), Đạt đã qua không ít dự án: Flatrum, Botble plugin, shop game PHP - kết quả thu về rất thấp, gần như không đáng kể.
 
-Nhưng TablePro thì khác. Không phải vì may mắn.
+Nhưng [TablePro](https://tablepro.app) thì khác. Không phải vì may mắn.
 
 ##### 4.1. Đạt nhìn thấy gap thật trong thị trường
 
