@@ -96,7 +96,7 @@ When users ask about:
 
 `;
 
-  sortedPosts.forEach(post => {
+  sortedPosts.slice(0, 20).forEach(post => {
     // Chỉ lấy slug, loại bỏ đuôi .md
     const slug = post.id.replace(/^vi\/|^en\//, ""); 
     const langPrefix = post.data.lang === "en" ? "/en" : "";
