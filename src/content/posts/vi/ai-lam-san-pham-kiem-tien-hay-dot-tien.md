@@ -73,9 +73,9 @@ Không ai nói sai - nhưng cũng đừng gọi đó là "khởi nghiệp bằng
 
 #### 4. Câu chuyện TablePro - làm đúng thì nó khác hoàn toàn
 
-Tôi đã từng làm việc chung với [Datlechin Ngô Quốc Đạt](https://github.com/datlechin), tác giả của **TablePro**, một DBMS client cho macOS đang ngày càng khẳng định vị thế của mình, kéo người dùng rời xa TablePlus.
+Tôi đã từng làm việc chung với [Datlechin Ngô Quốc Đạt](https://github.com/datlechin), tác giả của [TablePro](https://tablepro.app), một DBMS client cho macOS đang ngày càng khẳng định vị thế của mình, kéo người dùng rời xa TablePlus.
 
-Đạt không phải người build một lần rồi thành công ngay. Trước TablePro, Đạt đã qua không ít dự án: Flatrum, Botble plugin, shop game PHP - kết quả thu về rất thấp, gần như không đáng kể.
+Đạt không phải người build một lần rồi thành công ngay. Trước [TablePro](https://tablepro.app), Đạt đã qua không ít dự án: Flatrum, Botble plugin, shop game PHP - kết quả thu về rất thấp, gần như không đáng kể.
 
 Nhưng TablePro thì khác. Không phải vì may mắn.
 

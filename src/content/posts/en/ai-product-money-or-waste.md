@@ -73,11 +73,11 @@ None of those are wrong answers. But don't frame it as "building with AI" or "in
 
 #### 4. The TablePro story - what doing it right actually looks like
 
-I worked with [Datlechin - Ngô Quốc Đạt](https://github.com/datlechin), the developer behind **TablePro**: a native macOS DBMS client that's been steadily pulling users away from TablePlus.
+I worked with [Datlechin - Ngô Quốc Đạt](https://github.com/datlechin), the developer behind [TablePro](https://tablepro.app) a native macOS DBMS client that's been steadily pulling users away from TablePlus.
 
-Đạt didn't succeed on his first try. Before TablePro, there were other projects - Flatrum, Botble plugins, a PHP game shop - with very little to show for them in return.
+Đạt didn't succeed on his first try. Before [TablePro](https://tablepro.app), there were other projects - Flatrum, Botble plugins, a PHP game shop - with very little to show for them in return.
 
-TablePro is different. Not because of luck.
+[TablePro](https://tablepro.app) is different. Not because of luck.
 
 ##### 4.1. He identified a real gap, not an imaginary one
 
