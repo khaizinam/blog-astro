@@ -5,7 +5,7 @@ pubDatetime: 2026-02-24T19:46:10.000Z
 slug: con-ac-mong-lap-trinh-mat-sach-index-google-chi-trong-1-dem-vi-mot-dong-code-chat-widget
 lang: vi
 translationKey: post-187
-featured: true
+featured: false
 draft: false
 tags:
   - "NgoaiLe"

@@ -5,7 +5,7 @@ pubDatetime: 2026-03-19T19:26:34.000Z
 slug: session-vs-jwt-toan-bo-ly-thuyet
 lang: en
 translationKey: post-204
-featured: true
+featured: false
 draft: false
 tags:
   - "SeriesPhongVan"

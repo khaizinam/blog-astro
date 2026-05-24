@@ -5,7 +5,7 @@ pubDatetime: 2026-03-19T16:03:51.000Z
 slug: phong-van-junior-outsource-tu-ai-workflow-dependency-injection-den-bai-toan-redis-chan-concurrent-edit
 lang: en
 translationKey: post-203
-featured: true
+featured: false
 draft: false
 tags:
   - "SeriesPhongVan"

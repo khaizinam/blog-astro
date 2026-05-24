@@ -5,7 +5,7 @@ pubDatetime: 2026-03-09T09:05:00.000Z
 slug: ke-chuyen-phong-van-junior-intern-backend-nodejs-typescript-ho-hoi-gi-minh-tra-loi-ra-sao
 lang: en
 translationKey: post-197
-featured: true
+featured: false
 draft: false
 tags:
   - "SeriesPhongVan"
