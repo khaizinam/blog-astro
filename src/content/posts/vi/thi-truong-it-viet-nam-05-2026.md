@@ -1,6 +1,6 @@
 ---
 title: "Tình hình thị trường IT Việt Nam tháng 05 2026"
-author: KhaiziNam
+author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-05-24 01:00:00
 slug: thi-truong-it-viet-nam-05-2026
 lang: vi
