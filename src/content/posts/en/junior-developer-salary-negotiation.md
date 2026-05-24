@@ -1,7 +1,7 @@
 ---
 title: "Junior Developer Salary Negotiation: How to Counter Your First Offer (With Scripts and Market Data)"
 author: KhaiziNam
-pubDatetime: 2026-05-24T10:08:00.000Z
+pubDatetime: 2026-05-24T01:00:00.000Z
 slug: junior-developer-salary-negotiation
 lang: en
 translationKey: post-210
