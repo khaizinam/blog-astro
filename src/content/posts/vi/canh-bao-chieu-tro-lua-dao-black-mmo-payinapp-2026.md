@@ -1,5 +1,5 @@
 ---
-title: "Cảnh báo chiêu trò lừa đảo \"Black MMO PayinApp\" 2026"
+title: "Cảnh báo chiêu trò lừa đảo Black MMO PayinApp 2026"
 author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-04-17T19:58:40.000Z
 slug: canh-bao-chieu-tro-lua-dao-black-mmo-payinapp-2026
@@ -7,9 +7,10 @@ lang: vi
 translationKey: post-223
 featured: false
 draft: false
+ogImage: "https://cdn.khaizinam.io.vn/blogs/blog-2026-04-17.webp"
 tags:
   - "NgoaiLe"
-description: "Trong thời đại số, khi các nền tảng mạng xã hội như Facebook, Telegram trở thành nơi giao thương nhộn nhịp, thì cũng là lúc những \"con mồi\" tiềm năng bị đưa vào tầm ngắm của những kẻ lừa đảo. Chưa bao giờ, những lời mời chào về một công việc \"việc nhẹ lương cao\", \"ngồi nhà kiếm tiền triệu\", hay \"không cần kinh nghiệm, được đào tạo từ A-Z\" lại xuất hiện dày đặc như hiện nay."
+description: "Trong thời đại số, khi các nền tảng mạng xã hội như Facebook, Telegram trở thành nơi giao thương nhộn nhịp, thì cũng là lúc những con mồi tiềm năng bị đưa vào tầm ngắm của những kẻ lừa đảo. Chưa bao giờ, những lời mời chào về một công việc việc nhẹ lương cao, ngồi nhà kiếm tiền triệu, hay không cần kinh nghiệm, được đào tạo từ A-Z lại xuất hiện dày đặc như hiện nay."
 ---
 
 ## 1\. Mở đầu: "Cái bẫy" mang tên việc làm không cần kinh nghiệm

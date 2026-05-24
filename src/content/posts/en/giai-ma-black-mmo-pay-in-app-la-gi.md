@@ -7,6 +7,7 @@ lang: en
 translationKey: post-224
 featured: false
 draft: false
+ogImage: "https://cdn.khaizinam.io.vn/black-mmo-blog/black-mmo-1.webp"
 tags:
   - "SEO"
 description: "In the digital age, Pay in-app (in-app purchasing) has become an indispensable part of the experience, allowing users to easily buy game items, upgrade service packages, or subscribe to memberships with just a few taps."

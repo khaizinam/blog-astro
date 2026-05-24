@@ -7,6 +7,7 @@ lang: vi
 translationKey: post-224
 featured: false
 draft: false
+ogImage: "https://cdn.khaizinam.io.vn/black-mmo-blog/black-mmo-1.webp"
 tags:
   - "SEO"
 description: "Trong kỷ nguyên số, Pay in-app (thanh toán trong ứng dụng) đã trở thành một phần không thể thiếu, giúp người dùng dễ dàng mua vật phẩm game, nâng cấp các gói dịch vụ hoặc đăng ký thành viên chỉ với vài thao tác chạm."
