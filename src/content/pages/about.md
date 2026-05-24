@@ -25,6 +25,8 @@ Chữ **KhaiZiNam** được bắt nguồn từ niềm đam mê chơi game thờ
 *   **Tác giả:** Nguyễn Hữu Khải (khaizinam)
 *   **Website:** [khaizinam.com](https://khaizinam.com)
 *   **Portfolio:** [KhaiZiNam Portfolio](https://cv.khaizinam.com)
+*   **Github:** [khaizinam](https://github.com/khaizinam)
+*   **LinkedIn:** [khaizinam-bdemonk](https://www.linkedin.com/in/khaizinam-bdemonk/)
 *   **Ngôn ngữ:** Tiếng Việt & English (Song ngữ)
 *   **Đối tượng hướng đến:** Lập trình viên Việt Nam, đặc biệt là các bạn Junior Developer và Fresher IT.
 

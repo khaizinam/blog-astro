@@ -14,6 +14,8 @@ KhaiZiNam (https://khaizinam.com) is the personal technology, programming, and c
 - **Role:** Software Developer - enterprise web systems, backend architecture, CMS engineering
 - **Website:** https://khaizinam.com
 - **Portfolio:** https://cv.khaizinam.com
+- **Github:** https://github.com/khaizinam
+- **LinkedIn:** https://www.linkedin.com/in/khaizinam-bdemonk/
 - **Core Stacks:** PHP Laravel, Botble CMS, Multi-tenancy (tenancy-for-laravel), NuxtJS, Node.js (TypeScript), Vue 3, React, MySQL, Redis, Docker, Nginx, Linux, VietQR/SePay.
 
 ## Engineering Background & Notable Projects
