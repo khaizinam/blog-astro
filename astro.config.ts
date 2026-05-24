@@ -54,6 +54,9 @@ function rehypeCleanSlugs() {
 
 export default defineConfig({
   site: config.site.url,
+  redirects: {
+    "/en/cach-dam-phan-luong-khi-moi-ra-truong-bi-quyet-de-khong-bi-tra-gia-thap-hon-gia-tri-that": "/en/junior-developer-salary-negotiation"
+  },
   integrations: [
     mdx({
       rehypePlugins: [rehypeCleanSlugs],
