@@ -186,7 +186,7 @@ Using AI as a support tool is fine - the same as using Stack Overflow or documen
 
 ##### How often should I update my portfolio?
 
-Regularly - especially when you're actively job searching. A commit history with recent activity (within the past few weeks) signals that you're actively developing and growing. When applying to different types of roles, adjust your pinned repositories so the most relevant project appears first. For a complete guide to interview preparation, see [Junior IT Interview Tips A-Z](/en/tips-phong-van-junior-it-tong-hop-a-z-de-ban-vuot-qua-moi-vong), and for how to introduce your portfolio during an interview, see [IT Interview Self-Introduction Templates](/en/cach-gioi-thieu-ban-than-khi-phong-van-it-script-mau-cho-fresher-va-junior-dev).
+Regularly - especially when you're actively job searching. A commit history with recent activity (within the past few weeks) signals that you're actively developing and growing. When applying to different types of roles, adjust your pinned repositories so the most relevant project appears first. For a complete guide to interview preparation, see [Junior IT Interview Tips A-Z](/en/tips-phong-van-junior-it-tong-hop-a-z-de-ban-vuot-qua-moi-vong), and for how to introduce your portfolio during an interview, see [IT Interview Self-Introduction Templates](/en/it-interview-self-introduction-scripts-by-stack).
 
 #### 9\. Summary
 

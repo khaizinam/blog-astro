@@ -194,7 +194,7 @@ In order of preference: (1) Search LinkedIn for the company name plus "HR" or "T
 
 ##### The job doesn't require a cover letter - should I send one anyway?
 
-Yes, if you're a fresher and want to increase your chances. Write a shorter version (150–200 words), label it clearly as "Cover Letter - \[Role Title\]" so HR understands it's a supplementary document. This is one of the simplest ways to stand out because so few freshers do it - it automatically signals initiative and seriousness. For a complete interview preparation guide, see [Junior IT Interview Tips A-Z](/en/tips-phong-van-junior-it-tong-hop-a-z-de-ban-vuot-qua-moi-vong), and for self-introduction scripts and templates, see [IT Interview Self-Introduction Templates](/en/cach-gioi-thieu-ban-than-khi-phong-van-it-script-mau-cho-fresher-va-junior-dev).
+Yes, if you're a fresher and want to increase your chances. Write a shorter version (150–200 words), label it clearly as "Cover Letter - \[Role Title\]" so HR understands it's a supplementary document. This is one of the simplest ways to stand out because so few freshers do it - it automatically signals initiative and seriousness. For a complete interview preparation guide, see [Junior IT Interview Tips A-Z](/en/tips-phong-van-junior-it-tong-hop-a-z-de-ban-vuot-qua-moi-vong), and for self-introduction scripts and templates, see [IT Interview Self-Introduction Templates](/en/it-interview-self-introduction-scripts-by-stack).
 
 #### 9\. Summary
 

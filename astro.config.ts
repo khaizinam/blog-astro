@@ -56,7 +56,8 @@ export default defineConfig({
   site: config.site.url,
   redirects: {
     "/en/cach-dam-phan-luong-khi-moi-ra-truong-bi-quyet-de-khong-bi-tra-gia-thap-hon-gia-tri-that": "/en/junior-developer-salary-negotiation",
-    "/en/muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu": "/en/entry-level-software-engineer-salary-2026"
+    "/en/muc-luong-fresher-junior-it-2026-ban-nen-ky-vong-bao-nhieu": "/en/entry-level-software-engineer-salary-2026",
+    "/en/cach-gioi-thieu-ban-than-khi-phong-van-it-script-mau-cho-fresher-va-junior-dev": "/en/it-interview-self-introduction-scripts-by-stack"
   },
   integrations: [
     mdx({

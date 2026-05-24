@@ -144,10 +144,10 @@ Being honest about that is fine — but end with the moment you confirmed the ch
 
 ##### 7.5. Does the answer need to connect to the specific role being applied for?
 
-Connect in the Direction component when it feels natural — don't force it if the link is weak. The cleanest way to connect is to mention the tech stack or product type you want to work with, and let the interviewer draw the line to their JD themselves. See [IT Job Interview Self Introduction: Script Templates for Freshers & Junior Devs](/en/cach-gioi-thieu-ban-than-khi-phong-van-it-script-mau-cho-fresher-va-junior-dev) for how to weave your technical direction naturally into your full opening statement.
+Connect in the Direction component when it feels natural — don't force it if the link is weak. The cleanest way to connect is to mention the tech stack or product type you want to work with, and let the interviewer draw the line to their JD themselves. See [IT Job Interview Self Introduction: Script Templates for Freshers & Junior Devs](/en/it-interview-self-introduction-scripts-by-stack) for how to weave your technical direction naturally into your full opening statement.
 
 #### 8\. Summary
 
 The "why did you choose IT?" question doesn't need a grand answer — it needs a specific, honest one with a clear direction. Apply the SMD framework: find one concrete Spark (however small), describe the active Movement you made after it, and close with a clear Direction you're currently pursuing. Avoid the three overused reasons (salary, job market, liking computers since childhood), and connect your Direction to the role you're applying for wherever it feels natural.
 
-To prepare fully for the HR and behavioral rounds, pair this with [10 IT Fresher Interview Questions You'll Actually Face (With Model Answers 2026)](/en/10-cau-hoi-phong-van-fresher-it-hay-gap-nhat-ban-can-chuan-bi) and [IT Job Interview Self Introduction: Script Templates for Freshers & Junior Devs](/en/cach-gioi-thieu-ban-than-khi-phong-van-it-script-mau-cho-fresher-va-junior-dev) to handle the full opening section of any IT interview with confidence.
+To prepare fully for the HR and behavioral rounds, pair this with [10 IT Fresher Interview Questions You'll Actually Face (With Model Answers 2026)](/en/10-cau-hoi-phong-van-fresher-it-hay-gap-nhat-ban-can-chuan-bi) and [IT Job Interview Self Introduction: Script Templates for Freshers & Junior Devs](/en/it-interview-self-introduction-scripts-by-stack) to handle the full opening section of any IT interview with confidence.
