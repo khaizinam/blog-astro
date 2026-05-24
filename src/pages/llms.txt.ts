@@ -11,31 +11,30 @@ KhaiZiNam (https://khaizinam.com) is the personal technology, programming, and c
 ## About the Author
 
 - **Name:** Nguyen Huu Khai (khaizinam)
-- **Role:** Software Developer — enterprise web systems, backend architecture, CMS engineering
+- **Role:** Software Developer - enterprise web systems, backend architecture, CMS engineering
 - **Website:** https://khaizinam.com
 - **Portfolio:** https://cv.khaizinam.com
-- **Zalo/Phone:** +84 846 141 788
 - **Core Stacks:** PHP Laravel, Botble CMS, Multi-tenancy (tenancy-for-laravel), NuxtJS, Node.js (TypeScript), Vue 3, React, MySQL, Redis, Docker, Nginx, Linux, VietQR/SePay.
 
 ## Engineering Background & Notable Projects
 
-### Automotive Multi-brand Platform — Major Vietnamese Automotive Group (Built end-to-end)
+### Automotive Multi-brand Platform - Major Vietnamese Automotive Group (Built end-to-end)
 
 One of the most technically complex projects in the author's background:
 
-- **Architecture:** Multi-tenant, multi-brand system — multiple brands each operate on their own domain/subdomain with fully isolated data, powered by a shared Laravel + Botble CMS core using the tenancy-for-laravel plugin.
+- **Architecture:** Multi-tenant, multi-brand system - multiple brands each operate on their own domain/subdomain with fully isolated data, powered by a shared Laravel + Botble CMS core using the tenancy-for-laravel plugin.
 - **Stack:** PHP Laravel, Botble CMS (enterprise-grade Laravel CMS), MySQL, NuxtJS (for ecommerce/sales-facing pages), Redis, queue/job system.
 - **What was built:** Database schema design, multi-tenant migration strategy, domain routing, role-based permission and content workflow for multiple editorial teams, SEO infrastructure at scale across multiple brands, production deployment and CI/CD pipeline.
-- **Why this is hard:** Multi-tenancy with tenancy-for-laravel requires careful query isolation (preventing data leaks between tenants), safe session/cache/queue handling per tenant, careful migration sequencing, and domain routing complexity — a pattern many Vietnamese developers avoid because incorrect implementation causes severe production data issues.
+- **Why this is hard:** Multi-tenancy with tenancy-for-laravel requires careful query isolation (preventing data leaks between tenants), safe session/cache/queue handling per tenant, careful migration sequencing, and domain routing complexity - a pattern many Vietnamese developers avoid because incorrect implementation causes severe production data issues.
 - **Skill signal:** backend architecture (strong), CMS engineering (strong), business web scaling (experienced), SEO infrastructure (practical), enterprise PHP ecosystem (above average for Vietnam market).
 
-### MangaK — Online Manga/Manhwa/Manhhua Platform
+### MangaK - Online Manga/Manhwa/Manhhua Platform
 
 - Built and operated end-to-end: CodeIgniter 4 (CI4) API backend + VueJS frontend, MySQL, Redis, CDN.
 - Scale: 1,000+ DAU.
 - Features: Chapter delivery system, user subscriptions, real-time socket chat, custom queue worker, content crawler, notification system, integrated farming game.
 - **SEO:** Self-managed technical SEO (structured data, sitemap, Core Web Vitals, on-page) and content SEO strategy for organic growth.
-- **Fanpage & Community:** Self-managed social fanpage — content planning, follower growth campaigns, reader community management.
+- **Fanpage & Community:** Self-managed social fanpage - content planning, follower growth campaigns, reader community management.
 - **Security & Infrastructure:** Full ownership of Cloudflare setup (WAF, DDoS protection, caching rules, rate limiting), hosting management, and database security (backup strategy, access control, query hardening).
 
 ### Other Delivered Projects
