@@ -157,7 +157,7 @@ Thị trường đang rất tốt cho bạn - 140 jobs, cạnh tranh cao nhưng 
  
 ##### 7.4. Nếu bạn là PHP dev
  
-Học thêm Python hoặc Node.js ở mức build được REST API hoàn chỉnh trong 3–4 tháng là khoản đầu tư hợp lý nhất lúc này. Không cần bỏ PHP - nhưng đừng để PHP là thứ duy nhất trong CV. Tham khảo thêm [Phỏng vấn backend junior - câu hỏi thường gặp và cách trả lời](/phong-van-backend-junior-cau-hoi-thuong-gap) để hiểu nhà tuyển dụng đang kỳ vọng gì ở cấp độ junior.
+Học thêm Python hoặc Node.js ở mức build được REST API hoàn chỉnh trong 3–4 tháng là khoản đầu tư hợp lý nhất lúc này. Không cần bỏ PHP - nhưng đừng để PHP là thứ duy nhất trong CV. Tham khảo thêm [Phỏng vấn backend junior - câu hỏi thường gặp và cách trả lời](/cau-hoi-phong-van-backend-junior-tong-hop-day-du-tu-database-den-api-auth-va-cache) để hiểu nhà tuyển dụng đang kỳ vọng gì ở cấp độ junior.
  
 ##### 7.5. Nếu bạn đang cân nhắc chuyển hướng sang AI
  
