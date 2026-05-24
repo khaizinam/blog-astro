@@ -21,7 +21,12 @@ const posts = defineCollection({
       draft: z.boolean().optional(),
       tags: z.array(z.string()).default(["others"]),
       ogImage: image().or(z.string()).optional(),
-      description: z.string(),
+      description: z.string().transform(desc => {
+        if (desc.length <= 160) return desc;
+        const sub = desc.substring(0, 157);
+        const lastSpace = sub.lastIndexOf(" ");
+        return lastSpace > 0 ? sub.substring(0, lastSpace) + "..." : sub + "...";
+      }),
       canonicalURL: z.string().optional(),
       hideEditPost: z.boolean().optional(),
       timezone: z.string().optional(),
@@ -36,7 +41,12 @@ const pages = defineCollection({
   loader: glob({ pattern: "**/[^_]*.{md,mdx}", base: "./src/content/pages" }),
   schema: z.object({
     title: z.string(),
-    description: z.string().optional(),
+    description: z.string().optional().transform(desc => {
+      if (!desc || desc.length <= 160) return desc;
+      const sub = desc.substring(0, 157);
+      const lastSpace = sub.lastIndexOf(" ");
+      return lastSpace > 0 ? sub.substring(0, lastSpace) + "..." : sub + "...";
+    }),
     ogImage: z.string().optional(),
     canonicalURL: z.string().optional(),
   }),
