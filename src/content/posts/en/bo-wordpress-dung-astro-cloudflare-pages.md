@@ -30,7 +30,7 @@ This isn't an A-to-Z technical tutorial. It's a practical perspective from a dev
 - [4. The stack I'm using and why I chose each piece](#4-the-stack-im-using-and-why-i-chose-each-piece)
 - [5. Honest comparison: WordPress vs Astro + Cloudflare](#5-honest-comparison-wordpress-vs-astro-cloudflare)
 - [6. What WordPress still does better](#6-what-wordpress-still-does-better)
-- [7. 5 mistakes people make when migrating](#7-5-mistakes-people-make-when-migrating)
+- [7. 6 mistakes people make when migrating](#7-6-mistakes-people-make-when-migrating)
 - [8. FAQ](#8-faq)
 - [9. Why does Cloudflare still offer so many free features?](#9-why-does-cloudflare-still-offer-so-many-free-features)
 - [10. Conclusion](#10-conclusion)
@@ -114,6 +114,12 @@ No more storing images in WordPress media library, no more worrying about disk s
 
 Speed is the obvious win, but it's not what I feel most after migrating. What I feel most is the absence of worry - no more dreading the update button, no more checking the site every morning, no more alerts at 2am because the site went down.
 
+##### 5.2. Astro's biggest advantage: Perfect PageSpeed
+
+![Astro's biggest advantage Perfect PageSpeed](https://cdn.khaizinam.io.vn/blog-folder/2026-05/Screenshot%202026-05-25%20090018.png)
+
+The cost to optimize technical SEO for Astro is virtually zero. Unlike WordPress - where you have to pay for premium optimization plugins and spend a lot of effort just to achieve a green score - Astro is inherently lightweight. Pages load incredibly fast, and PageSpeed scores almost always hit 95-100 on both Mobile and Desktop without any extra tweaking.
+
 #### 6. What WordPress still does better
 
 ##### 6.1. WordPress is still the right choice for many use cases
@@ -124,7 +130,7 @@ News sites, ecommerce, membership sites, team content with multiple authors, com
 
 When all you need is to write and publish posts, the entire WordPress ecosystem becomes overhead. That's not a WordPress problem - it's a problem of using the wrong tool for the job.
 
-#### 7. 5 mistakes people make when migrating
+#### 7. 6 mistakes people make when migrating
 
 ##### 7.1. Migrating all old content before the theme is stable
 
@@ -145,6 +151,10 @@ Static sites don't have auto-image-optimization plugins like WordPress. Images u
 ##### 7.5. Thinking "no database" means no backup needed
 
 Markdown files on GitHub are already your backup, but many people don't commit consistently. A habit of committing after every post is enough to never lose content - simpler than WordPress backups, but it requires doing it consciously.
+
+##### 7.6. Forgetting to configure the www custom domain
+
+Many people only configure their root domain (e.g., `domain.com`) and forget to add `www.domain.com` to the Custom Domains in Cloudflare Pages. This causes users trying to access the `www` version to hit an error or timeout, directly impacting user experience and significantly hurting SEO.
 
 #### 8. FAQ
 
