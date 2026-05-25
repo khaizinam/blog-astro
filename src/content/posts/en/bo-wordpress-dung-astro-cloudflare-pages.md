@@ -30,7 +30,7 @@ This isn't an A-to-Z technical tutorial. It's a practical perspective from a dev
 - [4. The stack I'm using and why I chose each piece](#4-the-stack-im-using-and-why-i-chose-each-piece)
 - [5. Honest comparison: WordPress vs Astro + Cloudflare](#5-honest-comparison-wordpress-vs-astro-cloudflare)
 - [6. What WordPress still does better](#6-what-wordpress-still-does-better)
-- [7. 6 mistakes people make when migrating](#7-6-mistakes-people-make-when-migrating)
+- [7. Mistakes people make when migrating](#7-mistakes-people-make-when-migrating)
 - [8. FAQ](#8-faq)
 - [9. Why does Cloudflare still offer so many free features?](#9-why-does-cloudflare-still-offer-so-many-free-features)
 - [10. Conclusion](#10-conclusion)
@@ -130,7 +130,7 @@ News sites, ecommerce, membership sites, team content with multiple authors, com
 
 When all you need is to write and publish posts, the entire WordPress ecosystem becomes overhead. That's not a WordPress problem - it's a problem of using the wrong tool for the job.
 
-#### 7. 6 mistakes people make when migrating
+#### 7. Mistakes people make when migrating
 
 ##### 7.1. Migrating all old content before the theme is stable
 
@@ -150,11 +150,15 @@ Static sites don't have auto-image-optimization plugins like WordPress. Images u
 
 ##### 7.5. Thinking "no database" means no backup needed
 
-Markdown files on GitHub are already your backup, but many people don't commit consistently. A habit of committing after every post is enough to never lose content - simpler than WordPress backups, but it requires doing it consciously.
+You should use GitHub to host your source code and blog posts. If you just upload files directly to Cloudflare, you could lose everything if Cloudflare experiences an issue or if you accidentally delete a file. GitHub acts as a highly secure backup. Make it a habit to commit regularly after writing or editing a post. Don't worry about manual deployments, as Cloudflare Pages will automatically trigger a build every time you push a new commit to GitHub.
 
 ##### 7.6. Forgetting to configure the www custom domain
 
 Many people only configure their root domain (e.g., `domain.com`) and forget to add `www.domain.com` to the Custom Domains in Cloudflare Pages. This causes users trying to access the `www` version to hit an error or timeout, directly impacting user experience and significantly hurting SEO.
+
+##### 7.7. Forgetting to configure Cache TTL for R2
+
+If you use R2 for image hosting, make sure to set the domain's Cache TTL to 1 year. Many people leave it at the default 4 hours, causing browsers to unnecessarily re-download images. This negatively impacts PageSpeed scores and prevents file caching from working effectively.
 
 #### 8. FAQ
 
