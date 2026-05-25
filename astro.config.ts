@@ -52,6 +52,53 @@ function rehypeCleanSlugs() {
   };
 }
 
+function rehypeFigure() {
+  return (tree: any) => {
+    function visitNode(node: any) {
+      if (node.children) {
+        for (let i = 0; i < node.children.length; i++) {
+          const child = node.children[i];
+          // Tìm thẻ <p> chỉ chứa duy nhất một thẻ <img> có thuộc tính alt
+          if (child.type === "element" && child.tagName === "p" && child.children) {
+            const nonWhitespace = child.children.filter(
+              (c: any) => !(c.type === "text" && /^\s*$/.test(c.value))
+            );
+            if (
+              nonWhitespace.length === 1 &&
+              nonWhitespace[0].type === "element" &&
+              nonWhitespace[0].tagName === "img" &&
+              nonWhitespace[0].properties &&
+              nonWhitespace[0].properties.alt
+            ) {
+              const imgNode = nonWhitespace[0];
+              const altText = imgNode.properties.alt;
+
+              // Thay thế thẻ <p> bằng thẻ <figure> chứa ảnh và chú thích figcaption
+              node.children[i] = {
+                type: "element",
+                tagName: "figure",
+                properties: {},
+                children: [
+                  imgNode,
+                  {
+                    type: "element",
+                    tagName: "figcaption",
+                    properties: {},
+                    children: [{ type: "text", value: altText }]
+                  }
+                ]
+              };
+              continue;
+            }
+          }
+          visitNode(child);
+        }
+      }
+    }
+    visitNode(tree);
+  };
+}
+
 export default defineConfig({
   site: config.site.url,
   redirects: {
@@ -61,7 +108,7 @@ export default defineConfig({
   },
   integrations: [
     mdx({
-      rehypePlugins: [rehypeCleanSlugs],
+      rehypePlugins: [rehypeCleanSlugs, rehypeFigure],
     }),
     sitemap({
       filter: page =>
@@ -77,7 +124,7 @@ export default defineConfig({
   },
   markdown: {
     remarkPlugins: [remarkToc],
-    rehypePlugins: [rehypeCleanSlugs],
+    rehypePlugins: [rehypeCleanSlugs, rehypeFigure],
     shikiConfig: {
       themes: { light: "min-light", dark: "night-owl" },
       defaultColor: false,
