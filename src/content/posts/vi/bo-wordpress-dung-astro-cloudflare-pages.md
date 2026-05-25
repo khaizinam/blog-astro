@@ -182,6 +182,18 @@ Có nguy cơ nếu không setup redirect đúng. Nếu redirect 301 đầy đủ
 
 Khác, không hẳn bất tiện. WordPress có visual editor quen thuộc. Astro dùng Markdown - nhanh hơn khi đã quen, và dễ kết hợp với AI để viết và format nội dung. Nếu cần giao diện viết bài trực quan hơn, có thể kết hợp với Decap CMS hoặc Keystatic.
 
+##### Không có database thì làm sao làm tính năng Bình luận (Comments) và Tìm kiếm (Search)?
+
+Static site vẫn có thể tích hợp hoàn hảo các tính năng động qua bên thứ 3. Với bình luận, bạn có thể dùng Giscus (dựa trên GitHub Discussion) - như chính blog này đang dùng, hoặc Cusdis, Disqus. Còn với tìm kiếm, thư viện Pagefind cực kỳ phù hợp và nhẹ cho Astro.
+
+##### Xem thống kê lượt truy cập bằng cách nào khi không dùng plugin như WordPress?
+
+Bạn hoàn toàn có thể nhúng mã Google Analytics (như blog này đang dùng) vào template Astro. Ngoài ra, Cloudflare Web Analytics là một lựa chọn miễn phí tuyệt vời được bật sẵn trong dashboard, không dùng cookie, bảo mật và không làm chậm tốc độ tải trang vì không cần chèn mã tracking.
+
+##### Nếu đang đi ngoài đường, muốn đăng bài bằng điện thoại thì làm thế nào?
+
+Đây là điểm yếu của Jamstack so với app WordPress trên điện thoại. Với Astro, workflow chuẩn nhất là ngồi máy tính viết Markdown. Nếu bạn muốn viết trên mobile, bạn sẽ cần setup thêm headless CMS như Keystatic hoặc dùng app Git (như Working Copy trên iOS) để push file Markdown.
+
 ##### Cloudflare Pages miễn phí được trong bao lâu?
 
 Vĩnh viễn cho đến khi Cloudflare tuyên bố phá sản.

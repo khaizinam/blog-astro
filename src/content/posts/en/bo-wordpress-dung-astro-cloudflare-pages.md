@@ -182,6 +182,18 @@ There's risk if you don't set up redirects correctly. With proper 301 redirects 
 
 Different, not necessarily worse. WordPress has a familiar visual editor. Astro uses Markdown - faster once you're used to it, and easy to combine with AI for writing and formatting. If you want a more visual writing interface, you can pair Astro with Decap CMS or Keystatic.
 
+##### How do you handle Comments and Search without a database?
+
+Static sites can perfectly integrate dynamic features via third parties. For comments, you can use Giscus (based on GitHub Discussions) - like this blog uses, or alternatives like Cusdis and Disqus. For search, Pagefind is an incredibly lightweight library that fits perfectly with Astro.
+
+##### How do you track visitors without WordPress plugins?
+
+You can easily embed Google Analytics tracking codes into your Astro template (like this blog does). Additionally, Cloudflare Web Analytics is a fantastic built-in free option in your dashboard that is cookie-less, privacy-first, and doesn't slow down your site since it doesn't require third-party tracking scripts.
+
+##### How can I write and publish posts from my phone while on the go?
+
+This is a weakness of Jamstack compared to the WordPress mobile app. With Astro, the standard workflow requires sitting at a computer and writing Markdown. If you really want to write on mobile, you need to set up a headless CMS like Keystatic or use a Git client app (like Working Copy on iOS) to push Markdown files to GitHub.
+
 ##### How long is Cloudflare Pages free?
 
 Forever, or until Cloudflare goes bankrupt.
