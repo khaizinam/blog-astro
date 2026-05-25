@@ -115,7 +115,7 @@ Example: "Based on data from Wellfound for remote junior Node.js roles, I'm look
 #### 6. FAQ
 
 ##### Do full-stack juniors earn more than specialists globally?
-At startups, yes—they need people who can build end-to-end. At FAANG/Big Tech, specialists (e.g., deep backend distributed systems, deep frontend architecture) often earn more. 
+At startups, yes-they need people who can build end-to-end. At FAANG/Big Tech, specialists (e.g., deep backend distributed systems, deep frontend architecture) often earn more. 
 
 ##### How does equity (RSUs/Options) factor in?
 For FAANG, RSUs are liquid and represent real cash. For early startups, options are "paper money" until an IPO or acquisition. As a junior, focus primarily on Base Salary for stability.

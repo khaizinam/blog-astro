@@ -1,5 +1,5 @@
 ---
-title: "I Failed My IT Job Interview — Here's What I Changed to Get Hired"
+title: "I Failed My IT Job Interview - Here's What I Changed to Get Hired"
 author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-05-03T12:11:54.000Z
 slug: bi-tu-choi-phong-van-it
@@ -9,16 +9,16 @@ featured: false
 draft: false
 tags:
   - "NgoaiLe"
-description: "Getting rejected from an IT job interview is something almost every fresher and junior developer goes through at least once — usually more. That first rejection can make you question your abilities, but in the vast majority of cases, interview failures have specific, identifiable, fixable causes that can be addressed in a matter of weeks if you know where to look."
+description: "Getting rejected from an IT job interview is something almost every fresher and junior developer goes through at least once - usually more. That first rejection can make you question your abilities, but in the vast majority of cases, interview failures have specific, identifiable, fixable causes that can be addressed in a matter of weeks if you know where to look."
 ---
 
-Getting rejected from an IT job interview is something almost every fresher and junior developer goes through at least once — usually more. That first rejection can make you question your abilities, but in the vast majority of cases, interview failures have specific, identifiable, fixable causes that can be addressed in a matter of weeks if you know where to look.
+Getting rejected from an IT job interview is something almost every fresher and junior developer goes through at least once - usually more. That first rejection can make you question your abilities, but in the vast majority of cases, interview failures have specific, identifiable, fixable causes that can be addressed in a matter of weeks if you know where to look.
 
-![I Failed My IT Job Interview — Here's What I Changed to Get Hired](https://cdn.khaizinam.io.vn/blog-folder/2026-04/images.jpg)
+![I Failed My IT Job Interview - Here's What I Changed to Get Hired](https://cdn.khaizinam.io.vn/blog-folder/2026-04/images.jpg)
 
-I Failed My IT Job Interview — Here's What I Changed to Get Hired
+I Failed My IT Job Interview - Here's What I Changed to Get Hired
 
-This isn't a motivational article about "keep trying and you'll succeed." This is a practical breakdown: why developers get rejected, how to read rejection feedback to find the real problem, and a concrete improvement plan for your next interview — based on real experiences from the Vietnamese developer community.
+This isn't a motivational article about "keep trying and you'll succeed." This is a practical breakdown: why developers get rejected, how to read rejection feedback to find the real problem, and a concrete improvement plan for your next interview - based on real experiences from the Vietnamese developer community.
 
 **Table of Contents**
 
@@ -26,7 +26,7 @@ This isn't a motivational article about "keep trying and you'll succeed." This i
 *   [2\. The 6 most common reasons freshers and juniors get rejected](#2-the-6-most-common-reasons-freshers-and-juniors-get-rejected)
 *   [3\. How to read rejection feedback to find the real problem](#3-how-to-read-rejection-feedback-to-find-the-real-problem)
 *   [4\. An improvement plan for each root cause](#4-an-improvement-plan-for-each-root-cause)
-*   [5\. Case study — from 0/5 offers to hired in 6 weeks](#5-case-study-from-05-offers-to-hired-in-6-weeks)
+*   [5\. Case study - from 0/5 offers to hired in 6 weeks](#5-case-study-from-05-offers-to-hired-in-6-weeks)
 *   [6\. 5 mistakes people make after getting rejected](#6-5-mistakes-people-make-after-getting-rejected)
 *   [7\. FAQ](#7-faq)
 *   [8\. Summary](#8-summary)
@@ -35,7 +35,7 @@ This isn't a motivational article about "keep trying and you'll succeed." This i
 
 #### 1\. Why rejection doesn't mean you're not good enough
 
-An interview is not an objective measure of your ability. It's a matching process — the company is looking for a specific person for a specific role at a specific moment, with a specific budget, inside a team with a specific culture. An excellent developer can be rejected because the company just decided to change their tech stack, because they're looking for someone more senior, or simply because an internal candidate was prioritized.
+An interview is not an objective measure of your ability. It's a matching process - the company is looking for a specific person for a specific role at a specific moment, with a specific budget, inside a team with a specific culture. An excellent developer can be rejected because the company just decided to change their tech stack, because they're looking for someone more senior, or simply because an internal candidate was prioritized.
 
 ##### 1.1. Two completely different types of rejection
 
@@ -43,17 +43,17 @@ Rejection due to **insufficient skills** and rejection due to **a poor match** a
 
 ##### 1.2. Rejection rates are normal in this industry
 
-Even experienced developers at major companies face 70-80% rejection rates when switching jobs — and that number is higher for freshers. The goal isn't to avoid rejection. It's to reduce the number of attempts needed before landing the first offer. That's entirely achievable by correctly diagnosing what went wrong.
+Even experienced developers at major companies face 70-80% rejection rates when switching jobs - and that number is higher for freshers. The goal isn't to avoid rejection. It's to reduce the number of attempts needed before landing the first offer. That's entirely achievable by correctly diagnosing what went wrong.
 
 #### 2\. The 6 most common reasons freshers and juniors get rejected
 
 ##### 2.1. Gaps in foundational knowledge
 
-Not "not knowing everything" — but gaps in things the interviewer assumes you must already know. For example: not being able to explain the difference between GET and POST at the HTTP level when applying for a backend role, or not understanding how React re-rendering works when applying for a frontend React position. These questions appear in 90% of interviews and failing them is a significant red flag.
+Not "not knowing everything" - but gaps in things the interviewer assumes you must already know. For example: not being able to explain the difference between GET and POST at the HTTP level when applying for a backend role, or not understanding how React re-rendering works when applying for a frontend React position. These questions appear in 90% of interviews and failing them is a significant red flag.
 
 ##### 2.2. No real projects to prove your skills
 
-A CV that lists skills but has no projects that can be demoed or linked to GitHub gives the interviewer nothing to verify. One small but complete project — with a clear README, something that actually runs, and an explanation of the architecture — is worth more than fifteen technology names on a CV with nothing to back them up.
+A CV that lists skills but has no projects that can be demoed or linked to GitHub gives the interviewer nothing to verify. One small but complete project - with a clear README, something that actually runs, and an explanation of the architecture - is worth more than fifteen technology names on a CV with nothing to back them up.
 
 ##### 2.3. Weak behavioral interview answers
 
@@ -61,7 +61,7 @@ Developers typically prepare their technical answers thoroughly but get caught o
 
 ##### 2.4. Salary expectations misaligned with the market
 
-Some freshers set expectations too high relative to their actual experience (based on figures they heard online without verifying), or they undervalue themselves — which leads companies to question their quality. Not knowing the specific market rate for a role, stack, and company type is a silent cause of many late-stage rejections.
+Some freshers set expectations too high relative to their actual experience (based on figures they heard online without verifying), or they undervalue themselves - which leads companies to question their quality. Not knowing the specific market rate for a role, stack, and company type is a silent cause of many late-stage rejections.
 
 ##### 2.5. Communication and body language undermining correct answers
 
@@ -73,7 +73,7 @@ Applying to product companies that require product thinking when your only exper
 
 #### 3\. How to read rejection feedback to find the real problem
 
-Most companies — in Vietnam especially — don't send detailed feedback after a rejection. You get a template email or silence. But there's still useful information you can extract.
+Most companies - in Vietnam especially - don't send detailed feedback after a rejection. You get a template email or silence. But there's still useful information you can extract.
 
 ##### 3.1. Which round you were rejected at is the most important signal
 
@@ -84,13 +84,13 @@ Most companies — in Vietnam especially — don't send detailed feedback after 
 
 ##### 3.2. Proactively asking for feedback after rejection
 
-Sending a polite, brief email requesting feedback is completely professional, and many recruiters will respond if you ask the right way. A short template: "Thank you for your time during the interview process. If possible, I'd appreciate any feedback on areas I could improve for future opportunities." Specific, not desperate, and showing a learning mindset — those three qualities significantly increase your chances of receiving a genuine response.
+Sending a polite, brief email requesting feedback is completely professional, and many recruiters will respond if you ask the right way. A short template: "Thank you for your time during the interview process. If possible, I'd appreciate any feedback on areas I could improve for future opportunities." Specific, not desperate, and showing a learning mindset - those three qualities significantly increase your chances of receiving a genuine response.
 
 #### 4\. An improvement plan for each root cause
 
 ##### 4.1. If you were rejected for technical knowledge gaps
 
-Don't study broadly — study by clusters of real interview questions. Use a stack-specific interview question list (see [Junior IT Interview Tips A-Z](/en/tips-phong-van-junior-it-tong-hop-a-z-de-ban-vuot-qua-moi-vong) for reference), answer each question from memory without looking anything up, record which ones you weren't confident on, and review exactly those sections. Forty-five minutes a day for three weeks is enough to fill the foundational gaps for a specific stack.
+Don't study broadly - study by clusters of real interview questions. Use a stack-specific interview question list (see [Junior IT Interview Tips A-Z](/en/tips-phong-van-junior-it-tong-hop-a-z-de-ban-vuot-qua-moi-vong) for reference), answer each question from memory without looking anything up, record which ones you weren't confident on, and review exactly those sections. Forty-five minutes a day for three weeks is enough to fill the foundational gaps for a specific stack.
 
 ##### 4.2. If you were rejected for lacking real projects
 
@@ -102,11 +102,11 @@ Practice mock interviews with friends or record yourself on video. Watch the rec
 
 ##### 4.4. If you were rejected because of salary misalignment
 
-Research specific market rates: consult the ITviec Salary Report, TopDev's Vietnam IT Market Report, and ask directly in developer communities. Distinguish rates by company type: outsourcing, product, startup, foreign company — the ranges vary significantly for the same role and stack. Having concrete benchmark numbers lets you give a confident, calibrated answer instead of a number you made up or heard from someone else.
+Research specific market rates: consult the ITviec Salary Report, TopDev's Vietnam IT Market Report, and ask directly in developer communities. Distinguish rates by company type: outsourcing, product, startup, foreign company - the ranges vary significantly for the same role and stack. Having concrete benchmark numbers lets you give a confident, calibrated answer instead of a number you made up or heard from someone else.
 
-#### 5\. Case study — from 0/5 offers to hired in 6 weeks
+#### 5\. Case study - from 0/5 offers to hired in 6 weeks
 
-Hung, a backend PHP fresher who graduated in March 2024, applied to five companies in his first month and was rejected by all five — all at the technical round. Instead of immediately applying again, he stopped and analyzed: he wrote down every question he had been asked across those five sessions and identified a clear pattern. All five had asked about databases (indexes, query optimization, transactions) and OOP principles (SOLID, dependency injection). He didn't learn a new framework — he spent three focused weeks reviewing exactly those two topics and built a Laravel REST API project with authentication that he could explain end to end. In week four, he applied again and passed the technical round at three out of three companies. He accepted an offer from an outsourcing company in Da Nang at 8 million VND per month — the correct market rate for a PHP fresher with a real project to show. What he changed wasn't how much he studied. It was what he studied.
+Hung, a backend PHP fresher who graduated in March 2024, applied to five companies in his first month and was rejected by all five - all at the technical round. Instead of immediately applying again, he stopped and analyzed: he wrote down every question he had been asked across those five sessions and identified a clear pattern. All five had asked about databases (indexes, query optimization, transactions) and OOP principles (SOLID, dependency injection). He didn't learn a new framework - he spent three focused weeks reviewing exactly those two topics and built a Laravel REST API project with authentication that he could explain end to end. In week four, he applied again and passed the technical round at three out of three companies. He accepted an offer from an outsourcing company in Da Nang at 8 million VND per month - the correct market rate for a PHP fresher with a real project to show. What he changed wasn't how much he studied. It was what he studied.
 
 #### 6\. 5 mistakes people make after getting rejected
 
@@ -124,34 +124,34 @@ Watching a classmate land an offer while you're on your third rejection is a hea
 
 ##### 6.4. Dismissing feedback because it feels unfair
 
-Sometimes feedback from a company sounds unreasonable or inconsistent. But even when feedback isn't entirely accurate, it's still data about how you were perceived — and that perception is what needs to change. You're not always right and the interviewer isn't always wrong.
+Sometimes feedback from a company sounds unreasonable or inconsistent. But even when feedback isn't entirely accurate, it's still data about how you were perceived - and that perception is what needs to change. You're not always right and the interviewer isn't always wrong.
 
 ##### 6.5. Stopping applications out of fear of more rejection
 
-Avoidance after repeated failure is natural but dangerous. Every interview session — including the ones that end in rejection — is data that makes you better. A developer who goes three months without interviewing loses both familiarity and confidence, and the next session becomes harder, not easier.
+Avoidance after repeated failure is natural but dangerous. Every interview session - including the ones that end in rejection - is data that makes you better. A developer who goes three months without interviewing loses both familiarity and confidence, and the next session becomes harder, not easier.
 
 #### 7\. FAQ
 
-##### Rejected 3-4 times in a row — should I keep pursuing a career in IT?
+##### Rejected 3-4 times in a row - should I keep pursuing a career in IT?
 
-Three or four rejections are not a signal that you don't belong in the industry. Most developers need five to fifteen interview sessions before their first offer, depending on the market and how prepared they are. The question isn't "should I keep going" — it's "which round am I being eliminated at and why?" Fix that specific thing and the numbers shift.
+Three or four rejections are not a signal that you don't belong in the industry. Most developers need five to fifteen interview sessions before their first offer, depending on the market and how prepared they are. The question isn't "should I keep going" - it's "which round am I being eliminated at and why?" Fix that specific thing and the numbers shift.
 
-##### Should I ask for feedback after rejection — will it make me look bad?
+##### Should I ask for feedback after rejection - will it make me look bad?
 
-No. Asking for feedback politely and briefly is a professional act that signals you're focused on learning. Many recruiters appreciate it, and some will remember you positively for future openings. The only way to look bad is to send an email complaining about their decision — don't do that.
+No. Asking for feedback politely and briefly is a professional act that signals you're focused on learning. Many recruiters appreciate it, and some will remember you positively for future openings. The only way to look bad is to send an email complaining about their decision - don't do that.
 
 ##### How long should I wait before reapplying to the same company?
 
-Three to six months is generally appropriate before applying to the same role at the same company — long enough to have improved meaningfully and long enough that they won't clearly remember the previous session's details. If they have a different role that's a better fit for where you are now, you can apply sooner with a brief note in your cover letter acknowledging it.
+Three to six months is generally appropriate before applying to the same role at the same company - long enough to have improved meaningfully and long enough that they won't clearly remember the previous session's details. If they have a different role that's a better fit for where you are now, you can apply sooner with a brief note in your cover letter acknowledging it.
 
-##### Nobody is calling me back from my CV — where's the problem?
+##### Nobody is calling me back from my CV - where's the problem?
 
 If you've applied to fifteen to twenty places with zero callbacks, the issue is almost certainly in your CV: missing technical keywords that ATS systems scan for, a format too complex for automated systems to parse, or insufficient project or experience that matches the JD. Try switching to a simple single-column format with no tables or graphics, add specific technical keywords directly from the job descriptions you're applying to, and make sure at least one project has a live link or demo.
 
-##### No internship experience as a fresher — is that a fatal disadvantage?
+##### No internship experience as a fresher - is that a fatal disadvantage?
 
-A disadvantage, but not an insurmountable one. Two things can compensate for missing internship experience: personal projects of genuine quality (not tutorial copy-paste work), and solid foundational knowledge in the core areas. Companies hiring freshers don't expect you to know everything — they expect you to have a learning mindset and no dangerous gaps in the fundamentals.
+A disadvantage, but not an insurmountable one. Two things can compensate for missing internship experience: personal projects of genuine quality (not tutorial copy-paste work), and solid foundational knowledge in the core areas. Companies hiring freshers don't expect you to know everything - they expect you to have a learning mindset and no dangerous gaps in the fundamentals.
 
 #### 8\. Summary
 
-Getting rejected from an IT interview is normal, analyzable, and fixable. The six most common causes — knowledge gaps, missing real projects, poor presentation, misaligned salary expectations, weak communication, and applying to the wrong places — all have specific, actionable improvement plans. The key is diagnosing which round you were eliminated at before deciding what to fix. Adding more technologies to your CV isn't the answer if the problem is foundational knowledge. Applying to more companies isn't the answer if your CV isn't passing ATS screening. Right diagnosis, right action — that's the shortest path from rejection to offer. For a complete guide to interview preparation, see [Junior IT Interview Tips A-Z](/en/tips-phong-van-junior-it-tong-hop-a-z-de-ban-vuot-qua-moi-vong).
+Getting rejected from an IT interview is normal, analyzable, and fixable. The six most common causes - knowledge gaps, missing real projects, poor presentation, misaligned salary expectations, weak communication, and applying to the wrong places - all have specific, actionable improvement plans. The key is diagnosing which round you were eliminated at before deciding what to fix. Adding more technologies to your CV isn't the answer if the problem is foundational knowledge. Applying to more companies isn't the answer if your CV isn't passing ATS screening. Right diagnosis, right action - that's the shortest path from rejection to offer. For a complete guide to interview preparation, see [Junior IT Interview Tips A-Z](/en/tips-phong-van-junior-it-tong-hop-a-z-de-ban-vuot-qua-moi-vong).

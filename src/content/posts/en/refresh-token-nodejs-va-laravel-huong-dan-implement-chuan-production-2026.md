@@ -9,14 +9,14 @@ featured: false
 draft: false
 tags:
   - "SeriesPhongVan"
-description: "A complete guide to implementing Refresh Tokens in both Node.js (Express) and Laravel PHP — covering database design, API endpoints, rotation logic, and common pitfalls — helping developers build a production-ready JWT authentication system in 2026."
+description: "A complete guide to implementing Refresh Tokens in both Node.js (Express) and Laravel PHP - covering database design, API endpoints, rotation logic, and common pitfalls - helping developers build a production-ready JWT authentication system in 2026."
 ---
 
 ### Refresh Token Node.js and Laravel: Complete Production-Ready Implementation Guide for Developers 2026
 
-A complete guide to implementing Refresh Tokens in both Node.js (Express) and Laravel PHP — covering database design, API endpoints, rotation logic, and common pitfalls — helping developers build a production-ready JWT authentication system in 2026.
+A complete guide to implementing Refresh Tokens in both Node.js (Express) and Laravel PHP - covering database design, API endpoints, rotation logic, and common pitfalls - helping developers build a production-ready JWT authentication system in 2026.
 
-You've got JWT working, the access token runs fine, but every time it expires users get logged out and have to sign in again from scratch? Or you've set a 24-hour TTL to avoid that problem but you know it's a security mistake? The refresh token is the missing piece — but implementing it correctly is more involved than most tutorials suggest. This article goes straight to real working code for both Node.js and Laravel, including rotation logic, database schema, and edge cases that typical tutorials skip entirely.
+You've got JWT working, the access token runs fine, but every time it expires users get logged out and have to sign in again from scratch? Or you've set a 24-hour TTL to avoid that problem but you know it's a security mistake? The refresh token is the missing piece - but implementing it correctly is more involved than most tutorials suggest. This article goes straight to real working code for both Node.js and Laravel, including rotation logic, database schema, and edge cases that typical tutorials skip entirely.
 
 Table of Contents:
 
@@ -30,7 +30,7 @@ Table of Contents:
 
 [5\. Refresh Token Implementation in Laravel PHP](#5-refresh-token-implementation-in-laravel-php)
 
-[6\. Refresh Token Rotation — Detecting Token Theft](#6-refresh-token-rotation-detecting-token-theft)
+[6\. Refresh Token Rotation - Detecting Token Theft](#6-refresh-token-rotation-detecting-token-theft)
 
 [7\. 6 Common Mistakes When Implementing Refresh Tokens](#7-6-common-mistakes-when-implementing-refresh-tokens)
 
@@ -42,7 +42,7 @@ Table of Contents:
 
 ##### 1.1 The Core Tension in JWT That Refresh Tokens Solve
 
-JWT access tokens have a fundamental tension: the shorter the TTL, the more secure (smaller attack window), but the more disruptive for users (forced to log in more frequently). A 15-minute TTL is the security best practice — but users would be logged out after 15 minutes of inactivity, which is unacceptable UX.
+JWT access tokens have a fundamental tension: the shorter the TTL, the more secure (smaller attack window), but the more disruptive for users (forced to log in more frequently). A 15-minute TTL is the security best practice - but users would be logged out after 15 minutes of inactivity, which is unacceptable UX.
 
 Refresh tokens solve this tension by splitting into two token types with two distinct purposes:
 
@@ -56,23 +56,23 @@ Refresh tokens solve this tension by splitting into two token types with two dis
 3.  Access token expires → API returns 401.
 4.  Client automatically calls **/auth/refresh** with the refresh token.
 5.  Server verifies refresh token, issues new access token + new refresh token (rotation).
-6.  Client uses new access token, continues working — user notices nothing.
+6.  Client uses new access token, continues working - user notices nothing.
 
 #### 2\. Before/After: What Changes When You Implement It Correctly
 
 ##### 2.1 Before Refresh Tokens
 
-A project management app with ~500 internal users used JWT access tokens with an 8-hour TTL (a compromise between security and UX). When a compromised account was discovered, there was no way to revoke the token immediately — it remained valid for up to 8 more hours. Meanwhile, users working late were randomly logged out at 3am in the middle of their work.
+A project management app with ~500 internal users used JWT access tokens with an 8-hour TTL (a compromise between security and UX). When a compromised account was discovered, there was no way to revoke the token immediately - it remained valid for up to 8 more hours. Meanwhile, users working late were randomly logged out at 3am in the middle of their work.
 
 ##### 2.2 After Implementing Refresh Tokens Correctly
 
-After switching to 15-minute access tokens + 30-day refresh tokens with rotation and DB storage: compromised accounts can be revoked within 15 minutes (access token TTL), and deleting the refresh token from DB blocks any new token issuance. Users are never abruptly logged out during active work. Bonus: reuse attack detection (refresh token used twice) automatically revokes all sessions for that user — proactive breach detection.
+After switching to 15-minute access tokens + 30-day refresh tokens with rotation and DB storage: compromised accounts can be revoked within 15 minutes (access token TTL), and deleting the refresh token from DB blocks any new token issuance. Users are never abruptly logged out during active work. Bonus: reuse attack detection (refresh token used twice) automatically revokes all sessions for that user - proactive breach detection.
 
 #### 3\. Database Schema Design for Refresh Tokens
 
 ##### 3.1 Required Fields
 
-Refresh tokens must never be stored as raw values in the DB — they must be hashed first (similar to passwords). Reason: if the DB is dumped, attackers can't use the hash to authenticate.
+Refresh tokens must never be stored as raw values in the DB - they must be hashed first (similar to passwords). Reason: if the DB is dumped, attackers can't use the hash to authenticate.
 
 ```sql
 -- MySQL / PostgreSQL schema
@@ -96,7 +96,7 @@ CREATE TABLE refresh_tokens (
 
 ##### 3.2 Why Index expires\_at?
 
-A nightly cleanup job needs to delete expired tokens — without an index, it would do a full table scan on a table that can grow to millions of rows. With the index, cleanup runs in milliseconds rather than seconds.
+A nightly cleanup job needs to delete expired tokens - without an index, it would do a full table scan on a table that can grow to millions of rows. With the index, cleanup runs in milliseconds rather than seconds.
 
 #### 4\. Refresh Token Implementation in Node.js (Express)
 
@@ -133,7 +133,7 @@ function generateAccessToken(userId, role) {
 }
 ```
 
-##### 4.2 Login Endpoint — Issue Both Tokens
+##### 4.2 Login Endpoint - Issue Both Tokens
 
 ```javascript
 // POST /auth/login
@@ -179,7 +179,7 @@ app.post('/auth/login', async (req, res) => {
 });
 ```
 
-##### 4.3 Refresh Endpoint — Issue New Access Token with Rotation
+##### 4.3 Refresh Endpoint - Issue New Access Token with Rotation
 
 ```javascript
 // POST /auth/refresh
@@ -315,7 +315,7 @@ class RefreshToken extends Model
 }
 ```
 
-##### 5.2 AuthService — Centralized Logic
+##### 5.2 AuthService - Centralized Logic
 
 ```php
 // app/Services/AuthService.php
@@ -459,16 +459,16 @@ class AuthController extends Controller
 }
 ```
 
-#### 6\. Refresh Token Rotation — Detecting Token Theft
+#### 6\. Refresh Token Rotation - Detecting Token Theft
 
 ##### 6.1 Why Rotation Matters More Than Most Developers Realize
 
-Rotation isn't just a best practice — it's an active breach detection mechanism. Scenario: an attacker steals user A's refresh token. Both the attacker and user A now hold the same refresh token. Whoever uses it first gets a new token; the old one is revoked. The second person to try using it sees "Invalid refresh token" — this is the signal that a breach has occurred.
+Rotation isn't just a best practice - it's an active breach detection mechanism. Scenario: an attacker steals user A's refresh token. Both the attacker and user A now hold the same refresh token. Whoever uses it first gets a new token; the old one is revoked. The second person to try using it sees "Invalid refresh token" - this is the signal that a breach has occurred.
 
-##### 6.2 Implementing Reuse Detection — Revoke All Sessions on Reuse
+##### 6.2 Implementing Reuse Detection - Revoke All Sessions on Reuse
 
 ```javascript
-// Node.js — Upgrade refresh endpoint with full reuse detection
+// Node.js - Upgrade refresh endpoint with full reuse detection
 app.post('/auth/refresh', async (req, res) => {
   const rawRefreshToken = req.cookies?.refreshToken;
   if (!rawRefreshToken) {
@@ -492,7 +492,7 @@ app.post('/auth/refresh', async (req, res) => {
 
   // Reuse detected: token exists but already revoked
   if (storedToken.revoked) {
-    // Possible attack in progress — revoke all sessions for this user
+    // Possible attack in progress - revoke all sessions for this user
     await db.query(
       `UPDATE refresh_tokens SET revoked = 1, revoked_at = NOW()
        WHERE user_id = ? AND revoked = 0`,
@@ -507,7 +507,7 @@ app.post('/auth/refresh', async (req, res) => {
     return res.status(401).json({ error: 'Refresh token expired' });
   }
 
-  // Valid token — proceed with rotation
+  // Valid token - proceed with rotation
   // ... (rotation code from section 4.3)
 });
 ```
@@ -515,11 +515,11 @@ app.post('/auth/refresh', async (req, res) => {
 #### 7\. 6 Common Mistakes When Implementing Refresh Tokens
 
 1.  **Storing the raw refresh token in the DB** → Fix: always store a SHA-256 hash. If the DB is dumped, attackers get the hash but can't authenticate because the server compares hash(rawToken) against the stored value.
-2.  **Not implementing rotation — reusing the same refresh token forever** → Fix: every refresh must issue a new token and revoke the old one. Without rotation, there is no way to detect token theft.
+2.  **Not implementing rotation - reusing the same refresh token forever** → Fix: every refresh must issue a new token and revoke the old one. Without rotation, there is no way to detect token theft.
 3.  **Storing refresh tokens in localStorage instead of httpOnly cookies** → Fix: refresh tokens are even more sensitive than access tokens because of their longer TTL. They must be in httpOnly cookies. Full details in [JWT Security Best Practices](/en/jwt-security-best-practices-how-to-secure-json-web-tokens-in-production-2026).
-4.  **Not cleaning up old tokens — letting the refresh\_tokens table grow unbounded** → Fix: run a nightly cron job to delete revoked or expired tokens older than 7 days. A bloated table hurts query performance.
-5.  **Returning the refresh token in the response body instead of a cookie** → Fix: refresh token in httpOnly cookie, access token in body. Many tutorials return both in the body — this is a serious security mistake.
-6.  **No logout-all endpoint — no way to revoke access when an account is compromised** → Fix: always provide a **/auth/logout-all** endpoint that revokes all refresh tokens by user\_id. This is a mandatory feature for any production system.
+4.  **Not cleaning up old tokens - letting the refresh\_tokens table grow unbounded** → Fix: run a nightly cron job to delete revoked or expired tokens older than 7 days. A bloated table hurts query performance.
+5.  **Returning the refresh token in the response body instead of a cookie** → Fix: refresh token in httpOnly cookie, access token in body. Many tutorials return both in the body - this is a serious security mistake.
+6.  **No logout-all endpoint - no way to revoke access when an account is compromised** → Fix: always provide a **/auth/logout-all** endpoint that revokes all refresh tokens by user\_id. This is a mandatory feature for any production system.
 
 For the full JWT security picture, read [JWT Security Best Practices 2026](/en/jwt-security-best-practices-how-to-secure-json-web-tokens-in-production-2026). If you're still deciding between Session and JWT for your project, [Session vs JWT: Which Should Developers Choose?](/en/session-vs-jwt-which-should-developers-choose-a-practical-comparison-for-2026) will help you make a definitive decision.
 
@@ -527,24 +527,24 @@ For the full JWT security picture, read [JWT Security Best Practices 2026](/en/j
 
 ##### 8.1 How long should the refresh token TTL be?
 
-It depends on the use case. Consumer apps (social, e-commerce): 30-90 days — users don't want to log in frequently. Sensitive apps (banking, fintech, admin tools): 1-7 days — balance between UX and security. Some systems implement "sliding expiry" — each time the refresh token is used, the TTL is extended, and it only truly expires after X consecutive days of inactivity.
+It depends on the use case. Consumer apps (social, e-commerce): 30-90 days - users don't want to log in frequently. Sensitive apps (banking, fintech, admin tools): 1-7 days - balance between UX and security. Some systems implement "sliding expiry" - each time the refresh token is used, the TTL is extended, and it only truly expires after X consecutive days of inactivity.
 
 ##### 8.2 Does the refresh token need to be in JWT format?
 
-No, and it actually shouldn't be. A refresh token only needs to be an unpredictable random string — **crypto.randomBytes(40).toString('hex')** is sufficient. Using JWT for refresh tokens adds unnecessary complexity, and the payload can be decoded even if it can't be forged. Opaque token (random string) + DB lookup is the standard pattern.
+No, and it actually shouldn't be. A refresh token only needs to be an unpredictable random string - **crypto.randomBytes(40).toString('hex')** is sufficient. Using JWT for refresh tokens adds unnecessary complexity, and the payload can be decoded even if it can't be forged. Opaque token (random string) + DB lookup is the standard pattern.
 
 ##### 8.3 How should the client handle 401s from an expired access token?
 
-Implement an axios interceptor or fetch wrapper: when a 401 is received, automatically call **/auth/refresh**, get a new access token, then retry the original request. The user notices nothing. Important: handle the race condition — if multiple requests simultaneously receive a 401, only one should call refresh; the rest queue and wait. Avoid triggering N parallel refresh calls.
+Implement an axios interceptor or fetch wrapper: when a 401 is received, automatically call **/auth/refresh**, get a new access token, then retry the original request. The user notices nothing. Important: handle the race condition - if multiple requests simultaneously receive a 401, only one should call refresh; the rest queue and wait. Avoid triggering N parallel refresh calls.
 
 ##### 8.4 Does the access token need to be stored in the DB?
 
-No, and it shouldn't be — that's the whole point of JWT being stateless. Access tokens have a short TTL (15 minutes) and can be verified by signature alone. If you need to revoke an access token immediately before it expires (e.g., breach detected), use a jti blacklist in Redis with TTL equal to the token's remaining lifetime. Full details in [JWT Security Best Practices](/en/jwt-security-best-practices-how-to-secure-json-web-tokens-in-production-2026).
+No, and it shouldn't be - that's the whole point of JWT being stateless. Access tokens have a short TTL (15 minutes) and can be verified by signature alone. If you need to revoke an access token immediately before it expires (e.g., breach detected), use a jti blacklist in Redis with TTL equal to the token's remaining lifetime. Full details in [JWT Security Best Practices](/en/jwt-security-best-practices-how-to-secure-json-web-tokens-in-production-2026).
 
 ##### 8.5 Do refresh tokens work with React Native?
 
-Yes, but storage is different from a browser. React Native doesn't have httpOnly cookies — store the refresh token in **react-native-keychain** (iOS Keychain / Android Keystore). This is the mobile-equivalent of httpOnly cookie security. Never use AsyncStorage or MMKV for refresh tokens — neither is encrypted and both are readable if the device is rooted.
+Yes, but storage is different from a browser. React Native doesn't have httpOnly cookies - store the refresh token in **react-native-keychain** (iOS Keychain / Android Keystore). This is the mobile-equivalent of httpOnly cookie security. Never use AsyncStorage or MMKV for refresh tokens - neither is encrypted and both are readable if the device is rooted.
 
 #### Summary & Next Steps
 
-Implementing refresh tokens correctly isn't complicated, but it requires discipline: hash before storing in DB, rotate on every use, httpOnly cookie for storage, reuse detection to catch breaches, and a cleanup job to keep the table lean. The code in this article is designed to be copied into a production project with minimal adjustments — both Node.js and Laravel have complete flows covering login through logout-all. Next step: implement silent refresh on the client side so access tokens are automatically renewed without the user noticing — that's the final piece of a truly production-ready JWT auth system.
+Implementing refresh tokens correctly isn't complicated, but it requires discipline: hash before storing in DB, rotate on every use, httpOnly cookie for storage, reuse detection to catch breaches, and a cleanup job to keep the table lean. The code in this article is designed to be copied into a production project with minimal adjustments - both Node.js and Laravel have complete flows covering login through logout-all. Next step: implement silent refresh on the client side so access tokens are automatically renewed without the user noticing - that's the final piece of a truly production-ready JWT auth system.

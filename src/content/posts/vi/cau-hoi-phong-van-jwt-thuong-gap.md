@@ -14,7 +14,7 @@ description: "JWT interview questions and answers covering token structure, refr
 
 Tổng hợp 15+ câu hỏi phỏng vấn JWT thường gặp nhất năm 2026, kèm đáp án chi tiết, ví dụ thực tế và các lỗi sai phổ biến giúp developer tự tin vượt qua vòng technical interview.
 
-Bạn chuẩn bị phỏng vấn vị trí Backend hoặc Fullstack nhưng mỗi lần đến phần xác thực (authentication) lại lúng túng không biết giải thích JWT như thế nào cho đúng? Nhiều fresher và junior developer nắm được khái niệm cơ bản nhưng lại "tắc" ngay khi interviewer hỏi sâu hơn về bảo mật, flow thực tế hay so sánh với Session. Bài viết này tổng hợp toàn bộ câu hỏi phỏng vấn JWT phổ biến nhất — từ định nghĩa, cấu trúc, luồng xác thực cho đến các vấn đề bảo mật — kèm hướng dẫn trả lời cụ thể để bạn không bị bắt bẻ.
+Bạn chuẩn bị phỏng vấn vị trí Backend hoặc Fullstack nhưng mỗi lần đến phần xác thực (authentication) lại lúng túng không biết giải thích JWT như thế nào cho đúng? Nhiều fresher và junior developer nắm được khái niệm cơ bản nhưng lại "tắc" ngay khi interviewer hỏi sâu hơn về bảo mật, flow thực tế hay so sánh với Session. Bài viết này tổng hợp toàn bộ câu hỏi phỏng vấn JWT phổ biến nhất - từ định nghĩa, cấu trúc, luồng xác thực cho đến các vấn đề bảo mật - kèm hướng dẫn trả lời cụ thể để bạn không bị bắt bẻ.
 
 Nội dung bài viết:
 
@@ -32,7 +32,7 @@ Nội dung bài viết:
 
 ##### Bản chất của vấn đề
 
-JWT (JSON Web Token) là một tiêu chuẩn mở (RFC 7519) để truyền tải thông tin an toàn giữa các bên dưới dạng JSON object được ký số (signed). Điểm cốt lõi cần hiểu: JWT không phải là cơ chế mã hóa (encryption) — nó là cơ chế **xác minh tính toàn vẹn** (integrity verification). Ai cũng có thể đọc payload nếu có token, nhưng không ai giả mạo được nội dung mà không có secret key.
+JWT (JSON Web Token) là một tiêu chuẩn mở (RFC 7519) để truyền tải thông tin an toàn giữa các bên dưới dạng JSON object được ký số (signed). Điểm cốt lõi cần hiểu: JWT không phải là cơ chế mã hóa (encryption) - nó là cơ chế **xác minh tính toàn vẹn** (integrity verification). Ai cũng có thể đọc payload nếu có token, nhưng không ai giả mạo được nội dung mà không có secret key.
 
 Câu hỏi mà interviewer thường dùng để test level:
 
@@ -42,7 +42,7 @@ Câu hỏi mà interviewer thường dùng để test level:
 
 ##### Cách trả lời chuẩn
 
-JWT là một chuỗi gồm 3 phần được encode bằng Base64URL và nối với nhau bằng dấu chấm (.). Nó được sử dụng để xác thực (authentication) và trao đổi thông tin (information exchange) trong các hệ thống stateless — đặc biệt là REST API và microservices. Server không cần lưu trạng thái session vì mọi thông tin cần thiết đã nằm trong token.
+JWT là một chuỗi gồm 3 phần được encode bằng Base64URL và nối với nhau bằng dấu chấm (.). Nó được sử dụng để xác thực (authentication) và trao đổi thông tin (information exchange) trong các hệ thống stateless - đặc biệt là REST API và microservices. Server không cần lưu trạng thái session vì mọi thông tin cần thiết đã nằm trong token.
 
 #### Cấu trúc JWT - Header, Payload, Signature
 
@@ -57,7 +57,7 @@ Một JWT có dạng: **xxxxx.yyyyy.zzzzz**
   "typ": "JWT"
 }
 
-**Payload** chứa các claims — thông tin về user và metadata. Có 3 loại claim:
+**Payload** chứa các claims - thông tin về user và metadata. Có 3 loại claim:
 
 *   **Registered claims**: iss (issuer), exp (expiration), sub (subject), aud (audience)
 *   **Public claims**: do cộng đồng định nghĩa, cần tránh trùng tên
@@ -78,7 +78,7 @@ HMACSHA256(
   secret
 )
 
-Câu hỏi hay bị hỏi thêm: **"Payload có bị lộ không?"** — Trả lời: Có. Base64URL là encode, không phải encrypt. Tuyệt đối không đặt password hay thông tin nhạy cảm trong payload. Nếu cần bảo mật payload, dùng JWE (JSON Web Encryption).
+Câu hỏi hay bị hỏi thêm: **"Payload có bị lộ không?"** - Trả lời: Có. Base64URL là encode, không phải encrypt. Tuyệt đối không đặt password hay thông tin nhạy cảm trong payload. Nếu cần bảo mật payload, dùng JWE (JSON Web Encryption).
 
 #### JWT vs Session: So sánh trong phỏng vấn
 
@@ -86,10 +86,10 @@ Câu hỏi hay bị hỏi thêm: **"Payload có bị lộ không?"** — Trả l
 
 Đây là câu hỏi kinh điển trong mọi buổi phỏng vấn Backend. Bài viết [Session vs JWT: Toàn Bộ Lý Thuyết Và Câu Hỏi Phỏng Vấn Hay Gặp Nhất Mà Junior Cần Nắm Chắc](/session-vs-jwt-toan-bo-ly-thuyet) đã phân tích chi tiết, nhưng để trả lời phỏng vấn, bạn cần nhớ bảng so sánh này:
 
-*   **Session**: Stateful — server lưu session data, client chỉ giữ session ID. Phù hợp monolith, dễ revoke ngay lập tức.
-*   **JWT**: Stateless — server không lưu gì, mọi thứ trong token. Phù hợp microservices, scale ngang dễ dàng, nhưng khó revoke trước khi hết hạn.
+*   **Session**: Stateful - server lưu session data, client chỉ giữ session ID. Phù hợp monolith, dễ revoke ngay lập tức.
+*   **JWT**: Stateless - server không lưu gì, mọi thứ trong token. Phù hợp microservices, scale ngang dễ dàng, nhưng khó revoke trước khi hết hạn.
 
-Khi interviewer hỏi "Khi nào dùng JWT, khi nào dùng Session?" — đáp án thông minh là: dùng JWT cho REST API và hệ thống distributed; dùng Session cho web app truyền thống cần kiểm soát đăng xuất chặt chẽ.
+Khi interviewer hỏi "Khi nào dùng JWT, khi nào dùng Session?" - đáp án thông minh là: dùng JWT cho REST API và hệ thống distributed; dùng Session cho web app truyền thống cần kiểm soát đăng xuất chặt chẽ.
 
 #### Câu hỏi bảo mật JWT nâng cao
 
@@ -113,10 +113,10 @@ Nếu lưu JWT trong localStorage, XSS có thể đánh cắp token. Fix: lưu t
 
 Attacker sử dụng lại token cũ bị đánh cắp. Fix: đặt exp ngắn (15 phút cho access token), dùng refresh token rotation.
 
-##### RS256 vs HS256 — khi nào dùng gì?
+##### RS256 vs HS256 - khi nào dùng gì?
 
-*   **HS256**: Symmetric — cùng một secret để ký và verify. Phù hợp khi chỉ có 1 service.
-*   **RS256**: Asymmetric — private key để ký, public key để verify. Phù hợp microservices vì các service khác chỉ cần public key, không cần secret.
+*   **HS256**: Symmetric - cùng một secret để ký và verify. Phù hợp khi chỉ có 1 service.
+*   **RS256**: Asymmetric - private key để ký, public key để verify. Phù hợp microservices vì các service khác chỉ cần public key, không cần secret.
 
 #### Access Token & Refresh Token - Flow thực tế
 
@@ -129,7 +129,7 @@ Attacker sử dụng lại token cũ bị đánh cắp. Fix: đặt exp ngắn (
 5.  Server verify refresh token, cấp access token mới + **rotate refresh token** (vô hiệu hóa token cũ).
 6.  Khi logout: xóa refresh token khỏi DB (blacklist hoặc delete).
 
-**Case study thực tế:** Một startup SaaS dùng access token 1 giờ (không có refresh token) — kết quả user bị đăng xuất liên tục, ảnh hưởng UX. Sau khi chuyển sang access token 15 phút + refresh token 30 ngày có rotation, tỷ lệ phàn nàn về đăng xuất giảm 80% trong 2 tuần đầu. Đồng thời bảo mật tốt hơn vì refresh token bị đánh cắp sẽ bị phát hiện ngay qua rotation.
+**Case study thực tế:** Một startup SaaS dùng access token 1 giờ (không có refresh token) - kết quả user bị đăng xuất liên tục, ảnh hưởng UX. Sau khi chuyển sang access token 15 phút + refresh token 30 ngày có rotation, tỷ lệ phàn nàn về đăng xuất giảm 80% trong 2 tuần đầu. Đồng thời bảo mật tốt hơn vì refresh token bị đánh cắp sẽ bị phát hiện ngay qua rotation.
 
 #### 5 sai lầm phổ biến khi trả lời câu hỏi về JWT trong phỏng vấn
 
@@ -149,7 +149,7 @@ Có. Bất kỳ ai có JWT đều có thể decode phần Header và Payload vì
 
 ##### Làm thế nào để logout khi dùng JWT?
 
-Đây là câu hỏi hay đánh đố. JWT bản thân không có cơ chế revoke — token vẫn hợp lệ cho đến khi hết hạn. Các cách giải quyết: (1) Dùng access token TTL ngắn (15 phút) để giảm thiểu rủi ro. (2) Blacklist jti (JWT ID) trong Redis khi logout. (3) Xóa refresh token trong DB để ngăn cấp token mới. Trong thực tế, kết hợp cả 3 cách cho hệ thống production.
+Đây là câu hỏi hay đánh đố. JWT bản thân không có cơ chế revoke - token vẫn hợp lệ cho đến khi hết hạn. Các cách giải quyết: (1) Dùng access token TTL ngắn (15 phút) để giảm thiểu rủi ro. (2) Blacklist jti (JWT ID) trong Redis khi logout. (3) Xóa refresh token trong DB để ngăn cấp token mới. Trong thực tế, kết hợp cả 3 cách cho hệ thống production.
 
 ##### JWT có phù hợp cho mobile app không?
 
@@ -157,15 +157,15 @@ Có, và đây là use case phổ biến nhất. Mobile app không có cookie nh
 
 ##### Tại sao nên dùng RS256 thay vì HS256 trong microservices?
 
-Trong kiến trúc microservices, nhiều service cần verify JWT. Nếu dùng HS256, tất cả service đều phải biết secret key — rủi ro bảo mật cao. Với RS256, chỉ Auth Service giữ private key để ký; các service khác chỉ cần public key để verify. Public key có thể publish công khai (ví dụ qua JWKS endpoint) mà không lo bị lộ.
+Trong kiến trúc microservices, nhiều service cần verify JWT. Nếu dùng HS256, tất cả service đều phải biết secret key - rủi ro bảo mật cao. Với RS256, chỉ Auth Service giữ private key để ký; các service khác chỉ cần public key để verify. Public key có thể publish công khai (ví dụ qua JWKS endpoint) mà không lo bị lộ.
 
 ##### JWT size có ảnh hưởng performance không?
 
-Có, đặc biệt khi gọi API nhiều. JWT thường nặng hơn Session ID (vài byte) do chứa claims. Một JWT điển hình dài 200-500 byte; nếu nhồi nhiều claim thì có thể lên đến 1KB+. Với hệ thống gọi 100+ API/giây, overhead này tích lũy đáng kể. Best practice: chỉ đặt vào payload những thông tin thực sự cần dùng trong request — không lưu toàn bộ profile user.
+Có, đặc biệt khi gọi API nhiều. JWT thường nặng hơn Session ID (vài byte) do chứa claims. Một JWT điển hình dài 200-500 byte; nếu nhồi nhiều claim thì có thể lên đến 1KB+. Với hệ thống gọi 100+ API/giây, overhead này tích lũy đáng kể. Best practice: chỉ đặt vào payload những thông tin thực sự cần dùng trong request - không lưu toàn bộ profile user.
 
 #### Tổng kết & Bước tiếp theo
 
-Để vượt qua câu hỏi phỏng vấn JWT, bạn cần nắm vững 4 trụ cột: cấu trúc token (Header/Payload/Signature), flow xác thực thực tế (access + refresh token), các điểm bảo mật quan trọng (alg:none, XSS, brute-force), và khi nào nên dùng JWT thay vì Session. Câu trả lời hay không phải là đọc thuộc lòng định nghĩa — mà là kể được một scenario thực tế bạn đã làm hoặc đã nghiên cứu. Hãy thử tự xây dựng một JWT auth flow nhỏ bằng ngôn ngữ quen thuộc trước khi đi phỏng vấn — không gì thay thế được kinh nghiệm thực tay.
+Để vượt qua câu hỏi phỏng vấn JWT, bạn cần nắm vững 4 trụ cột: cấu trúc token (Header/Payload/Signature), flow xác thực thực tế (access + refresh token), các điểm bảo mật quan trọng (alg:none, XSS, brute-force), và khi nào nên dùng JWT thay vì Session. Câu trả lời hay không phải là đọc thuộc lòng định nghĩa - mà là kể được một scenario thực tế bạn đã làm hoặc đã nghiên cứu. Hãy thử tự xây dựng một JWT auth flow nhỏ bằng ngôn ngữ quen thuộc trước khi đi phỏng vấn - không gì thay thế được kinh nghiệm thực tay.
 
 Tác giả: Nguyễn Hữu Khải
 

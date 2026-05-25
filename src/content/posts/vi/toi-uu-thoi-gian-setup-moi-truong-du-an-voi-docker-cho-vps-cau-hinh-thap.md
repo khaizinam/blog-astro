@@ -14,7 +14,7 @@ description: "Thực trạng VPS 2GB RAM và nỗi lo \"hết bộ nhớ\" Việ
 
 ### **1\. Tối ưu thời gian setup môi trường dự án với Docker là gì?**
 
-**Tối ưu thời gian setup môi trường dự án với Docker** là phương pháp sử dụng công nghệ Containerization để đóng gói toàn bộ phần mềm, thư viện và cấu hình hệ thống vào một đơn vị duy nhất gọi là "Container". Thay vì cài đặt trực tiếp lên hệ điều hành (Native Install) — một quy trình thường gây ra xung đột phiên bản và khó quản lý — Docker tạo ra các môi trường biệt lập, nhẹ nhàng và có khả năng chạy đồng nhất trên mọi máy chủ.
+**Tối ưu thời gian setup môi trường dự án với Docker** là phương pháp sử dụng công nghệ Containerization để đóng gói toàn bộ phần mềm, thư viện và cấu hình hệ thống vào một đơn vị duy nhất gọi là "Container". Thay vì cài đặt trực tiếp lên hệ điều hành (Native Install) - một quy trình thường gây ra xung đột phiên bản và khó quản lý - Docker tạo ra các môi trường biệt lập, nhẹ nhàng và có khả năng chạy đồng nhất trên mọi máy chủ.
 
 Đối với các dòng VPS cấu hình thấp, đặc biệt là chạy hệ điều hành **Debian** (vốn nổi tiếng là bản phân phối Linux nhẹ và ổn định nhất), việc tối ưu Docker giúp bạn vắt kiệt hiệu suất phần cứng mà không làm quá tải hệ thống. Thay vì cài đặt hàng chục gói dịch vụ rải rác, bạn chỉ cần định nghĩa tất cả thông qua các tệp cấu hình mã nguồn.
 

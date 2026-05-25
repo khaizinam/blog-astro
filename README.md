@@ -72,7 +72,7 @@ Inside of AstroPaper, you'll see the following folders and files:
 └── astro.config.ts
 ```
 
-All blog posts are stored in the `src/content/posts/` directory. You can organise posts into subdirectories — the subdirectory name becomes part of the post URL.
+All blog posts are stored in the `src/content/posts/` directory. You can organise posts into subdirectories - the subdirectory name becomes part of the post URL.
 
 ## 📖 Documentation
 

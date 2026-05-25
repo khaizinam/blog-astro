@@ -9,14 +9,14 @@ featured: false
 draft: false
 tags:
   - "SeriesPhongVan"
-description: "Hướng dẫn implement Refresh Token hoàn chỉnh cho cả Node.js (Express) và Laravel PHP — từ thiết kế database, viết API endpoint, xử lý rotation, đến các lỗi thường gặp — giúp developer xây hệ thống JWT authentication chuẩn production trong năm 2026."
+description: "Hướng dẫn implement Refresh Token hoàn chỉnh cho cả Node.js (Express) và Laravel PHP - từ thiết kế database, viết API endpoint, xử lý rotation, đến các lỗi thường gặp - giúp developer xây hệ thống JWT authentication chuẩn production trong năm 2026."
 ---
 
 ### Refresh Token Node.js và Laravel: Hướng dẫn implement đầy đủ, chuẩn production cho developer 2026
 
-Hướng dẫn implement Refresh Token hoàn chỉnh cho cả Node.js (Express) và Laravel PHP — từ thiết kế database, viết API endpoint, xử lý rotation, đến các lỗi thường gặp — giúp developer xây hệ thống JWT authentication chuẩn production trong năm 2026.
+Hướng dẫn implement Refresh Token hoàn chỉnh cho cả Node.js (Express) và Laravel PHP - từ thiết kế database, viết API endpoint, xử lý rotation, đến các lỗi thường gặp - giúp developer xây hệ thống JWT authentication chuẩn production trong năm 2026.
 
-Bạn đã implement JWT được rồi, access token chạy ổn, nhưng mỗi lần token hết hạn user lại bị đăng xuất và phải login lại từ đầu? Hoặc bạn đặt access token TTL 24 giờ để tránh vấn đề này nhưng biết rõ như vậy là sai về bảo mật? Refresh token chính là mảnh ghép còn thiếu — nhưng implement đúng không đơn giản như nhiều tutorial trên mạng mô tả. Bài viết này đi thẳng vào code thực tế cho cả Node.js lẫn Laravel, bao gồm rotation logic, database schema, và xử lý edge case mà tutorial thông thường bỏ qua.
+Bạn đã implement JWT được rồi, access token chạy ổn, nhưng mỗi lần token hết hạn user lại bị đăng xuất và phải login lại từ đầu? Hoặc bạn đặt access token TTL 24 giờ để tránh vấn đề này nhưng biết rõ như vậy là sai về bảo mật? Refresh token chính là mảnh ghép còn thiếu - nhưng implement đúng không đơn giản như nhiều tutorial trên mạng mô tả. Bài viết này đi thẳng vào code thực tế cho cả Node.js lẫn Laravel, bao gồm rotation logic, database schema, và xử lý edge case mà tutorial thông thường bỏ qua.
 
 Nội dung bài viết:
 
@@ -30,7 +30,7 @@ Nội dung bài viết:
 
 [5\. Implement Refresh Token trong Laravel PHP](#5-implement-refresh-token-trong-laravel-php)
 
-[6\. Refresh Token Rotation — Phát hiện token theft](#6-refresh-token-rotation-phat-hien-token-theft)
+[6\. Refresh Token Rotation - Phát hiện token theft](#6-refresh-token-rotation-phat-hien-token-theft)
 
 [7\. 6 sai lầm phổ biến khi implement Refresh Token](#7-6-sai-lam-pho-bien-khi-implement-refresh-token)
 
@@ -42,7 +42,7 @@ Nội dung bài viết:
 
 ##### 1.1 Bản chất vấn đề JWT cần giải quyết
 
-JWT access token có một tension cơ bản: token càng ngắn hạn thì càng an toàn (cửa sổ tấn công nhỏ hơn), nhưng càng gây khó chịu cho user (phải login lại thường xuyên hơn). Đặt TTL 15 phút là best practice về bảo mật — nhưng user sẽ bị đăng xuất sau 15 phút không hoạt động, không thể chấp nhận được về UX.
+JWT access token có một tension cơ bản: token càng ngắn hạn thì càng an toàn (cửa sổ tấn công nhỏ hơn), nhưng càng gây khó chịu cho user (phải login lại thường xuyên hơn). Đặt TTL 15 phút là best practice về bảo mật - nhưng user sẽ bị đăng xuất sau 15 phút không hoạt động, không thể chấp nhận được về UX.
 
 Refresh token giải quyết tension này bằng cách tách thành hai loại token với hai mục đích khác nhau:
 
@@ -56,23 +56,23 @@ Refresh token giải quyết tension này bằng cách tách thành hai loại t
 3.  Access token hết hạn → API trả về 401.
 4.  Client tự động gọi endpoint **/auth/refresh** kèm refresh token.
 5.  Server verify refresh token, cấp access token mới + refresh token mới (rotation).
-6.  Client dùng access token mới, tiếp tục hoạt động — user không hay biết gì.
+6.  Client dùng access token mới, tiếp tục hoạt động - user không hay biết gì.
 
 #### 2\. Before/After khi implement đúng Refresh Token
 
 ##### 2.1 Trước khi có Refresh Token
 
-Một ứng dụng quản lý dự án với ~500 user nội bộ dùng JWT access token TTL 8 giờ (thỏa hiệp giữa bảo mật và UX). Khi phát hiện một tài khoản bị lộ credentials, admin không có cách nào revoke token ngay — token vẫn hợp lệ trong tối đa 8 giờ tiếp theo. Đồng thời, user làm việc qua đêm bị đăng xuất lúc 3 giờ sáng khi đang dở việc.
+Một ứng dụng quản lý dự án với ~500 user nội bộ dùng JWT access token TTL 8 giờ (thỏa hiệp giữa bảo mật và UX). Khi phát hiện một tài khoản bị lộ credentials, admin không có cách nào revoke token ngay - token vẫn hợp lệ trong tối đa 8 giờ tiếp theo. Đồng thời, user làm việc qua đêm bị đăng xuất lúc 3 giờ sáng khi đang dở việc.
 
 ##### 2.2 Sau khi implement đúng Refresh Token
 
-Sau khi chuyển sang access token 15 phút + refresh token 30 ngày có rotation và lưu DB: tài khoản bị compromise được revoke trong vòng 15 phút (TTL access token), xóa refresh token trong DB ngăn cấp token mới. User không bao giờ bị đăng xuất đột ngột trong lúc làm việc. Bonus: khi phát hiện reuse attack (refresh token bị dùng hai lần), toàn bộ session của user đó tự động bị revoke — phát hiện breach chủ động.
+Sau khi chuyển sang access token 15 phút + refresh token 30 ngày có rotation và lưu DB: tài khoản bị compromise được revoke trong vòng 15 phút (TTL access token), xóa refresh token trong DB ngăn cấp token mới. User không bao giờ bị đăng xuất đột ngột trong lúc làm việc. Bonus: khi phát hiện reuse attack (refresh token bị dùng hai lần), toàn bộ session của user đó tự động bị revoke - phát hiện breach chủ động.
 
 #### 3\. Thiết kế Database Schema cho Refresh Token
 
 ##### 3.1 Những trường bắt buộc cần có
 
-Refresh token không được lưu raw value trong DB — phải hash trước (tương tự password). Lý do: nếu DB bị dump, attacker không thể dùng hash để authenticate.
+Refresh token không được lưu raw value trong DB - phải hash trước (tương tự password). Lý do: nếu DB bị dump, attacker không thể dùng hash để authenticate.
 
 ```sql
 -- MySQL / PostgreSQL schema
@@ -96,7 +96,7 @@ CREATE TABLE refresh_tokens (
 
 ##### 3.2 Tại sao cần index expires\_at?
 
-Cần chạy cleanup job định kỳ để xóa token hết hạn — không index thì full table scan trên bảng có thể lên đến hàng triệu record. Với index, cleanup chạy trong milliseconds thay vì vài giây.
+Cần chạy cleanup job định kỳ để xóa token hết hạn - không index thì full table scan trên bảng có thể lên đến hàng triệu record. Với index, cleanup chạy trong milliseconds thay vì vài giây.
 
 #### 4\. Implement Refresh Token trong Node.js (Express)
 
@@ -133,7 +133,7 @@ function generateAccessToken(userId, role) {
 }
 ```
 
-##### 4.2 Login endpoint — cấp cả hai token
+##### 4.2 Login endpoint - cấp cả hai token
 
 ```javascript
 // POST /auth/login
@@ -183,7 +183,7 @@ app.post('/auth/login', async (req, res) => {
 });
 ```
 
-##### 4.3 Refresh endpoint — cấp access token mới kèm rotation
+##### 4.3 Refresh endpoint - cấp access token mới kèm rotation
 
 ```javascript
 // POST /auth/refresh
@@ -255,7 +255,7 @@ app.post('/auth/refresh', async (req, res) => {
 });
 ```
 
-##### 4.4 Logout endpoint — revoke refresh token
+##### 4.4 Logout endpoint - revoke refresh token
 
 ```javascript
 // POST /auth/logout
@@ -274,7 +274,7 @@ app.post('/auth/logout', async (req, res) => {
   res.json({ message: 'Logged out successfully' });
 });
 
-// POST /auth/logout-all — đăng xuất khỏi tất cả thiết bị
+// POST /auth/logout-all - đăng xuất khỏi tất cả thiết bị
 app.post('/auth/logout-all', requireAuth, async (req, res) => {
   await db.query(
     `UPDATE refresh_tokens SET revoked = 1, revoked_at = NOW()
@@ -340,7 +340,7 @@ class RefreshToken extends Model
 }
 ```
 
-##### 5.2 AuthService — Logic tập trung
+##### 5.2 AuthService - Logic tập trung
 
 ```php
 // app/Services/AuthService.php
@@ -433,7 +433,7 @@ class AuthService
 }
 ```
 
-##### 5.3 AuthController — API endpoints
+##### 5.3 AuthController - API endpoints
 
 ```php
 // app/Http/Controllers/AuthController.php
@@ -538,16 +538,16 @@ class AuthController extends Controller
 }
 ```
 
-#### 6\. Refresh Token Rotation — Phát hiện Token Theft
+#### 6\. Refresh Token Rotation - Phát hiện Token Theft
 
 ##### 6.1 Tại sao Rotation quan trọng hơn nhiều người nghĩ
 
-Rotation không chỉ là "best practice" — nó là cơ chế phát hiện tấn công chủ động. Kịch bản: attacker đánh cắp refresh token của user A. Cả attacker và user A đều có cùng refresh token. Ai dùng trước sẽ nhận được token mới; token cũ bị revoke. Người dùng sau sẽ thấy "Invalid refresh token" — đây chính là tín hiệu có breach.
+Rotation không chỉ là "best practice" - nó là cơ chế phát hiện tấn công chủ động. Kịch bản: attacker đánh cắp refresh token của user A. Cả attacker và user A đều có cùng refresh token. Ai dùng trước sẽ nhận được token mới; token cũ bị revoke. Người dùng sau sẽ thấy "Invalid refresh token" - đây chính là tín hiệu có breach.
 
-##### 6.2 Implement Reuse Detection — Revoke toàn bộ session khi phát hiện tái sử dụng
+##### 6.2 Implement Reuse Detection - Revoke toàn bộ session khi phát hiện tái sử dụng
 
 ```javascript
-// Node.js — Nâng cấp refresh endpoint với reuse detection
+// Node.js - Nâng cấp refresh endpoint với reuse detection
 app.post('/auth/refresh', async (req, res) => {
   const rawRefreshToken = req.cookies?.refreshToken;
   if (!rawRefreshToken) {
@@ -556,7 +556,7 @@ app.post('/auth/refresh', async (req, res) => {
 
   const tokenHash = hashToken(rawRefreshToken);
 
-  // Tìm token — kể cả đã revoke
+  // Tìm token - kể cả đã revoke
   const [rows] = await db.query(
     'SELECT * FROM refresh_tokens WHERE token_hash = ? LIMIT 1',
     [tokenHash]
@@ -571,7 +571,7 @@ app.post('/auth/refresh', async (req, res) => {
 
   // Phát hiện reuse: token tồn tại nhưng đã bị revoke
   if (storedToken.revoked) {
-    // CẢNH BÁO: Có thể đang bị tấn công — revoke toàn bộ session
+    // CẢNH BÁO: Có thể đang bị tấn công - revoke toàn bộ session
     await db.query(
       `UPDATE refresh_tokens SET revoked = 1, revoked_at = NOW()
        WHERE user_id = ? AND revoked = 0`,
@@ -588,7 +588,7 @@ app.post('/auth/refresh', async (req, res) => {
     return res.status(401).json({ error: 'Refresh token expired' });
   }
 
-  // Token hợp lệ — tiến hành rotation bình thường
+  // Token hợp lệ - tiến hành rotation bình thường
   // ... (code rotation như phần 4.3)
 });
 ```
@@ -596,11 +596,11 @@ app.post('/auth/refresh', async (req, res) => {
 #### 7\. 6 sai lầm phổ biến khi implement Refresh Token
 
 1.  **Lưu raw refresh token trong DB** → Fix: luôn lưu SHA-256 hash. Nếu DB bị dump, attacker có hash nhưng không thể dùng để authenticate vì server so sánh hash(rawToken) với giá trị lưu trong DB.
-2.  **Không implement rotation — dùng một refresh token mãi mãi** → Fix: mỗi lần refresh phải cấp token mới và revoke token cũ. Không có rotation đồng nghĩa với không có khả năng phát hiện token theft.
-3.  **Lưu refresh token trong localStorage thay vì httpOnly cookie** → Fix: refresh token còn quan trọng hơn access token về mặt bảo mật — TTL dài hơn nhiều. Bắt buộc lưu httpOnly cookie. Xem thêm tại bài [JWT Security Best Practices](/jwt-security-best-practices-bao-mat-jwt-dung-cach-trong-du-an-thuc-te-2026).
-4.  **Không xóa token cũ sau rotation — để bảng refresh\_tokens phình to vô hạn** → Fix: đặt cronjob chạy mỗi đêm xóa token đã revoke hoặc hết hạn quá 7 ngày. Bảng lớn ảnh hưởng hiệu năng query.
-5.  **Trả refresh token trong response body thay vì cookie** → Fix: refresh token trong httpOnly cookie, access token trong body. Nhiều tutorial trả cả hai trong body — sai hoàn toàn về bảo mật.
-6.  **Không implement logout-all — không có cách revoke khi tài khoản bị xâm phạm** → Fix: luôn có endpoint **/auth/logout-all** revoke tất cả refresh token theo user\_id. Đây là tính năng bắt buộc cho production.
+2.  **Không implement rotation - dùng một refresh token mãi mãi** → Fix: mỗi lần refresh phải cấp token mới và revoke token cũ. Không có rotation đồng nghĩa với không có khả năng phát hiện token theft.
+3.  **Lưu refresh token trong localStorage thay vì httpOnly cookie** → Fix: refresh token còn quan trọng hơn access token về mặt bảo mật - TTL dài hơn nhiều. Bắt buộc lưu httpOnly cookie. Xem thêm tại bài [JWT Security Best Practices](/jwt-security-best-practices-bao-mat-jwt-dung-cach-trong-du-an-thuc-te-2026).
+4.  **Không xóa token cũ sau rotation - để bảng refresh\_tokens phình to vô hạn** → Fix: đặt cronjob chạy mỗi đêm xóa token đã revoke hoặc hết hạn quá 7 ngày. Bảng lớn ảnh hưởng hiệu năng query.
+5.  **Trả refresh token trong response body thay vì cookie** → Fix: refresh token trong httpOnly cookie, access token trong body. Nhiều tutorial trả cả hai trong body - sai hoàn toàn về bảo mật.
+6.  **Không implement logout-all - không có cách revoke khi tài khoản bị xâm phạm** → Fix: luôn có endpoint **/auth/logout-all** revoke tất cả refresh token theo user\_id. Đây là tính năng bắt buộc cho production.
 
 Để hiểu đầy đủ bức tranh bảo mật JWT, đọc thêm bài [JWT Security Best Practices 2026](/jwt-security-best-practices-bao-mat-jwt-dung-cach-trong-du-an-thuc-te-2026). Nếu bạn còn phân vân giữa Session và JWT cho dự án của mình, bài [Session vs JWT: Developer nên chọn cái nào?](/session-vs-jwt-developer-nen-chon-cai-nao-so-sanh-thuc-te-2026) sẽ giúp bạn quyết định dứt khoát.
 
@@ -608,24 +608,24 @@ app.post('/auth/refresh', async (req, res) => {
 
 ##### 8.1 Nên đặt TTL refresh token bao lâu là hợp lý?
 
-Phụ thuộc vào use case. Ứng dụng consumer (social app, e-commerce): 30-90 ngày — user không muốn login lại thường xuyên. Ứng dụng nhạy cảm (banking, fintech, admin tool): 1-7 ngày — cân bằng giữa UX và bảo mật. Một số hệ thống còn implement "sliding expiry" — mỗi lần dùng refresh token, TTL được gia hạn thêm, chỉ thực sự hết hạn khi user không dùng trong X ngày liên tiếp.
+Phụ thuộc vào use case. Ứng dụng consumer (social app, e-commerce): 30-90 ngày - user không muốn login lại thường xuyên. Ứng dụng nhạy cảm (banking, fintech, admin tool): 1-7 ngày - cân bằng giữa UX và bảo mật. Một số hệ thống còn implement "sliding expiry" - mỗi lần dùng refresh token, TTL được gia hạn thêm, chỉ thực sự hết hạn khi user không dùng trong X ngày liên tiếp.
 
 ##### 8.2 Refresh token có cần JWT format không?
 
-Không, và thực ra không nên. Refresh token chỉ cần là một chuỗi ngẫu nhiên không thể đoán được — **crypto.randomBytes(40).toString('hex')** là đủ. Dùng JWT cho refresh token thêm complexity không cần thiết và payload có thể bị decode dù không forge được. Opaque token (chuỗi ngẫu nhiên) + DB lookup là pattern chuẩn.
+Không, và thực ra không nên. Refresh token chỉ cần là một chuỗi ngẫu nhiên không thể đoán được - **crypto.randomBytes(40).toString('hex')** là đủ. Dùng JWT cho refresh token thêm complexity không cần thiết và payload có thể bị decode dù không forge được. Opaque token (chuỗi ngẫu nhiên) + DB lookup là pattern chuẩn.
 
 ##### 8.3 Client nên xử lý 401 từ access token hết hạn như thế nào?
 
-Implement axios interceptor hoặc fetch wrapper: khi nhận 401, tự động gọi **/auth/refresh**, lấy access token mới, rồi retry request gốc với token mới. User không thấy gì. Chú ý xử lý race condition: nếu nhiều request đồng thời nhận 401, chỉ một request được phép gọi refresh — các request còn lại queue và chờ. Tránh gọi refresh N lần song song.
+Implement axios interceptor hoặc fetch wrapper: khi nhận 401, tự động gọi **/auth/refresh**, lấy access token mới, rồi retry request gốc với token mới. User không thấy gì. Chú ý xử lý race condition: nếu nhiều request đồng thời nhận 401, chỉ một request được phép gọi refresh - các request còn lại queue và chờ. Tránh gọi refresh N lần song song.
 
 ##### 8.4 Có cần lưu access token vào DB không?
 
-Không cần và không nên — đây là điểm mạnh của JWT stateless. Access token TTL ngắn (15 phút), verify bằng signature là đủ. Nếu cần revoke access token ngay lập tức trước khi hết hạn (ví dụ: phát hiện breach), dùng jti blacklist trong Redis với TTL = thời gian còn lại của token. Xem chi tiết tại bài [JWT Security Best Practices](/jwt-security-best-practices).
+Không cần và không nên - đây là điểm mạnh của JWT stateless. Access token TTL ngắn (15 phút), verify bằng signature là đủ. Nếu cần revoke access token ngay lập tức trước khi hết hạn (ví dụ: phát hiện breach), dùng jti blacklist trong Redis với TTL = thời gian còn lại của token. Xem chi tiết tại bài [JWT Security Best Practices](/jwt-security-best-practices).
 
 ##### 8.5 Refresh token có hoạt động với React Native không?
 
-Có, nhưng storage khác browser. Không có httpOnly cookie trong React Native — lưu refresh token trong **react-native-keychain** (iOS Keychain / Android Keystore). Đây là Secure Storage tương đương với httpOnly cookie về mặt bảo mật trên mobile. Tuyệt đối không dùng AsyncStorage hay MMKV cho refresh token — hai cái này không được mã hóa và dễ bị đọc nếu thiết bị bị root.
+Có, nhưng storage khác browser. Không có httpOnly cookie trong React Native - lưu refresh token trong **react-native-keychain** (iOS Keychain / Android Keystore). Đây là Secure Storage tương đương với httpOnly cookie về mặt bảo mật trên mobile. Tuyệt đối không dùng AsyncStorage hay MMKV cho refresh token - hai cái này không được mã hóa và dễ bị đọc nếu thiết bị bị root.
 
 #### Tổng kết và bước tiếp theo
 
-Implement refresh token đúng cách không khó nhưng cần kỷ luật: hash trước khi lưu DB, rotation mỗi lần dùng, httpOnly cookie cho storage, reuse detection để phát hiện breach, và cleanup job để giữ bảng gọn. Code trong bài này đã được thiết kế để copy vào dự án production với điều chỉnh tối thiểu — cả Node.js lẫn Laravel đều có đủ flow hoàn chỉnh từ login đến logout-all. Bước tiếp theo: implement silent refresh phía client để access token tự động được gia hạn mà user không hay biết — đó là phần hoàn thiện cuối cùng của một JWT auth system production-ready.
+Implement refresh token đúng cách không khó nhưng cần kỷ luật: hash trước khi lưu DB, rotation mỗi lần dùng, httpOnly cookie cho storage, reuse detection để phát hiện breach, và cleanup job để giữ bảng gọn. Code trong bài này đã được thiết kế để copy vào dự án production với điều chỉnh tối thiểu - cả Node.js lẫn Laravel đều có đủ flow hoàn chỉnh từ login đến logout-all. Bước tiếp theo: implement silent refresh phía client để access token tự động được gia hạn mà user không hay biết - đó là phần hoàn thiện cuối cùng của một JWT auth system production-ready.

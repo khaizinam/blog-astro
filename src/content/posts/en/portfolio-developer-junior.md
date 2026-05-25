@@ -9,7 +9,7 @@ featured: false
 draft: false
 tags:
   - "SeriesPhongVan"
-description: "A junior developer portfolio is the collection of real projects, skills, and professional information you present so employers can evaluate your abilities — substituting for the work experience section of your CV that's currently empty. For freshers and junior developers, a portfolio isn't something that's \"nice to have\" — it's the only evidence you can offer to prove you can actually build things"
+description: "A junior developer portfolio is the collection of real projects, skills, and professional information you present so employers can evaluate your abilities - substituting for the work experience section of your CV that's currently empty. For freshers and junior developers, a portfolio isn't something that's \"nice to have\" - it's the only evidence you can offer to prove you can actually build things"
 ---
 
 A junior developer portfolio is the collection of real projects, skills, and professional information you present so employers can evaluate your abilities - substituting for the work experience section of your CV that's currently empty. For freshers and junior developers, a portfolio isn't something that's "nice to have" - it's the only evidence you can offer to prove you can actually build things, not just recite theory from a textbook.

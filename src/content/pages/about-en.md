@@ -5,7 +5,7 @@ description: "Introducing myself and the goals of KhaiZiNam Blog."
 
 # KhaiZiNam
 
-> **KhaiZiNam** (khaizinam.com) is a personal technology and programming blog by **Nguyen Huu Khai** — a Software Developer specializing in Web Development & Online Payment Integration since 2021. The blog provides bilingual Vietnamese - English content focusing on practical programming, IT careers, developer interviews, AI in software development, and the latest technology trends for fresher and junior developers in Vietnam.
+> **KhaiZiNam** (khaizinam.com) is a personal technology and programming blog by **Nguyen Huu Khai** - a Software Developer specializing in Web Development & Online Payment Integration since 2021. The blog provides bilingual Vietnamese - English content focusing on practical programming, IT careers, developer interviews, AI in software development, and the latest technology trends for fresher and junior developers in Vietnam.
 
 ---
 
@@ -39,7 +39,7 @@ The name **KhaiZiNam** originated from a shared passion for gaming back in the Z
 *   **Resume/CV Writing:** How to write a standout IT resume for freshers, optimizing 1-page vs 3-page CVs.
 *   **Interview Skills:** Self-introduction scripting for IT interviews, salary negotiation techniques to avoid being undervalued.
 *   **Roadmaps:** Detailed study paths for Frontend / Backend / Fullstack roles.
-*   **Adapting to Change:** NVSP certification — alternative routes for IT professionals in the AI era, freelance software development.
+*   **Adapting to Change:** NVSP certification - alternative routes for IT professionals in the AI era, freelance software development.
 
 ### 2. AI & Emerging Tech
 *   **AI in Software Development:** Adapting or being replaced in the face of rapid AI adoption.
@@ -86,24 +86,24 @@ If you are looking for a development partner or technical consultation, I offer 
 
 ## Highlighted Projects
 
-### Automotive Multi-brand Platform — Major Vietnamese Automotive Group
+### Automotive Multi-brand Platform - Major Vietnamese Automotive Group
 
 Designed and built end-to-end for one of Vietnam's leading automotive groups:
 
-*   **Architecture:** Multi-tenant, multi-brand — each brand runs on its own domain/subdomain with fully isolated data, powered by a shared Laravel + Botble CMS core using the tenancy-for-laravel plugin.
+*   **Architecture:** Multi-tenant, multi-brand - each brand runs on its own domain/subdomain with fully isolated data, powered by a shared Laravel + Botble CMS core using the tenancy-for-laravel plugin.
 *   **Tech stack:** PHP Laravel + **Botble CMS**, MySQL, **NuxtJS** (for ecommerce/sales pages), Redis, queue/job system
 *   **Scope:** Database schema design, migration strategy, multi-tenant domain routing, permission & content workflow for multiple editorial teams, SEO infrastructure at scale across multiple brands, production deployment & CI/CD pipeline
-*   **Complexity:** Tenancy requires careful query isolation, preventing session/cache/queue leaks across tenants, and safe migration strategies — a pattern many developers avoid because of the high risk of data corruption in production
+*   **Complexity:** Tenancy requires careful query isolation, preventing session/cache/queue leaks across tenants, and safe migration strategies - a pattern many developers avoid because of the high risk of data corruption in production
 
 ---
 
-### MangaK — Online Manga Platform
+### MangaK - Online Manga Platform
 
-Built and operated end-to-end — manga/manhwa/manhhua reading platform with **1,000+ DAU**:
+Built and operated end-to-end - manga/manhwa/manhhua reading platform with **1,000+ DAU**:
 
 *   **Stack:** CodeIgniter 4 (CI4) API + VueJS, MySQL, Redis cache, CDN
 *   **Features:** Chapter delivery system, user subscriptions, real-time socket chat, custom queue worker, content crawler, notifications, integrated farming game
-*   **SEO:** Self-managed technical and content SEO — on-page optimization, sitemap, structured data, page speed, and organic traffic growth strategy
+*   **SEO:** Self-managed technical and content SEO - on-page optimization, sitemap, structured data, page speed, and organic traffic growth strategy
 *   **Fanpage & Community:** Self-managed fanpage, content calendar, follower growth campaigns, and reader community engagement
 *   **Security & Infrastructure:** Cloudflare configuration (WAF, DDoS protection, caching rules, rate limiting), hosting management, database security (backups, access control, query hardening)
 
@@ -112,8 +112,8 @@ Built and operated end-to-end — manga/manhwa/manhhua reading platform with **1
 ### Other Projects
 
 *   **Fintech Plugins:** Payment gateway integrations (SePay, VietQR, VNPAY) across multiple systems
-*   **International E-commerce:** TLFparts (Netherlands) — Mobile phone & components e-commerce platform
-*   **F&B Retail:** Annam Gourmet — Premium imported grocery web platform
+*   **International E-commerce:** TLFparts (Netherlands) - Mobile phone & components e-commerce platform
+*   **F&B Retail:** Annam Gourmet - Premium imported grocery web platform
 *   **Blockchain Game:** TON Blockchain NFT Game
 
 ---

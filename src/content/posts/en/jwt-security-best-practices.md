@@ -9,12 +9,12 @@ featured: false
 draft: false
 tags:
   - "SeriesPhongVan"
-description: "You've implemented JWT and it works — but is it actually secure? Many developers get the functionality right while getting the security completely wrong: storing tokens in localStorage, using weak secrets, skipping claims validation, or ignoring refresh token rotation."
+description: "You've implemented JWT and it works - but is it actually secure? Many developers get the functionality right while getting the security completely wrong: storing tokens in localStorage, using weak secrets, skipping claims validation, or ignoring refresh token rotation."
 ---
 
-Summary of 10+ of the most important JWT security best practices in 2026 — from secure token storage and choosing the right signing algorithm to handling revocation — helping developers avoid critical security vulnerabilities in production projects.
+Summary of 10+ of the most important JWT security best practices in 2026 - from secure token storage and choosing the right signing algorithm to handling revocation - helping developers avoid critical security vulnerabilities in production projects.
 
-You already know what JWT is and have used it in projects, but are you making security mistakes that hackers could exploit in minutes? Many developers implement JWT correctly in terms of functionality but completely wrong in terms of security — storing tokens in localStorage, using weak secret keys, failing to rotate refresh tokens, or ignoring claim validation. A system compromised due to JWT misconfiguration can lose all user sessions in just a few hours. This article goes straight into each specific best practice, explaining why and guiding you on how to implement it correctly.
+You already know what JWT is and have used it in projects, but are you making security mistakes that hackers could exploit in minutes? Many developers implement JWT correctly in terms of functionality but completely wrong in terms of security - storing tokens in localStorage, using weak secret keys, failing to rotate refresh tokens, or ignoring claim validation. A system compromised due to JWT misconfiguration can lose all user sessions in just a few hours. This article goes straight into each specific best practice, explaining why and guiding you on how to implement it correctly.
 
 Article Content:
 
@@ -33,7 +33,7 @@ Article Content:
 
 ##### 1.1 Why is JWT easier to misconfigure than Sessions?
 
-JWT is a self-contained technology — all authentication information resides within the token, and the server does not store state. This creates high flexibility but also shifts security responsibility entirely to the developer. With Sessions, the server has direct control: to kick a user out, just delete the session. With JWT, if a token is leaked and you don't have a revocation mechanism, an attacker can use that token for its entire remaining duration — which could be 24 hours, or even 7 days if configured incorrectly.
+JWT is a self-contained technology - all authentication information resides within the token, and the server does not store state. This creates high flexibility but also shifts security responsibility entirely to the developer. With Sessions, the server has direct control: to kick a user out, just delete the session. With JWT, if a token is leaked and you don't have a revocation mechanism, an attacker can use that token for its entire remaining duration - which could be 24 hours, or even 7 days if configured incorrectly.
 
 ##### 1.2 Practical JWT attack vectors you need to know
 
@@ -47,28 +47,28 @@ JWT is a self-contained technology — all authentication information resides wi
 
 ##### 2.1 System before applying practices
 
-*   Secret key: "mysecret" — 8 characters, easy to brute-force in minutes.
-*   Token TTL: 7 days — wide attack window if the token is leaked.
-*   Storage: localStorage — XSS can steal the token instantly.
-*   No iss, aud validation — attackers can use tokens from other services.
-*   No refresh token rotation — stolen tokens can be used forever until expiration.
+*   Secret key: "mysecret" - 8 characters, easy to brute-force in minutes.
+*   Token TTL: 7 days - wide attack window if the token is leaked.
+*   Storage: localStorage - XSS can steal the token instantly.
+*   No iss, aud validation - attackers can use tokens from other services.
+*   No refresh token rotation - stolen tokens can be used forever until expiration.
 
 ##### 2.2 System after applying best practices
 
-*   Secret key: 256-bit random string from **crypto.randomBytes(32)** — practically impossible to brute-force.
-*   Access token TTL: 15 minutes — minimizes damage if a token is leaked.
+*   Secret key: 256-bit random string from **crypto.randomBytes(32)** - practically impossible to brute-force.
+*   Access token TTL: 15 minutes - minimizes damage if a token is leaked.
 *   Storage: refresh token in httpOnly + Secure + SameSite=Strict cookie.
 *   Full validation: exp, iss, aud, nbf before each request.
 *   Refresh token rotation + jti blacklist in Redis upon logout.
 
 #### 3\. Choosing the right signing algorithm: HS256, RS256, ES256
 
-##### 3.1 HS256 — When is it suitable?
+##### 3.1 HS256 - When is it suitable?
 
-HS256 (HMAC SHA-256) is a symmetric algorithm: the same secret key is used for both signing and verification. Suitable when there is only one service that both issues and authenticates tokens. Pros: simple, fast. Cons: if multiple services need verification, all must hold the secret — leaking risk increases with the number of services.
+HS256 (HMAC SHA-256) is a symmetric algorithm: the same secret key is used for both signing and verification. Suitable when there is only one service that both issues and authenticates tokens. Pros: simple, fast. Cons: if multiple services need verification, all must hold the secret - leaking risk increases with the number of services.
 
 ```javascript
-// Node.js — Generating a strong secret key
+// Node.js - Generating a strong secret key
 const crypto = require('crypto');
 const secret = crypto.randomBytes(32).toString('hex');
 // Result: 64 hex characters = 256 bit entropy
@@ -82,12 +82,12 @@ const token = jwt.sign(
 );
 ```
 
-##### 3.2 RS256 — The choice for microservices
+##### 3.2 RS256 - The choice for microservices
 
 RS256 is asymmetric: a private key for signing (held only by the Auth Service), and a public key for verification (can be made public via a JWKS endpoint). This is the best practice for microservices systems or when third parties need to verify tokens.
 
 ```javascript
-// Node.js — Signing with RS256
+// Node.js - Signing with RS256
 const fs = require('fs');
 const privateKey = fs.readFileSync('private.pem');
 
@@ -106,20 +106,20 @@ const decoded = jwt.verify(token, publicKey, {
 });
 ```
 
-##### 3.3 ES256 — When higher performance than RS256 is needed
+##### 3.3 ES256 - When higher performance than RS256 is needed
 
-ES256 (ECDSA with P-256) is also asymmetric but with smaller keys and significantly faster than RS256 — suitable for mobile or IoT. It offers equivalent security to RS256 but the signature is ~3 times smaller, reducing network overhead.
+ES256 (ECDSA with P-256) is also asymmetric but with smaller keys and significantly faster than RS256 - suitable for mobile or IoT. It offers equivalent security to RS256 but the signature is ~3 times smaller, reducing network overhead.
 
-#### 4\. Secure Token Storage — Decisions affecting overall security
+#### 4\. Secure Token Storage - Decisions affecting overall security
 
 ##### 4.1 Why is localStorage the wrong choice?
 
-localStorage is accessible by any JavaScript running on the same origin — including scripts injected via XSS. A minor XSS vulnerability (e.g., rendering un-sanitized user input) is enough for an attacker to run **localStorage.getItem('token')** and send it to their server. This isn't theory — this is an attack vector exploited in many real-world bug bounty reports.
+localStorage is accessible by any JavaScript running on the same origin - including scripts injected via XSS. A minor XSS vulnerability (e.g., rendering un-sanitized user input) is enough for an attacker to run **localStorage.getItem('token')** and send it to their server. This isn't theory - this is an attack vector exploited in many real-world bug bounty reports.
 
-##### 4.2 httpOnly Cookie — Best practice for web apps
+##### 4.2 httpOnly Cookie - Best practice for web apps
 
 ```javascript
-// Node.js / Express — Setting refresh token in httpOnly cookie
+// Node.js / Express - Setting refresh token in httpOnly cookie
 res.cookie('refreshToken', refreshToken, {
   httpOnly: true,      // JavaScript cannot read it
   secure: true,        // Only send via HTTPS
@@ -134,15 +134,15 @@ res.json({ accessToken });
 
 ##### 4.3 Storage strategy by platform
 
-*   **Web App**: Refresh token → httpOnly cookie. Access token → in-memory (JS variable, lost on F5 — this is an acceptable tradeoff).
-*   **Mobile App (React Native)**: Use **react-native-keychain** or Expo SecureStore — store in iOS Keychain / Android Keystore, not AsyncStorage.
-*   **SPAs needing persistence**: Use silent refresh — access token in-memory; when lost, automatically call the refresh endpoint (using the httpOnly cookie) to retrieve a new one.
+*   **Web App**: Refresh token → httpOnly cookie. Access token → in-memory (JS variable, lost on F5 - this is an acceptable tradeoff).
+*   **Mobile App (React Native)**: Use **react-native-keychain** or Expo SecureStore - store in iOS Keychain / Android Keystore, not AsyncStorage.
+*   **SPAs needing persistence**: Use silent refresh - access token in-memory; when lost, automatically call the refresh endpoint (using the httpOnly cookie) to retrieve a new one.
 
 #### 5\. Validating Claims & Expiry correctly
 
 ##### 5.1 Mandatory claims to validate
 
-Many developers only verify the signature and ignore claim validation — this is a serious vulnerability. You must validate:
+Many developers only verify the signature and ignore claim validation - this is a serious vulnerability. You must validate:
 
 *   **exp** (expiration): Has the token expired? Most libraries do this automatically, but ensure this feature is not disabled.
 *   **nbf** (not before): Is the token being used earlier than allowed?
@@ -151,7 +151,7 @@ Many developers only verify the signature and ignore claim validation — this i
 *   **alg whitelist**: Always specify the list of allowed algorithms; do not let the library blindly trust the header.
 
 ```php
-// Laravel PHP — Full validation with firebase/php-jwt
+// Laravel PHP - Full validation with firebase/php-jwt
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 
@@ -164,10 +164,10 @@ if ($decoded->iss !== 'auth.khaizinam.io.vn') {
 if ($decoded->aud !== 'api') {
     throw new \Exception('Invalid audience');
 }
-// exp is automatically checked by firebase/php-jwt — throws ExpiredException if expired
+// exp is automatically checked by firebase/php-jwt - throws ExpiredException if expired
 ```
 
-##### 5.2 Clock Skew — The issue few notice
+##### 5.2 Clock Skew - The issue few notice
 
 In distributed environments, clocks between servers can drift by a few seconds. A newly created token might be rejected by another service for "not yet valid (nbf)" or "expired (exp)". Best practice: allow a clock skew of up to 30-60 seconds during validation.
 
@@ -175,9 +175,9 @@ In distributed environments, clocks between servers can drift by a few seconds. 
 
 ##### 6.1 Core problem: JWT cannot revoke itself
 
-This is a design trade-off of JWT compared to Sessions. Once issued, a token is valid until it expires — even if the user changes their password, is banned, or an admin wants to kick them. Solutions must be built externally:
+This is a design trade-off of JWT compared to Sessions. Once issued, a token is valid until it expires - even if the user changes their password, is banned, or an admin wants to kick them. Solutions must be built externally:
 
-##### 6.2 Jti Blacklist with Redis — Instant Revocation
+##### 6.2 Jti Blacklist with Redis - Instant Revocation
 
 ```javascript
 // Upon logout or when immediate revocation is needed
@@ -189,19 +189,19 @@ const ttl = decoded.exp - Math.floor(Date.now() / 1000);
 // 2. Store in Redis with TTL = remaining time of the token
 await redis.setex(`blacklist:${jti}`, ttl, '1');
 
-// 3. Verify middleware — check blacklist before allowing access
+// 3. Verify middleware - check blacklist before allowing access
 const isBlacklisted = await redis.get(`blacklist:${jti}`);
 if (isBlacklisted) {
     return res.status(401).json({ error: 'Token revoked' });
 }
 ```
 
-##### 6.3 Refresh Token Rotation — Detecting Token Theft
+##### 6.3 Refresh Token Rotation - Detecting Token Theft
 
-Rotation is a mechanism where every time a refresh token is used to get a new access token, the old refresh token is invalidated and a new one is issued. If an attacker steals a refresh token and uses it before the user, when the real user attempts to use it, the system sees the token is already invalid — immediately indicating a breach and allowing for the revocation of the entire session.
+Rotation is a mechanism where every time a refresh token is used to get a new access token, the old refresh token is invalidated and a new one is issued. If an attacker steals a refresh token and uses it before the user, when the real user attempts to use it, the system sees the token is already invalid - immediately indicating a breach and allowing for the revocation of the entire session.
 
 ```javascript
-// Node.js — Refresh Token Rotation logic
+// Node.js - Refresh Token Rotation logic
 async function refreshTokens(oldRefreshToken) {
   // 1. Find in DB
   const storedToken = await db.refreshTokens.findOne({
@@ -210,7 +210,7 @@ async function refreshTokens(oldRefreshToken) {
   });
 
   if (!storedToken) {
-    // Token doesn't exist or is already revoked — possible reuse attack
+    // Token doesn't exist or is already revoked - possible reuse attack
     // Revoke all sessions for this user
     await db.refreshTokens.updateMany(
       { userId: storedToken?.userId },
@@ -244,7 +244,7 @@ async function refreshTokens(oldRefreshToken) {
 3.  **Storing access tokens in localStorage** → Fix: Access token in-memory, refresh token in httpOnly cookie. Accept the UX trade-off for security.
 4.  **TTLs that are too long (24h, 7 days) for access tokens** → Fix: Access token 15 minutes, refresh token 7-30 days. Use silent refresh to maintain UX.
 5.  **Not validating iss and aud** → Fix: Always set issuer and audience when signing, and verify when decoding. Crucial in multi-service architectures.
-6.  **Storing sensitive information in payload** → Fix: Payload should only contain userId, role, exp — no emails, passwords, or PII. The payload is only encoded, not encrypted.
+6.  **Storing sensitive information in payload** → Fix: Payload should only contain userId, role, exp - no emails, passwords, or PII. The payload is only encoded, not encrypted.
 
 To understand more about how JWT works in technical interviews, see [Common JWT Interview Questions and Standard Answers 2026](/en/session-vs-jwt-phong-van). If you're unsure whether to choose JWT or Session, [Session vs JWT: Full Theory and Interview Questions](/en/session-vs-jwt-toan-bo-ly-thuyet) will help you decide.
 
@@ -252,11 +252,11 @@ To understand more about how JWT works in technical interviews, see [Common JWT 
 
 ##### 8.1 Does JWT need HTTPS?
 
-Absolutely. JWT is signed, not encrypted — anyone intercepting HTTP traffic can read and steal the token. HTTPS is the minimum requirement for JWT security to be meaningful.
+Absolutely. JWT is signed, not encrypted - anyone intercepting HTTP traffic can read and steal the token. HTTPS is the minimum requirement for JWT security to be meaningful.
 
 ##### 8.2 Should I use JWE instead of JWT?
 
-JWE (JSON Web Encryption) encrypts the payload — suitable if the payload contains sensitive info that must be kept secret from third parties. However, JWE is significantly more complex and has higher CPU overhead. Practical best practice: just don't store sensitive info in the payload.
+JWE (JSON Web Encryption) encrypts the payload - suitable if the payload contains sensitive info that must be kept secret from third parties. However, JWE is significantly more complex and has higher CPU overhead. Practical best practice: just don't store sensitive info in the payload.
 
 ##### 8.3 Should I use JWT for regular web sessions?
 
@@ -264,7 +264,7 @@ Not necessarily. For traditional web apps (server-side rendered, no immediate ne
 
 ##### 8.4 How to rotate secret keys while users are logged in?
 
-Use key versioning: add a **kid** (key ID) claim to the header; the server keeps multiple keys mapped by kid. When rotating, issue new tokens with the new kid — old tokens remain valid until they expire. This allows zero-downtime key rotation.
+Use key versioning: add a **kid** (key ID) claim to the header; the server keeps multiple keys mapped by kid. When rotating, issue new tokens with the new kid - old tokens remain valid until they expire. This allows zero-downtime key rotation.
 
 ##### 8.5 Is JWT suitable for real-time apps (WebSockets)?
 
@@ -272,7 +272,7 @@ Yes, but it requires manual handling. WebSockets do not have automatic Authoriza
 
 #### Summary & Next Steps
 
-JWT security is not a one-time checklist — it's a design mindset. Remember the three pillars: choose the right algorithm (RS256 for multi-service), store tokens correctly (httpOnly cookies for refresh), and always have a revocation mechanism. Review your current codebase with this checklist — chances are you'll find at least one point for improvement.
+JWT security is not a one-time checklist - it's a design mindset. Remember the three pillars: choose the right algorithm (RS256 for multi-service), store tokens correctly (httpOnly cookies for refresh), and always have a revocation mechanism. Review your current codebase with this checklist - chances are you'll find at least one point for improvement.
 
 Author: Nguyen Huu Khai
 

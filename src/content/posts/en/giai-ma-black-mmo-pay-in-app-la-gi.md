@@ -21,7 +21,7 @@ In the digital age, **Pay in-app** (in-app purchasing) has become an indispensab
 
 In the digital age, Pay in-app has become an indispensable part
 
-However, behind this convenience lies a "dark corner" of the **Black MMO** world, where Pay in-app is defined as a sub-branch of **Carding** — a form of fraud that uses stolen (hacked) international payment card information to perform unauthorized shopping or payment transactions.
+However, behind this convenience lies a "dark corner" of the **Black MMO** world, where Pay in-app is defined as a sub-branch of **Carding** - a form of fraud that uses stolen (hacked) international payment card information to perform unauthorized shopping or payment transactions.
 
 Current trends show an explosion in these fraudulent activities through mobile payment gateways, as bad actors exploit system security loopholes for profit.
 

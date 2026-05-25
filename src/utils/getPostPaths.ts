@@ -14,7 +14,7 @@ function getPostPathSegments(filePath: string | undefined): string[] {
       .split("/")
       .filter(path => path !== "")
       .filter(path => !path.startsWith("_"))
-      // Strip language folder prefix (vi/ or en/) — we route by locale, not path
+      // Strip language folder prefix (vi/ or en/) - we route by locale, not path
       .filter(path => !LANG_PREFIXES.includes(path))
       .slice(0, -1)
       .map(segment => slugifyStr(segment)) ?? []

@@ -9,24 +9,24 @@ featured: false
 draft: false
 tags:
   - "DevOps"
-description: "You just spun up a Linux VPS and you're staring at a blank terminal not knowing where to start? Shared hosting works fine for simple PHP — but the moment you need to control PHP versions, configure MySQL your way, or run a Laravel queue worker, shared hosting falls short."
+description: "You just spun up a Linux VPS and you're staring at a blank terminal not knowing where to start? Shared hosting works fine for simple PHP - but the moment you need to control PHP versions, configure MySQL your way, or run a Laravel queue worker, shared hosting falls short."
 ---
 
 A complete step-by-step guide to installing PHP 8.2, Nginx, MySQL via Docker, configuring PHP-FPM, UFW firewall, and Let's Encrypt SSL to deploy plain PHP, Laravel, or CodeIgniter on an Ubuntu VPS from scratch.
 
-You just spun up a Linux VPS and you're staring at a blank terminal not knowing where to start? Shared hosting works fine for simple PHP — but the moment you need to control PHP versions, configure MySQL your way, or run a Laravel queue worker, shared hosting falls short. This guide goes straight to hands-on: from your first SSH login to your domain running HTTPS with PHP 8.2, Nginx, MySQL (via Docker), and auto-renewing SSL.
+You just spun up a Linux VPS and you're staring at a blank terminal not knowing where to start? Shared hosting works fine for simple PHP - but the moment you need to control PHP versions, configure MySQL your way, or run a Laravel queue worker, shared hosting falls short. This guide goes straight to hands-on: from your first SSH login to your domain running HTTPS with PHP 8.2, Nginx, MySQL (via Docker), and auto-renewing SSL.
 
 **Table of Contents:**
 
 *   [1\. Why Nginx instead of Apache for PHP on a VPS?](#1-why-nginx-instead-of-apache-for-php-on-a-vps)
 *   [2\. Prerequisites](#2-prerequisites)
-*   [3\. Step 1 — SSH in, update the server, and enable UFW firewall](#3-step-1-ssh-in-update-the-server-and-enable-ufw-firewall)
-*   [4\. Step 2 — Install PHP 8.2 and required extensions](#4-step-2-install-php-82-and-required-extensions)
-*   [5\. Step 3 — Install Nginx](#5-step-3-install-nginx)
-*   [6\. Step 4 — Install MySQL via Docker (and why you should)](#6-step-4-install-mysql-via-docker-and-why-you-should)
-*   [7\. Step 5 — Configure Nginx server block for PHP](#7-step-5-configure-nginx-server-block-for-php)
-*   [8\. Step 6 — Enable free HTTPS with Certbot + Let's Encrypt](#8-step-6-enable-free-https-with-certbot-lets-encrypt)
-*   [9\. Step 7 — Deploy Laravel and CodeIgniter](#9-step-7-deploy-laravel-and-codeigniter)
+*   [3\. Step 1 - SSH in, update the server, and enable UFW firewall](#3-step-1-ssh-in-update-the-server-and-enable-ufw-firewall)
+*   [4\. Step 2 - Install PHP 8.2 and required extensions](#4-step-2-install-php-82-and-required-extensions)
+*   [5\. Step 3 - Install Nginx](#5-step-3-install-nginx)
+*   [6\. Step 4 - Install MySQL via Docker (and why you should)](#6-step-4-install-mysql-via-docker-and-why-you-should)
+*   [7\. Step 5 - Configure Nginx server block for PHP](#7-step-5-configure-nginx-server-block-for-php)
+*   [8\. Step 6 - Enable free HTTPS with Certbot + Let's Encrypt](#8-step-6-enable-free-https-with-certbot-lets-encrypt)
+*   [9\. Step 7 - Deploy Laravel and CodeIgniter](#9-step-7-deploy-laravel-and-codeigniter)
 *   [10\. Common errors and fixes](#10-common-errors-and-fixes)
 *   [FAQ](#faq-frequently-asked-questions)
 
@@ -34,15 +34,15 @@ You just spun up a Linux VPS and you're staring at a blank terminal not knowing 
 
 #### 1\. Why Nginx Instead of Apache for PHP on a VPS?
 
-Apache has been the default web server for PHP for decades — and it still works well — but Nginx has a clear advantage on resource-constrained VPS environments. Nginx handles concurrent requests using an event-driven asynchronous model, consuming significantly less RAM than Apache's process-per-request model under load. On a 1-2GB RAM VPS, this difference is substantial.
+Apache has been the default web server for PHP for decades - and it still works well - but Nginx has a clear advantage on resource-constrained VPS environments. Nginx handles concurrent requests using an event-driven asynchronous model, consuming significantly less RAM than Apache's process-per-request model under load. On a 1-2GB RAM VPS, this difference is substantial.
 
 > See more: [How to Deploy Node.js and React Apps on Linux Hosting with Nginx Reverse Proxy](/en/cach-deploy-nodejs-va-react-len-hosting-linux-bang-nginx-reverse-proxy-huong-dan-day-du-pm2-ssl-2025)
 
-Nginx doesn't execute PHP directly — it delegates PHP processing to **PHP-FPM** (FastCGI Process Manager) over a Unix socket or TCP port. This separation means:
+Nginx doesn't execute PHP directly - it delegates PHP processing to **PHP-FPM** (FastCGI Process Manager) over a Unix socket or TCP port. This separation means:
 
 *   Nginx serves static files (CSS, JS, images) directly without involving PHP-FPM
 *   PHP-FPM manages its own worker pool, tunable to your server's RAM
-*   Upgrading PHP versions only requires changing the socket path in Nginx config — no web server changes needed
+*   Upgrading PHP versions only requires changing the socket path in Nginx config - no web server changes needed
 *   Multiple PHP apps with different versions (7.4 and 8.2) can run side-by-side on the same server
 
 * * *
@@ -51,12 +51,12 @@ Nginx doesn't execute PHP directly — it delegates PHP processing to **PHP-FPM*
 
 *   VPS or dedicated server running **Ubuntu 20.04 / 22.04 / 24.04**
 *   **Root or sudo access** via SSH
-*   A domain with its **A record pointing to your server's public IP** — point the domain first, wait for DNS propagation, then run Certbot
+*   A domain with its **A record pointing to your server's public IP** - point the domain first, wait for DNS propagation, then run Certbot
 *   PHP / Laravel / CodeIgniter code ready to deploy (via Git or SCP/SFTP)
 
 * * *
 
-#### 3\. Step 1 — SSH In, Update the Server, and Enable UFW Firewall
+#### 3\. Step 1 - SSH In, Update the Server, and Enable UFW Firewall
 
 ##### 3.1. SSH into the server
 
@@ -84,7 +84,7 @@ sudo apt install -y curl git unzip software-properties-common apt-transport-http
 # Enable UFW
 sudo ufw enable
 
-# Allow SSH (critical — missing this step will lock you out)
+# Allow SSH (critical - missing this step will lock you out)
 sudo ufw allow ssh
 sudo ufw allow 22/tcp
 
@@ -95,11 +95,11 @@ sudo ufw allow 'Nginx Full'
 sudo ufw status verbose
 ```
 
-**Critical warning:** Always run **sudo ufw allow ssh** BEFORE **sudo ufw enable**. Enabling UFW without opening the SSH port first will completely lock you out of the server — you'll need to use your VPS provider's console to recover.
+**Critical warning:** Always run **sudo ufw allow ssh** BEFORE **sudo ufw enable**. Enabling UFW without opening the SSH port first will completely lock you out of the server - you'll need to use your VPS provider's console to recover.
 
 * * *
 
-#### 4\. Step 2 — Install PHP 8.2 and Required Extensions
+#### 4\. Step 2 - Install PHP 8.2 and Required Extensions
 
 ##### 4.1. Add PPA and install PHP 8.2
 
@@ -154,7 +154,7 @@ composer --version
 
 * * *
 
-#### 5\. Step 3 — Install Nginx
+#### 5\. Step 3 - Install Nginx
 
 ```bash
 sudo apt install -y nginx
@@ -162,7 +162,7 @@ sudo systemctl enable nginx
 sudo systemctl start nginx
 sudo systemctl status nginx
 
-# Remove the default config — you'll create per-site configs instead
+# Remove the default config - you'll create per-site configs instead
 sudo rm /etc/nginx/sites-enabled/default
 ```
 
@@ -170,13 +170,13 @@ At this point, visiting **http://YOUR_SERVER_IP** in a browser should show the N
 
 * * *
 
-#### 6\. Step 4 — Install MySQL via Docker (and Why You Should)
+#### 6\. Step 4 - Install MySQL via Docker (and Why You Should)
 
-You can install MySQL directly with **apt install mysql-server** — that works perfectly fine. However, running MySQL inside a Docker container has practical advantages, especially when managing multiple projects on a single server:
+You can install MySQL directly with **apt install mysql-server** - that works perfectly fine. However, running MySQL inside a Docker container has practical advantages, especially when managing multiple projects on a single server:
 
-*   **Easy port control:** Instead of MySQL exposing port 3306 to the whole server, you map it to a custom port (e.g. 33060) and bind it to localhost only — more secure than the default
+*   **Easy port control:** Instead of MySQL exposing port 3306 to the whole server, you map it to a custom port (e.g. 33060) and bind it to localhost only - more secure than the default
 *   **Isolated instances:** Need MySQL 5.7 for a legacy project and MySQL 8 for a new one? Run two containers side by side with zero conflicts
-*   **Simple backup and migration:** All MySQL data lives in a Docker volume — copying the volume is a complete backup
+*   **Simple backup and migration:** All MySQL data lives in a Docker volume - copying the volume is a complete backup
 *   **Clean uninstall:** Removing a container leaves no system files behind, unlike a native install
 
 ##### 6.1. Install Docker
@@ -218,7 +218,7 @@ docker run -d \
   mysql:8.0
 ```
 
-**Important:** The **-p 127.0.0.1:33060:3306** flag binds MySQL only to the loopback interface — only processes on the same server can connect. Never use **0.0.0.0:3306** on a production server as it exposes MySQL to the public internet.
+**Important:** The **-p 127.0.0.1:33060:3306** flag binds MySQL only to the loopback interface - only processes on the same server can connect. Never use **0.0.0.0:3306** on a production server as it exposes MySQL to the public internet.
 
 ##### 6.3. Create a database and user per project
 
@@ -248,9 +248,9 @@ DB_PASSWORD=strong_password_here
 
 * * *
 
-#### 7\. Step 5 — Configure Nginx Server Block for PHP
+#### 7\. Step 5 - Configure Nginx Server Block for PHP
 
-Nginx doesn't process PHP — it hands PHP requests to PHP-FPM via **fastcgi_pass**. This is the PHP equivalent of **proxy_pass** for Node.js, but using the FastCGI protocol instead of HTTP.
+Nginx doesn't process PHP - it hands PHP requests to PHP-FPM via **fastcgi_pass**. This is the PHP equivalent of **proxy_pass** for Node.js, but using the FastCGI protocol instead of HTTP.
 
 ##### 7.1. Create the web directory and upload code
 
@@ -269,7 +269,7 @@ git clone https://github.com/youruser/your-php-project.git .
 sudo nano /etc/nginx/sites-available/yourdomain.com
 ```
 
-Paste the following. This is the HTTP port 80 config — Certbot will add the HTTPS section in the next step:
+Paste the following. This is the HTTP port 80 config - Certbot will add the HTTPS section in the next step:
 
 ```nginx
 server {
@@ -347,9 +347,9 @@ sudo systemctl reload nginx
 
 * * *
 
-#### 8\. Step 6 — Enable Free HTTPS with Certbot + Let's Encrypt
+#### 8\. Step 6 - Enable Free HTTPS with Certbot + Let's Encrypt
 
-Certbot reads your existing Nginx config, adds an HTTPS server block for port 443, and configures an HTTP-to-HTTPS redirect — no manual Nginx editing required.
+Certbot reads your existing Nginx config, adds an HTTPS server block for port 443, and configures an HTTP-to-HTTPS redirect - no manual Nginx editing required.
 
 ```bash
 sudo apt install -y certbot python3-certbot-nginx
@@ -360,10 +360,10 @@ sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
 Follow the prompts:
 1. Enter your email for renewal notifications
 2. Agree to the Terms of Service (A)
-3. Select redirect HTTP to HTTPS (option 2) — recommended
+3. Select redirect HTTP to HTTPS (option 2) - recommended
 
 ```bash
-# Test auto-renewal (dry run — does not affect the real certificate)
+# Test auto-renewal (dry run - does not affect the real certificate)
 sudo certbot renew --dry-run
 
 # Verify the systemd renewal timer is active
@@ -372,7 +372,7 @@ sudo systemctl status certbot.timer
 
 * * *
 
-#### 9\. Step 7 — Deploy Laravel and CodeIgniter
+#### 9\. Step 7 - Deploy Laravel and CodeIgniter
 
 ##### 9.1. Complete Laravel setup
 
@@ -438,7 +438,7 @@ sudo supervisorctl start laravel-worker:*
 
 * * *
 
-#### FAQ — Frequently Asked Questions
+#### FAQ - Frequently Asked Questions
 
 ##### Should I install MySQL directly or use Docker on a VPS?
 
@@ -446,24 +446,24 @@ Both work. A direct install is simpler if you only have one project. Docker make
 
 ##### What's the difference between a Unix socket and a TCP port for PHP-FPM?
 
-A Unix socket (**unix:/var/run/php/php8.2-fpm.sock**) is faster than TCP because it communicates through the kernel without going through the network stack. Use Unix sockets when Nginx and PHP-FPM are on the same server — this is the standard setup. Use TCP (**127.0.0.1:9000**) only when PHP-FPM runs on a separate server.
+A Unix socket (**unix:/var/run/php/php8.2-fpm.sock**) is faster than TCP because it communicates through the kernel without going through the network stack. Use Unix sockets when Nginx and PHP-FPM are on the same server - this is the standard setup. Use TCP (**127.0.0.1:9000**) only when PHP-FPM runs on a separate server.
 
 ##### Can I run multiple PHP versions on the same server?
 
-Yes. Install PHP 7.4 and PHP 8.2 in parallel from Ondřej's PPA — each version gets its own PHP-FPM socket. In each site's Nginx config, simply point **fastcgi_pass** to the correct socket: **php7.4-fpm.sock** or **php8.2-fpm.sock**.
+Yes. Install PHP 7.4 and PHP 8.2 in parallel from Ondřej's PPA - each version gets its own PHP-FPM socket. In each site's Nginx config, simply point **fastcgi_pass** to the correct socket: **php7.4-fpm.sock** or **php8.2-fpm.sock**.
 
 ##### What's the deployment process for new code?
 
-For plain PHP: upload files via SFTP or run **git pull** — no server restart needed. For Laravel: **git pull && composer install --no-dev && php artisan migrate --force && php artisan config:cache && php artisan route:cache**. If using queue workers: **sudo supervisorctl restart laravel-worker:*** after deployment.
+For plain PHP: upload files via SFTP or run **git pull** - no server restart needed. For Laravel: **git pull && composer install --no-dev && php artisan migrate --force && php artisan config:cache && php artisan route:cache**. If using queue workers: **sudo supervisorctl restart laravel-worker:*** after deployment.
 
 ##### What happens when my Let's Encrypt certificate expires?
 
 Nothing manual is required. Certbot installs a systemd timer that runs **certbot renew** twice daily. Certificates are renewed automatically when less than 30 days remain. To verify: **sudo certbot renew --dry-run**.
 
-#### Conclusion — Your PHP Production Stack Is Ready
+#### Conclusion - Your PHP Production Stack Is Ready
 
 You now have a complete PHP production stack: PHP 8.2 with all required extensions running through PHP-FPM, Nginx as the web server with FastCGI pass, MySQL 8 isolated in a Docker container with persistent volume storage, UFW firewall controlling inbound traffic, and auto-renewing HTTPS via Let's Encrypt. This stack handles plain PHP, Laravel, CodeIgniter, and any other PHP framework.
 
-Next step: set up automated CI/CD with GitHub Actions — SSH into the server, pull the latest code, run **composer install** and **php artisan migrate** automatically on every merge to **main**. Automating deployments from day one eliminates manual errors and reduces each update to a matter of seconds.
+Next step: set up automated CI/CD with GitHub Actions - SSH into the server, pull the latest code, run **composer install** and **php artisan migrate** automatically on every merge to **main**. Automating deployments from day one eliminates manual errors and reduces each update to a matter of seconds.
 
 > See more: [How to Deploy Node.js and React Apps on Linux Hosting with Nginx Reverse Proxy](/en/cach-deploy-nodejs-va-react-len-hosting-linux-bang-nginx-reverse-proxy-huong-dan-day-du-pm2-ssl-2025)
