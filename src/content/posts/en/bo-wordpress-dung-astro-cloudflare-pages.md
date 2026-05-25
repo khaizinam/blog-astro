@@ -1,7 +1,7 @@
 ---
 title: "Why I Quit WordPress for Astro + Cloudflare Pages (And Cut My Hosting Bill to Zero)"
 author: "Nguyễn Hữu Khải - khaizinam"
-pubDatetime: 2026-05-22T08:00:00.000Z
+pubDatetime: 2026-05-25 00:00:00.00
 slug: bo-wordpress-dung-astro-cloudflare-pages
 lang: en
 translationKey: post-238
