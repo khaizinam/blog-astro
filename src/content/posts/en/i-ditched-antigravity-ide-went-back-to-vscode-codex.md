@@ -96,7 +96,7 @@ Compared to Codex (GPT-4o/o3) and Claude — the difference over the past two we
 
 ## 4. What I came back to and why
 
-**VSCode + Codex CLI** for the main coding flow. No heavyweight Electron agent running in the background, no `antigravity-server` consuming RAM. Codex runs from the terminal, context is explicit, control is total.
+**VSCode + Codex CLI** for the main coding flow. No heavyweight Electron agent running in the background, no `antigravity-server` consuming RAM. Codex runs from the terminal, context is explicit, control is total. And here's the best part — Codex is currently offering a free Plus tier (equivalent to ChatGPT Plus free for eligible users), so I have nothing to lose trying it out. If it becomes unstable, I can pivot to another tool without any financial commitment.
 
 **Claude** for tasks that need actual reasoning: complex refactors, architecture review, writing test cases. Claude Sonnet 4 right now is in the best shape it's ever been — and more importantly, it's *stable*.
 

@@ -98,7 +98,7 @@ So sánh với Codex (dùng GPT-4o/o3) và Claude - sự khác biệt trong 2 tu
 
 ## 4. Tôi quay về gì và tại sao
 
-**VSCode + Codex CLI** cho flow coding chính. Không có Electron agent nặng nề, không có background server ngốn RAM. Codex chạy từ terminal, context rõ ràng, kiểm soát được hoàn toàn.
+**VSCode + Codex CLI** cho flow coding chính. Không có Electron agent nặng nề, không có background server ngốn RAM. Codex chạy từ terminal, context rõ ràng, kiểm soát được hoàn toàn. Và tốt nhất là - Codex hiện tại đang free gói Plus (ChatGPT Plus free bạn nào), nên tôi không ngại gì để quay về dùng thử. Nếu không ổn định, tôi có thể chuyển sang tool khác mà không mất tiền.
 
 **Claude** cho những task cần reasoning: refactor logic phức tạp, review architecture, viết test case. Claude 4 Sonnet hiện tại đang ở trạng thái tốt nhất từ trước đến nay - và quan trọng hơn, nó ổn định.
 
