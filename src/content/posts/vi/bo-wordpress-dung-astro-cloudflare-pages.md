@@ -167,6 +167,41 @@ Có nguy cơ nếu không setup redirect đúng. Nếu redirect 301 đầy đủ
 
 Khác, không hẳn bất tiện. WordPress có visual editor quen thuộc. Astro dùng Markdown — nhanh hơn khi đã quen, và dễ kết hợp với AI để viết và format nội dung. Nếu cần giao diện viết bài trực quan hơn, có thể kết hợp với Decap CMS hoặc Keystatic.
 
+##### Cloudflare Pages miễn phí được trong bao lâu?
+
+Vĩnh viễn cho đến khi Cloudflare tuyên bố phá sản.
+
+##### Chịu được bao nhiêu lượt truy cập mỗi ngày?
+
+Con số là rất lớn, hiệu năng còn tốt hơn server VPS thông thường của bạn. Mức 250.000 lượt truy cập mỗi ngày là chuyện rất bình thường.
+> "250k lượt truy cập mỗi ngày vào trang web tĩnh của tôi mà chưa bao giờ bị gián đoạn." — *Theo Reddit.*
+
+Thêm một nhận xét ấn tượng khác:
+> "Một trong những khách hàng của mình host một số trang web sân bay, mỗi ngày nhận khoảng một triệu lượt truy cập và có thể vượt quá 50 triệu lượt trong 24 giờ khi thời tiết xấu.
+> Mình đang dùng gói Pro để có thêm một số tính năng và chưa bao giờ gặp vấn đề gì với CF không xử lý nổi lượng truy cập.
+> Ghi chú bên lề, kỷ lục của mình là trong lúc Crowdstrike bị lỗi, tất cả màn hình ở sân bay đều sập nên mọi người đều vào trang web để xem thông tin chuyến bay. Hôm đó mình đạt 1,8 tỷ lượt truy cập (lượt truy cập thực) và vẫn hoạt động suốt cả ngày." — *Theo Reddit.*
+
+##### Dùng Astro có chịu được tấn công DDoS không?
+
+Hoàn toàn có thể, thậm chí là cực kỳ tốt:
+> "Một trong những website của mình dùng gói miễn phí của Cloudflare bị tấn công DDoS và nhận hơn 1.4 tỉ request mà vẫn ngon lành cành đào nên mấy vụ traffic nhiều cỡ nào cũng chẳng phải lo! Chả downtime gì cả và 99.9% request bị chặn/cache luôn!" — *Theo Reddit.*
+
+##### Giới hạn số lần Build (triển khai) là bao nhiêu?
+
+Tối đa 500 lần build/deploy mã mới lên Git mỗi tháng cho mỗi dự án.
+
+##### Giới hạn số lượng tệp (files) là bao nhiêu?
+
+Tối đa 20.000 tệp trên mỗi trang web. Đối với blog cá nhân dạng vừa và nhỏ, con số 10.000 bài post đã là quá tuyệt vời rồi, nên bạn hầu như không cần quan tâm đến giới hạn này.
+
+##### Giới hạn kích thước tệp tối đa?
+
+Dung lượng mỗi tệp không được vượt quá 25 MB. Để dễ hình dung, 25 MB tương đương với khoảng hơn 10 triệu chữ (với mỗi ký tự là 1 byte, văn bản thuần tuý). Đây là một bài viết nội dung cực kỳ lớn, chắc bài viết của bạn không bao giờ đạt tới mức đó đâu ha kkk.
+
+##### Có giới hạn đối với Functions (Serverless) không?
+
+Có, Cloudflare Pages cung cấp miễn phí 100.000 request chứa hàm xử lý dữ liệu mỗi ngày.
+
 #### 9. Tổng kết
 
 Tôi không bỏ WordPress vì ghét nó. Tôi bỏ vì cuối cùng nhận ra blog cá nhân không nên cần một hệ thống phức tạp đến vậy. Astro + GitHub + Cloudflare Pages + R2 không phải stack hoàn hảo cho mọi người — nhưng với blog cá nhân nhỏ, nó giải quyết đúng ba thứ tôi muốn: không maintenance, không tốn tiền, không mất ownership. AI lấp phần kỹ thuật còn lại. Điều duy nhất còn lại là viết — và đó là lý do tôi làm blog ngay từ đầu.

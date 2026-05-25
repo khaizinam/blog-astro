@@ -167,6 +167,41 @@ There's risk if you don't set up redirects correctly. With proper 301 redirects 
 
 Different, not necessarily worse. WordPress has a familiar visual editor. Astro uses Markdown — faster once you're used to it, and easy to combine with AI for writing and formatting. If you want a more visual writing interface, you can pair Astro with Decap CMS or Keystatic.
 
+##### How long is Cloudflare Pages free?
+
+Forever, or until Cloudflare goes bankrupt.
+
+##### How much daily traffic can it handle?
+
+The number is massive, it performs even better than your typical VPS. Handling 250k visits per day is completely normal.
+> "250k hits a day to my static site and it's never skipped a beat." — *via Reddit.*
+
+Another impressive comment:
+> "One of my clients hosts some airport websites, they get about a million hits a day and can push 50 million in 24h when the weather is bad.
+> I use the Pro plan to get some extra features and have never had an issue with CF not being able to handle the traffic.
+> Side note, my record was during the Crowdstrike outage, all the screens in the airport went down so everyone went to the website to check flight info. I hit 1.8 billion requests (real traffic) that day and it stayed up the whole time." — *via Reddit.*
+
+##### Can using Astro handle DDoS attacks?
+
+Absolutely, and exceptionally well:
+> "One of my sites on the free tier got DDoS'd with over 1.4 billion requests and it handled it like a champ, so traffic volume is nothing to worry about! Zero downtime and 99.9% of requests were blocked/cached immediately!" — *via Reddit.*
+
+##### What is the build limit?
+
+A maximum of 500 builds/deployments per month (per project) when pushing new code to Git.
+
+##### What is the file count limit?
+
+A maximum of 20,000 files per site. For a small to medium personal blog, having 10,000 posts would already be amazing, so you practically don't need to worry about this.
+
+##### What is the maximum file size?
+
+The size of each file cannot exceed 25 MB. To put that into perspective, 25 MB of plain text is roughly over 10 million words. That would be an exceptionally massive article, so your blog posts will likely never reach that limit!
+
+##### What about Functions (Serverless)?
+
+It includes 100,000 free requests for data processing functions per day.
+
 #### 9. Conclusion
 
 I didn't quit WordPress because I hate it. I quit because I finally admitted that a personal blog doesn't need a system this complex. Astro + GitHub + Cloudflare Pages + R2 isn't a perfect stack for everyone — but for a small personal blog, it solves the three things I actually cared about: no maintenance, no hosting costs, no loss of ownership. AI fills in the technical gaps. The only thing left is writing — which is why I started blogging in the first place.
