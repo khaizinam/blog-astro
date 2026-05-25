@@ -10,14 +10,14 @@ draft: false
 tags:
   - "NgoaiLe"
 description: "After Antigravity 2.0 silently tanked my IDE's performance to force an upgrade, I uninstalled it. Here's what actually happened — and why Gemini's regression is the real problem."
-ogImage: "https://cdn.khaizinam.io.vn/blog-folder/2026-05/agy2-layout.jpg"
+ogImage: "https://cdn.khaizinam.io.vn/blog-folder/2026-05/antigravity-2-0.jpg"
 ---
 
 This afternoon I uninstalled Antigravity from my machine.
 
 Not because I didn't give it a fair shot. Not because I'm afraid of new tools. But because I sat staring at `htop` for 20 minutes watching `antigravity-server` eat RAM like it was training a model locally — while I was just writing a simple API endpoint.
 
-![I Ditched Antigravity IDE and Went Back to VSCode + Codex](https://cdn.khaizinam.io.vn/blog-folder/2026-05/agy2-layout.jpg)
+![I Ditched Antigravity IDE and Went Back to VSCode + Codex](https://cdn.khaizinam.io.vn/blog-folder/2026-05/antigravity-2-0.jpg)
 
 Machine stuttering. Fan screaming. IDE lagging so bad that keystrokes showed up 2 seconds late. That's not a working environment. That's a patience destroyer.
 
@@ -36,6 +36,8 @@ Machine stuttering. Fan screaming. IDE lagging so bad that keystrokes showed up 
 ## 1. What Antigravity is — and why it looked promising
 
 Antigravity is Google's AI IDE, launched late 2025. It's built on a **VS Code fork** — inherited from the Windsurf team that Google acquired through a major licensing deal. Technically it's an Electron app, TypeScript core, communicating with Gemini models over API. Nothing magical under the hood — same DNA as Cursor or Windsurf, except Google swapped in Gemini and layered a multi-agent "Plan → Build → Verify" loop on top.
+
+![ What Antigravity is — and why it looked promising](https://cdn.khaizinam.io.vn/blog-folder/2026-05/agy2-layout.jpg)
 
 Why did so many devs try it? It was free. It was agentic. And the demos looked incredible.
 
