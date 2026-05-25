@@ -9,13 +9,13 @@ featured: true
 draft: false
 tags:
   - "NgoaiLe"
-description: "After Antigravity 2.0 silently tanked my IDE's performance to force an upgrade, I uninstalled it. Here's what actually happened — and why Gemini's regression is the real problem."
+description: "After Antigravity 2.0 silently tanked my IDE's performance to force an upgrade, I uninstalled it. Here's what actually happened - and why Gemini's regression is the real problem."
 ogImage: "https://cdn.khaizinam.io.vn/blog-folder/2026-05/antigravity-2-0.jpg"
 ---
 
 This afternoon I uninstalled Antigravity from my machine.
 
-Not because I didn't give it a fair shot. Not because I'm afraid of new tools. But because I sat staring at `htop` for 20 minutes watching `antigravity-server` eat RAM like it was training a model locally — while I was just writing a simple API endpoint.
+Not because I didn't give it a fair shot. Not because I'm afraid of new tools. But because I sat staring at `htop` for 20 minutes watching `antigravity-server` eat RAM like it was training a model locally - while I was just writing a simple API endpoint.
 
 ![I Ditched Antigravity IDE and Went Back to VSCode + Codex](https://cdn.khaizinam.io.vn/blog-folder/2026-05/antigravity-2-0.jpg)
 
@@ -23,7 +23,7 @@ Machine stuttering. Fan screaming. IDE lagging so bad that keystrokes showed up 
 
 **Table of Contents**
 
-- [1. What Antigravity is — and why it looked promising](#1-what-antigravity-is--and-why-it-looked-promising)
+- [1. What Antigravity is - and why it looked promising](#1-what-antigravity-is--and-why-it-looked-promising)
 - [2. What happened today: throttling v1 to force the upgrade](#2-what-happened-today-throttling-v1-to-force-the-upgrade)
 - [3. The real problem: Gemini is regressing](#3-the-real-problem-gemini-is-regressing)
 - [4. What I came back to and why](#4-what-i-came-back-to-and-why)
@@ -33,11 +33,11 @@ Machine stuttering. Fan screaming. IDE lagging so bad that keystrokes showed up 
 
 ---
 
-## 1. What Antigravity is — and why it looked promising
+## 1. What Antigravity is - and why it looked promising
 
-Antigravity is Google's AI IDE, launched late 2025. It's built on a **VS Code fork** — inherited from the Windsurf team that Google acquired through a major licensing deal. Technically it's an Electron app, TypeScript core, communicating with Gemini models over API. Nothing magical under the hood — same DNA as Cursor or Windsurf, except Google swapped in Gemini and layered a multi-agent "Plan → Build → Verify" loop on top.
+Antigravity is Google's AI IDE, launched late 2025. It's built on a **VS Code fork** - inherited from the Windsurf team that Google acquired through a major licensing deal. Technically it's an Electron app, TypeScript core, communicating with Gemini models over API. Nothing magical under the hood - same DNA as Cursor or Windsurf, except Google swapped in Gemini and layered a multi-agent "Plan → Build → Verify" loop on top.
 
-![ What Antigravity is — and why it looked promising](https://cdn.khaizinam.io.vn/blog-folder/2026-05/agy2-layout.jpg)
+![ What Antigravity is - and why it looked promising](https://cdn.khaizinam.io.vn/blog-folder/2026-05/agy2-layout.jpg)
 
 Why did so many devs try it? It was free. It was agentic. And the demos looked incredible.
 
@@ -49,14 +49,14 @@ Reality was different.
 
 I was using Antigravity v1 normally this morning. By afternoon, everything changed. The IDE started stuttering constantly. Checking `htop` showed `antigravity-server` consuming RAM in a continuous climb. The machine was nearly frozen.
 
-I thought it was the project. Killed everything, opened a blank project — same result.
+I thought it was the project. Killed everything, opened a blank project - same result.
 
-Beyond the general lag, there's one infuriating bug: **Ctrl + V becomes completely unresponsive**. You copy code from somewhere, try to paste it into the IDE, and nothing happens. You have to spam Ctrl + V 5-6 times in a row, waiting 1-2 seconds between each attempt, before a single paste actually goes through. It's not failing — it's just... not responding. Like the IDE is busy doing something invisible in the background. Honestly, this is the worst UX sin — because paste is a *basic* action you do 50+ times per hour, and having to spam it 5-6 times each time creates a compounding frustration that's absolutely crushing to workflow.
+Beyond the general lag, there's one infuriating bug: **Ctrl + V becomes completely unresponsive**. You copy code from somewhere, try to paste it into the IDE, and nothing happens. You have to spam Ctrl + V 5-6 times in a row, waiting 1-2 seconds between each attempt, before a single paste actually goes through. It's not failing - it's just... not responding. Like the IDE is busy doing something invisible in the background. Honestly, this is the worst UX sin - because paste is a *basic* action you do 50+ times per hour, and having to spam it 5-6 times each time creates a compounding frustration that's absolutely crushing to workflow.
 
-After searching, I realized I wasn't alone. Google had just pushed Antigravity 2.0 following Google I/O 2026 — and the community was furious. Not because of new features, but because of *how* they shipped it:
+After searching, I realized I wasn't alone. Google had just pushed Antigravity 2.0 following Google I/O 2026 - and the community was furious. Not because of new features, but because of *how* they shipped it:
 
 - **The 2.0 UI initially removed the built-in IDE entirely**, dropping users into a barebones chat interface. Most developers assumed Google had killed the editor outright.
-- **Conversation history disappeared** post-update — data stranded in a backup folder with no migration path.
+- **Conversation history disappeared** post-update - data stranded in a backup folder with no migration path.
 - **Gemini usage quotas were slashed**, then slashed again, then Google had to reset them entirely after the backlash became too loud to ignore.
 
 It took a Google employee posting on X admitting "we should have been clearer from the start" before they pushed a patch to restore the "Open IDE" button. One button. They needed an emergency patch to restore a single button.
@@ -68,39 +68,39 @@ And then this notification appeared inside my IDE:
 
 I sat with that for a moment.
 
-They degraded v1 performance until it was unusable — forcing the upgrade. You suffer through the chaotic rollout: IDE gone, conversation history lost, machine lagging. Then they reward you with a 3x quota bump. Like handing out a discount voucher after a car accident.
+They degraded v1 performance until it was unusable - forcing the upgrade. You suffer through the chaotic rollout: IDE gone, conversation history lost, machine lagging. Then they reward you with a 3x quota bump. Like handing out a discount voucher after a car accident.
 
-This isn't how a mature product operates. It's a crack in Google's product strategy: they have the compute, the models, the distribution — but they're treating developers as hostages instead of as users who deserve respect.
+This isn't how a mature product operates. It's a crack in Google's product strategy: they have the compute, the models, the distribution - but they're treating developers as hostages instead of as users who deserve respect.
 
-If a small startup shipped this rollout, they'd be drowning in 1-star reviews. Because Google did it, it gets filed under "chaotic but fixable." But for me — a developer who uses tools to earn a living — "fixable after it already wrecked my workflow" is not an acceptable standard.
+If a small startup shipped this rollout, they'd be drowning in 1-star reviews. Because Google did it, it gets filed under "chaotic but fixable." But for me - a developer who uses tools to earn a living - "fixable after it already wrecked my workflow" is not an acceptable standard.
 
 ---
 
 ## 3. The real problem: Gemini is regressing
 
-This is the core reason I don't want to stay on Antigravity — regardless of how good the IDE becomes.
+This is the core reason I don't want to stay on Antigravity - regardless of how good the IDE becomes.
 
 Gemini Flash and Gemini Pro have been collecting complaints from the dev community at an accelerating rate:
 
-**Wasteful token loops.** Type a simple prompt. The model fires off a request loop — tool call → error → retry → tool call → error — before producing any output, or producing nothing at all. Tokens burning while you wait.
+**Wasteful token loops.** Type a simple prompt. The model fires off a request loop - tool call → error → retry → tool call → error - before producing any output, or producing nothing at all. Tokens burning while you wait.
 
 **Code that's wrong with confidence.** Not "wrong in a creative way." Wrong like: calling APIs that don't exist, writing invalid syntax, then when it errors, spiraling into self-criticism like:
 
 > *"I quit. I am clearly not capable of solving this problem. The code is cursed. I have made so many mistakes that I can no longer be trusted."*
 
-That's a real quote. Gemini said that to a user who was debugging. Google's AI lead Logan Kilpatrick acknowledged it as an "annoying infinite looping bug" — but it's been around long enough to become a community meme.
+That's a real quote. Gemini said that to a user who was debugging. Google's AI lead Logan Kilpatrick acknowledged it as an "annoying infinite looping bug" - but it's been around long enough to become a community meme.
 
 **The post-I/O 2026 stability crisis.** On the Google AI Developers Forum, a thread titled *"The 2026 Stability Crisis: Gemini has become the most unreliable frontier AI"* documents what's been happening since early April: endless "Thinking…" spinners, unexplained API timeouts, and output quality that's noticeably worse than a few months ago.
 
-Compared to Codex (GPT-4o/o3) and Claude — the difference over the past two weeks has been tangible. Not absolute, but consistent enough to feel in daily work.
+Compared to Codex (GPT-4o/o3) and Claude - the difference over the past two weeks has been tangible. Not absolute, but consistent enough to feel in daily work.
 
 ---
 
 ## 4. What I came back to and why
 
-**VSCode + Codex CLI** for the main coding flow. No heavyweight Electron agent running in the background, no `antigravity-server` consuming RAM. Codex runs from the terminal, context is explicit, control is total. And here's the best part — Codex is currently offering a free Plus tier (equivalent to ChatGPT Plus free for eligible users), so I have nothing to lose trying it out. If it becomes unstable, I can pivot to another tool without any financial commitment.
+**VSCode + Codex CLI** for the main coding flow. No heavyweight Electron agent running in the background, no `antigravity-server` consuming RAM. Codex runs from the terminal, context is explicit, control is total. And here's the best part - Codex is currently offering a free Plus tier (equivalent to ChatGPT Plus free for eligible users), so I have nothing to lose trying it out. If it becomes unstable, I can pivot to another tool without any financial commitment.
 
-**Claude** for tasks that need actual reasoning: complex refactors, architecture review, writing test cases. Claude Sonnet 4 right now is in the best shape it's ever been — and more importantly, it's *stable*.
+**Claude** for tasks that need actual reasoning: complex refactors, architecture review, writing test cases. Claude Sonnet 4 right now is in the best shape it's ever been - and more importantly, it's *stable*.
 
 To be honest: I'm not anti-AI-IDE. Cursor is still what I recommend to teammates. But there's a meaningful difference between an AI IDE that makes you faster, and an AI IDE that eats your RAM, forces upgrades, and runs on a model that's currently in an unstable phase.
 
@@ -161,7 +161,7 @@ If you're not ready to abandon it entirely, or want to keep optimizing your free
 
 ## 7. Closing
 
-If you're on Antigravity and hitting lag, RAM spikes, or a missing IDE after the 2.0 update — you're not imagining it. The problems are real, acknowledged, and Google is patching incrementally.
+If you're on Antigravity and hitting lag, RAM spikes, or a missing IDE after the 2.0 update - you're not imagining it. The problems are real, acknowledged, and Google is patching incrementally.
 
 But while waiting for Google to stabilize both the IDE and the model, I have no reason to sit on a machine that's stuttering.
 
