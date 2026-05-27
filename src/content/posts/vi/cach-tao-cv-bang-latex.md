@@ -9,9 +9,12 @@ draft: false
 tags:
   - "NgoaiLe"
 description: "Hướng dẫn viết CV bằng LaTeX trên Overleaf cho fresher IT: chọn template, dùng AI đúng cách, giữ CV gọn 1 trang và tránh lan man."
+ogImage: "https://cdn.khaizinam.io.vn/blog-folder/2026-05/cv-latex-1.jpg"
 ---
 
 Viết CV bằng LaTeX hợp với người đi IT vì bố cục gọn, PDF sạch, link rõ và rất dễ giữ CV trong 1 trang. Nếu bạn đang loay hoay với Word, Canva, hoặc muốn dùng AI để hỗ trợ nhưng sợ CV bị dài và rối, bài này đi thẳng vào cách làm trên Overleaf, cách viết prompt AI và những lỗi cần tránh trước khi gửi cho HR.
+
+![CV IT bằng Latex trên OverLeaf - Khaizinam Blog](https://cdn.khaizinam.io.vn/blog-folder/2026-05/cv-latex-1.jpg)
 
 Nếu bạn muốn đi tiếp theo đúng mạch xây hồ sơ, xem thêm [CV IT 1 Trang Hay 3 Trang: Bài Học Đắt Giá Khi Để AI Build CV Giúp Bạn](/cv-it-junior-bi-reject), [Cover Letter Fresher IT: Cách Viết Để Được Gọi Phỏng Vấn](/cover-letter-fresher-it) và [Portfolio cho dev junior - cần có gì để được chú ý](/portfolio-developer-junior).
 
@@ -62,6 +65,8 @@ Trước khi mở Overleaf, hãy chuẩn bị sẵn:
 * Mục tiêu ứng tuyển: fresher backend, frontend, fullstack, intern hoặc junior.
 
 CV fresher nên ưu tiên 1 trang. Nếu nội dung còn thiếu, hãy thêm chất lượng cho bullet point và kết quả thay vì kéo dài sang 2 đến 3 trang.
+
+![Viết CV bằng latex trên OverLeaf - Khaizinam Blog](https://cdn.khaizinam.io.vn/blog-folder/2026-05/cv-latex-2.jpg)
 
 <a id="thuc-thi"></a>
 ### 4. Cách viết CV bằng LaTeX trên Overleaf
