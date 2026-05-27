@@ -34,3 +34,5 @@ yarn.lock
 .agent/
 .agents/
 .codex/
+.seo-cache/
+public/gen-ai
