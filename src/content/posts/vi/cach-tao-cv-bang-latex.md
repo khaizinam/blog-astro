@@ -1,146 +1,190 @@
 ---
-title: "Cách Tạo CV IT Cho Fresher Bằng LaTeX Và AI"
+title: "Viết CV Bằng LaTeX Trên Overleaf Cho Fresher IT"
 author: "Nguyễn Hữu Khải - khaizinam"
-pubDatetime: 2026-04-01T19:19:43.000Z
+pubDatetime: 2026-05-26T19:19:43.000Z
 slug: cach-tao-cv-bang-latex
 lang: vi
-translationKey: post-213
 featured: false
 draft: false
 tags:
   - "NgoaiLe"
-description: "Bạn vừa tốt nghiệp, cầm tấm bằng IT trên tay nhưng gửi hàng chục CV đi mà chỉ nhận lại sự im lặng? Tôi cũng từng như bạn, loay hoay với Microsoft Word, cố gắng căn chỉnh từng dòng kẻ để rồi khi xuất PDF, định dạng lại nhảy lung tung. Nỗi đau lớn nhất của dân kỹ thuật không phải là thiếu kỹ năng, mà là không biết cách \"đóng gói\" giá trị bản thân vào một bản CV chuyên nghiệp."
+description: "Hướng dẫn viết CV bằng LaTeX trên Overleaf cho fresher IT: chọn template, dùng AI đúng cách, giữ CV gọn 1 trang và tránh lan man."
 ---
 
-Khám phá cách tạo CV IT chuyên nghiệp cho Fresher bằng LaTeX trên Overleaf kết hợp sức mạnh AI. Giải pháp giúp CV chuẩn ATS, chuyên nghiệp và tạo dấu ấn khác biệt ngay lập tức. Xem ngay!
+Viết CV bằng LaTeX hợp với người đi IT vì bố cục gọn, PDF sạch, link rõ và rất dễ giữ CV trong 1 trang. Nếu bạn đang loay hoay với Word, Canva, hoặc muốn dùng AI để hỗ trợ nhưng sợ CV bị dài và rối, bài này đi thẳng vào cách làm trên Overleaf, cách viết prompt AI và những lỗi cần tránh trước khi gửi cho HR.
 
-Bạn vừa tốt nghiệp, cầm tấm bằng IT trên tay nhưng gửi hàng chục CV đi mà chỉ nhận lại sự im lặng? Tôi cũng từng như bạn, loay hoay với Microsoft Word, cố gắng căn chỉnh từng dòng kẻ để rồi khi xuất PDF, định dạng lại nhảy lung tung. Nỗi đau lớn nhất của dân kỹ thuật không phải là thiếu kỹ năng, mà là không biết cách "đóng gói" giá trị bản thân vào một bản CV chuyên nghiệp. Nếu không thay đổi cách tiếp cận, CV của bạn sẽ mãi nằm lại ở bộ lọc ATS của các tập đoàn lớn. Bài viết này tôi sẽ chia sẻ lộ trình từ A-Z giúp bạn làm chủ LaTeX và AI để tạo ra bản CV "đỉnh của chóp".
+Nếu bạn muốn đi tiếp theo đúng mạch xây hồ sơ, xem thêm [CV IT 1 Trang Hay 3 Trang: Bài Học Đắt Giá Khi Để AI Build CV Giúp Bạn](/cv-it-junior-bi-reject), [Cover Letter Fresher IT: Cách Viết Để Được Gọi Phỏng Vấn](/cover-letter-fresher-it) và [Portfolio cho dev junior - cần có gì để được chú ý](/portfolio-developer-junior).
 
-### Mục Lục
+### Mục lục
 
-1\. [Bản chất của việc viết CV IT bằng LaTeX](#ban-chat)
+1. [Vì sao nên viết CV bằng LaTeX](#ban-chat)
+2. [Overleaf là gì và nên dùng khi nào](#overleaf)
+3. [Chuẩn bị gì trước khi bắt đầu](#chuan-bi)
+4. [Cách viết CV bằng LaTeX trên Overleaf](#thuc-thi)
+5. [Prompt AI để viết nội dung CV](#prompt-ai)
+6. [Những lỗi cần tránh](#sai-lam)
+7. [FAQ](#faq)
 
-2\. [Lợi ích thực tế khi dùng LaTeX và AI](#loi-ich)
+<a id="ban-chat"></a>
+### 1. Vì sao nên viết CV bằng LaTeX
 
-3\. [Hệ sinh thái công cụ cần chuẩn bị](#chuan-bi)
+LaTeX phù hợp với CV kỹ thuật vì nó cho bố cục ổn định, khoảng cách đồng nhất, tiêu đề rõ và PDF xuất ra rất sạch. Khi bạn thêm hay bớt một dòng, layout không bị vỡ như nhiều file Word tự chỉnh tay.
 
-4\. [Hướng dẫn thực thi: Tạo CV bằng LaTeX và AI](#thuc-thi)
+Điểm mạnh của LaTeX không phải là "làm CV đẹp tự động", mà là giúp bạn kiểm soát phần trình bày tốt hơn. Với người làm IT, điều này quan trọng vì CV thường cần ngắn, gọn, có link GitHub, có dự án, và không được rối mắt.
 
-5\. [Trải nghiệm thực tế khi ứng tuyển](#trai-nghiem)
+LaTeX cũng hợp khi bạn muốn:
 
-6\. [Những sai lầm "đốt thời gian" cần tránh](#sai-lam)
+* Giữ CV trong 1 trang mà vẫn còn chỗ cho dự án và kỹ năng.
+* Tạo nhiều phiên bản CV theo từng job mà không phải chỉnh lại toàn bộ file.
+* Chèn link GitHub, LinkedIn, portfolio, email một cách sạch sẽ.
+* Xuất PDF đồng nhất trên mọi máy.
 
-7\. [Hỏi đáp nhanh (FAQ)](#7-hoi-dap-nhanh-faq)
+Điều cần nói rõ: LaTeX không cứu được một CV nội dung yếu. Nếu bullet point dài, chung chung, hoặc nhồi quá nhiều công nghệ không liên quan, bản CV vẫn sẽ tệ dù trình bày tốt.
 
-* * *
+<a id="overleaf"></a>
+### 2. Overleaf là gì và nên dùng khi nào
 
-#### 1\. Bản chất & Căn nguyên của vấn đề
+Overleaf là trình soạn thảo LaTeX chạy trên web. Bạn không cần cài TeX local, có thể mở template, sửa nội dung, xem PDF ngay trong trình duyệt và xuất file sau khi hoàn tất.
 
-Hầu hết sinh viên IT mới ra trường thường mắc kẹt trong việc sử dụng các mẫu CV có sẵn trên Canva hoặc Word. Vấn đề là ở chỗ, các mẫu này thường chứa nhiều định dạng đồ họa phức tạp khiến **hệ thống quản lý ứng viên (ATS)** không thể đọc được thông tin chính xác. Bạn có thể có điểm GPA 3.5 và dự án khủng, nhưng nếu ATS không quét được từ khóa, bạn bị loại ngay từ "vòng gửi xe".
+Với người mới bắt đầu, Overleaf là cách nhanh nhất để viết CV bằng LaTeX. Theo tài liệu chính thức của Overleaf, gói free có thể tạo project, chia sẻ và làm việc trên các project cơ bản mà không cần cài đặt gì thêm. Tham khảo: [Overleaf free plan](https://www.overleaf.com/learn/how-to/Is_Overleaf_free_to_use%3F) và [Overleaf docs](https://docs.overleaf.com/getting-started/free-and-premium-plans).
 
-Các phương pháp cũ thường tốn quá nhiều thời gian vào việc căn chỉnh lề, font chữ thay vì tập trung vào nội dung. Khi bạn thêm một dòng kinh nghiệm, toàn bộ cấu trúc trang dưới có thể bị vỡ. Đây chính là lý do **LaTeX** xuất hiện như một cứu cánh cho dân Tech. Thay vì "kéo thả" một cách cảm tính, bạn "lập trình" cho chiếc CV của mình.
+Nếu bạn chỉ viết một CV cá nhân, bản miễn phí thường đã đủ để bắt đầu. Phần đáng làm kỹ không phải là nâng cấp gói, mà là chọn template phù hợp và viết nội dung cho gọn.
 
-Giải pháp tạo CV bằng LaTeX kết hợp AI giúp bạn tách biệt hoàn toàn phần nội dung (Content) và phần trình bày (Layout). Bạn chỉ cần tập trung vào việc viết gì, còn việc hiển thị như thế nào đã có mã code lo liệu.
+<a id="chuan-bi"></a>
+### 3. Chuẩn bị gì trước khi bắt đầu
 
-#### 2\. Lợi ích thực tế & Sự chuyển đổi
+Trước khi mở Overleaf, hãy chuẩn bị sẵn:
 
-*   **Độ chính xác tuyệt đối (Pixel Perfect):** LaTeX đảm bảo mọi khoảng cách, font chữ và căn lề đều chuẩn xác đến từng milimet. Điều này tạo nên vẻ ngoài cực kỳ chỉn chu, đúng chất "con nhà kỹ thuật".
-*   **Vượt qua mọi bộ lọc ATS:** File PDF xuất ra từ LaTeX có cấu trúc text rất sạch, giúp các công cụ quét CV dễ dàng trích xuất thông tin về Skill và Kinh nghiệm của bạn.
-*   **Dễ dàng quản lý phiên bản:** Bạn có thể sử dụng Git để quản lý các phiên bản CV của mình giống như quản lý code dự án.
-*   **Thể hiện tư duy Logic:** Việc gửi một bản CV viết bằng LaTeX ngầm khẳng định với Recruiter rằng bạn là một kỹ sư có tư duy hệ thống và biết sử dụng công cụ chuyên nghiệp.
+* Thông tin cá nhân: tên, email, số điện thoại, GitHub, LinkedIn, portfolio.
+* Học vấn: trường, ngành, thời gian học, GPA nếu đủ tốt.
+* Kỹ năng: chỉ giữ những gì bạn thật sự dùng được.
+* Dự án: 2 đến 3 dự án tốt nhất, mỗi dự án có mô tả, vai trò, công nghệ, kết quả.
+* Mục tiêu ứng tuyển: fresher backend, frontend, fullstack, intern hoặc junior.
 
-#### 3\. Điều kiện cần & Hệ sinh thái chuẩn bị
+CV fresher nên ưu tiên 1 trang. Nếu nội dung còn thiếu, hãy thêm chất lượng cho bullet point và kết quả thay vì kéo dài sang 2 đến 3 trang.
 
-Để bắt đầu cuộc cách mạng cho bản CV của mình, bạn cần chuẩn bị "vũ khí" sau:
+<a id="thuc-thi"></a>
+### 4. Cách viết CV bằng LaTeX trên Overleaf
 
-*   **Tài khoản Overleaf:** Đây là trình soạn thảo LaTeX online phổ biến nhất hiện nay. Nó giống như Google Docs nhưng dành cho LaTeX, cho phép bạn viết code và xem kết quả trực tiếp.
-*   **Công cụ AI (Gemini/ChatGPT):** Đóng vai trò là người viết code LaTeX và tối ưu hóa nội dung. AI sẽ giúp bạn chuyển đổi những đoạn văn thô kệch thành những dòng Bullet Point đắt giá.
-*   **Tư duy Clean Code:** Hãy coi CV là một dự án nhỏ. Bạn cần chuẩn bị các thông tin về dự án, công nghệ đã dùng (Tech stack) và kết quả đạt được theo con số.
+Quy trình cơ bản:
 
-#### 4\. Hướng dẫn thực thi toàn diện (Step-by-Step)
+1. Mở Overleaf và tạo một project mới.
+2. Chọn template resume/CV có bố cục tối giản.
+3. Thay thông tin mẫu bằng thông tin của bạn.
+4. Thêm dự án theo công thức: hành động + công nghệ + kết quả.
+5. Compile PDF và kiểm tra lại toàn bộ text.
+6. Xuất bản PDF sau khi đã đọc lại lần cuối.
 
-##### Giai đoạn 1: Thiết lập môi trường Overleaf
+Nếu bạn muốn tự viết từ đầu, một khung LaTeX tối thiểu có thể trông như sau:
 
-Đầu tiên, bạn truy cập **Overleaf.com**, đăng ký một tài khoản miễn phí. Chọn "New Project" -> "Blank Project". Tại đây, bạn sẽ thấy một giao diện chia đôi: bên trái là nơi gõ code, bên phải là nơi hiển thị file PDF.
+```latex
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
 
-##### Giai đoạn 2: Sử dụng AI để tạo khung xương mã Code
+\begin{document}
 
-Đừng tự viết code LaTeX từ đầu nếu bạn chưa quen. Hãy sử dụng Prompt sau để nhờ AI hỗ trợ:
+\begin{center}
+    {\LARGE NGUYEN VAN A}\\
+    \href{mailto:email@gmail.com}{email@gmail.com} \textbar{}
+    0901-234-567 \textbar{}
+    \href{https://github.com/yourprofile}{github.com/yourprofile}
+\end{center}
 
-"Hãy viết mã LaTeX cho một CV IT Fresher chuyên nghiệp. Cấu trúc bao gồm: 
-Thông tin cá nhân, Học vấn, Kỹ năng (Ngôn ngữ lập trình, Framework, Công cụ), 
-Dự án cá nhân (mô tả, công nghệ, link github), và Hoạt động. 
-Sử dụng package 'geometry' để chỉnh lề p-3 và 'hyperref' cho link user profile. 
-Font chữ hiện đại, sạch sẽ."
-    
+\section*{SKILLS}
+\begin{itemize}[leftmargin=*]
+    \item JavaScript, TypeScript, React, Node.js, MySQL
+\end{itemize}
 
-##### Giai đoạn 3: Tối ưu nội dung "Kinh nghiệm dự án"
+\section*{PROJECTS}
+\textbf{Task Manager} \hfill \href{https://github.com/yourprofile/task-manager}{GitHub}
+\begin{itemize}[leftmargin=*]
+    \item Xay dung ung dung quan ly cong viec voi React va Node.js.
+    \item Toi uu giao dien va API de luu du lieu theo tung user.
+\end{itemize}
 
-Đây là bước then chốt. Thay vì viết "Em làm web bán hàng", hãy dùng AI để viết lại theo công thức: **Hành động + Công nghệ + Kết quả**. Ví dụ: "Xây dựng hệ thống E-commerce bằng React và Node.js, tối ưu hóa truy vấn giúp giảm 30% thời gian tải trang".
+\end{document}
+```
 
-##### Giai đoạn 4: Paste code và chỉnh sửa trên Overleaf
+Đây chỉ là khung mẫu. Khi làm thật, bạn nên rút bớt những phần không cần thiết và giữ nội dung sát đúng job mục tiêu.
 
-Dưới đây là một đoạn code mẫu cơ bản để bạn có thể copy và dán vào Overleaf:
+<a id="prompt-ai"></a>
+### 5. Prompt AI để viết nội dung CV
 
-\\documentclass\[10pt,a4paper\]{article}
-\\usepackage\[utf8\]{inputenc}
-\\usepackage\[margin=0.75in\]{geometry}
-\\usepackage{hyperref}
-\\usepackage{enumitem}
+AI hữu ích nhất ở 3 chỗ: tạo khung LaTeX, viết lại bullet point cho ngắn hơn, và audit lần cuối để cắt phần lan man. Không nên để AI tự quyết toàn bộ CV.
 
-\\begin{document}
-\\begin{center}
-    \\textbf{\\huge NGUYỄN VĂN A} \\\\
-    \\small 0901-234-567 | \\href{mailto:email@gmail.com}{email@gmail.com} | \\href{https://github.com/yourprofile}{github.com/yourprofile}
-\\end{center}
+Nếu bạn đang hoàn thiện bộ hồ sơ ứng tuyển, hãy đọc thêm [portfolio developer junior](/portfolio-developer-junior) để biết nên đưa project nào vào, và [cover letter fresher IT](/cover-letter-fresher-it) để nối CV với một thư giới thiệu ngắn gọn, đúng trọng tâm.
 
-\\section\*{KỸ NĂNG CHUYÊN MÔN}
-\\begin{itemize}\[leftmargin=0.15in, labelsep=0.1in\]
-    \\item \\textbf{Ngôn ngữ:} Java, JavaScript, Python, C++.
-    \\item \\textbf{Công nghệ:} Spring Boot, ReactJS, Docker, MySQL.
-\\end{itemize}
+Prompt 1, tạo khung LaTeX:
 
-\\section\*{DỰ ÁN CÁ NHÂN}
-\\textbf{Hệ thống quản lý Task} | \\textit{React, Firebase} \\hfill \\href{https://story-link.com}{\[Link Dự Án\]}
-\\begin{itemize}
-    \\item Xây dựng giao diện Responsive với Tailwind CSS.
-    \\item Tích hợp Real-time database giúp cập nhật dữ liệu tức thì.
-\\end{itemize}
-\\end{document}
+```text
+Hãy tạo một file LaTeX CV IT cho fresher, bố cục 1 trang, tối giản, có các phần:
+thông tin cá nhân, học vấn, kỹ năng, dự án, hoạt động.
+Ưu tiên trình bày sạch, dễ đọc, có hyperlink cho email, GitHub, LinkedIn.
+Không dùng quá nhiều màu sắc, không làm layout quá phức tạp.
+```
 
-#### 5\. Case Study / Trải nghiệm thực tế
+Prompt 2, viết lại bullet dự án:
 
-Tôi từng hướng dẫn một bạn sinh viên tên Nam, tốt nghiệp loại khá nhưng CV Word của bạn ấy trông rất rối mắt. Sau khi chuyển sang template LaTeX "Awesome-CV" trên Overleaf và dùng AI để "chuốt" lại phần Project, Nam đã nhận được 3 lời mời phỏng vấn từ các công ty Outsourcing lớn chỉ trong 1 tuần.
+```text
+Viết lại 3 bullet point cho dự án sau theo công thức:
+hành động + công nghệ + kết quả.
+Giữ mỗi bullet ngắn, rõ, không thổi phồng.
+Nếu có chỗ nào nghe chung chung hoặc dài dòng, hãy cắt bớt.
 
-Điểm khác biệt nằm ở chỗ: Trong phần dự án, AI đã giúp Nam liệt kê cụ thể các **Metric** như: "Cải thiện hiệu năng 20%", "Đạt 100+ stars trên Github". Khi nhìn vào bản CV phẳng phiu, chuyên nghiệp, nhà tuyển dụng cảm nhận được sự tôn trọng và tính cẩn thận của ứng viên.
+[dán nội dung dự án vào đây]
+```
 
-#### 6\. Những sai lầm "đốt tiền/thời gian" cần tránh
+Prompt 3, audit cuối cùng:
 
-*   **Lạm dụng quá nhiều màu sắc:** CV IT cần sự tối giản. Đừng biến nó thành một bức tranh tô màu. Chỉ nên dùng màu đen, trắng và tối đa một màu nhấn (xanh đậm hoặc xám).
-*   **Quên kiểm tra Link:** LaTeX cho phép chèn Hyperlink cực xịn. Sai lầm chết người là chèn link Github hoặc Portfolio mà nhấn vào lại báo lỗi 404.
-*   **Để CV quá dài:** Với Fresher, 1 trang là con số vàng. Đừng cố viết 2-3 trang bằng cách liệt kê cả những việc không liên quan như "Phục vụ quán cafe".
-*   **Dùng AI viết quá "lố":** Đừng để AI dùng những từ ngữ sáo rỗng như "phù thủy lập trình". Hãy giữ phong cách khiêm tốn nhưng đầy kỹ thuật.
+```text
+Hãy audit CV này như một HR cho vị trí fresher IT.
+Tìm chỗ nào quá dài, nhồi keyword, nghe phóng đại, hoặc không rõ đóng góp thật.
+Đề xuất chỗ cần rút gọn để CV giữ trong 1 trang.
+Sau đó tóm tắt thành checklist những việc tôi cần sửa tay.
 
-#### 7\. Hỏi đáp nhanh (FAQ)
+[dán CV vào đây]
+```
 
-##### Hỏi: Tôi không biết gì về code LaTeX có làm được không?
+Nguyên tắc nên giữ là: AI hỗ trợ, bạn duyệt. Nếu AI viết quá tay, nó có thể biến CV thành một bản dài, nhiều chữ nhưng thiếu trọng tâm.
 
-**Đáp:** Hoàn toàn được. Bạn chỉ cần hiểu cấu trúc cơ bản và dùng AI để tạo code. Việc của bạn trên Overleaf chủ yếu là thay đổi nội dung chữ giữa các dấu ngoặc nhọn { }.
+<a id="sai-lam"></a>
+### 6. Những lỗi cần tránh
 
-##### Hỏi: Overleaf có mất phí không?
+* CV dài 3 đến 4 trang cho fresher. HR thường không có thời gian để đọc một bản quá dài nếu nội dung chưa đủ mạnh.
+* Để AI toàn quyền quyết định. AI nên gợi ý, còn bạn phải chốt lại số liệu, dự án và mức độ thật của kinh nghiệm.
+* Nhồi keyword công nghệ. Nếu phần kỹ năng và dự án bị lặp quá nhiều từ khóa, CV sẽ rối và mất tự nhiên.
+* Trang trí quá tay. Màu sắc, icon, khung viền hoặc cột quá nhiều làm CV nặng và khó đọc.
+* Link lỗi. GitHub, LinkedIn, portfolio phải mở được ngay, không để đến lúc nộp mới phát hiện sai.
+* Không đọc lại lần cuối. Sau khi AI xong, hãy nhìn lại thành quả một lượt nữa trước khi xuất PDF và gửi đi.
+* Chỉ chăm phần CV mà bỏ qua cover letter và portfolio. Với fresher, bộ ba này thường nên đi cùng nhau; nếu thiếu một phần, hồ sơ dễ bị hụt lực.
 
-**Đáp:** Phiên bản miễn phí là quá đủ cho nhu cầu cá nhân. Bạn có thể tạo vô số project CV mà không tốn một xu nào.
+<a id="faq"></a>
+### 7. FAQ
 
-##### Hỏi: Tại sao không dùng Canva cho nhanh?
+##### CV fresher nên dài bao nhiêu trang?
 
-**Đáp:** Canva rất đẹp nhưng file PDF xuất ra thường là dạng Layer ảnh, ATS rất khó đọc text. LaTeX tạo ra file PDF chuẩn vector, cực kỳ thân thiện với máy quét.
+Thường là 1 trang. Nếu bạn mới ra trường, điều HR cần nhất là thông tin liên hệ, kỹ năng chính, 2 đến 3 dự án tốt nhất và link liên quan. Đừng kéo dài sang 2 đến 3 trang chỉ vì muốn nhét thêm nội dung.
 
-##### Hỏi: AI có thể giúp tôi viết thư xin việc (Cover Letter) đồng bộ với CV không?
+##### Có nên để AI viết toàn bộ CV không?
 
-**Đáp:** Có, bạn nên dùng cùng một Prompt và yêu cầu AI giữ nguyên văn phong từ CV để tạo sự thống nhất trong bộ hồ sơ ứng tuyển của mình.
+Không nên. AI có thể hỗ trợ viết LaTeX, viết lại bullet point và phát hiện chỗ lan man, nhưng bạn vẫn phải tự kiểm tra từng dòng. CV là thứ phản ánh đúng năng lực và vai trò thật của bạn.
+
+##### Có nên nhồi nhiều keyword công nghệ để qua ATS không?
+
+Không. Keyword nên xuất hiện tự nhiên trong phần kỹ năng và dự án. Nhồi quá nhiều làm CV rối, thiếu tin cậy và khó đọc hơn.
+
+##### Overleaf có đủ để làm CV không?
+
+Có. Với CV cá nhân, gói free thường đã đủ để bắt đầu. Quan trọng hơn là chọn template phù hợp, viết nội dung gọn và kiểm tra lại PDF trước khi dùng.
+
+##### Tại sao không dùng Canva cho nhanh?
+
+Canva tiện cho thiết kế, nhưng với CV kỹ thuật, LaTeX thường cho PDF sạch hơn, link rõ hơn và bố cục ổn định hơn. Nếu mục tiêu là hồ sơ gọn, nghiêm túc và dễ đọc, LaTeX là lựa chọn hợp hơn.
 
 #### Tổng kết
 
-Đầu tư một bản CV IT bằng **LaTeX** kết hợp với sự hỗ trợ của **AI** không chỉ giúp bạn có một hồ sơ đẹp mà còn là quá trình bạn rà soát lại năng lực của chính mình. Đừng để những mẫu CV đại trà làm lu mờ giá trị của bạn. Hãy bắt tay vào Overleaf ngay hôm nay, tạo ra một bản CV khiến HR không thể rời mắt. Chúc bạn sớm tìm được công việc mơ ước!
+Viết CV bằng LaTeX là cách hợp lý nếu bạn muốn một bản CV gọn, rõ, dễ kiểm soát và phù hợp với người đi IT. Overleaf giúp bạn bắt đầu nhanh, còn AI giúp tăng tốc phần nội dung, nhưng người quyết định cuối cùng vẫn là bạn.
 
-**Bắt đầu ngay:** Hãy copy đoạn mã code mẫu phía trên và dán vào Overleaf để thấy sự kỳ diệu nhé!
+Điểm quan trọng nhất là đừng để CV dài lan man. Hãy giữ nó ngắn nhưng đủ, đọc lại thành quả trước khi gửi, và chỉ dùng AI như một trợ lý để chỉnh cho tốt hơn.
