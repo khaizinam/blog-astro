@@ -25,9 +25,6 @@ pnpm-debug.log*
 
 # pagefind
 public/pagefind
-package-lock.json
-pnpm-lock.yaml
-yarn.lock
 
 # wrangler
 .wrangler/

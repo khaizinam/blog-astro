@@ -1,9 +1,16 @@
 import type { APIRoute } from "astro";
 import satori from "satori";
 import sharp from "sharp";
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import { fontData, experimental_getFontFileURL } from "astro:assets";
 import { getFontPathByWeight } from "@/utils/getFontPathByWeight";
 import config from "@/config";
+
+async function getDefaultOgImage() {
+  const image = await readFile(join(process.cwd(), "public/default-og.jpg"));
+  return sharp(image).png().toBuffer();
+}
 
 export const GET: APIRoute = async context => {
   const fonts = fontData["--font-google-sans-code"];
@@ -11,17 +18,30 @@ export const GET: APIRoute = async context => {
   const boldFontPath = getFontPathByWeight(fonts, 700);
 
   if (regularFontPath === undefined || boldFontPath === undefined) {
-    throw new Error("Cannot find the font path.");
+    const pngBuffer = await getDefaultOgImage();
+    return new Response(new Uint8Array(pngBuffer), {
+      headers: { "Content-Type": "image/png" },
+    });
   }
 
-  const [regularData, boldData] = await Promise.all([
-    fetch(experimental_getFontFileURL(regularFontPath, context.url)).then(res =>
-      res.arrayBuffer()
-    ),
-    fetch(experimental_getFontFileURL(boldFontPath, context.url)).then(res =>
-      res.arrayBuffer()
-    ),
-  ]);
+  let regularData: ArrayBuffer;
+  let boldData: ArrayBuffer;
+
+  try {
+    [regularData, boldData] = await Promise.all([
+      fetch(experimental_getFontFileURL(regularFontPath, context.url)).then(res =>
+        res.arrayBuffer()
+      ),
+      fetch(experimental_getFontFileURL(boldFontPath, context.url)).then(res =>
+        res.arrayBuffer()
+      ),
+    ]);
+  } catch {
+    const pngBuffer = await getDefaultOgImage();
+    return new Response(new Uint8Array(pngBuffer), {
+      headers: { "Content-Type": "image/png" },
+    });
+  }
 
   const svg = await satori(
     {
