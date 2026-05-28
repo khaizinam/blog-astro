@@ -27,9 +27,6 @@ pnpm-debug.log*
 public/pagefind
 
 # wrangler
-.wrangler/
-.agent/
-.agents/
-.codex/
-.seo-cache/
+.*/
+!.agent
 public/gen-ai
