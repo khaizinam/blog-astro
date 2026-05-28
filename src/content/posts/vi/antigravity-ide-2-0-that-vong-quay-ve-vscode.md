@@ -1,5 +1,5 @@
 ---
-title: "Tôi đã bỏ Antigravity quay về với Codex và VSCode"
+title: "Bỏ Antigravity quay về với Codex và VSCode ?"
 author: "Nguyễn Hữu Khải"
 pubDatetime: 2026-05-25 02:00:00
 slug: antigravity-ide-2-0-that-vong-quay-ve-vscode
