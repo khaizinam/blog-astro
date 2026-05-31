@@ -1,8 +1,8 @@
 ---
 title: "Gothic Sketch AI Prompt: Turn Your Photo into Sketchbook Art"
 author: "Nguyễn Hữu Khải"
-pubDatetime: 2026-05-31T08:00:00.000Z
-modDatetime: 2026-05-31T08:00:00.000Z
+pubDatetime: 2026-05-31T00:00:00.000Z
+modDatetime: 2026-05-31T00:00:00.000Z
 slug: gothic-sketch-ai-prompt-portrait-to-sketchbook
 lang: en
 translationKey: post-242

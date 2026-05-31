@@ -1,8 +1,8 @@
 ---
 title: "Rejecting an IT Job Offer: 5 Red Flags Freshers Must Know"
 author: "Nguyễn Hữu Khải"
-pubDatetime: 2026-05-31T08:00:00Z
-modDatetime: 2026-05-31T08:00:00Z
+pubDatetime: 2026-05-31T00:00:00Z
+modDatetime: 2026-05-31T00:00:00Z
 slug: "reject-it-job-offer-red-flags-junior"
 lang: "en"
 translationKey: "red-flags-job-offer-junior"

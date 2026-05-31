@@ -1,8 +1,8 @@
 ---
 title: "Từ chối offer IT: 5 dấu hiệu đỏ fresher không nên bỏ qua"
 author: "Nguyễn Hữu Khải"
-pubDatetime: 2026-05-31T08:00:00Z
-modDatetime: 2026-05-31T08:00:00Z
+pubDatetime: 2026-05-31T00:00:00Z
+modDatetime: 2026-05-31T00:00:00Z
 slug: "tu-choi-offer-it"
 lang: "vi"
 translationKey: "red-flags-job-offer-junior"

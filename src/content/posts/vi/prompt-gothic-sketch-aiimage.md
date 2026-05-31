@@ -1,8 +1,8 @@
 ---
 title: "Prompt gothic sketch AI: biến chân dung thành sketchbook nghệ thuật"
 author: "Nguyễn Hữu Khải"
-pubDatetime: 2026-05-31T08:00:00.000Z
-modDatetime: 2026-05-31T08:00:00.000Z
+pubDatetime: 2026-05-31T00:00:00.000Z
+modDatetime: 2026-05-31T00:00:00.000Z
 slug: prompt-anh-gothic-sketch-ai
 lang: vi
 translationKey: post-242
