@@ -14,6 +14,7 @@ tags:
   - "Gothic"
   - "ImageGeneration"
 description: "Prompt đầy đủ để biến ảnh chân dung thành tác phẩm gothic sketchbook bằng AI - copy ngay, dùng được trên ChatGPT, Midjourney và Stable Diffusion, kèm hướng dẫn từng bước và mẹo giữ nguyên khuôn mặt."
+ogImage: "https://cdn.khaizinam.io.vn/blog-folder/2026-05/gothic-prompt-genimage.jpg"
 ---
 
 Muốn thử prompt gothic sketch ngay? Copy bên dưới, paste vào AI, done. Xem kết quả mẫu trước để biết bạn sắp tạo ra thứ gì - rồi làm theo hướng dẫn từng bước phía dưới.

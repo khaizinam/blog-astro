@@ -14,6 +14,7 @@ tags:
   - "Gothic"
   - "ImageGeneration"
 description: "A complete gothic sketch AI prompt to transform your portrait into dark sketchbook art - copy, paste, done. Works on ChatGPT, Midjourney, and Stable Diffusion with step-by-step guidance."
+ogImage: "https://cdn.khaizinam.io.vn/blog-folder/2026-05/gothic-prompt-genimage.jpg"
 ---
 
 Want to try the gothic sketch prompt right now? Copy it below, paste it into your AI tool of choice, and you're done. Check the sample results first so you know exactly what you're about to create - then follow the step-by-step guide.
