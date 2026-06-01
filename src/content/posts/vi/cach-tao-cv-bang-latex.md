@@ -63,6 +63,7 @@ Trước khi mở Overleaf, hãy chuẩn bị sẵn:
 * Kỹ năng: chỉ giữ những gì bạn thật sự dùng được.
 * Dự án: 2 đến 3 dự án tốt nhất, mỗi dự án có mô tả, vai trò, công nghệ, kết quả.
 * Mục tiêu ứng tuyển: fresher backend, frontend, fullstack, intern hoặc junior.
+* Ảnh avatar nếu nộp cho công ty Việt Nam: chọn ảnh có nền trung tính, ánh sáng đủ, nụ cười tự nhiên. Xem thêm [có nên để ảnh trong CV IT không](/cv-it-co-can-anh-avatar-khong) để biết khi nào nên bỏ.
 
 CV fresher nên ưu tiên 1 trang. Nếu nội dung còn thiếu, hãy thêm chất lượng cho bullet point và kết quả thay vì kéo dài sang 2 đến 3 trang.
 
@@ -187,6 +188,10 @@ Có. Với CV cá nhân, gói free thường đã đủ để bắt đầu. Quan
 ##### Tại sao không dùng Canva cho nhanh?
 
 Canva tiện cho thiết kế, nhưng với CV kỹ thuật, LaTeX thường cho PDF sạch hơn, link rõ hơn và bố cục ổn định hơn. Nếu mục tiêu là hồ sơ gọn, nghiêm túc và dễ đọc, LaTeX là lựa chọn hợp hơn.
+
+##### CV LaTeX có nên thêm ảnh avatar không?
+
+Có thể, nếu template hỗ trợ sẵn. Với công ty Việt Nam, avatar ấn tượng giúp HR dừng lại lâu hơn khi lướt qua stack CV. Lưu ý: nhiều template LaTeX tối giản không có slot ảnh mặc định vì ưu tiên bố cục 1 cột - nếu tự chèn ảnh, cần kiểm tra layout không bị vỡ sau khi compile. Xem phân tích đầy đủ tại [CV IT có cần ảnh avatar không](/cv-it-co-can-anh-avatar-khong).
 
 #### Tổng kết
 

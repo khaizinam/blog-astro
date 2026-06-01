@@ -191,7 +191,7 @@ Nếu GPA dưới 3.0/4.0 (tương đương dưới 7.5/10), tốt nhất không
 
 ##### Có nên để ảnh trong CV IT không?
 
-Ở Việt Nam, để ảnh vẫn phổ biến và được chấp nhận. Tuy nhiên, nếu apply công ty có yếu tố nước ngoài hoặc startup, bạn có thể bỏ ảnh - ảnh không giúp bạn được nhận việc nhưng ảnh xấu có thể cản trở. Nếu để ảnh, chọn ảnh chuyên nghiệp, nền trắng hoặc tone xám, trang phục lịch sự.
+Ở Việt Nam, để ảnh vẫn phổ biến và là lợi thế thực tế - một avatar ấn tượng giúp HR dừng lại lâu hơn trong biển CV toàn chữ. Tuy nhiên, nếu apply công ty nước ngoài hoặc nộp qua ATS của tập đoàn lớn, nên bỏ ảnh để tránh lỗi định dạng. Xem phân tích đầy đủ tại [CV IT có cần ảnh avatar không](/cv-it-co-can-anh-avatar-khong).
 
 ##### Sau khi rebuild CV thì nên test thế nào trước khi gửi?
 

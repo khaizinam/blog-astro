@@ -185,7 +185,7 @@ If your GPA is below 3.0/4.0, it's generally better to leave it out. Instead, co
 
 ##### Should an IT CV include a photo?
 
-In Vietnam, including a photo is common and accepted. However, for companies with international exposure or startups, you can skip it - a photo won't get you hired, but a poor photo can hurt your chances. If you do include one, use a professional headshot: white or grey background, business attire.
+In Vietnam, a photo is a real advantage - a strong avatar helps HR pause longer when skimming through a stack of text-heavy CVs. That said, skip the photo if you're applying to international companies or submitting through a large enterprise ATS to avoid formatting issues.
 
 ##### How should you test your CV before sending it out?
 
