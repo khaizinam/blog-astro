@@ -16,19 +16,7 @@ Most IT freshers look at exactly one number when they receive an offer: the base
 
 ## Table of Contents
 
-- [1. Why benefits matter more than you think](#1-why-benefits-matter-more-than-you-think)
-- [2. Financial benefits](#2-financial-benefits)
-- [3. Health benefits](#3-health-benefits)
-- [4. Time and flexibility benefits](#4-time-and-flexibility-benefits)
-- [5. Career development benefits](#5-career-development-benefits)
-- [6. How to ask about benefits without losing points](#6-how-to-ask-about-benefits-without-losing-points)
-- [7. Red flags: when a company is hiding something](#7-red-flags-when-a-company-is-hiding-something)
-- [8. FAQ](#8-faq)
-- [Summary](#summary)
-
----
-
-#### 1. Why benefits matter more than you think
+## 1. Why benefits matter more than you think
 
 Say you receive an offer of 15M VND gross. Company A offers nothing beyond that. Company B offers the same base salary but adds: private health insurance covering the whole family (ranging from 1.5–5M/month depending on the plan), 15 days of annual leave, remote work 3 days per week (saving roughly 1M/month in commuting costs), and a 5M VND annual learning budget.
 
@@ -36,7 +24,7 @@ Your real compensation from Company B is 4–5M per month higher than Company A 
 
 This is why benefits aren't a side topic. They're a core part of any offer decision.
 
-#### 2. Financial benefits
+## 2. Financial benefits
 
 This group has the clearest monetary value and should be fully understood before signing anything.
 
@@ -55,7 +43,7 @@ This group has the clearest monetary value and should be fully understood before
 
 **Equity/ESOP:** Less common for freshers, but if you're joining a funded startup, ask about it - not to set expectations but to understand who you're actually working for and what upside exists.
 
-#### 3. Health benefits
+## 3. Health benefits
 
 **Health insurance:** Statutory social health insurance contributions are legally required - but many companies purchase supplemental private health insurance (PVI, Bao Viet, AIA, etc.). Ask:
 - Does the plan cover just the employee or the whole family?
@@ -66,7 +54,7 @@ This group has the clearest monetary value and should be fully understood before
 
 **Mental health support:** More tech companies now offer this - mental health days, counseling hotlines, access to therapy services. Asking about it signals maturity, not weakness.
 
-#### 4. Time and flexibility benefits
+## 4. Time and flexibility benefits
 
 This group directly affects quality of daily life - and for many people, it matters more than base salary.
 
@@ -88,7 +76,7 @@ This group directly affects quality of daily life - and for many people, it matt
 - How is overtime compensated - overtime pay rate or compensatory time off?
 - Is overtime expected regularly or only in exceptional circumstances?
 
-#### 5. Career development benefits
+## 5. Career development benefits
 
 This is the group freshers most consistently overlook - and the one with the highest long-term value.
 
@@ -109,7 +97,7 @@ This is the group freshers most consistently overlook - and the one with the hig
 - Is there a formal mentoring program, or do you figure things out on your own?
 - Who will be your technical mentor during the first three months?
 
-#### 6. How to ask about benefits without losing points
+## 6. How to ask about benefits without losing points
 
 Many freshers avoid asking about benefits because they think it will make them look greedy or unprofessional. In reality, asking the right questions at the right time signals that you understand your own value and know how to evaluate total compensation.
 
@@ -132,7 +120,7 @@ See [Questions to Ask Your Interviewer as a Junior Dev](/en/cau-hoi-nguoc-phong-
 
 These questions are appropriate once you've received an offer and are in formal negotiation. See [Salary Negotiation for Fresh IT Graduates](/en/dam-phan-luong-fresher-it) for how to structure that conversation properly.
 
-#### 7. Red flags: when a company is hiding something
+## 7. Red flags: when a company is hiding something
 
 Not everything in an offer letter is transparent. Watch for these patterns:
 
@@ -148,7 +136,7 @@ Not everything in an offer letter is transparent. Watch for these patterns:
 
 If you notice several of these patterns at once, read [When to Turn Down a Job Offer](/en/tu-choi-offer-it) for more perspective before making your decision.
 
-#### 8. FAQ
+## 8. FAQ
 
 **Should freshers ask about benefits during the interview?**
 Yes, but timing matters. A technical interview round is not the place. The HR round or post-offer stage is appropriate. Asking about benefits doesn't make you look greedy - asking at the wrong moment does.

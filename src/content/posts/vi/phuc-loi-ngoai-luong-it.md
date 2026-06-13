@@ -16,19 +16,7 @@ Hầu hết fresher IT khi nhận offer chỉ nhìn vào một con số: lương
 
 ## Mục lục
 
-- [1. Tại sao phúc lợi quan trọng hơn bạn nghĩ](#1-tai-sao-phuc-loi-quan-trong-hon-ban-nghi)
-- [2. Nhóm phúc lợi tài chính](#2-nhom-phuc-loi-tai-chinh)
-- [3. Nhóm phúc lợi sức khỏe](#3-nhom-phuc-loi-suc-khoe)
-- [4. Nhóm phúc lợi thời gian và làm việc linh hoạt](#4-nhom-phuc-loi-thoi-gian-va-lam-viec-linh-hoat)
-- [5. Nhóm phúc lợi phát triển nghề nghiệp](#5-nhom-phuc-loi-phat-trien-nghe-nghiep)
-- [6. Cách hỏi phúc lợi không bị mất điểm](#6-cach-hoi-phuc-loi-khong-bi-mat-diem)
-- [7. Dấu hiệu công ty đang che giấu thông tin](#7-dau-hieu-cong-ty-dang-che-giau-thong-tin)
-- [8. FAQ](#8-faq)
-- [Tổng kết](#tong-ket)
-
----
-
-#### 1. Tại sao phúc lợi quan trọng hơn bạn nghĩ
+## 1. Tại sao phúc lợi quan trọng hơn bạn nghĩ
 
 Giả sử bạn nhận offer 15 triệu gross. Công ty A không có gì thêm. Công ty B cùng mức lương nhưng có: bảo hiểm sức khỏe tư nhân cho cả gia đình (dao động 1.5–5 triệu/tháng tùy gói), 15 ngày phép năm, remote 3 ngày/tuần (tiết kiệm xăng xe ~1 triệu/tháng), và budget học tập 5 triệu/năm.
 
@@ -36,7 +24,7 @@ Tổng thực nhận từ công ty B cao hơn công ty A khoảng 4–5 triệu/
 
 Đây là lý do phúc lợi không phải chuyện "hỏi cho biết" mà là phần quyết định thực sự của một offer.
 
-#### 2. Nhóm phúc lợi tài chính
+## 2. Nhóm phúc lợi tài chính
 
 Đây là nhóm có giá trị quy đổi tiền mặt rõ ràng nhất, cần hỏi rõ trước khi ký hợp đồng.
 
@@ -55,7 +43,7 @@ Tổng thực nhận từ công ty B cao hơn công ty A khoảng 4–5 triệu/
 
 **Cổ phần/ESOP:** Ít phổ biến với fresher nhưng nếu là startup có funding thì nên hỏi. Không phải để kỳ vọng mà để hiểu rõ mình đang làm cho ai.
 
-#### 3. Nhóm phúc lợi sức khỏe
+## 3. Nhóm phúc lợi sức khỏe
 
 **Bảo hiểm y tế:** Luật yêu cầu đóng BHYT theo luật - nhưng nhiều công ty mua thêm bảo hiểm sức khỏe tư nhân (PVI, Bảo Việt, AIA...). Hỏi:
 - Gói bảo hiểm cover cá nhân hay cả gia đình?
@@ -66,7 +54,7 @@ Tổng thực nhận từ công ty B cao hơn công ty A khoảng 4–5 triệu/
 
 **Hỗ trợ sức khỏe tâm thần:** Ngày càng nhiều công ty tech có chính sách này - ngày nghỉ mental health, support đường dây tư vấn. Nếu bạn quan tâm, đây là câu hỏi cho thấy bạn chín chắn, không phải yếu đuối.
 
-#### 4. Nhóm phúc lợi thời gian và làm việc linh hoạt
+## 4. Nhóm phúc lợi thời gian và làm việc linh hoạt
 
 Nhóm này ảnh hưởng trực tiếp đến chất lượng cuộc sống hàng ngày - đôi khi quan trọng hơn cả lương với nhiều người.
 
@@ -88,7 +76,7 @@ Nhóm này ảnh hưởng trực tiếp đến chất lượng cuộc sống hà
 - Khi làm thêm giờ thì tính lương OT như thế nào?
 - Có bù giờ nghỉ (compensatory time off) không?
 
-#### 5. Nhóm phúc lợi phát triển nghề nghiệp
+## 5. Nhóm phúc lợi phát triển nghề nghiệp
 
 Đây là nhóm fresher hay bỏ qua nhất - nhưng lại có giá trị dài hạn lớn nhất.
 
@@ -109,7 +97,7 @@ Nhóm này ảnh hưởng trực tiếp đến chất lượng cuộc sống hà
 - Có chương trình mentoring chính thức không hay tự bơi?
 - Senior nào sẽ là người hướng dẫn trong 3 tháng đầu?
 
-#### 6. Cách hỏi phúc lợi không bị mất điểm
+## 6. Cách hỏi phúc lợi không bị mất điểm
 
 Nhiều fresher sợ hỏi về phúc lợi vì nghĩ sẽ trông tham hoặc thiếu chuyên nghiệp. Thực ra, hỏi đúng cách là dấu hiệu của người biết coi trọng bản thân và hiểu giá trị tổng đãi ngộ.
 
@@ -132,7 +120,7 @@ Xem thêm bài [Cách đặt câu hỏi ngược khi phỏng vấn](/cau-hoi-ngu
 
 Những câu này có thể hỏi sau khi đã nhận offer và đang ở giai đoạn đàm phán chính thức. Xem thêm [Cách đàm phán lương fresher IT](/dam-phan-luong-fresher-it) để biết quy trình đàm phán đúng thời điểm.
 
-#### 7. Dấu hiệu công ty đang che giấu thông tin
+## 7. Dấu hiệu công ty đang che giấu thông tin
 
 Không phải mọi thứ trong offer letter đều minh bạch. Một số dấu hiệu cần chú ý:
 
@@ -148,7 +136,7 @@ Không phải mọi thứ trong offer letter đều minh bạch. Một số dấ
 
 Nếu nhận thấy nhiều dấu hiệu trên cùng lúc, hãy đọc [Khi nào nên từ chối offer](/tu-choi-offer-it) để có thêm góc nhìn trước khi quyết định ký hay không.
 
-#### 8. FAQ
+## 8. FAQ
 
 **Fresher có nên hỏi về phúc lợi khi phỏng vấn không?**
 Có, nhưng đúng thời điểm. Vòng technical không phải chỗ hỏi. Vòng HR hoặc khi nhận offer là lúc phù hợp. Hỏi phúc lợi không làm bạn trông tham - hỏi sai thời điểm mới gây vấn đề.

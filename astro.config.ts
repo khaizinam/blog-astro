@@ -48,6 +48,14 @@ function rehypeCleanSlugs() {
         node.properties = node.properties || {};
         node.properties.id = cleanSlugify(text);
       }
+      if (node.tagName === "a" && node.properties && typeof node.properties.href === "string" && node.properties.href.startsWith("#") && node.properties.href.length > 1) {
+        try {
+          const decodedHref = decodeURIComponent(node.properties.href.slice(1));
+          node.properties.href = "#" + cleanSlugify(decodedHref);
+        } catch (e) {
+          // ignore
+        }
+      }
     });
   };
 }
@@ -99,6 +107,23 @@ function rehypeFigure() {
   };
 }
 
+function remarkFixTocLinks() {
+  return (tree: any) => {
+    visit(tree, "link", (node: any) => {
+      if (typeof node.url === "string" && node.url.startsWith("#") && node.url.length > 1) {
+        try {
+          console.log("Found link to process:", node.url);
+          const decodedUrl = decodeURIComponent(node.url.slice(1));
+          node.url = "#" + cleanSlugify(decodedUrl);
+          console.log("Processed link:", node.url);
+        } catch (e) {
+          console.error("Error processing link:", e);
+        }
+      }
+    });
+  };
+}
+
 export default defineConfig({
   site: config.site.url,
   redirects: {
@@ -108,6 +133,7 @@ export default defineConfig({
   },
   integrations: [
     mdx({
+      remarkPlugins: [remarkFixTocLinks],
       rehypePlugins: [rehypeCleanSlugs, rehypeFigure],
     }),
     sitemap({
@@ -123,7 +149,10 @@ export default defineConfig({
     },
   },
   markdown: {
-    remarkPlugins: [remarkToc],
+    remarkPlugins: [
+      [remarkToc, { heading: "toc|table[ -]of[ -]contents?|mục lục|mục lục nội dung" }],
+      remarkFixTocLinks
+    ],
     rehypePlugins: [rehypeCleanSlugs, rehypeFigure],
     shikiConfig: {
       themes: { light: "min-light", dark: "night-owl" },
