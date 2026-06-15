@@ -1,5 +1,5 @@
 ---
-title: "Giáo Dục Chân Chính – Từ Webtoon Đình Đám Đến Live Action Gây Sốt Toàn Cầu"
+title: "Review Giáo Dục Chân Chính – Từ Webtoon Đình Đám Đến Live Action Gây Sốt Toàn Cầu"
 author: "Nguyễn Hữu Khải - khaizinam"
 pubDatetime: 2026-06-14T09:00:00.000Z
 slug: review-giao-duc-chan-chinh
