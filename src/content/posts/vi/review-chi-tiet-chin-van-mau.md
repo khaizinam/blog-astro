@@ -26,6 +26,8 @@ Không đẩy người chơi vào thế "làm vua một cõi" ngay từ đầu, 
 
 Đúng như tên gọi của game, hành trình của bạn bắt đầu từ một mẫu ruộng hoang sơ. Nhiệm vụ tối thượng là tích lũy, chiêu mộ hiền tài, khai hoang bờ cõi để từng bước biến mảnh đất nhỏ bé ấy thành một giang sơn rộng lớn lên tới **Chín Vạn Mẫu**. Cảm giác "bảo trì, nuôi trồng rồi gặt hái" mang lại tính gây nghiện rất cao cho những ai yêu thích dòng game mô phỏng quản lý.
 
+Tải Game ngay tại trang chính thức [Ninety Thousand Acres](https://nta.dhgames.com/)
+
 ## 2. Gameplay: Sự Giao Thoa Giữa Quản Lý Và Mưu Phạt
 
 ![Gameplay: Sự Giao Thoa Giữa Quản Lý Và Mưu Phạt](https://cdn.khaizinam.io.vn/blog-folder/2026-06/9-van-mau-gameplay.webp)
@@ -63,6 +65,8 @@ Như mọi tựa game SLG khác, *Chín Vạn Mẫu* cũng có sự phân hóa g
 
 * Tuy nhiên, nhờ vào cơ chế chiến thuật bàn cờ và sự khắc chế sâu sắc giữa các binh chủng, người chơi hệ cày cuốc thông minh (biết cách tối ưu tài nguyên, chọn đúng liên minh mạnh để dựa dẫm) vẫn có đất diễn và hoàn toàn có thể dùng mưu mẹo để bù đắp khoảng cách tài chính.
 * Một mẹo nhỏ phổ biến trong cộng đồng là sử dụng các trình giả lập (như LDPlayer) trên PC để chạy "multi-instance" – quản lý nhiều tài khoản phụ (acc clone) cùng lúc để vận chuyển tài nguyên về nuôi acc chính, giúp đẩy nhanh tốc độ xây dựng bờ cõi mà không tốn một đồng nào.
+
+Tải Game ngay tại trang chính thức [Ninety Thousand Acres](https://nta.dhgames.com/)
 
 ---
 
