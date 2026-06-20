@@ -1,7 +1,7 @@
 ---
 title: "Ninety Thousand Acres: How I Turned the Tables on a 1 vs 4 Siege With Pure Psychology"
 author: "Khaizinam - Nguyễn Hữu Khải"
-pubDatetime: 2026-06-20T08:00:00Z
+pubDatetime: 2026-06-19T08:00:00Z
 slug: ninety-thousand-acres-psychological-warfare
 lang: en
 translationKey: chin-van-mau-tam-ly-chien

@@ -1,7 +1,7 @@
 ---
 title: "Chín Vạn Mẫu: Bí Quyết Tâm Lý Chiến Lật Kèo 1 Chọi 4"
 author: "Khaizinam - Nguyễn Hữu Khải"
-pubDatetime: 2026-06-20T08:00:00Z
+pubDatetime: 2026-06-19T08:00:00Z
 slug: chin-van-mau-tam-ly-chien
 lang: vi
 translationKey: chin-van-mau-tam-ly-chien
