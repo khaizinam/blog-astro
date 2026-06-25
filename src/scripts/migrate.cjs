@@ -21,7 +21,7 @@ turndownService.addRule('codeBlock', {
       node.firstChild.nodeName === 'CODE'
     );
   },
-  replacement: function (content, node) {
+  replacement: function (_content, node) {
     const className = node.firstChild.className || '';
     const lang = className.replace('language-', '') || '';
     // Lấy nội dung text thuần để không bị escape ký tự lập trình

@@ -17,6 +17,8 @@
 
 interface Env {}
 
+declare const HTMLRewriter: any;
+
 // ─── helpers ─────────────────────────────────────────────────────────────────
 
 /** Rough GPT-style token estimate: ~4 chars per token. */
@@ -49,39 +51,39 @@ async function htmlToMarkdown(html: string): Promise<string> {
   const metaResponse = fakeResponse.clone();
   await new HTMLRewriter()
     .on("meta[name='title']", {
-      element(el) {
+      element(el: any) {
         meta.title = meta.title ?? el.getAttribute("content") ?? undefined;
       },
     })
     .on("meta[property='og:title']", {
-      element(el) {
+      element(el: any) {
         meta.title = meta.title ?? el.getAttribute("content") ?? undefined;
       },
     })
     .on("title", {
-      text(chunk) {
+      text(chunk: any) {
         if (!meta.title && chunk.text) meta.title = chunk.text;
       },
     })
     .on("meta[name='description']", {
-      element(el) {
+      element(el: any) {
         meta.description =
           meta.description ?? el.getAttribute("content") ?? undefined;
       },
     })
     .on("meta[property='og:description']", {
-      element(el) {
+      element(el: any) {
         meta.description =
           meta.description ?? el.getAttribute("content") ?? undefined;
       },
     })
     .on("meta[property='og:image']", {
-      element(el) {
+      element(el: any) {
         meta.image = meta.image ?? el.getAttribute("content") ?? undefined;
       },
     })
     .on("script[type='application/ld+json']", {
-      text(chunk) {
+      text(chunk: any) {
         if (chunk.text) jsonLdBlocks.push(chunk.text);
       },
     })
@@ -105,7 +107,7 @@ async function htmlToMarkdown(html: string): Promise<string> {
     .on(
       "nav, header, footer, aside, script, style, noscript, form, iframe, svg",
       {
-        element(el) {
+        element(el: any) {
           inSkip++;
           el.onEndTag(() => {
             inSkip--;
@@ -117,7 +119,7 @@ async function htmlToMarkdown(html: string): Promise<string> {
     .on(
       "[role='navigation'], [role='banner'], [role='contentinfo'], [role='complementary'], [role='search']",
       {
-        element(el) {
+        element(el: any) {
           inSkip++;
           el.onEndTag(() => {
             inSkip--;
@@ -127,7 +129,7 @@ async function htmlToMarkdown(html: string): Promise<string> {
     )
     // ── headings ─────────────────────────────────────────────────────────────
     .on("h1", {
-      element(el) {
+      element(el: any) {
         if (!inSkip) {
           parts.push("\n# ");
           el.onEndTag(() => parts.push("\n"));
@@ -135,7 +137,7 @@ async function htmlToMarkdown(html: string): Promise<string> {
       },
     })
     .on("h2", {
-      element(el) {
+      element(el: any) {
         if (!inSkip) {
           parts.push("\n## ");
           el.onEndTag(() => parts.push("\n"));
@@ -143,7 +145,7 @@ async function htmlToMarkdown(html: string): Promise<string> {
       },
     })
     .on("h3", {
-      element(el) {
+      element(el: any) {
         if (!inSkip) {
           parts.push("\n### ");
           el.onEndTag(() => parts.push("\n"));
@@ -151,7 +153,7 @@ async function htmlToMarkdown(html: string): Promise<string> {
       },
     })
     .on("h4", {
-      element(el) {
+      element(el: any) {
         if (!inSkip) {
           parts.push("\n#### ");
           el.onEndTag(() => parts.push("\n"));
@@ -159,7 +161,7 @@ async function htmlToMarkdown(html: string): Promise<string> {
       },
     })
     .on("h5", {
-      element(el) {
+      element(el: any) {
         if (!inSkip) {
           parts.push("\n##### ");
           el.onEndTag(() => parts.push("\n"));
@@ -167,7 +169,7 @@ async function htmlToMarkdown(html: string): Promise<string> {
       },
     })
     .on("h6", {
-      element(el) {
+      element(el: any) {
         if (!inSkip) {
           parts.push("\n###### ");
           el.onEndTag(() => parts.push("\n"));
@@ -176,7 +178,7 @@ async function htmlToMarkdown(html: string): Promise<string> {
     })
     // ── paragraphs ────────────────────────────────────────────────────────────
     .on("p", {
-      element(el) {
+      element(el: any) {
         if (!inSkip) {
           parts.push("\n");
           el.onEndTag(() => parts.push("\n"));
@@ -185,7 +187,7 @@ async function htmlToMarkdown(html: string): Promise<string> {
     })
     // ── blockquote ────────────────────────────────────────────────────────────
     .on("blockquote", {
-      element(el) {
+      element(el: any) {
         if (!inSkip) {
           parts.push("\n> ");
           el.onEndTag(() => parts.push("\n"));
@@ -194,7 +196,7 @@ async function htmlToMarkdown(html: string): Promise<string> {
     })
     // ── lists ─────────────────────────────────────────────────────────────────
     .on("ul, ol", {
-      element(el) {
+      element(el: any) {
         if (!inSkip) {
           listDepth++;
           parts.push("\n");
@@ -206,7 +208,7 @@ async function htmlToMarkdown(html: string): Promise<string> {
       },
     })
     .on("li", {
-      element(el) {
+      element(el: any) {
         if (!inSkip) {
           parts.push("\n" + "  ".repeat(Math.max(listDepth - 1, 0)) + "- ");
           el.onEndTag(() => {});
@@ -215,7 +217,7 @@ async function htmlToMarkdown(html: string): Promise<string> {
     })
     // ── links ─────────────────────────────────────────────────────────────────
     .on("a[href]", {
-      element(el) {
+      element(el: any) {
         if (!inSkip) {
           const href = el.getAttribute("href") ?? "";
           parts.push("[");
@@ -225,7 +227,7 @@ async function htmlToMarkdown(html: string): Promise<string> {
     })
     // ── emphasis ─────────────────────────────────────────────────────────────
     .on("strong, b", {
-      element(el) {
+      element(el: any) {
         if (!inSkip) {
           parts.push("**");
           el.onEndTag(() => parts.push("**"));
@@ -233,7 +235,7 @@ async function htmlToMarkdown(html: string): Promise<string> {
       },
     })
     .on("em, i", {
-      element(el) {
+      element(el: any) {
         if (!inSkip) {
           parts.push("_");
           el.onEndTag(() => parts.push("_"));
@@ -242,7 +244,7 @@ async function htmlToMarkdown(html: string): Promise<string> {
     })
     // ── inline code ───────────────────────────────────────────────────────────
     .on("code", {
-      element(el) {
+      element(el: any) {
         if (!inSkip && !inPre) {
           parts.push("`");
           el.onEndTag(() => parts.push("`"));
@@ -251,7 +253,7 @@ async function htmlToMarkdown(html: string): Promise<string> {
     })
     // ── code blocks ───────────────────────────────────────────────────────────
     .on("pre", {
-      element(el) {
+      element(el: any) {
         if (!inSkip) {
           inPre = true;
           codeBuffer = "";
@@ -266,7 +268,7 @@ async function htmlToMarkdown(html: string): Promise<string> {
     })
     // ── images ────────────────────────────────────────────────────────────────
     .on("img[alt]", {
-      element(el) {
+      element(el: any) {
         if (!inSkip) {
           const src = el.getAttribute("src") ?? "";
           const alt = el.getAttribute("alt") ?? "";
@@ -276,19 +278,19 @@ async function htmlToMarkdown(html: string): Promise<string> {
     })
     // ── horizontal rule ───────────────────────────────────────────────────────
     .on("hr", {
-      element(el) {
+      element(_el: any) {
         if (!inSkip) parts.push("\n---\n");
       },
     })
     // ── line breaks ───────────────────────────────────────────────────────────
     .on("br", {
-      element(el) {
+      element(_el: any) {
         if (!inSkip) parts.push("  \n");
       },
     })
     // ── table ─────────────────────────────────────────────────────────────────
     .on("th, td", {
-      element(el) {
+      element(el: any) {
         if (!inSkip) {
           parts.push("| ");
           el.onEndTag(() => parts.push(" "));
@@ -296,7 +298,7 @@ async function htmlToMarkdown(html: string): Promise<string> {
       },
     })
     .on("tr", {
-      element(el) {
+      element(el: any) {
         if (!inSkip) {
           el.onEndTag(() => parts.push("|\n"));
         }
@@ -304,7 +306,7 @@ async function htmlToMarkdown(html: string): Promise<string> {
     })
     // ── text nodes ────────────────────────────────────────────────────────────
     .on("body", {
-      text(chunk) {
+      text(chunk: any) {
         if (inSkip) return;
         const t = chunk.text;
         if (!t.trim()) {
@@ -350,7 +352,7 @@ async function htmlToMarkdown(html: string): Promise<string> {
 
 // ─── middleware ───────────────────────────────────────────────────────────────
 
-export const onRequest: PagesFunction<Env> = async (ctx) => {
+export const onRequest = async (ctx: any) => {
   const { request, next } = ctx;
   const accept = request.headers.get("Accept") ?? "";
 
