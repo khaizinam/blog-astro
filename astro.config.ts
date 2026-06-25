@@ -150,7 +150,7 @@ export default defineConfig({
   },
   markdown: {
     remarkPlugins: [
-      [remarkToc, { heading: "toc|table[ -]of[ -]contents?|mục lục|mục lục nội dung" }],
+      [remarkToc, { heading: "toc|table[ -]of[ -]contents?|mục lục|mục lục nội dung", maxDepth: 3 }],
       remarkFixTocLinks
     ],
     rehypePlugins: [rehypeCleanSlugs, rehypeFigure],
