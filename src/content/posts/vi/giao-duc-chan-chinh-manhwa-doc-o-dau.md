@@ -1,7 +1,7 @@
 ---
 title: "Đọc Giáo Dục Chân Chính Manhwa Tiếng Việt Ở Đâu?"
 author: "Nguyễn Hữu Khải - khaizinam"
-pubDatetime: 2026-06-25T15:00:00.000Z
+pubDatetime: 2026-06-25T12:00:00.000Z
 slug: giao-duc-chan-chinh-manhwa-doc-o-dau
 lang: vi
 featured: false
