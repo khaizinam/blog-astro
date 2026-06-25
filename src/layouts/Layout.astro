@@ -106,6 +106,10 @@ const rssHref = getRelativeLocaleUrl(
       href={new URL(rssHref, Astro.site)}
     />
 
+    <!-- Markdown for Agents: signal that text/markdown is available via content negotiation -->
+    <!-- Agents can request this URL with `Accept: text/markdown` to get a Markdown response -->
+    <link rel="alternate" type="text/markdown" href={canonicalURL} />
+
     <!-- Filled at runtime by theme.ts to match the current background colour -->
     <meta name="theme-color" content="" />
 
