@@ -1,7 +1,7 @@
 ---
 title: "Chín Vạn Mẫu Hướng Dẫn Dig Đất Cơ Bản Với Đạo Cung Và Khiên"
 author: "Nguyễn Hữu Khải - khaizinam"
-pubDatetime: 2026-04-04T11:36:05.000Z
+pubDatetime: 2026-08-01T00:21:09.000Z
 slug: "chin-van-mau-huong-dan-dig-co-ban"
 description: "Hướng dẫn dig đất cơ bản trong Chín Vạn Mẫu (Ninety Thousand Acres): thứ tự ưu tiên đạo cung, đạo khiên, cách sắp đội hình 4 cung 1 tank, trang bị và cách trị Boss."
 draft: false
