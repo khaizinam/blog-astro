@@ -1,16 +1,14 @@
 ---
 title: "GenZ Không Tiết Kiệm Tiền: Lỗi Hệ Thống Hay Lựa Chọn?"
 author: "Nguyễn Hữu Khải - khaizinam"
-pubDatetime: 2026-09-20 08:00:00
-modDatetime: 2026-09-20 08:00:00
+pubDatetime: 2026-09-19 08:00:00
+modDatetime: 2026-09-19 08:00:00
 slug: genz-khong-tiet-kiem-tien-loi-he-thong-hay-lua-chon
 lang: vi
 translationKey: "genz-spend-all-earn-all-vietnam-2026"
 featured: true
 draft: false
 tags:
-  - "TaiChinh"
-  - "GenZ"
   - "NgoaiLe"
 description: "GenZ không tiết kiệm tiền vì lười hay vì giá nhà cần 30 năm thu nhập mới mua được? Phân tích thẳng thắn nguyên nhân thật + 3 bước bắt đầu tích lũy ngay hôm nay."
 ogImage: "https://cdn.khaizinam.io.vn/blog-folder/2026-06/genz-khong-tiet-kiem-tien-hero.jpg"
